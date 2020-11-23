@@ -22,6 +22,28 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: Subheading, name: subheading, widget: string}
       - {label: Image, name: image, widget: image}
+      - {label: "Contact Block", name: contactblock, widget: object, fields: [
+        {label: Adresse, name: adress, widget: object, fields: [
+          {label: Icon, name: icon, widget: image},
+          {label: "Straße", name: street, widget: string},
+          {label: "PLZ & Ort", name: city, widget: string}
+        ]},
+        {label: "Telefon & Fax", name: numbers, widget: object, fields: [
+          {label: Icon, name: icon, widget: image},
+          {label: "Telefon", name: phone, widget: string},
+          {label: "Fax", name: fax, widget: string}
+        ]},
+        {label: "Internet Adressen", name: webadress, widget: object, fields: [
+          {label: Icon, name: icon, widget: image},
+          {label: "E-Mail", name: mail, widget: string},
+          {label: "Webseite", name: web, widget: string}
+        ]},
+        {label: "Öffnungszeiten", name: openhours, widget: object, fields: [
+          {label: Icon, name: icon, widget: image},
+          {label: "Regulär", name: regularhours, widget: "text"},
+          {label: "Zusätzliche Infos", name: specialinfo, widget: "text"}
+        ]}
+      ]}
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
@@ -46,6 +68,8 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
+          - {label: Quote, name: quote, widget: object, fields: [{label: Text, name: text, widget: "text"}, {label: Author, name: author, widget: string}]} 
+
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
