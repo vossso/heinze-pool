@@ -1,5 +1,5 @@
 ---
 templateKey: index-page
 title: Great coffee with a conscience hallo
-image: /img/home-jumbotron.jpg
+image: /img/p1020238.jpg
 ---
