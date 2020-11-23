@@ -2,7 +2,7 @@
 templateKey: content-page
 title: Titel Inhaltsseite
 subheading: subheadlin inhaltsseite
-image: /img/apple-touch-icon.png
+image: /img/p1020287-edit.jpg
 contactblock:
   adress:
     street: Daimler Straße 9
