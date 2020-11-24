@@ -40,4 +40,7 @@ history:
       vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit
       aliquet. Donec ullamcorper nulla non metus auctor fringilla. Cras justo
       odio, dapibus ac facilisis in, egestas eget quam.
+    historyimage:
+      image: /img/202011221137-01.png
+      alt: alt
 ---
