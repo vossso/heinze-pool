@@ -2,6 +2,9 @@
 templateKey: about-page
 path: /about
 title: About our values
+titleimage:
+  image: /img/dsc_0204-2.jpg
+  alt: hello
 history:
   - historyimage:
       image: /img/202011221137-01.png
