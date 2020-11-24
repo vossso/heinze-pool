@@ -43,8 +43,8 @@ history:
     historyimage:
       image: /img/202011221137-01.png
       alt: alt
-    description: Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam
-      quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non
+    description: Cras **justo** odio, dapibus ac facilisis in, egestas eget quam.
+      Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non
       commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
       elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
       nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum
