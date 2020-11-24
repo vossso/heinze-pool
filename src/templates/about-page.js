@@ -2,44 +2,66 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
+import ContactBlock from '../components/ContactBlock/ContactBlock'
+import History from '../components/History/History'
+
+export const AboutPageTemplate = ({ title, titleimage, history, contactblock }) => {
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
+            <div className="AboutPage">
+              <div className="AboutPage__stage">
+                <h2 className="AboutPage__title">
+                  {title}
+                </h2>
+                <div className="AboutPage__image">
+                  <img src={titleimage.image} style={{height: '100%', width: '100%'}} alt={titleimage.alt}/>
+                </div>
+              </div>
+              <div className="AboutPage__content">
+                <History data={history} />
+                <ContactBlock contactblock={contactblock}/> 
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
   )
 }
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
+  titleimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  history: PropTypes.array,
+  contactblock: PropTypes.shape({
+    adress: PropTypes.shape({
+      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+      street: PropTypes.string,
+      city: PropTypes.string
+    }),
+    numbers: PropTypes.shape({
+      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+      phone: PropTypes.string,
+      fax: PropTypes.string
+    }),
+    adrwebadressess: PropTypes.shape({
+      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+      mail: PropTypes.string,
+      web: PropTypes.string
+    }),
+    openhours: PropTypes.shape({
+      regularhours: PropTypes.string,
+      specialinfo: PropTypes.string
+    }),
+  })
 }
 
 const AboutPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
       <AboutPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
+        title={frontmatter.title}
+        titleimage={frontmatter.titleimage}
+        history={frontmatter.history}
       />
     </Layout>
   )
@@ -57,6 +79,75 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        titleimage {
+          alt
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        history {
+          historyimage {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          title
+          description
+        }
+        contactblock {
+          adress {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            street
+            city
+          }
+          numbers {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            phone
+            fax
+          }
+          webadress {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            mail
+            web
+          }
+          openhours {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            regularhours
+            specialinfo
+          }
+        }
       }
     }
   }

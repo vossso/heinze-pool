@@ -30,11 +30,11 @@ const ContactTeaser = ({ icon, content }) => (
 )
 
 ContactTeaser.propTypes = {
-    icon: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    icon: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
     content: PropTypes.arrayOf(
         PropTypes.shape({
         name: PropTypes.string,
-        content: PropTypes.string,
+        content: PropTypes.string.isRequired,
         })
     ),
     getAsset: PropTypes.func,

@@ -16,9 +16,9 @@ const ContactBlock = ({ contactblock }) => {
     return (
         <div className="ContactBlock">
             <div className="ContactBlock__teaser">
-                <ContactTeaser icon={adress.icon} content={[["Adresse", `${adress.street}\n${adress.city}`]]}></ContactTeaser>
-                <ContactTeaser icon={numbers.icon} content={[["Telefon", numbers.phone],["Fax", numbers.fax]]}></ContactTeaser>
-                <ContactTeaser icon={webadress.icon} content={[["E-Mail", webadress.web]]}></ContactTeaser>
+                <ContactTeaser icon={adress.image} content={[["Adresse", `${adress.street}\n${adress.city}`]]}></ContactTeaser>
+                <ContactTeaser icon={numbers.image} content={[["Telefon", numbers.phone],["Fax", numbers.fax]]}></ContactTeaser>
+                <ContactTeaser icon={webadress.image} content={[["E-Mail", webadress.web]]}></ContactTeaser>
             </div>
             <div className="ContactBlock__map">
                 <div className="ContactBlock__map-text">
@@ -34,26 +34,26 @@ const ContactBlock = ({ contactblock }) => {
 ContactBlock.propTypes = {
     contactblock: PropTypes.shape({
         adress: PropTypes.shape({
-            icon: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+            image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
             street: PropTypes.string,
             city: PropTypes.string
         }),
         numbers: PropTypes.shape({
-            icon: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+            image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
             phone: PropTypes.string,
             fax: PropTypes.string,
         }),
         webadress: PropTypes.shape({
-            icon: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+            image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
             mail: PropTypes.string,
             web: PropTypes.string,
         }),
         openhours: PropTypes.shape({
-            icon: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+            image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
             regularhours: PropTypes.string,
             specialinfo: PropTypes.string
         })
-    }),
+    }).isRequired,
     getAsset: PropTypes.func,
 }
 
