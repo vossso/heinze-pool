@@ -9,8 +9,8 @@ history:
     title: "1998"
     description: Integer posuere erat a ante venenatis dapibus posuere velit
       aliquet. Integer posuere erat a ante venenatis dapibus posuere velit
-      aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna.
-      Aenean lacinia bibendum nulla sed consectetur.
+      aliquet. **Maecenas** sed diam eget risus varius blandit sit amet non
+      magna. Aenean lacinia bibendum nulla sed consectetur.
 contactblock:
   adress:
     image: /img/dsc_0204-2.jpg
