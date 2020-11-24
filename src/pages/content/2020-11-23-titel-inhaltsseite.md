@@ -3,6 +3,9 @@ templateKey: content-page
 title: Titel Inhaltsseite
 subheading: subheadlin inhaltsseite
 image: /img/dsc_0204-2.jpg
+titleimage:
+  image: /img/dsc_0204-2.jpg
+  alt: "Pools Hallen "
 contactblock:
   adress:
     street: Daimler Straße 9
