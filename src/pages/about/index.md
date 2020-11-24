@@ -1,7 +1,38 @@
 ---
-templateKey: 'about-page'
+templateKey: about-page
 path: /about
 title: About our values
+history:
+  - historyimage:
+      image: /img/202011221137-01.png
+      alt: Pool 1998
+    title: "1998"
+    description: Integer posuere erat a ante venenatis dapibus posuere velit
+      aliquet. Integer posuere erat a ante venenatis dapibus posuere velit
+      aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna.
+      Aenean lacinia bibendum nulla sed consectetur.
+contactblock:
+  adress:
+    image: /img/dsc_0204-2.jpg
+    street: "Daimlerstr. 9 "
+    city: 30916 Isernhagen
+  numbers:
+    image: /img/p1020238.jpg
+    phone: 0511 2713145
+    fax: 0511 2713147
+  webadress:
+    image: /img/p1020287-edit.jpg
+    mail: info@heinze-pool.de
+    web: heinze-pool.de
+  openhours:
+    image: /img/202011221137-01.png
+    regularhours: |-
+      Mo - Fr
+      10 - 16 Uhr
+
+      Sa
+      10 - 13 Uhr
+    specialinfo: Oktober bis März Samstags geschlossen
 ---
 ### Shade-grown coffee
 Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
