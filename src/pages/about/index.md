@@ -4,7 +4,7 @@ path: /about
 title: About our values
 titleimage:
   image: /img/1200_ohne-alles.jpg
-  alt: hello
+  alt: helloo
 history:
   - historyimage:
       image: /img/202011221137-01.png
