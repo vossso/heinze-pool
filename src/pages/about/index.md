@@ -3,7 +3,7 @@ templateKey: about-page
 path: /about
 title: About our values
 titleimage:
-  image: /img/dsc_0204-2.jpg
+  image: /img/1200_ohne-alles.jpg
   alt: hello
 history:
   - historyimage:
