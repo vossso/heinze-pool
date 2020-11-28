@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 path: /about
-title: About our values
+title: Über uns
 titleimage:
   image: /img/1200_ohne-alles.jpg
   alt: helloo
