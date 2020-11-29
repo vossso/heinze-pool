@@ -34,6 +34,12 @@ history:
     title: "1990"
     description: Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a
       pharetra augue. Sed posuere consectetur est at lobortis.
+  - historyimage:
+      image: /img/1200_ohne-alles.jpg
+      alt: "2001"
+    title: "2001"
+    description: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+      auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 contactblock:
   adress:
     image: /img/dsc_0204-2.jpg
