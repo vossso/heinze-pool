@@ -3,7 +3,7 @@ templateKey: about-page
 path: /about
 title: Über uns
 titleimage:
-  image: /img/1200_ohne-alles.jpg
+  image: /img/old_1993-kopie.jpg
   alt: helloo
 history:
   - historyimage:
