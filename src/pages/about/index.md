@@ -42,15 +42,15 @@ history:
       auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 contactblock:
   adress:
-    image: /img/dsc_0204-2.jpg
+    image: /img/icons_hp-22.png
     street: "Daimlerstr. 9 "
     city: 30916 Isernhagen
   numbers:
-    image: /img/p1020238.jpg
+    image: /img/icons_hp-26.png
     phone: 0511 2713145
     fax: 0511 2713147
   webadress:
-    image: /img/p1020287-edit.jpg
+    image: /img/icons_hp-25.png
     mail: info@heinze-pool.de
     web: heinze-pool.de
   openhours:
