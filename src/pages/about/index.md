@@ -62,4 +62,13 @@ contactblock:
       Sa
       10 - 13 Uhr
     specialinfo: Oktober bis März Samstags geschlossen
+  openinghours:
+    - daysbegin: Montag
+      daysend: Freitag
+      timebegin: 10
+      timeend: 16
+    - daysbegin: Samstag
+      daysend: Samstag
+      timebegin: 10
+      timeend: 13
 ---
