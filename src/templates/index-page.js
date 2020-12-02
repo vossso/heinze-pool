@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import './index-page.sass'
+import './index-page.scss'
 
 import Layout from '../components/Layout'
 import Quote from '../components/Quote/Quote'

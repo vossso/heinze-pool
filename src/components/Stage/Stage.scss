@@ -1,0 +1,40 @@
+@import "../global.scss";
+
+.Stage {
+    width: 100vw;
+    height: 40vh;
+    max-height: 50rem;
+
+    position: relative;
+    overflow: hidden;
+
+    &__image {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        & img {
+            width: 100%;
+            height: auto;
+
+            object-fit: cover;
+        }
+
+    }
+
+    &__content {
+        z-index: 1;
+        position: relative;
+        height: auto;
+
+        margin: 7rem 0 2rem;
+
+        & h2, & span {
+            color: $hp-white;
+        }
+    }
+}
+    

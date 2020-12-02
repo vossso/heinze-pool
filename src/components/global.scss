@@ -1,0 +1,41 @@
+@import "~bulma/sass/utilities/initial-variables";
+
+$hp-blue: #1E3769;
+$hp-blue-2: #1E73B9;
+$hp-blue-3: #78B4D7;
+$hp-white: #fff;
+
+$hp-ff: 'Brandon Text';
+
+$fs-s: 0.9rem;
+$fs-m: 1.2rem;
+$fs-l: 1.5rem;
+$fs-xl: 2rem;
+$fs-xxl: 2.4rem;
+$fs-xxxl: 3.4rem;
+
+//TODO importieren Font-weoght
+$fw-bold: 800;
+
+
+main {
+    font-family: $hp-ff;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, p, span {
+    color: $hp-blue;
+    font-family: $hp-ff;
+}
+
+h1, h2, h3, h4 {
+    font-size: $fs-l;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+}
+h1 {
+    font-size: $fs-xxxl;
+}
+h2 {
+    font-size: $fs-xxl;
+}
+    

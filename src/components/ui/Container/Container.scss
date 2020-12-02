@@ -1,0 +1,11 @@
+@import "../../global.scss";
+
+.Container {
+    width: 100vw;
+    padding: 2rem 10rem;
+    margin-top: 5rem;
+
+    &--no-top {
+        margin-top: 0;   
+    }
+}

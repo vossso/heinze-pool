@@ -1,0 +1,26 @@
+@import "../global.scss";
+
+.ContactBlock {
+    height: auto;
+    width: 100%;
+    padding: 20rem 0 0;
+    &__teaser {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+    }
+    &__map {
+        background-color: $hp-blue;  
+
+        
+        &-text {
+            margin-top: 2rem;
+
+            h4, p, span {
+                color: $hp-white;      
+            }  
+        }     
+    }
+}    
+    

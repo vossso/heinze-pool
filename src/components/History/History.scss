@@ -1,0 +1,29 @@
+@import "../global.scss";
+
+.History {
+    height: auto;
+    width: 100%;
+
+    > h3, > p {
+        text-align: center;    
+    }
+    > p {
+        font-size: $fs-m;    
+    }
+
+    &__teasers {
+        & .HistoryTeaser:nth-child(odd) {
+            flex-direction: row-reverse;
+
+            .HistoryTeaser__image {
+                    margin: 0;  
+            }
+            
+            .HistoryTeaser__content {
+                    margin-left: 1rem;
+            }
+        } 
+    }
+}
+        
+    

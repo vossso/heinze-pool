@@ -5,10 +5,12 @@
   "author": "Austin Green",
   "dependencies": {
     "bulma": "^0.9.0",
-    "gatsby": "^2.20.35",
+    "core-js": "^3.8.0",
+    "gatsby": "^2.27.4",
+    "gatsby-cli": "^2.14.1",
     "gatsby-image": "^2.3.5",
     "gatsby-plugin-netlify": "^2.2.4",
-    "gatsby-plugin-netlify-cms": "^4.2.5",
+    "gatsby-plugin-netlify-cms": "^4.6.0",
     "gatsby-plugin-purgecss": "^5.0.0",
     "gatsby-plugin-react-helmet": "^3.2.5",
     "gatsby-plugin-sass": "^2.2.4",
@@ -22,15 +24,20 @@
     "lodash": "^4.17.15",
     "lodash-webpack-plugin": "^0.11.4",
     "markdown-to-jsx": "^7.1.0",
+    "netlify": "^4.9.0",
     "netlify-cms-app": "^2.9.6",
     "netlify-cms-media-library-cloudinary": "^1.3.2",
     "netlify-cms-media-library-uploadcare": "^0.5.2",
-    "node-sass": "^4.14.0",
+    "node-sass": "4.14.1",
     "prop-types": "^15.6.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-helmet": "^6.0.0",
-    "uuid": "^7.0.0"
+    "sass": "^1.29.0",
+    "sass-loader": "^10.1.0",
+    "uuid": "^7.0.0",
+    "webpack": "^4.44.2",
+    "yoga-layout-prebuilt": "^1.10.0"
   },
   "keywords": [
     "gatsby"

@@ -5,22 +5,19 @@ import Layout from '../components/Layout'
 
 import ContactBlock from '../components/ContactBlock/ContactBlock'
 import History from '../components/History/History'
+import Stage from '../components/Stage/Stage'
 
 export const AboutPageTemplate = ({ title, titleimage, history, contactblock }) => {
+
 
   return (
             <div className="AboutPage">
               <div className="AboutPage__stage">
-                <h2 className="AboutPage__title">
-                  {title}
-                </h2>
-                <div className="AboutPage__image">
-                  <img src={titleimage.image} style={{height: '100%', width: '100%'}} alt={titleimage.alt}/>
-                </div>
+                <Stage title={title} image={titleimage.image} alt={titleimage.alt} />
               </div>
               <div className="AboutPage__content">
-                <History data={history} />
-                <ContactBlock contactblock={contactblock}/> 
+                {history && <History data={history} />}
+                {contactblock && <ContactBlock contactblock={contactblock}/> }
               </div>
             </div>
   )
@@ -55,6 +52,7 @@ AboutPageTemplate.propTypes = {
 
 const AboutPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
+  console.log(frontmatter)
 
   return (
     <Layout>
@@ -62,6 +60,7 @@ const AboutPage = ({ data }) => {
         title={frontmatter.title}
         titleimage={frontmatter.titleimage}
         history={frontmatter.history}
+        contactblock={frontmatter.contactblock}
       />
     </Layout>
   )

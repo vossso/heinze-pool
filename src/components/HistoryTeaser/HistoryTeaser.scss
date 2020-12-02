@@ -1,0 +1,17 @@
+@import "../global.scss";
+    
+.HistoryTeaser {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 2rem;
+
+    &__content {
+        flex: 1 1 50%;
+    }
+    &__image {
+        flex: 1 1 50%;
+        margin-left: 1rem;
+    }
+}
+    

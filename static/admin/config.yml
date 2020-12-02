@@ -87,6 +87,13 @@ collections:
               {label: "Öffnungszeiten", name: openhours, widget: object, fields: [
                 {label: "Regulär", name: regularhours, widget: "text"},
                 {label: "Zusätzliche Infos", name: specialinfo, widget: "text"}
+              ]},
+              {label: "Öffnungszeiten", name: openinghours, widget: list, fields: [
+                  {label: "Von (Wochentag)", name: daysbegin, widget: select, options: ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"], default: ["Montag"] },
+                  {label: "Bis (Wochentag)", name: daysend, widget: select, options: ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"], default: ["Samstag"] },
+                  {label: "Von (Uhrzeit)", name: timebegin, widget: number, default: 10, value_type: "int", min: 0, max: 23 },
+                  {label: "Bis (Uhrzeit)", name: timeend, widget: number, default: 16, value_type: "int", min: 0, max: 23 },
+
               ]}
             ]}
       - file: "src/pages/products/index.md"

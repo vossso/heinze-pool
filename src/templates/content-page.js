@@ -9,7 +9,7 @@ export const ContentPageTemplate = ({title, titleimage, subheading, contactblock
         <div className="ContentPage__header">
             <h2>{title && title}</h2>
             <p>{subheading && subheading}</p> 
-            <div
+            {titleimage && <div
                 className="ContentPage__header-image"
                 style={{
                     backgroundImage: `url(${
@@ -17,7 +17,7 @@ export const ContentPageTemplate = ({title, titleimage, subheading, contactblock
                     })`,
                 }}
             >
-            </div>
+            </div>}
         </div>
         <div className="ContentPage__content">
         </div>

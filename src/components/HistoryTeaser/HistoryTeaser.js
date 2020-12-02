@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Markdown from 'markdown-to-jsx'
 
-import './HistoryTeaser.sass'
+import './HistoryTeaser.scss'
 
 const HistoryTeaser = ({ data }) => {
 const {title, description, historyimage} = data
@@ -17,10 +17,10 @@ const {title, description, historyimage} = data
                        <Markdown>{description}</Markdown> 
                 </p>}
             </div>
-            <div className="HistoryTeaser__image">
+           {historyimage && <div className="HistoryTeaser__image">
                 {console.log(historyimage.image)}
-                <img src={historyimage.image} style={{height: '100%', width: '100%'}}/>
-            </div> 
+                <img src={!!historyimage.image.childImageSharp ? historyimage.image.childImageSharp.fluid.src : historyimage.image} style={{height: '100%', width: '100%'}} alt="oldpic"/>
+            </div> }
         </div>)
 }
 

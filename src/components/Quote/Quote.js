@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './Quote.sass'
+import './Quote.scss'
 
 const Quote = ({ quote }) => (
     quote.text ? 
