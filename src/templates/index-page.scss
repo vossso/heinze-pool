@@ -1,22 +1,87 @@
+@import '../components/global.scss';
+
 .IndexPage {
     height: auto;
     width: 100vw;
+    height: 100vh;
     overflow: hidden;
-    &__header {
-        width: 100vw;
-        height: 100vh;
-        max-height: 50rem;
-    }
-    &__header-image {
+
+    &__bg-image {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         width: auto;
         height: 100%;
     }
+
     &__content {
         height: auto;
         min-height: 100vh;
-        position: relative;
+        position: absolute;
+
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu-right,
+    &__menu-left  {
+        flex: 0 0 35%;
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        height: 90%;
+        z-index: 2;
+    }
+    &__menu-left{
+        align-items: flex-end;
+
+        & .IndexPage__link:nth-child(even) {
+            margin-right: 15rem;
+        }
+    }
+    &__menu-right {
+
+        & .IndexPage__link:nth-child(even) {
+            margin-left: 15rem;
+        }
+    }  
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: $fw-bold;
+        font-size: $fs-xxl;
+
+        color: $hp-white;
+
+    }
+
+    &__logo-box, &__hexa-box {
+        position: absolute;
+
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & img {
+            height: auto;
+            width: 40vw;
+        } 
+    }
+
+    &__hexa-box {
+        & img {
+            width: 50vw;
+        } 
     }
 }

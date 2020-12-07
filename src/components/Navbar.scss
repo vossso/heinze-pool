@@ -1,0 +1,46 @@
+@import './global.scss';
+
+.Navbar {
+    width: 100%;
+    background-color: $hp-white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+
+    a {
+        text-decoration: none;
+        color: $hp-blue;
+        text-transform: uppercase;
+        margin-right: 2rem;
+    }
+
+
+
+    &__desktop {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    &__links, &__rechts {
+        padding: 1rem;
+
+        .Navbar__start {
+            > img {
+                width: auto;
+                height: 2rem;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__links {
+        flex: 0 1 20%;
+    }
+     &__rechts {
+        flex: 1 1 80%;
+        
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+     }
+
+}

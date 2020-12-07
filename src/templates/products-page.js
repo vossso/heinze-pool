@@ -6,33 +6,33 @@ import Stage from '../components/Stage/Stage'
 
 
 
-export const ProductPageTemplate = ({
+export const ProductsPageTemplate = ({
   image,
   title,
   description
 }) => (
-  <div className="ProductPage">
-    <div className="ProductPage__stage">
+  <div className="ProductsPage">
+    <div className="ProductsPage__stage">
       <Stage image={image} title={title} description={description}/>
     </div>
-    <div className="ProductPage__content">
+    <div className="ProductsPage__content">
 
     </div>
   </div>
 )
 
-ProductPageTemplate.propTypes = {
+ProductsPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   description: PropTypes.string
 }
 
-const ProductPage = ({ data }) => {
+const ProductsPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
-      <ProductPageTemplate
+      <ProductsPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
         description={frontmatter.description}
@@ -41,7 +41,7 @@ const ProductPage = ({ data }) => {
   )
 }
 
-ProductPage.propTypes = {
+ProductsPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -49,11 +49,11 @@ ProductPage.propTypes = {
   }),
 }
 
-export default ProductPage
+export default ProductsPage
 
-export const productPageQuery = graphql`
-  query ProductPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+export const productsPageQuery = graphql`
+  query ProductsPage {
+    markdownRemark(frontmatter: { templateKey: { eq: "products-page" } }) {
       frontmatter {
         title
         image {

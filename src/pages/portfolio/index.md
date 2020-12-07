@@ -1,4 +1,6 @@
 ---
+path: /portfolio
+templateKey: portfolio-page
 title: Portfolio
 description: Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui.
 imageTeasers:

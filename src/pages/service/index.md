@@ -1,4 +1,6 @@
 ---
+path: /service
+templateKey: service-page
 title: Leistungen
 image: /img/dsc_0204-2.jpg
 description: Maecenas sed diam eget risus varius blandit sit amet non magna.

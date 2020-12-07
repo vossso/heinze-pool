@@ -1,7 +1,7 @@
 ---
 heading: Great coffee with a conscience
 path: /products
-templateKey: product-page
+templateKey: products-page
 pricing:
   heading: Monthly subscriptions
   description: We make it easy to make great coffee a part of your life. Choose

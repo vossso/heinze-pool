@@ -58,8 +58,8 @@ const ContentPage = ({ data }) => {
 export default ContentPage
 
 export const contentPageQuery = graphql`
-  query ContentPageByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+  query ContentPage {
+    markdownRemark(frontmatter: { templateKey: { eq: "content-page" } }) {
       html
       frontmatter {
         title

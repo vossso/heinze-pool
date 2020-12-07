@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import './Navbar.scss'
+
+import logo from '../img/hp-logo_typo.jpg'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -21,7 +24,7 @@ const Navbar = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: 'is-active',
+              navBarActiveClass: 'Navbar--is-active',
             })
           : this.setState({
               navBarActiveClass: '',
@@ -33,32 +36,33 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="Navbar"
         role="navigation"
         aria-label="main-navigation"
       >
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              {/* <img src={logo} alt="Kaldi" style={{ width: '88px' }} /> */}
-              Start
-            </Link>
+        <div className="Navbar__container">
+          <div className="Navbar__mobile">
             {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
+            {/* <div
+              className={`Navbar__hamburger${this.state.navBarActiveClass}`}
               data-target="navMenu"
               onClick={() => this.toggleHamburger()}
             >
               <span />
               <span />
               <span />
-            </div>
+            </div> */}
           </div>
           <div
             id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
+            className={`Navbar__desktop${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
+            <div className="Navbar__links">
+              <Link to="/" className="Navbar__start" title="Logo">
+              <img src={logo} alt="Heinze-Pool"/>
+            </Link>
+            </div>
+            <div className="Navbar__rechts">
               {/* <Link className="navbar-item">
                 Leistungen
               </Link> */}
@@ -68,12 +72,12 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/about">
                 Über uns
               </Link>
-              <Link className="navbar-item" to="/contact">
+              {/* <Link className="navbar-item" to="/contact">
                 Contact
               </Link>
               <Link className="navbar-item" to="/contact/examples">
                 Form Examples
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
