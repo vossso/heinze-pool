@@ -56,6 +56,12 @@ title: Produktübersicht
 productPages:
   - lable: Pools
     path: /pools
+  - lable: Überdachung
+    path: /ueberdachung
+  - lable: Wasserpflege
+    path: /wasserpflege
+  - lable: Zubehör
+    path: zubehoer
 main:
   heading: Great coffee with no compromises
   description: >
