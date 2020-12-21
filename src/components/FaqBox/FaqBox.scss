@@ -1,0 +1,32 @@
+@import "../global.scss";
+
+.FaqBox {
+    width: 100%;
+    height: auto;
+    padding: $spacer-m;
+    margin-bottom: $spacer-s;
+
+
+    box-shadow: $bs-standard;
+    border-radius: $br-standard;
+    border: $border-xs;
+
+    position: relative;
+    display: block;
+    cursor: pointer;
+
+    &__question {
+        margin: 0;
+        
+    }
+    &__answer {
+        margin-top: $spacer-s;
+    }
+    &__button {
+        width: 3rem;
+        position: absolute;
+        top: $spacer-m;
+        right: - 1.5rem;
+    }
+
+}

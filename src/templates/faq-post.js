@@ -48,14 +48,14 @@ FaqPost.propTypes = {
 export default FaqPost
 
 export const pageQuery = graphql`
-query FaqPostById($id: String) {
-    markdownRemark(id: {eq: $id}) {
-      id
+query FaqPostById {
+    markdownRemark(frontmatter: {templateKey: {eq: "faq-post"}}) {
       frontmatter {
         title
+        date(locale: "de", formatString: "DD.MM.YYYY hh:mm")
         description
-        date(formatString: "MMMM DD, YYYY")
       }
+      id
     }
   }
 `

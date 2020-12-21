@@ -1,0 +1,12 @@
+@import "../../global.scss";
+
+.ArrowLink {
+    height: 100%;
+    cursor: pointer;
+
+    transition: transform $duration-s;
+
+    &--down{
+        transform: rotate(90deg);
+    }
+}

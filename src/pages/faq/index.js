@@ -1,34 +1,20 @@
 import React from 'react'
 
 import Layout from '../../components/Layout'
-// import BlogRoll from '../../components/BlogRoll'
+import FaqRoll from '../../components/FaqRoll/FaqRoll'
+import Stage from '../../components/Stage/Stage'
+
+import titleImg from '../../img/water.jpg'
 
 export default class FaqIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <div
-          className="full-width-image-container margin-top-0"
-          style={{
-            backgroundImage: `url('/img/faq-index.jpg')`,
-          }}
-        >
-          <h1
-            className="has-text-weight-bold is-size-1"
-            style={{
-              boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-              backgroundColor: '#f40',
-              color: 'white',
-              padding: '1rem',
-            }}
-          >
-            Latest Stories
-          </h1>
-        </div>
+        <Stage title="Fragen & Antworten" image={titleImg} description="Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue." />
         <section className="section">
           <div className="container">
             <div className="content">
-              {/* <BlogRoll /> */}
+              <FaqRoll />
             </div>
           </div>
         </section>
