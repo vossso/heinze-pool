@@ -14,6 +14,21 @@ productElement:
     images:
       - image: /img/p1020287-edit.jpg
         alt: tag1
+  - single: true
+    title: Polypropylen
+    description: Nulla vitae elit libero, a pharetra augue. Cum sociis natoque
+      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    images:
+      - image: /img/202011221137-01.png
+        alt: poly
+  - single: false
+    title: Container
+    description: Cras mattis consectetur purus sit amet fermentum. Morbi leo risus,
+      porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac
+      facilisis in, egestas eget quam.
+    images:
+      - image: /img/1200_alles_aus_dina4.jpg
+        alt: Container
 brands:
   - image: /img/icons_hp-25.png
     name: marke1
