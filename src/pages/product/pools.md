@@ -14,8 +14,6 @@ productElement:
     images:
       - image: /img/p1020287-edit.jpg
         alt: tag1
-      - image: /img/p1020238.jpg
-        alt: tag2
 brands:
   - image: /img/icons_hp-25.png
     name: marke1
