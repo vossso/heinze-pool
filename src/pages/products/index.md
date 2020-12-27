@@ -59,18 +59,22 @@ productPages:
     text: Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
       lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Nullam id
       dolor id nibh ultricies vehicula ut id elit.
+    productPage: pools
   - lable: Überdachung
     path: /ueberdachung
     text: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+    productPage: pools
   - lable: Wasserpflege
     path: /wasserpflege
     text: Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi
       porta gravida at eget metus. Praesent commodo cursus magna, vel
       scelerisque nisl consectetur et.
+    productPage: pools
   - lable: Zubehör
     path: /zubehoer
     text: Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
       Vestibulum id ligula porta felis euismod semper.
+    productPage: pools
 main:
   heading: Great coffee with no compromises
   description: >
