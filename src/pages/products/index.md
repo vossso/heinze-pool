@@ -68,7 +68,7 @@ productPages:
       porta gravida at eget metus. Praesent commodo cursus magna, vel
       scelerisque nisl consectetur et.
   - lable: Zubehör
-    path: zubehoer
+    path: /zubehoer
     text: Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
       Vestibulum id ligula porta felis euismod semper.
 main:
