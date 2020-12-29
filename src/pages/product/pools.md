@@ -29,6 +29,14 @@ productElement:
     images:
       - image: /img/1200_alles_aus_dina4.jpg
         alt: Container
+  - single: false
+    title: Whirlpool
+    description: Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis
+      risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a
+      pharetra augue.
+    images:
+      - image: /img/dsc_0204-2.jpg
+        alt: tag whirlpool
 brands:
   - image: /img/icons_hp-25.png
     name: marke1
