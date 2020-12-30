@@ -38,12 +38,12 @@ productElement:
       - image: /img/dsc_0204-2.jpg
         alt: tag whirlpool
 brands:
-  - image: /img/icons_hp-25.png
+  - image: /img/bayrol_logo_web_rgb.png
     name: marke1
-  - image: /img/202011221137-01.png
+  - image: /img/bayrol_logo_web_rgb.png
     name: logo2
-  - image: /img/p1020238.jpg
+  - image: /img/bayrol_logo_web_rgb.png
     name: logo3
-  - image: /img/dsc_0204-2.jpg
+  - image: /img/bayrol_logo_web_rgb.png
     name: logo4
 ---
