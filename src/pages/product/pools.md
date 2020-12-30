@@ -40,4 +40,10 @@ productElement:
 brands:
   - image: /img/icons_hp-25.png
     name: marke1
+  - image: /img/202011221137-01.png
+    name: logo2
+  - image: /img/p1020238.jpg
+    name: logo3
+  - image: /img/dsc_0204-2.jpg
+    name: logo4
 ---
