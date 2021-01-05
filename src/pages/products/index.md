@@ -57,8 +57,7 @@ productPages:
   - lable: Pools
     path: /pools
     text: Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
-      lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Nullam id
-      dolor id nibh ultricies vehicula ut id elit.
+      lacinia odio sem nec elit.
     productPage: pools
   - lable: Überdachung
     path: /ueberdachung
@@ -66,14 +65,11 @@ productPages:
     productPage: überdachung
   - lable: Wasserpflege
     path: /wasserpflege
-    text: Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi
-      porta gravida at eget metus. Praesent commodo cursus magna, vel
-      scelerisque nisl consectetur et.
+    text: "Nullam quis risus eget urna mollis ornare vel eu leo. "
     productPage: wasserpflege
   - lable: Zubehör
     path: /zubehoer
-    text: Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-      Vestibulum id ligula porta felis euismod semper.
+    text: "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. "
     productPage: zubehör
 main:
   heading: Great coffee with no compromises
