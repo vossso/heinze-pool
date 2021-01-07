@@ -10,7 +10,7 @@ const FaqBox = ({ description, title }) => {
 
 
     return (
-        <a className={`FaqBox${isActive?' FaqBox--active':''}`} onClick={() => {
+        <div href='#' className={`FaqBox${isActive?' FaqBox--active':''}`} onClick={() => {
             setIsActive(!isActive)
         }}>
             <h3 className="FaqBox__question">
@@ -24,7 +24,7 @@ const FaqBox = ({ description, title }) => {
             <div className="FaqBox__button" >
                 <ArrowLink variant={`${isActive? 'down':''}`}/>
             </div>
-    </a>
+    </div>
     )
 }
 

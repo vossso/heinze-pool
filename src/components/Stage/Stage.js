@@ -5,6 +5,7 @@ import Markdown from 'markdown-to-jsx'
 import Container from '../ui/Container/Container'
 
 const Stage = ({ image, title, description }) => (
+    <Container variant={["half-height","full-width", "no-padding"]}>
         <div className="Stage"> 
             {image && 
                 <div className="Stage__image">
@@ -21,6 +22,7 @@ const Stage = ({ image, title, description }) => (
                 </Container>
             </div>
         </div> 
+    </Container>
 
   )
 

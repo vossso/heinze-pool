@@ -20,7 +20,7 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Links, name: links, widget: list, fields: [
+          - {label: Links, name: links, widget: list, label_singular: "Link hinzufügen", fields: [
               {label: "Link Name", name: name, widget: string},
               {label: Pfad, name: path, widget: string},
           ]}
@@ -29,49 +29,75 @@ collections:
         name: "portfolio"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "portfolio-page"}
-          - {label: Title, name: title, widget: string}
+          - {label: Titel, name: title, widget: string}
           - {label: Einführungstext, name: description, widget: text}
           - {label: Bilder, name: imageTeasers, widget: list, max: 28, fields: [
               {label: Foto, name: image, widget: image},
-              {label: Foto-Titel, name: title, widget: text},
+              {label: Foto-Titel, name: title, widget: string},
               {label: Beschreibung, name: description, widget: text},
-              {label: Keywords, name: alt, widget: text}
+              {label: Keywords, name: alt, widget: string}
           ]}
       - file: "src/pages/service/index.md"
         label: "Leistungsseite"
         name: "service"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "service-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Einführungstext, name: description, widget: markdown}
+          - {label: Titel, name: title, widget: string}
+          - {label: Titelbild, name: image, widget: image}
+          - {label: Einführungstext, name: description, widget: text}
+          - {label: Leistungsübersicht, name: sOverview, widget: list, max: 6, label_singular: "Leistung" , fields: [
+              {label: Icon, name: image, widget: image },
+              {label: Keywords, name: alt, widget: string },
+              {label: Title, name: title, widget: string },
+              {label: Text, name: text, widget: text},
+          ]}
+          - {label: "Step-by-Step Abschnitt", name: steps, widget: list, label_singular: "Step" , max: 6, fields: [
+              {label: Text, name: text, widget: string},
+          ]}
+          - {label: "Labor Abschnitt", name: labor, widget: list, max: 3, label_singular: "labor Step" , fields: [
+            {label: Icon, name: image, widget: image },
+            {label: Keywords, name: alt, widget: string },
+            {label: Title, name: title, widget: string },
+            {label: Text, name: text, widget: text},
+          ]}
+          - {label: "Shop Abschnitt", name: shop, widget: object, fields: [
+            {label: Title, name: title, widget: string},
+            {label: Text, name: text, widget: text},
+            {label: Bild-Object, name: imageObject, widget: object, fields: [
+              {label: Bild, name: image, widget: image}, 
+              {label: Keywords, name: alt, widget: string},
+            ]},
+          ]}
       - file: "src/pages/products/index.md"
         label: "Produktübersicht"
         name: "products"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-page"}
           - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Einführungstext, name: description, widget: markdown}
+          - {label: Produktseiten, name: productPages, widget: list, max: 4, label_singular: "Element hinzufügen",fields: [
+              {label: Label, name: lable, widget: string},
+              {label: Infotext, name: text, widget: text},
+              {label: Test, name: productPage, widget: "relation", collection: "product", searchFields: ["title"], valueField: "{{slug}}"}
+            ]}
       - file: "src/pages/about/index.md"
         label: "Über uns"
         name: "about"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
+          - {label: Titel, name: "title", widget: "string"}
           - {label: Titelbild, name: titleimage, widget: object, fields: [
               {label: Image, name: image, widget: image}, 
-              {label: Alt, name: alt, widget: string}
+              {label: Tags, name: alt, widget: string}
             ]}
-          - {label: Zeitstrahl, name: history, widget: list, fields: [
+          - {label: Zeitstrahl, name: history, widget: list, label_singular: "Jahr hinzufügen", fields: [
               {label: Bild, name: historyimage, widget: object, fields: [
-                {label: Image, name: image, widget: image}, 
-                {label: Alt, name: alt, widget: string}
+                {label: Foto, name: image, widget: image}, 
+                {label: Tags, name: alt, widget: string}
               ]},
               {label: Titel, name: title, widget: string},
-              {label: Beschreibung, name: description, widget: "markdown"}
+              {label: Text, name: description, widget: "markdown"}
             ]}
-          - {label: "Contact Block", name: contactblock, widget: object, fields: [
+          - {label: Kontakt, name: contactblock, widget: object, fields: [
               {label: Adresse, name: adress, widget: object, fields: [
                 {label: Icon, name: image, widget: image},
                 {label: "Straße", name: street, widget: string},
@@ -87,25 +113,39 @@ collections:
                 {label: "E-Mail", name: mail, widget: string},
                 {label: "Webseite", name: web, widget: string}
               ]},
-              {label: "Öffnungszeiten", name: openhours, widget: object, fields: [
-                {label: "Regulär", name: regularhours, widget: "text"},
-                {label: "Zusätzliche Infos", name: specialinfo, widget: "text"}
-              ]},
-              {label: "Öffnungszeiten", name: openinghours, widget: list, fields: [
+              {label: "Öffnungszeiten", name: openinghours, widget: list, label_singular: "Öffnungszeit hinzufügen",fields: [
                   {label: "Von (Wochentag)", name: daysbegin, widget: select, options: ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"], default: ["Montag"] },
                   {label: "Bis (Wochentag)", name: daysend, widget: select, options: ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"], default: ["Samstag"] },
                   {label: "Von (Uhrzeit)", name: timebegin, widget: number, default: 10, value_type: "int", min: 0, max: 23 },
                   {label: "Bis (Uhrzeit)", name: timeend, widget: number, default: 16, value_type: "int", min: 0, max: 23 },
+                  {label: "Zusätzliche Infos", name: specialinfo, widget: "text", required: false},
 
               ]}
             ]}
-  - name: "products"
+  - name: "product"
     label: "Produkte"
-    folder: "src/pages/products"
+    folder: "src/pages/product"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
+    identifier_field: title
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
+      - {label: Titelbild, name: image, widget: image}
+      - {label: Title, name: title, widget: string}
+      - {label: Einführungstext, name: description, widget: text}
+      - {label: Produkt-Element, name: productElement, widget: list, label_singular: "Teaser hinzufügen", fields: [
+          {label: Title, name: title, widget: string, required: false},
+          {label: Text, name: "description", widget: text, required: false},
+          {label: Bilder, name: images, widget: list, fields: [
+            {label: Foto, name: image, widget: image},
+            {label: Tags, name: alt, widget: string}
+          ]},
+          {label: "Gesamter Seitenabschnitt", name: single, widget: "boolean", default: true}
+        ]}
+      - {label: "Marken", name: brands, widget: list, label_singular: "Marke hinzufügen", fields: [
+          {label: Logo, name: image, widget: image},
+          {label: Name, name: name, widget: string}
+      ]}
 
   - name: "faq"
     label: "FAQ"
@@ -115,5 +155,5 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "faq-post"}
       - {label: "Frage", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Erstellungsdatum", name: "date", widget: "datetime"}
+      - {label: "Antwort", name: "description", widget: text}

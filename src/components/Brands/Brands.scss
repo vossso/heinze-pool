@@ -1,0 +1,19 @@
+@import "../global.scss";
+
+.Brands {
+    height: 100%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__element {
+        flex: 0 1 31%;
+
+        max-height: 10rem;
+        height: max-content;
+        overflow: hidden;
+        margin-bottom: $spacer-s;
+    }
+}

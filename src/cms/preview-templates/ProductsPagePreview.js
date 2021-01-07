@@ -9,7 +9,7 @@ const ProductsPagePreview = ({ entry, getAsset }) => {
     <ProductsPageTemplate
       image={getAsset(data.image)}
       title={data.title}
-      description={data.description}
+      products={data.productPages}
     />
   )
 }
@@ -18,7 +18,6 @@ ProductsPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
-  getAsset: PropTypes.func,
 }
 
 export default ProductsPagePreview

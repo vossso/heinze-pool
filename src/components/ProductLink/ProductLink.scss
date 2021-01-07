@@ -1,6 +1,6 @@
 @import "../global.scss";
 
-.FaqBox {
+.ProductLink {
     width: 100%;
     height: auto;
     padding: $spacer-m;
@@ -15,14 +15,11 @@
     display: block;
     cursor: pointer;
 
-    &__question {
-        margin: 0;
+    &__lable {
         text-align: left;
-        
+        margin: 0 0 $spacer-xs;
     }
-    &__answer {
-        margin-top: $spacer-s;
-    }
+
     &__button {
         width: 3rem;
         position: absolute;

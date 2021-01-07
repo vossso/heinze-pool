@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { graphql, StaticQuery } from 'gatsby'
 
 import FaqBox from '../FaqBox/FaqBox'
-import Container from '../ui/Container/Container'
 
 import './FaqRoll.scss'
 
@@ -14,12 +13,10 @@ class FaqRoll extends React.Component {
 
     return (
       <div className="FaqRoll">
-          <Container>
             {posts.map(({node: post}, index) => {
                 const {title, description } = post.frontmatter;
                 return <FaqBox key={index} title={title} description={description}/>
             })}
-        </Container>
       </div>
     )
   }

@@ -4,14 +4,18 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 import Stage from '../components/Stage/Stage'
+import ServiceOverview from '../components/ServiceOverview/ServiceOverview'
 
-export const ServicePageTemplate = ({ title, image, description }) => {
+export const ServicePageTemplate = ({ title, image, description, sOverview, steps, labor, shop }) => {
 
 
   return (
             <div className="ServicePage">
               <div className="ServicePage__stage">
-                <Stage title={title} image={image}/>
+                <Stage title={title} image={image} description={description}/>
+              </div>
+              <div className="ServicePage__content">
+                <ServiceOverview services={sOverview} />
               </div>
             </div>
   )
@@ -20,7 +24,11 @@ export const ServicePageTemplate = ({ title, image, description }) => {
 ServicePageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  description: PropTypes.string
+  description: PropTypes.string,
+  sOverview: PropTypes.array,
+  steps: PropTypes.array,
+  labor: PropTypes.array,
+  shop: PropTypes.object,
 }
 
 const ServicePage = ({ data }) => {
@@ -32,6 +40,10 @@ const ServicePage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         description={frontmatter.description}
+        sOverview= {frontmatter.sOverview}
+        steps={frontmatter.steps}
+        labor={frontmatter.labor}
+        shop={frontmatter.shop}
       />
     </Layout>
   )
@@ -60,6 +72,47 @@ query ServicePage {
           }
         }
         description
+        sOverview {
+          alt
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          text
+          title
+        }
+        shop {
+          text
+          title
+          imageObject {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+        labor {
+          alt
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          text
+          title
+        }
+        steps {
+          text
+        }
       }
     }
   }

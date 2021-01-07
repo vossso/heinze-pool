@@ -1,4 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables";
+// @import "./_fonts.scss";
 
 $hp-blue: #1E3769;
 $hp-blue-2: #1E73B9;
@@ -6,7 +7,7 @@ $hp-blue-3: #78B4D7;
 $hp-white: #fff;
 $hp-light-gray: rgb(236, 236, 236);
 
-$hp-ff: 'Brandon Text Regular';
+$hp-ff: 'Brandon Text',Fallback, sans-serif ;
 
 $fs-s: 0.9rem;
 $fs-m: 1.2rem;
@@ -16,6 +17,8 @@ $fs-xxl: 2.4rem;
 $fs-xxxl: 3.4rem;
 
 //TODO importieren Font-weoght
+$fw-light: 400;
+$fw-regular: 500;
 $fw-bold: 800;
 
 $border-xs: $hp-light-gray 1px solid;
@@ -27,6 +30,7 @@ $spacer-xs: 0.5rem;
 $spacer-s: 1rem;
 $spacer-m: 3rem;
 $spacer-l: 5rem;
+$spacer-xl: 8rem;
 
 $duration-s: 0.5s;
 $duration-m: 1s;
@@ -45,7 +49,6 @@ h1, h2, h3, h4, p, span {
 }
 
 h1, h2, h3, h4 {
-    font-size: $fs-l;
     font-weight: $fw-bold;
     text-transform: uppercase;
 }
@@ -55,7 +58,17 @@ h1 {
 h2 {
     font-size: $fs-xxl;
 }
-
+h3 {
+    text-align: center;
+    font-size: $fs-xl;
+    margin-bottom: $spacer-l;
+}
+h4 {
+    font-size: $fs-m;
+}
+a {
+    text-decoration: none;
+}
 img {
     width: 100%;
     height: 100%;

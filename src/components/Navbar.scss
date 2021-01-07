@@ -1,6 +1,8 @@
 @import './global.scss';
 
 .Navbar {
+    position: fixed;
+    z-index: 50;
     width: 100%;
     background-color: $hp-white;
     box-shadow: $bs-standard;

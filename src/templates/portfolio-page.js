@@ -18,7 +18,7 @@ export const PortfolioPageTemplate = ({ title, image, description }) => {
 }
 
 PortfolioPageTemplate.propTypes = {
-    imageTeasers: PropTypes.array,
+  imageTeasers: PropTypes.array,
   title: PropTypes.string,
   description: PropTypes.string
 }

@@ -10,6 +10,10 @@ const ServicePagePreview = ({ entry, getAsset }) => {
       image={getAsset(data.image)}
       title={data.title}
       description={data.description}
+      sOverview= {data.sOverview}
+        steps={data.steps}
+        labor={data.labor}
+        shop={data.shop}
     />
   )
 }

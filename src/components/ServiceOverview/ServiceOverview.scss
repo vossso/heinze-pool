@@ -1,0 +1,38 @@
+.ServiceOverview {
+
+    &__intro {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    &__left {
+        flex: 0 0 30%;
+    }
+    &__right {
+        flex: 0 0 70%;
+    }
+    &__hexa {
+        position: relative;
+        width: 10rem;
+        height: 10rem;
+
+        > img {
+            object-fit: contain;
+            height: 100%;
+            width: 100%;
+        }
+        & .ServiceOverview__icon {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 3;
+
+            & img {
+                margin: auto;
+            }
+        }
+
+    }
+}

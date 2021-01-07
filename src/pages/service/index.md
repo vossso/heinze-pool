@@ -7,7 +7,7 @@ description: Maecenas sed diam eget risus varius blandit sit amet non magna.
   Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis
   consectetur purus sit amet fermentum.
 sOverview:
-  - icon: /img/bayrol_logo_web_rgb.png
+  - image: /img/bayrol_logo_web_rgb.png
     alt: Installation Pool
     title: Installation
     text: Nullam quis risus eget urna mollis ornare vel eu leo. Lorem ipsum dolor
@@ -20,19 +20,19 @@ steps:
   - text: Schritt 5
   - text: Schritt 6
 labor:
-  - icon: /img/bayrol_logo_web_rgb.png
+  - image: /img/bayrol_logo_web_rgb.png
     alt: Labor1
     title: 1. Labor
     text: Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas
       faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum
       faucibus dolor auctor.
-  - icon: /img/icons_hp-22.png
+  - image: /img/icons_hp-22.png
     alt: Labor2
     title: Labor 2
     text: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
       vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Nulla
       vitae elit libero, a pharetra augue.
-  - icon: /img/icons_hp-26.png
+  - image: /img/icons_hp-26.png
     alt: Labor3
     title: Labor 3
     text: Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus

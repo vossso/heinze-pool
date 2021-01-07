@@ -4,10 +4,13 @@
 	 viewBox="0 0 570.6 503" style="enable-background:new 0 0 570.6 503;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#203669;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
 <g>
 	<path class="st0" d="M411.4,0H159.2c-11.8,0-22.8,6.3-28.7,16.6L4.4,234.9c-5.9,10.2-5.9,22.9,0,33.1l126.1,218.4
-		c5.9,10.2,16.8,16.6,28.7,16.6h252.2c11.8,0,22.8-6.3,28.7-16.6L566.2,268c5.9-10.2,5.9-22.9,0-33.1L440,16.6
+		c5.9,10.2,16.8,16.6,28.7,16.6h252.2c11.8,0,22.8-6.3,28.7-16.6l126.1-218.4c5.9-10.2,5.9-22.9,0-33.1L440,16.6
 		C434.1,6.3,423.2,0,411.4,0z"/>
 </g>
+<line class="st1" x1="164.3" y1="246.1" x2="403.7" y2="246.1"/>
+<polyline class="st1" points="345.3,185.6 405.7,246.1 345.3,306.5 "/>
 </svg>

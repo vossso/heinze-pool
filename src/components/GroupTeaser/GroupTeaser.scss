@@ -1,0 +1,47 @@
+@import "../global.scss";
+
+.GroupTeaser {
+    display: flex;
+    justify-content: space-evenly;
+
+    margin: $spacer-xl auto;
+
+    &__content {
+        flex: 1 1 auto;
+
+        &:not(:last-child) {
+            margin-right: $spacer-s;
+        }
+    }
+    &__image {
+        position: relative;
+        z-index: 1;
+
+        height: 20rem;
+        overflow: hidden;
+        width: 100%;
+
+    }
+
+    &__text {
+        position: relative;
+        z-index: 2;
+
+        height: auto;
+        max-height: 20rem;
+        width: 80%;
+        max-width: 50rem;
+
+        margin: 0 auto;
+        margin-top: calc(-20rem/2);
+        padding: $spacer-m;
+        background-color: $hp-white;
+        box-shadow: $bs-standard;
+        border-radius: $br-standard;
+        border: $border-xs;
+    }
+    &__title {
+        text-align: left;
+        margin-bottom: $spacer-xs;
+    }
+}

@@ -1,30 +1,29 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import PropTypes, { element } from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Stage from '../components/Stage/Stage'
+import ProductLinks from '../components/ProductLinks/ProductLinks'
+import Container from '../components/ui/Container/Container'
 
 
 
 export const ProductsPageTemplate = ({
-  image,
-  title,
-  description
-}) => (
-  <div className="ProductsPage">
-    <div className="ProductsPage__stage">
-      <Stage image={image} title={title} description={description}/>
-    </div>
-    <div className="ProductsPage__content">
+  title, products
+}) => {
 
-    </div>
+  return <div className="ProductsPage">
+    <Container variant={['full-height', 'no-padding', 'full-width']}>
+      <div className="ProductsPage__links">
+        <h2>{title}</h2>
+        <ProductLinks products={products} />
+      </div>
+    </Container>
   </div>
-)
+}
 
 ProductsPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  description: PropTypes.string
+  productPages: PropTypes.array,
 }
 
 const ProductsPage = ({ data }) => {
@@ -33,9 +32,8 @@ const ProductsPage = ({ data }) => {
   return (
     <Layout>
       <ProductsPageTemplate
-        image={frontmatter.image}
         title={frontmatter.title}
-        description={frontmatter.description}
+        products={frontmatter.productPages}
       />
     </Layout>
   )
@@ -56,14 +54,11 @@ export const productsPageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "products-page" } }) {
       frontmatter {
         title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+        productPages {
+          lable
+          text
+          productPage
         }
-        description
       }
     }
   }

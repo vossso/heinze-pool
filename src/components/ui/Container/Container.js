@@ -1,15 +1,16 @@
 import React from 'react'
+import getVariantClasses from '../../../helpers/getVariantClass'
 
 
 import './Container.scss'
 
-const Container = ({ children, variant }) => {
+const Container = ({ children, variant, id }) => {
 
-    const className = `Container${variant? ' Container--'+variant : ''}`
+    const className = getVariantClasses("Container", variant);
     
     return (
         children && 
-            <div className={className}>
+            <div className={className} id={id}>
                 {children}
             </div>
     )
