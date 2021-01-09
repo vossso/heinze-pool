@@ -100,6 +100,13 @@ collections:
               {label: Titel, name: title, widget: string},
               {label: Text, name: description, widget: "markdown"}
             ]}
+          - {label: "5 Gründe", name: reasonsArea, widget: object, fields: [
+              {label: Titel, name: title, widget: string},
+              {label: "Liste der Gründe", name: reasonsList, widget: list, label_singular: "Reason",  fields: [
+                {label: "Grund", name: reason, widget: string},
+                {label: Beschreibung, name: description, widget: text},
+              ]},
+          ]}
           - {label: Kontakt, name: contactblock, widget: object, fields: [
               {label: Adresse, name: adress, widget: object, fields: [
                 {label: Icon, name: image, widget: image},

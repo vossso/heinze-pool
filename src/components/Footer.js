@@ -5,7 +5,6 @@ import PropTypes from 'prop-types'
 import { graphql, StaticQuery } from 'gatsby'
 
 import Container from './ui/Container/Container'
-// import PreviewCompatibleImage from './ui/Image/PreviewCompatibleImage'
 import logo from '../img/hp-logo_white.png'
 
 class Footer extends React.Component {
@@ -91,6 +90,6 @@ export default () => (
       }
     }
     `}
-    render={(data, count) => <Footer data={data} count={count} />}
+    render={(data ) => <Footer data={data}/>}
   />
 )

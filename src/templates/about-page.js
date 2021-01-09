@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
-import ContactBlock from '../components/ContactBlock/ContactBlock'
 import History from '../components/History/History'
 import Stage from '../components/Stage/Stage'
+import Reasons from '../components/Reasons/Reasons'
+import Footer from '../components/Footer'
 
-export const AboutPageTemplate = ({ title, titleimage, history, contactblock }) => {
-
+export const AboutPageTemplate = ({ title, titleimage, history, reasonsArea }) => {
 
   return (
             <div className="AboutPage">
@@ -17,8 +17,9 @@ export const AboutPageTemplate = ({ title, titleimage, history, contactblock }) 
               </div>
               <div className="AboutPage__content">
                 {history && <History data={history} />}
-                {contactblock && <ContactBlock contactblock={contactblock}/> }
               </div>
+              <Reasons title={reasonsArea.title} reasonsList={reasonsArea.reasonsList} />
+              <Footer hasMap={true}/>
             </div>
   )
 }
@@ -27,40 +28,22 @@ AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   titleimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   history: PropTypes.array,
-  contactblock: PropTypes.shape({
-    adress: PropTypes.shape({
-      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-      street: PropTypes.string,
-      city: PropTypes.string
-    }),
-    numbers: PropTypes.shape({
-      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-      phone: PropTypes.string,
-      fax: PropTypes.string
-    }),
-    adrwebadressess: PropTypes.shape({
-      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-      mail: PropTypes.string,
-      web: PropTypes.string
-    }),
-    openhours: PropTypes.shape({
-      regularhours: PropTypes.string,
-      specialinfo: PropTypes.string
-    }),
+  reasonsArea: PropTypes.shape({
+    adress: PropTypes.string,
+    reasonsList: PropTypes.array,
   })
 }
 
 const AboutPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  console.log(frontmatter)
 
   return (
-    <Layout>
+    <Layout hasFooter={false}>
       <AboutPageTemplate
         title={frontmatter.title}
         titleimage={frontmatter.titleimage}
         history={frontmatter.history}
-        contactblock={frontmatter.contactblock}
+        reasonsArea={frontmatter.reasonsArea}
       />
     </Layout>
   )
@@ -101,50 +84,11 @@ export const aboutPageQuery = graphql`
           title
           description
         }
-        contactblock {
-          adress {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 2048, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            street
-            city
-          }
-          numbers {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 2048, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            phone
-            fax
-          }
-          webadress {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 2048, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            mail
-            web
-          }
-          openhours {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 2048, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            regularhours
-            specialinfo
+        reasonsArea {
+          title
+          reasonsList {
+            description
+            reason
           }
         }
       }

@@ -13,7 +13,7 @@ const AboutPagePreview = ({ entry, getAsset }) => {
               alt: data.titleimage.alt,
             }}
             history={data.history}
-            contactblock={data.contactblock}
+            reasonsArea={data.reasonsArea}
         />
       ) : <div>Loading ...</div>
 }

@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .HexaIcon {
     position: relative;
 
@@ -23,6 +25,10 @@
             width: 50%;
             height: auto;
             object-fit: cover;
+        }
+        > h2 {
+            color: $hp-white;
+            margin: 0;
         }
     }
 }

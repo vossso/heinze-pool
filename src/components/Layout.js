@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
-const TemplateWrapper = ({ children }) => {
+const TemplateWrapper = ({ hasFooter = true, children }) => {
   const { title, description } = useSiteMetadata()
   return (
     <div>
@@ -49,7 +49,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Navbar />
       <div>{children}</div>
-      <Footer />
+      {hasFooter && <Footer />}
     </div>
   )
 }

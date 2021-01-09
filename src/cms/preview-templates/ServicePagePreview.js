@@ -12,7 +12,7 @@ const ServicePagePreview = ({ entry, getAsset }) => {
       description={data.description}
       sOverview= {data.sOverview}
         steps={data.steps}
-        labor={data.labor}
+        laborArea={data.laborArea}
         shop={data.shop}
     />
   )

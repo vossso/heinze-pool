@@ -1,0 +1,36 @@
+@import "../global.scss";
+
+.Reasons {
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__reason {
+        position: relative;
+        flex: 0 0 28%;
+
+        background-color: $hp-white;
+        box-shadow: $bs-standard;
+        border-radius: $br-standard;
+        border: $border-xs;
+
+        padding: $spacer-m;
+        padding-left: 4rem;
+        margin-bottom: $spacer-m;
+
+        &:nth-child(2) {
+            margin-left: $spacer-l;
+        }
+        &:nth-child(2), &:nth-child(4) {
+            margin-right: $spacer-l;
+        }
+
+        & .HexaIcon {
+            position: absolute;
+            top: 2rem;
+            margin-left: -6.5rem;
+        }
+    }
+}
