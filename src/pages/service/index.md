@@ -54,8 +54,8 @@ laborArea:
       alt: Labor1
       title: 1. Labor
       text: Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas
-        faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum
-        faucibus dolor auctor.
+        faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet
+        rutrum faucibus dolor auctor.
     - image: /img/icons_hp-22.png
       alt: Labor2
       title: Labor 2
@@ -65,9 +65,9 @@ laborArea:
     - image: /img/icons_hp-26.png
       alt: Labor3
       title: Labor 3
-      text: Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus
-        sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum
-        dolor sit amet, consectetur adipiscing elit.
+      text: "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus
+        sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. "
 shop:
   title: Wir vorort - für Dich
   text: Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet,
