@@ -5,9 +5,11 @@ import Layout from '../components/Layout'
 
 import Stage from '../components/Stage/Stage'
 import ServiceOverview from '../components/ServiceOverview/ServiceOverview'
+import StepByStep from '../components/StepByStep/StepByStep'
+import ServiceTeaser from '../components/ServiceTeaser/ServiceTeaser'
+import ProductTeaser from '../components/ProductTeaser/ProductTeaser'
 
-export const ServicePageTemplate = ({ title, image, description, sOverview, steps, labor, shop }) => {
-
+export const ServicePageTemplate = ({ title, image, description, sOverview, steps, laborArea, shop }) => {
 
   return (
             <div className="ServicePage">
@@ -16,6 +18,9 @@ export const ServicePageTemplate = ({ title, image, description, sOverview, step
               </div>
               <div className="ServicePage__content">
                 <ServiceOverview services={sOverview} />
+                <StepByStep steps={steps} />
+                <ServiceTeaser content={laborArea}/>
+                <ProductTeaser title={shop.title} images={[shop.imageObject]} description={shop.text}/>
               </div>
             </div>
   )
@@ -27,7 +32,7 @@ ServicePageTemplate.propTypes = {
   description: PropTypes.string,
   sOverview: PropTypes.array,
   steps: PropTypes.array,
-  labor: PropTypes.array,
+  laborArea: PropTypes.object,
   shop: PropTypes.object,
 }
 
@@ -42,7 +47,7 @@ const ServicePage = ({ data }) => {
         description={frontmatter.description}
         sOverview= {frontmatter.sOverview}
         steps={frontmatter.steps}
-        labor={frontmatter.labor}
+        laborArea={frontmatter.laborArea}
         shop={frontmatter.shop}
       />
     </Layout>
@@ -98,17 +103,20 @@ query ServicePage {
             }
           }
         }
-        labor {
-          alt
-          image {
-            childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid
+        laborArea { 
+          title 
+          labor {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
               }
             }
+            text
+            title
           }
-          text
-          title
         }
         steps {
           text

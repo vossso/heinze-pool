@@ -1,3 +1,5 @@
+@import "../global.scss";
+
 .ServiceOverview {
 
     &__intro {
@@ -7,6 +9,10 @@
     }
     &__left {
         flex: 0 0 30%;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__right {
         flex: 0 0 70%;
@@ -34,5 +40,15 @@
             }
         }
 
+    }
+    &__content {
+        margin-top: $spacer-xl;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        > div {
+            flex: 0 0 30%;
+        }
     }
 }

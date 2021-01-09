@@ -1,28 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import hexa from '../../img/hexa_blue.svg'
-
-
-
 import './ServiceOverview.scss'
 import Container from '../ui/Container/Container'
-import PreviewCompatibleImage from '../ui/Image/PreviewCompatibleImage'
+import HexaIcon from '../ui/HexaIcon/HexaIcon'
+import ServiceOverviewElement from '../ServiceOverviewElement/ServiceOverviewElement'
 
 const ServiceOverview =({services}) => {
 
     return (
-        <div className="ServiceOverview">
+        services ? <div className="ServiceOverview">
         <Container variant="half-height">
             <div className="ServiceOverview__intro">
                 <div className="ServiceOverview__left">
                     {services && services.map((element, index) => {
                         return (
-                            <div className="ServiceOverview__hexa">
-                                <img src={hexa} alt="Poool"/>
-                                <div className="ServiceOverview__icon"><PreviewCompatibleImage imageInfo={element.image} /></div>
-                            </div>)
-                    })}
+                            <HexaIcon icon={element} key={index} />
+                    )})}
                 </div>
                 <div className="ServiceOverview__right">
                     <h4>Unser großes Leistungsspektrum</h4>
@@ -34,17 +28,17 @@ const ServiceOverview =({services}) => {
             <div className="ServiceOverview__content">
                 {services && services.map((element, index) => {
                     return <div className="ServiceOverview__element" key={index}>
-                            {console.log(element)}
+                            <ServiceOverviewElement icon={element} title={element.title} description={element.text} />
                         </div>
                 })}
             </div>
         </Container>
-        </div>
+        </div> : null
     )
   }
 
 ServiceOverview.propTypes = {
-  products: PropTypes.array,
+    services: PropTypes.array,
 }
 
 export default ServiceOverview

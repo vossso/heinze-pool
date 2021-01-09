@@ -12,7 +12,7 @@ const Brands =({brands}) => {
             <div className="Brands">
                 {brands.map((brand, index) => {
                     return <div className="Brands__element" key={index}>
-                            <PreviewCompatibleImage imageInfo={brand} />
+                            {brand && <PreviewCompatibleImage imageInfo={brand} />}
                         </div>
                 })}
             </div>

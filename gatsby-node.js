@@ -85,3 +85,16 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
+exports.onCreateWebpackConfig = gatsby => {
+  if (gatsby.stage === 'build-javascript') {
+    const config = gatsby.getConfig();
+    const miniCssExtractPlugin = config.plugins.find(
+      plugin => plugin.constructor.name === 'MiniCssExtractPlugin'
+    );
+    if (miniCssExtractPlugin) {
+      miniCssExtractPlugin.options.ignoreOrder = true;
+    }
+    gatsby.actions.replaceWebpackConfig(config);
+  }
+};

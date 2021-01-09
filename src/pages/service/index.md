@@ -47,25 +47,27 @@ steps:
   - text: Schritt 4
   - text: Schritt 5
   - text: Schritt 6
-labor:
-  - image: /img/bayrol_logo_web_rgb.png
-    alt: Labor1
-    title: 1. Labor
-    text: Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas
-      faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum
-      faucibus dolor auctor.
-  - image: /img/icons_hp-22.png
-    alt: Labor2
-    title: Labor 2
-    text: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
-      vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Nulla
-      vitae elit libero, a pharetra augue.
-  - image: /img/icons_hp-26.png
-    alt: Labor3
-    title: Labor 3
-    text: Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus
-      sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum
-      dolor sit amet, consectetur adipiscing elit.
+laborArea:
+  title: Laboruntersuchung der Wasserqualität
+  labor:
+    - image: /img/bayrol_logo_web_rgb.png
+      alt: Labor1
+      title: 1. Labor
+      text: Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas
+        faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum
+        faucibus dolor auctor.
+    - image: /img/icons_hp-22.png
+      alt: Labor2
+      title: Labor 2
+      text: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+        vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Nulla
+        vitae elit libero, a pharetra augue.
+    - image: /img/icons_hp-26.png
+      alt: Labor3
+      title: Labor 3
+      text: Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus
+        sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit.
 shop:
   title: Wir vorort - für Dich
   text: Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet,

@@ -54,11 +54,14 @@ collections:
           - {label: "Step-by-Step Abschnitt", name: steps, widget: list, label_singular: "Step" , max: 6, fields: [
               {label: Text, name: text, widget: string},
           ]}
-          - {label: "Labor Abschnitt", name: labor, widget: list, max: 3, label_singular: "labor Step" , fields: [
-            {label: Icon, name: image, widget: image },
-            {label: Keywords, name: alt, widget: string },
-            {label: Title, name: title, widget: string },
-            {label: Text, name: text, widget: text},
+          - {label: "Labor Abschnitt", name: laborArea, widget: object, fields: [
+              {label: Titel, name: title, widget: string},
+              {label: "Labor Abschnitt", name: labor, widget: list, max: 3, label_singular: "labor Step" , fields: [
+                {label: Icon, name: image, widget: image },
+                {label: Keywords, name: alt, widget: string },
+                {label: Title, name: title, widget: string },
+                {label: Text, name: text, widget: text},
+              ]}
           ]}
           - {label: "Shop Abschnitt", name: shop, widget: object, fields: [
             {label: Title, name: title, widget: string},

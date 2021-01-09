@@ -1,0 +1,51 @@
+@import "../global.scss";
+
+.Step {
+    width: 100%;
+
+    &:nth-child(even) {
+        //rehts und links boxen anorden 
+
+        .Step__content {
+            flex-direction: row-reverse;
+            margin-left: 0; 
+            margin-right: auto;
+        }
+        .Step__hexa {
+            margin: auto -2rem auto $spacer-m;
+        }
+    }
+
+    &__content {
+        background-color: $hp-white;
+        box-shadow: $bs-standard;
+        border-radius: $br-standard;
+        border: $border-xs;
+
+        width: 35rem;
+        margin-left: auto; 
+        margin-right: 0;
+
+        padding: $spacer-s;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+
+        > h4 {
+            width: auto;
+        }
+    }
+    &__hexa {
+        height: 2rem;
+        width: 2rem;
+
+        margin: auto $spacer-m auto -2rem;
+
+        > img {
+            width: 100%;
+            height: auto;
+        }
+
+
+    }
+}

@@ -1,0 +1,9 @@
+@import "../global.scss";
+
+.ServiceTeaser {
+    &__boxes {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}

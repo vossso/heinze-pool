@@ -44,7 +44,7 @@ class Footer extends React.Component {
               {adress.city}</p>
             </div>
             <div className="Footer__col">
-              <img src={logo}/>
+              <img src={logo} alt="Heinze Pool Logo"/>
             </div>
           </div>
           <div className="Footer__subline">

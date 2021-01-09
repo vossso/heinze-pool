@@ -7,6 +7,7 @@
     margin-bottom: $spacer-s;
 
 
+    background-color: $hp-white;
     box-shadow: $bs-standard;
     border-radius: $br-standard;
     border: $border-xs;
@@ -22,6 +23,7 @@
     }
     &__answer {
         margin-top: $spacer-s;
+        text-align: left;
     }
     &__button {
         width: 3rem;
