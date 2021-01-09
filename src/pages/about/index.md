@@ -40,6 +40,30 @@ history:
     title: "2001"
     description: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
       auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+reasonsArea:
+  reasonsList:
+    - reason: Erster Grund
+      description: Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+        eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis
+        ornare vel eu leo.
+    - reason: Zweiter Grund
+      description: >
+        Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia
+        bibendum nulla sed consectetur. Donec id elit non mi porta gravida at
+        eget metus.
+    - reason: Dritter Grund
+      description: Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+        vestibulum.
+    - reason: Vierter Grund
+      description: Cum sociis natoque penatibus et magnis dis parturient montes,
+        nascetur ridiculus mus. Cras mattis consectetur purus sit amet
+        fermentum. Maecenas faucibus mollis interdum.
+    - reason: Fünfter Grund
+      description: Curabitur blandit tempus porttitor. Donec sed odio dui. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+        mus.
+  title: 5 Gründe für Heinze-Pool
 contactblock:
   adress:
     image: /img/icons_hp-22.png
