@@ -73,9 +73,10 @@ export const aboutPageQuery = graphql`
         }
         history {
           historyimage {
+            alt
             image {
               childImageSharp {
-                fluid(maxWidth: 2048, quality: 100) {
+                fluid(maxWidth: 526, quality: 92)  {
                   ...GatsbyImageSharpFluid
                 }
               }

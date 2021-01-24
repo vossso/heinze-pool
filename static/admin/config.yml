@@ -95,7 +95,7 @@ collections:
           - {label: Zeitstrahl, name: history, widget: list, label_singular: "Jahr hinzufügen", fields: [
               {label: Bild, name: historyimage, widget: object, fields: [
                 {label: Foto, name: image, widget: image}, 
-                {label: Tags, name: alt, widget: string}
+                {label: Tags, name: alt, widget: string},
               ]},
               {label: Titel, name: title, widget: string},
               {label: Text, name: description, widget: "markdown"}

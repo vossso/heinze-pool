@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { ContentPageTemplate } from '../../templates/content-page'
 
-const ContentPagePreview = ({ entry, getAsset }) => {
+const ContentPagePreview = ({ entry }) => {
     const data = entry.getIn(['data']).toJS()
 
 
