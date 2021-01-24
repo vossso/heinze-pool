@@ -1,0 +1,124 @@
+@import "~bulma/sass/utilities/initial-variables";
+// @import "./_fonts.scss";
+
+$hp-blue: #1E3769;
+$hp-blue-2: #1E73B9;
+$hp-blue-3: #78B4D7;
+$hp-white: #fff;
+$hp-light-gray: rgb(236, 236, 236);
+
+$hp-ff: 'Brandon Text',Fallback, sans-serif ;
+
+$fs-s: 1.4rem;
+$fs-p-mobile: 1.6rem;
+$fs-p: 1.8rem;
+$fs-h5-footer: 1.8rem;
+$fs-h4: 3.4rem;
+$fs-h3: 4.5rem;
+$fs-h2: 5.8rem;
+$fs-h1: 24rem;
+
+//TODO importieren Font-weoght
+$fw-light: 400;
+$fw-regular: 500;
+$fw-bold: 800;
+
+$border-xs: $hp-light-gray 1px solid;
+
+$bs-standard: 0px 10px 20px #00000029;
+$br-standard: 2rem;
+
+$margin-xs: 0.5rem; 
+$margin-s: 1rem;
+$margin-m: 3rem;
+$margin-l: 5rem;
+$margin-menu: 8rem;
+
+$spacer-s: 5rem;
+$spacer-m: 10rem;
+$spacer-l: 15rem;
+$spacer-xl: 20rem;
+
+$padding-xs: 1.5rem;
+$padding-s: 3rem;
+$padding-box-verti: 8rem;
+$padding-box-hori: 7rem;
+
+
+$max-width-xl: 1920px;
+$max-width-l: 1380px;
+$max-width-l-inner: 1280px;
+$max-width-m: 1060px;
+$max-width-m-inner: 960px;
+$max-width-s: 940px;
+$max-width-s-inner: 840px;
+
+$breakpoints: (
+  'xxs': 360px,
+  'xs': 480px,
+  's': 568px,
+  'm': 800px,
+  'l': 1024px,
+  'xl': 1280px,
+  'xxl': 1400px
+);
+
+$duration-s: 0.5s;
+$duration-m: 1s;
+
+
+*, body {
+    box-sizing: border-box;
+    margin: 0;
+
+    scroll-snap-type: y mandatory;
+    &.proximity {
+      scroll-snap-type: y proximity;
+    }
+}
+html {
+    font-size: 10/16 * 100%;
+    font-family: $hp-ff;
+    color: $hp-blue;
+}
+h1, h2, h3, h4, p, span {
+    color: $hp-blue;
+    font-family: $hp-ff;
+}
+
+h1, h2, h3, h4 {
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+}
+h1 {
+    font-size: $fs-h1;
+}
+h2 {
+    font-size: $fs-h2;
+}
+h3 {
+    text-align: center;
+    font-size: $fs-h3;
+    margin-bottom: $spacer-l;
+}
+h4 {
+    font-size: $fs-h4;
+}
+h5 {
+    font-size: $fs-h5-footer;
+    text-transform: uppercase;
+    color: $hp-white;
+}
+p {
+    font-size: $fs-p-mobile;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+    

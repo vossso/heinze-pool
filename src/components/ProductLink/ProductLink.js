@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ArrowLink from '../ui/ArrowLink/ArrowLink'
+import ArrowLink from '../share/ArrowLink/ArrowLink'
 import './ProductLink.scss'
 
 const ProductLink = ({ lable, text, path }) => {

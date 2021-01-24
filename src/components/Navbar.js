@@ -1,16 +1,18 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import './Navbar.scss'
+import React, { useState } from "react";
+import { Link } from "gatsby";
+import "./Navbar.scss";
 
-import logo from '../img/hp-logo_typo.jpg'
+import logo from "../img/hp-logo_typo.jpg";
 
 const Navbar = class extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       active: false,
-      navBarActiveClass: '',
-    }
+      navBarActiveClass: "",
+      dropActiveClass: " Navbar__dropdown--active",
+      showDrop: false,
+    };
   }
 
   toggleHamburger = () => {
@@ -24,22 +26,18 @@ const Navbar = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: 'Navbar--is-active',
+              navBarActiveClass: "Navbar--is-active",
             })
           : this.setState({
-              navBarActiveClass: '',
-            })
+              navBarActiveClass: "",
+            });
       }
-    )
-  }
+    );
+  };
 
   render() {
     return (
-      <nav
-        className="Navbar"
-        role="navigation"
-        aria-label="main-navigation"
-      >
+      <nav className="Navbar" role="navigation" aria-label="main-navigation">
         <div className="Navbar__container">
           <div className="Navbar__mobile">
             {/* Hamburger menu */}
@@ -57,36 +55,67 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`Navbar__desktop${this.state.navBarActiveClass}`}
           >
-            <div className="Navbar__links">
+            <div className="Navbar__left">
               <Link to="/" className="Navbar__start" title="Logo">
-              <img src={logo} alt="Heinze-Pool"/>
-            </Link>
+                <img src={logo} alt="Heinze-Pool" />
+              </Link>
             </div>
-            <div className="Navbar__rechts">
+            <div className="Navbar__right">
               <Link className="navbar-item" to="/service">
                 Leistungen
               </Link>
-              <Link className="navbar-item" to="/products">
-                Produkte
-              </Link>
+              <div className="Navbar__ext">
+                <a
+                className="Navbar__link"
+                  onClick={() =>
+                    this.setState({
+                      showDrop: !this.state.showDrop,
+                    })
+                  }
+                >
+                  <div
+                    className={`Navbar__plus${
+                      this.state.showDrop ? " Navbar__plus--active" : ""
+                    }`}
+                  >
+                    +
+                  </div>
+                  Produkte
+                </a>
+                <div
+                  className={`Navbar__dropdown${
+                    this.state.showDrop ? " Navbar__dropdown--active" : ""
+                  }`}
+                >
+                  <Link className="navbar-item" to="/products">
+                    Übersicht
+                  </Link>
+                  <Link className="navbar-item" to="/product/pools">
+                    Pools
+                  </Link>
+                  <Link className="navbar-item" to="/product/überdachung">
+                    Überdachung
+                  </Link>
+                  <Link className="navbar-item" to="/product/wasserpflege">
+                    Wasserpflege
+                  </Link>
+                  <Link className="navbar-item" to="/product/zubehör">
+                    Zubehör
+                  </Link>
+                </div>
+              </div>
               <Link className="navbar-item" to="/about">
                 Über uns
               </Link>
               <Link className="navbar-item" to="/faq">
                 FAQ
               </Link>
-              {/* <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link> */}
             </div>
           </div>
         </div>
       </nav>
-    )
+    );
   }
-}
+};
 
-export default Navbar
+export default Navbar;

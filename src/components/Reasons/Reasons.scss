@@ -1,4 +1,4 @@
-@import "../global.scss";
+@import "../../styles/_global.scss";
 
 .Reasons {
     &__content {
@@ -16,9 +16,9 @@
         border-radius: $br-standard;
         border: $border-xs;
 
-        padding: $spacer-m;
+        padding: $margin-m;
         padding-left: 4rem;
-        margin-bottom: $spacer-m;
+        margin-bottom: $margin-m;
 
         &:nth-child(2) {
             margin-left: $spacer-l;

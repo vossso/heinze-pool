@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 
 
 import './GroupTeaser.scss'
-import PreviewCompatibleImage from '../ui/Image/PreviewCompatibleImage'
-import Container from '../ui/Container/Container'
+import PreviewCompatibleImage from '../share/Image/PreviewCompatibleImage'
+import Container from '../share/Container/Container'
 
 const GroupTeaser =({products}) => {
 
     return (
-      <Container variant="full-height" id="Sonstige">
+      <Container variant={["full-height","starter"]} id="Sonstige">
         <div className="GroupTeaser">
         { products.map( (product, index) => {
           const {title, description, images} = product;

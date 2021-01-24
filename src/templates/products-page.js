@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import ProductLinks from '../components/ProductLinks/ProductLinks'
-import Container from '../components/ui/Container/Container'
+import Container from '../components/share/Container/Container'
 
 
 
@@ -12,7 +12,7 @@ export const ProductsPageTemplate = ({
 }) => {
 
   return <div className="ProductsPage">
-    <Container variant={['full-height', 'no-padding', 'full-width']}>
+    <Container variant={['full-height', 'no-padding', 'full-width', "starter"]}>
       <div className="ProductsPage__links">
         <h2>{title}</h2>
         <ProductLinks products={products} />

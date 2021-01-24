@@ -1,0 +1,11 @@
+@import "./_global";
+
+@mixin respond-to($media) {
+  @if $media == 0 {
+    @content;
+  } @else {
+    @media only screen and (min-width: map-get($breakpoints, $media)+1) {
+      @content;
+    }
+  }
+}

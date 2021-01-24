@@ -1,10 +1,10 @@
-@import "../global.scss";
+@import "../../styles/_global.scss";
 
 .FaqBox {
     width: 100%;
     height: auto;
-    padding: $spacer-m;
-    margin-bottom: $spacer-s;
+    padding: $margin-m;
+    margin-bottom: $margin-s;
 
 
     background-color: $hp-white;
@@ -22,13 +22,13 @@
         
     }
     &__answer {
-        margin-top: $spacer-s;
+        margin-top: $margin-s;
         text-align: left;
     }
     &__button {
         width: 3rem;
         position: absolute;
-        top: $spacer-m;
+        top: $margin-m;
         right: - 1.5rem;
     }
 

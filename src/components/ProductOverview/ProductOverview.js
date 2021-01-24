@@ -4,7 +4,7 @@ import ProductOverviewElement from '../ProductOverviewElement/ProductOverviewEle
 
 
 import './ProductOverview.scss'
-import Container from '../ui/Container/Container'
+import Container from '../share/Container/Container'
 
 const ProductOverview =({primeProducts, secondProducts}) => {
 

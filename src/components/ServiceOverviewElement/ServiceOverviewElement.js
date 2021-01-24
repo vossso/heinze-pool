@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import './ServiceOverviewElement.scss'
-import HexaIcon from '../ui/HexaIcon/HexaIcon'
+import HexaIcon from '../share/HexaIcon/HexaIcon'
 
 const ServiceOverviewElement =({icon, title, description}) => {
 

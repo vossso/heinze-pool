@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import HistoryTeaser from '../HistoryTeaser/HistoryTeaser'
-import Container from '../ui/Container/Container'
+import Container from '../share/Container/Container'
 
 import './History.scss'
 

@@ -1,0 +1,59 @@
+@import "./_global";
+
+// %hexa {
+//     margin: auto -2.5rem;
+
+//     width: 60px;
+//     height: 100px ;
+//     background-color: $hp-blue;
+//     position: relative;
+
+//     &:before {
+//         content: "";
+//         position: absolute;
+//         left: -30px;
+//         border-right: 30px solid $hp-blue;
+//         border-top: 50px solid transparent;
+//         border-bottom: 50px solid transparent;
+//     }
+
+//     &:after {
+//         content: "";
+//         position: absolute;
+//         right: -30px;
+//         border-left: 30px solid $hp-blue;
+//         border-top: 50px solid transparent;
+//         border-bottom: 50px solid transparent;
+//     }
+// }
+%box {
+  box-shadow: $bs-standard;
+  border: $border-xs;
+  background-color: $hp-white;
+}
+%round-box {
+  @extend %box;
+  border-radius: $br-standard;
+
+  height: auto;
+  padding: $padding-box-verti $padding-box-hori;
+}
+%link {
+  color: $hp-blue-3;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    width: 0px;
+    height: 1px;
+    display: block;
+    background-color: $hp-blue-2;
+    transition: width $duration-s;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}

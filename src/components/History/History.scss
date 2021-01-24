@@ -1,4 +1,4 @@
-@import "../global.scss";
+@import "../../styles/_global.scss";
 
 .History {
     height: auto;
@@ -8,7 +8,7 @@
         text-align: center;    
     }
     > p {
-        font-size: $fs-m;    
+        // font-size: $fs-m;    
     }
 
     &__teasers {

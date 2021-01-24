@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import './ProductOverviewElement.scss'
-import ArrowLink from '../ui/ArrowLink/ArrowLink'
+import ArrowLink from '../share/ArrowLink/ArrowLink'
 
 const ProductOverviewElement =({title, description}) => {
 

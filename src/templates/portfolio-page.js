@@ -3,24 +3,32 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
+import HexaPattern from '../components/HexaPattern/HexaPattern'
+import Container from '../components/share/Container/Container'
 
-export const PortfolioPageTemplate = ({ title, image, description }) => {
 
+export const PortfolioPageTemplate = ({ title, description,imageTeasers }) => {
 
+console.log("imageTeasers:", imageTeasers)
   return (
+          <Container variant={["full-height","starter"]}>
             <div className="PortfolioPage">
               <div className="PortfolioPage__stage">
+                <h3>{title}</h3>
+                <p>{description}</p>
               </div>
               <div className="PortfolioPage__content">
+                <HexaPattern imageList={imageTeasers}/>
               </div>
             </div>
+          </Container>
   )
 }
 
 PortfolioPageTemplate.propTypes = {
-  imageTeasers: PropTypes.array,
   title: PropTypes.string,
-  description: PropTypes.string
+  description: PropTypes.string,
+  imageTeasers: PropTypes.array,
 }
 
 const PortfolioPage = ({ data }) => {
@@ -31,6 +39,7 @@ const PortfolioPage = ({ data }) => {
       <PortfolioPageTemplate
         title={frontmatter.title}
         description={frontmatter.description}
+        imageTeasers={frontmatter.imageTeasers}
       />
     </Layout>
   )
@@ -48,7 +57,7 @@ export default PortfolioPage
 
 export const PortfolioPageQuery = graphql`
 query PortfolioPage {
-    markdownRemark(frontmatter: { templateKey: { eq: "service-page" } }) {
+    markdownRemark(frontmatter: { templateKey: { eq: "portfolio-page" } }) {
       frontmatter {
         title
         description

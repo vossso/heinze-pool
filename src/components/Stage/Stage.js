@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './Stage.scss'
 import Markdown from 'markdown-to-jsx'
-import Container from '../ui/Container/Container'
+import Container from '../share/Container/Container'
 
 const Stage = ({ image, title, description }) => (
-    <Container variant={["half-height","full-width", "no-padding"]}>
+    <Container variant={["half-height","full-width", "no-padding","starter"]}>
         <div className="Stage"> 
             {image && 
                 <div className="Stage__image">

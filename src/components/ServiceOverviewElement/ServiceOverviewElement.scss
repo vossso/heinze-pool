@@ -1,4 +1,4 @@
-@import "../global.scss";
+@import "../../styles/_global.scss";
 
 .ServiceOverviewElement {
     margin-bottom: $spacer-l;
@@ -9,7 +9,7 @@
             margin-top: -6rem;
         }
 
-        padding: $spacer-m;
+        padding: $margin-m;
         max-height: 15rem;
 
         background-color: $hp-white;
@@ -20,7 +20,7 @@
         text-align: center;
 
         > h4 {
-            margin: $spacer-s 0 $spacer-s;
+            margin: $margin-s 0 $margin-s;
         }
     }
 }

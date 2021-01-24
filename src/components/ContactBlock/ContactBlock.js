@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import ContactTeaser from '../ContactTeaser/ContactTeaser'
 import './ContactBlock.scss'
 
-import Container from '../ui/Container/Container'
+import Container from '../share/Container/Container'
 
 const ContactBlock = ({ contactblock }) => {
 

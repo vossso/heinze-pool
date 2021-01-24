@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import PropTypes from 'prop-types'
 import './FaqBox.scss'
-import ArrowLink from '../ui/ArrowLink/ArrowLink'
+import ArrowLink from '../share/ArrowLink/ArrowLink'
 import AnimateHeight from 'react-animate-height';
 
 const FaqBox = ({ description, title }) => {

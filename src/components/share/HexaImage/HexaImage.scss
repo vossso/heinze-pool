@@ -1,0 +1,53 @@
+@import "../../../styles/_global.scss";
+
+.HexaImage{
+    transform: rotate(-90deg);
+    border: solid green 2px;
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // height: auto;
+    // display: block;
+    // object-fit: cover;
+    transform: rotate(90deg);
+  }
+.r-hex {
+  overflow: hidden;
+  display: inline-block;
+  margin: 3em 0;
+  width: 250px; height: 216px;
+  transform: rotate(-30deg) skewX(30deg);
+  border-radius: 10px;
+}
+.r-hex *, .r-hex *:before {
+  display: block;
+  overflow: hidden;
+  width: inherit; height: inherit;
+  border-radius: inherit;
+}
+.r-hex-inner {
+  transform: skewX(-30deg) rotate(60deg) skewX(30deg);
+  cursor: pointer;
+}
+.r-hex:first-child .r-hex-inner:before, .r-hex-inner-2 {
+  transform: skewX(-30deg) rotate(60deg) skewX(30deg);
+  background:url('../../../img/test.jpg');
+  background-size: cover;
+  content: '';
+}
+.r-hex-inner-2:before {
+  margin-top: -15px;
+  height: 250px;
+  transform: skewX(-30deg) rotate(-90deg);
+  background-size: cover;
+  line-height: 250px;
+  text-align: center;
+  content: '';
+  font-family: arial;
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+  font-size:18px;
+}
+}

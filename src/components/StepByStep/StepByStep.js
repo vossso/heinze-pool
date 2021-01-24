@@ -2,13 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import './StepByStep.scss'
-import Container from '../ui/Container/Container'
+import Container from '../share/Container/Container'
 import Step from '../Step/Step'
 
 const StepByStep =({steps}) => {
 
     return (
-      steps ? <Container variant="full-height">
+      steps ? <Container variant={["full-height","starter"]}>
           <h3>Step by Step zu deinem Pool</h3>
         <div className="StepByStep">
                 {steps.map((element, index) => {

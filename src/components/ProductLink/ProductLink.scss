@@ -1,10 +1,10 @@
-@import "../global.scss";
+@import "../../styles/_global.scss";
 
 .ProductLink {
     width: 100%;
     height: auto;
-    padding: $spacer-m;
-    margin-bottom: $spacer-s;
+    padding: $margin-m;
+    margin-bottom: $margin-s;
 
 
     box-shadow: $bs-standard;
@@ -17,13 +17,13 @@
 
     &__lable {
         text-align: left;
-        margin: 0 0 $spacer-xs;
+        margin: 0 0 $margin-xs;
     }
 
     &__button {
         width: 3rem;
         position: absolute;
-        top: $spacer-m;
+        top: $margin-m;
         right: - 1.5rem;
     }
 

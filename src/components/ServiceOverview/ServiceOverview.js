@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import './ServiceOverview.scss'
-import Container from '../ui/Container/Container'
-import HexaIcon from '../ui/HexaIcon/HexaIcon'
+import Container from '../share/Container/Container'
+import HexaIcon from '../share/HexaIcon/HexaIcon'
 import ServiceOverviewElement from '../ServiceOverviewElement/ServiceOverviewElement'
 
 const ServiceOverview =({services}) => {
@@ -24,7 +24,7 @@ const ServiceOverview =({services}) => {
                 </div>
             </div>
         </Container>
-        <Container variant="full-height">
+        <Container variant={["full-height","starter"]}>
             <div className="ServiceOverview__content">
                 {services && services.map((element, index) => {
                     return <div className="ServiceOverview__element" key={index}>

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import './ServiceTeaserElement.scss'
-import PreviewCompatibleImage from '../ui/Image/PreviewCompatibleImage'
+import PreviewCompatibleImage from '../share/Image/PreviewCompatibleImage'
 
 const ServiceTeaserElement =({title, text, image, alt}) => {
 

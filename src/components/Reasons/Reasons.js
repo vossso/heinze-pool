@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 
 
 import './Reasons.scss'
-import Container from '../ui/Container/Container'
-import HexaIcon from '../ui/HexaIcon/HexaIcon'
+import Container from '../share/Container/Container'
+import HexaIcon from '../share/HexaIcon/HexaIcon'
 
 const Reasons =({title, reasonsList}) => {
 
     return (
-      <Container variant="full-height">
+      <Container variant={["full-height", "starter"]}>
         <div className="Reasons">
           <h3>{title}</h3>
           <div className="Reasons__content">

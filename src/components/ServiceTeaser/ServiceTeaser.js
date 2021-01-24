@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import './ServiceTeaser.scss'
-import Container from '../ui/Container/Container'
+import Container from '../share/Container/Container'
 import ServiceTeaserElement from '../ServiceTeaserElement/ServiceTeaserElement'
 
 const ServiceTeaser =({content}) => {
@@ -10,7 +10,7 @@ const ServiceTeaser =({content}) => {
 
     return (
       content ? 
-        <Container variant="full-height">
+        <Container variant={["full-height","starter"]}>
           <div className="ServiceTeaser">
             <h3>{title}</h3>
             <div className="ServiceTeaser__boxes">

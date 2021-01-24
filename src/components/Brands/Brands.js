@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import PreviewCompatibleImage from '../ui/Image/PreviewCompatibleImage'
+import PreviewCompatibleImage from '../share/Image/PreviewCompatibleImage'
 
 import './Brands.scss'
-import Container from '../ui/Container/Container'
+import Container from '../share/Container/Container'
 
 const Brands =({brands}) => {
 
     return (
-        brands && <Container variant="half-height">
+        brands && <Container variant={["half-height", "starter"]}>
             <div className="Brands">
                 {brands.map((brand, index) => {
                     return <div className="Brands__element" key={index}>

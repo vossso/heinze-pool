@@ -1,4 +1,4 @@
-@import "../global.scss";
+@import "../../styles/_global.scss";
 
 .ServiceOverview {
 
@@ -42,7 +42,7 @@
 
     }
     &__content {
-        margin-top: $spacer-xl;
+        // margin-top: $spacer-xl;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;

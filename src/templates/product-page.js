@@ -15,6 +15,7 @@ export const ProductPageTemplate = ({title, description, image, productElement, 
                 </div>
                 <div className="ProductPage__content">
                     <ProductTeasers products={productElement}/>
+                    
                     <Brands brands={brands} />
                 </div>
             </div>

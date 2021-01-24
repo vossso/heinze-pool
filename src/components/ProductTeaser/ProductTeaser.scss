@@ -1,4 +1,4 @@
-@import "../global.scss";
+@import "../../styles/_global.scss";
 
 .ProductTeaser {
     position: relative;
@@ -41,7 +41,7 @@
     }
     &__text {
         height: max-content;
-        padding: $spacer-m;
+        padding: $margin-m;
         background-color: $hp-white;
         box-shadow: $bs-standard;
         border-radius: $br-standard;
@@ -49,6 +49,6 @@
     }
     &__title {
         text-align: left;
-        margin-bottom: $spacer-xs;
+        margin-bottom: $margin-xs;
     }
 }

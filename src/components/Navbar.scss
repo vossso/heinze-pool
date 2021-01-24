@@ -1,48 +1,109 @@
-@import './global.scss';
+@import "../styles/_global";
+@import "../styles/_extends";
 
 .Navbar {
-    position: fixed;
-    z-index: 50;
-    width: 100%;
-    background-color: $hp-white;
-    box-shadow: $bs-standard;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  @extend %box;
+
+  height: $margin-menu;
+
+  a {
+    @extend %link;
+    color: $hp-blue;
+    margin-right: $margin-l;
+    transition: all $duration-s;
+    cursor: pointer;
+
+    &::after {
+      background-color: $hp-blue;
+    }
+  }
+
+  &__container,
+  &__desktop {
+    height: 100%;
+  }
+
+  &__desktop {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  &__left,
+  &__right {
+    height: auto;
+    margin: auto 14rem;
+
+    .Navbar__start {
+      > img {
+        width: auto;
+        height: 3.5rem;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__left {
+    flex: 0 1 20%;
 
     a {
-        text-decoration: none;
-        color: $hp-blue;
-        text-transform: uppercase;
-        margin-right: 2rem;
+      margin: 0;
+
+      &::after {
+        height: 0;
+      }
+    }
+  }
+  &__right {
+    flex: 1 1 80%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  &__ext {
+    position: relative;
+    width: auto;
+    height: auto;
+  }
+
+  &__plus {
+    font-size: 2rem;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: $margin-xs;
+
+    transition: all $duration-s;
+
+    &--active {
+      transform: rotate(45deg);
+    }
+  }
+
+  &__dropdown {
+    position: absolute;
+    height: auto;
+    width: auto;
+    max-width: 20rem;
+    top: 5rem;
+    left: 0;
+    opacity: 0;
+    transition: opacity $duration-s;
+
+    background-color: $hp-white;
+    padding: $padding-xs;
+
+    > a {
+      margin: 0;
+      margin-bottom: $margin-xs;
     }
 
-
-
-    &__desktop {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
+    &--active {
+      opacity: 1;
     }
-
-    &__links, &__rechts {
-        padding: 1rem;
-
-        .Navbar__start {
-            > img {
-                width: auto;
-                height: 2rem;
-                object-fit: cover;
-            }
-        }
-    }
-
-    &__links {
-        flex: 0 1 20%;
-    }
-     &__rechts {
-        flex: 1 1 80%;
-        
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-     }
-
+  }
 }

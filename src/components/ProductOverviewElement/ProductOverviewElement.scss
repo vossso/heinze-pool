@@ -1,4 +1,4 @@
-@import "../global.scss";
+@import "../../styles/_global.scss";
 
 .ProductOverviewElement {
     flex: 0 0 25%;
@@ -9,11 +9,11 @@
     border: $border-xs;
     background-color: $hp-white;
 
-    padding: $spacer-m $spacer-m/2;
+    padding: $margin-m $margin-m/2;
     margin-top: -$spacer-l;
 
     & h4 {
-        margin-bottom: $spacer-xs;
+        margin-bottom: $margin-xs;
     }
 
     &__button {
@@ -22,6 +22,6 @@
 
         position: absolute;
         bottom: -1.5rem;
-        right: $spacer-m/2;
+        right: $margin-m/2;
     }
 }

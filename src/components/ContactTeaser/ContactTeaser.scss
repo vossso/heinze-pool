@@ -1,4 +1,4 @@
-@import "../global.scss";
+@import "../../styles/_global.scss";
 
 .ContactTeaser {
     flex: 1 1 auto;
@@ -64,12 +64,10 @@
 
         &-element {
             > span {
-                text-transform: uppercase;
-                font-size: $fs-m;    
+                text-transform: uppercase;  
             }
             > p {
-                font-weight: $fw-bold; 
-                font-size: $fs-m;    
+                font-weight: $fw-bold;    
             }
         }
     }

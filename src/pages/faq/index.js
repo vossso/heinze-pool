@@ -5,7 +5,7 @@ import FaqRoll from '../../components/FaqRoll/FaqRoll'
 import Stage from '../../components/Stage/Stage'
 
 import titleImg from '../../img/water.jpg'
-import Container from '../../components/ui/Container/Container'
+import Container from '../../components/share/Container/Container'
 
 export default class FaqIndexPage extends React.Component {
   render() {

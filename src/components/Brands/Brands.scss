@@ -1,4 +1,5 @@
-@import "../global.scss";
+@import "../../styles/_global.scss";
+
 
 .Brands {
     height: 100%;
@@ -14,6 +15,6 @@
         max-height: 10rem;
         height: max-content;
         overflow: hidden;
-        margin-bottom: $spacer-s;
+        margin-bottom: $margin-s;
     }
 }

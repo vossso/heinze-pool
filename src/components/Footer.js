@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 import { graphql, StaticQuery } from 'gatsby'
 
-import Container from './ui/Container/Container'
+import Container from './share/Container/Container'
 import logo from '../img/hp-logo_white.png'
 
 class Footer extends React.Component {

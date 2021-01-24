@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 
 
 import './ProductTeaser.scss'
-import ImageGallery from '../ui/ImageGallery/ImageGallery'
-import Container from '../ui/Container/Container'
+import ImageGallery from '../share/ImageGallery/ImageGallery'
+import Container from '../share/Container/Container'
 
 const ProductTeaser =({title, description, images}) => {
 
     return (
-      <Container variant="full-height" id={title}>
+      <Container variant={["full-height", "starter"]} id={title}>
         <div className="ProductTeaser">
           {images && <div className="ProductTeaser__gallery">
             <ImageGallery images={images} />
