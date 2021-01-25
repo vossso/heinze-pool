@@ -55,7 +55,7 @@ steps:
 laborArea:
   title: Professionelle Wasseranalyse
   labor:
-    - image: /img/bayrol_logo_web_rgb.png
+    - image: /img/icons_hp-25.png
       alt: Wasserprobleme
       title: Wasserprobleme
       text: Die volle Pracht Ihres Pools entfaltet sich erst bei kristallklarem
