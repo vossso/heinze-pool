@@ -42,24 +42,24 @@ history:
       auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 reasonsArea:
   reasonsList:
-    - reason: Erster Grund
+    - reason: Erfahrung
       description: Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
         eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis
         ornare vel eu leo.
-    - reason: Zweiter Grund
+    - reason: Familienunternehmen
       description: >
-        Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia
-        bibendum nulla sed consectetur. Donec id elit non mi porta gravida at
-        eget metus.
-    - reason: Dritter Grund
+        Wir leben Pool! Und das seit über 50 Jahren als Familienunternehmen in
+        3. Generation. In jedes Projekt fließt unser vollstes Herzblut, damals,
+        wie heute und in Zukunft!
+    - reason: Qualität
       description: Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
         Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
         vestibulum.
-    - reason: Vierter Grund
+    - reason: Loakl
       description: Cum sociis natoque penatibus et magnis dis parturient montes,
         nascetur ridiculus mus. Cras mattis consectetur purus sit amet
         fermentum. Maecenas faucibus mollis interdum.
-    - reason: Fünfter Grund
+    - reason: Unabhängig
       description: Curabitur blandit tempus porttitor. Donec sed odio dui. Cum sociis
         natoque penatibus et magnis dis parturient montes, nascetur ridiculus
         mus.
