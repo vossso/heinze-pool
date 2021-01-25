@@ -3,14 +3,26 @@
 .HistoryTeaser {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 
-    margin-top: 2rem;
+    margin-bottom: $spacer-m;
 
     &__content {
-        flex: 1 1 50%;
+        flex: 0 1 40%;
+        position: relative;
+
+        & > span {
+            font-weight: $fw-light;
+            font-size: 6.8rem;
+            color: $hp-blue-3;
+
+            position: absolute;
+            top: -4rem;
+            right: 2rem;
+        }
     }
     &__image {
-        flex: 1 1 50%;
+        flex: 0 1 40%;
         margin-left: 1rem;
     }
 }

@@ -8,7 +8,7 @@
     h3 {
         color: $hp-white;
         text-align: left;
-        margin-bottom: $margin-m;
+        margin-bottom: 0;
     }
 
     > div {
@@ -51,10 +51,15 @@
     }
     &__hours {
         flex: 1 1 auto;
+        margin-right: $margin-m;
 
         & span {
             display: inline-block;
             margin-bottom: $margin-xs;
+
+        }
+        >  p::after {
+            content: ' Uhr';
         }
         
     }

@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "gatsby";
+import PropTypes from "prop-types";
 import "./Navbar.scss";
 
 import logo from "../img/hp-logo_typo.jpg";
+import logo2 from "../img/hp-logo_typo-white.png";
+import getVariantClasses from "../helpers/getVariantClass";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -36,8 +39,10 @@ const Navbar = class extends React.Component {
   };
 
   render() {
+    const { variant } = this.props;
+    const className = getVariantClasses("Navbar", variant);
     return (
-      <nav className="Navbar" role="navigation" aria-label="main-navigation">
+      <nav className={className} role="navigation" aria-label="main-navigation">
         <div className="Navbar__container">
           <div className="Navbar__mobile">
             {/* Hamburger menu */}
@@ -57,7 +62,11 @@ const Navbar = class extends React.Component {
           >
             <div className="Navbar__left">
               <Link to="/" className="Navbar__start" title="Logo">
-                <img src={logo} alt="Heinze-Pool" />
+                {variant === "transparent" ? (
+                  <img src={logo2} alt="Heinze-Pool" />
+                ) : (
+                  <img src={logo} alt="Heinze-Pool" />
+                )}
               </Link>
             </div>
             <div className="Navbar__right">
@@ -65,8 +74,8 @@ const Navbar = class extends React.Component {
                 Leistungen
               </Link>
               <div className="Navbar__ext">
-                <a
-                className="Navbar__link"
+                <button
+                  className="Navbar__link"
                   onClick={() =>
                     this.setState({
                       showDrop: !this.state.showDrop,
@@ -81,7 +90,7 @@ const Navbar = class extends React.Component {
                     +
                   </div>
                   Produkte
-                </a>
+                </button>
                 <div
                   className={`Navbar__dropdown${
                     this.state.showDrop ? " Navbar__dropdown--active" : ""
@@ -116,6 +125,10 @@ const Navbar = class extends React.Component {
       </nav>
     );
   }
+};
+
+Navbar.propTypes = {
+  data: PropTypes.object,
 };
 
 export default Navbar;

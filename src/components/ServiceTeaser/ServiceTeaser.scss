@@ -1,9 +1,30 @@
 @import "../../styles/_global.scss";
 
 .ServiceTeaser {
+    margin-top: $margin-menu + $margin-l;
+
     &__boxes {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+    }
+    &__box {
+       display: flex;
+       justify-content: space-between;
+       align-content: center;
+
+       &:not(:last-child) {
+           margin-right: $margin-s;
+       }
+
+       > a {
+           flex: 1 0 10%;
+           margin: auto;
+           height: auto;
+       }
+       > div {
+           flex: 0 1 auto;
+       }
+
     }
 }

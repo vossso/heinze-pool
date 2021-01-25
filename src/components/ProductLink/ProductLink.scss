@@ -3,13 +3,7 @@
 .ProductLink {
     width: 100%;
     height: auto;
-    padding: $margin-m;
     margin-bottom: $margin-s;
-
-
-    box-shadow: $bs-standard;
-    border-radius: $br-standard;
-    border: $border-xs;
 
     position: relative;
     display: block;
@@ -19,12 +13,10 @@
         text-align: left;
         margin: 0 0 $margin-xs;
     }
-
     &__button {
-        width: 3rem;
         position: absolute;
         top: $margin-m;
-        right: - 1.5rem;
+        right: -3rem;
     }
 
 }

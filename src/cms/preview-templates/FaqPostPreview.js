@@ -4,7 +4,6 @@ import { FaqPostTemplate } from '../../templates/faq-post'
 
 const FaqPostPreview = ({ entry }) => {
     const data = entry.getIn(['data']).toJS()
-    console.log(data)
   return (
     <FaqPostTemplate
         title={data.title}

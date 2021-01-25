@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import './ProductTeaser.scss'
 import ImageGallery from '../share/ImageGallery/ImageGallery'
 import Container from '../share/Container/Container'
+import TextBox from '../share/TextBox/TextBox'
 
 const ProductTeaser =({title, description, images}) => {
 
@@ -15,10 +16,7 @@ const ProductTeaser =({title, description, images}) => {
             <ImageGallery images={images} />
           </div>}
           <div className="ProductTeaser__description">
-            <div className="ProductTeaser__text">
-              <h3 className="ProductTeaser__title">{title}</h3>
-              <p className="ProductTeaser__desc">{description}</p>
-            </div>
+            <TextBox title={title} text={description} />
           </div>
         </div>
       </Container>

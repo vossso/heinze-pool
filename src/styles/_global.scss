@@ -12,14 +12,14 @@ $hp-ff: 'Brandon Text',Fallback, sans-serif ;
 $fs-s: 1.4rem;
 $fs-p-mobile: 1.6rem;
 $fs-p: 1.8rem;
-$fs-h5-footer: 1.8rem;
-$fs-h4: 3.4rem;
+$fs-h5-footer: 1.6rem;
+$fs-h4: 2.8rem;
 $fs-h3: 4.5rem;
 $fs-h2: 5.8rem;
 $fs-h1: 24rem;
 
 //TODO importieren Font-weoght
-$fw-light: 400;
+$fw-light: 300;
 $fw-regular: 500;
 $fw-bold: 800;
 
@@ -32,6 +32,7 @@ $margin-xs: 0.5rem;
 $margin-s: 1rem;
 $margin-m: 3rem;
 $margin-l: 5rem;
+$margin-xl: 7rem;
 $margin-menu: 8rem;
 
 $spacer-s: 5rem;
@@ -41,8 +42,10 @@ $spacer-xl: 20rem;
 
 $padding-xs: 1.5rem;
 $padding-s: 3rem;
-$padding-box-verti: 8rem;
-$padding-box-hori: 7rem;
+$padding-m: 5rem;
+$padding-l: 8rem;
+$padding-box-verti: 5rem;
+$padding-box-hori: 4rem;
 
 
 $max-width-xl: 1920px;
@@ -52,6 +55,8 @@ $max-width-m: 1060px;
 $max-width-m-inner: 960px;
 $max-width-s: 940px;
 $max-width-s-inner: 840px;
+$max-width-xs: 540px;
+$max-width-xs-inner: 440px;
 
 $breakpoints: (
   'xxs': 360px,
@@ -70,11 +75,6 @@ $duration-m: 1s;
 *, body {
     box-sizing: border-box;
     margin: 0;
-
-    scroll-snap-type: y mandatory;
-    &.proximity {
-      scroll-snap-type: y proximity;
-    }
 }
 html {
     font-size: 10/16 * 100%;
@@ -99,21 +99,27 @@ h2 {
 h3 {
     text-align: center;
     font-size: $fs-h3;
-    margin-bottom: $spacer-l;
+    margin-bottom: $margin-l;
 }
 h4 {
     font-size: $fs-h4;
+    margin-bottom: $margin-s;
 }
 h5 {
     font-size: $fs-h5-footer;
     text-transform: uppercase;
     color: $hp-white;
+    font-weight: $fw-light;
 }
 p {
     font-size: $fs-p-mobile;
 }
-a {
+a, button {
     text-decoration: none;
+}
+button {
+    background-color: transparent;
+    border: none;
 }
 img {
     width: 100%;

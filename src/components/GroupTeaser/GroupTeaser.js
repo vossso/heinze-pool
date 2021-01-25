@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import './GroupTeaser.scss'
 import PreviewCompatibleImage from '../share/Image/PreviewCompatibleImage'
 import Container from '../share/Container/Container'
+import TextBox from '../share/TextBox/TextBox'
 
 const GroupTeaser =({products}) => {
 
@@ -19,8 +20,7 @@ const GroupTeaser =({products}) => {
                       <PreviewCompatibleImage imageInfo={images[0]} />
                   </div>
                   <div className="GroupTeaser__text">
-                      <h3 className="GroupTeaser__title">{title}</h3>
-                      <p className="GroupTeaser__desc">{description}</p>
+                      <TextBox title={title} text={description} />
                   </div>
               </div>
               )

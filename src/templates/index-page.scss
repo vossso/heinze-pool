@@ -6,12 +6,17 @@
     height: 100vh;
     overflow: hidden;
 
+
     &__bg-image {
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background: $hp-blue; 
+        background: -webkit-linear-gradient(rgba($hp-blue, 0.8), rgba($hp-blue, 0.5));
+        background: linear-gradient(rgba($hp-blue, 0.8), rgba($hp-blue, 0.5)); 
         width: auto;
         height: 100%;
+
+        & img {
+            opacity: 0.5;
+        }
     }
 
     &__content {
@@ -28,10 +33,15 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
+        & a {
+            font-size: $fs-h3;
+            
+        }
     }
     &__menu-right,
     &__menu-left  {
-        flex: 0 0 35%;
+        flex: 0 0 30%;
 
         display: flex;
         justify-content: space-between;
@@ -75,13 +85,19 @@
 
         & img {
             height: auto;
-            width: 40vw;
+            width: 30vw;
+
         } 
     }
 
     &__hexa-box {
         & img {
-            width: 50vw;
+            width: 45vw;
         } 
+    }
+    &__logo-box {
+        & img {
+            margin-top: -$spacer-m;
+        }
     }
 }

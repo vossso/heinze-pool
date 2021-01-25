@@ -18,12 +18,12 @@ class Footer extends React.Component {
           <h3>Kontakt</h3>
           <div className="Footer__content">
             <div className="Footer__col">
-              <span>Öffnungszeiten</span>
+              <h5>Öffnungszeiten</h5>
               <div className="Footer__hours-block">
                 {openinghours.map((element, index) => {
                   return (
                     <div className="Footer__hours" key={index}>
-                      <span>{element.daysbegin} - {element.daysend}</span>
+                      <h5>{element.daysbegin} - {element.daysend}</h5>
                       <p>{element.timebegin} - {element.timeend}</p>
                     </div>
                   )
@@ -31,13 +31,13 @@ class Footer extends React.Component {
               </div>
             </div>
             <div className="Footer__col">
-              <span>E-Mail</span>
+              <h5>E-Mail</h5>
               <p>{webadress.mail}</p>
-              <span>Telefon</span>
+              <h5>Telefon</h5>
               <p>{numbers.phone}</p>
             </div>
             <div className="Footer__col">
-              <span>Adresse</span>
+              <h5>Adresse</h5>
               <p>Henze Pool GmbH<br/>
               {adress.street}<br/>
               {adress.city}</p>

@@ -1,11 +1,17 @@
-@import "../../../styles/_global.scss";
+@import "../../../styles/_global";
+@import "../../../styles/media-queries";
 
 .ArrowLink {
     display: block;
     height: 100%;
+    width: 5rem;
     cursor: pointer;
 
     transition: transform $duration-s;
+
+    @include respond-to(m) {
+        width: 6rem;
+    }
 
     &--down{
         transform: rotate(90deg);

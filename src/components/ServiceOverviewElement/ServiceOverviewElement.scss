@@ -1,26 +1,24 @@
 @import "../../styles/_global.scss";
+@import "../../styles/_media-queries.scss";
 
 .ServiceOverviewElement {
-    margin-bottom: $spacer-l;
+    margin-bottom: $margin-xl;
 
     &__content {
-        > .HexaIcon {
-            margin: 0 auto;
-            margin-top: -6rem;
-        }
-
-        padding: $margin-m;
-        max-height: 15rem;
-
-        background-color: $hp-white;
-        box-shadow: $bs-standard;
-        border-radius: $br-standard;
-        border: $border-xs;
+        position: relative;
+        display: flex;
+        justify-content: center;
 
         text-align: center;
 
-        > h4 {
-            margin: $margin-s 0 $margin-s;
+        > .HexaIcon {
+            position: absolute;
+            margin-top: -4.5rem;
+        }
+
+        > .TextBox {
+            padding-top: $padding-l;
+            max-width: 40rem;
         }
     }
 }
