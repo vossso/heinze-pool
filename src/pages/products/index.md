@@ -56,20 +56,22 @@ title: Produktübersicht
 productPages:
   - lable: Pools
     path: /pools
-    text: Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
-      lacinia odio sem nec elit.
+    text: Polyproplyen Pools, GFK Pools, Segmentbecken, Containerpools, Whirlpools,
+      Ceramic Pool
     productPage: pools
   - lable: Überdachung
     path: /ueberdachung
-    text: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+    text: Leichtbauhallen, Rollladen, Rollschutzplanen, Luftpolsterplanen
     productPage: überdachung
   - lable: Wasserpflege
     path: /wasserpflege
-    text: "Nullam quis risus eget urna mollis ornare vel eu leo. "
+    text: Sandfilter, Kartuschenfilter, Cyclonefilter, Umwälzpumpen, Dosieranlagen,
+      Salzelektrolyse, Pool-/ Wasserchemie
     productPage: wasserpflege
   - lable: Zubehör
     path: /zubehoer
-    text: "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. "
+    text: Poolroboter, Wärmepumpen, Wärmetauscher, Gegenstromanlagen, Skimmer,
+      Einlaufdüsen, PVC Fittinge
     productPage: zubehör
 main:
   heading: Great coffee with no compromises
