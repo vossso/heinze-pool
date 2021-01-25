@@ -8,8 +8,6 @@ class ProductIndexPage extends React.Component {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
 
-    console.log(data);
-    console.log(posts)
     return (
         <>
         <h1>Hier sind wir auf der product/index</h1>

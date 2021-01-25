@@ -1,5 +1,6 @@
 @import "../styles/_global";
 @import "../styles/_extends";
+@import "../styles/_media-queries";
 
 .Navbar {
   position: fixed;
@@ -9,7 +10,7 @@
 
   height: $margin-menu;
 
-  a {
+  a, button {
     @extend %link;
     color: $hp-blue;
     margin-right: $margin-l;
@@ -30,12 +31,30 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+
+    width: $max-width-s;
+    margin: 0 auto;
+
+    @include respond-to(s) {
+      width: $max-width-xs;
+    }
+
+    @include respond-to(m) {
+      width: $max-width-s;
+    }
+
+    @include respond-to(l) {
+      width: $max-width-m;
+    }
+    @include respond-to(xl) {
+      width: $max-width-l;
+    }
   }
 
   &__left,
   &__right {
     height: auto;
-    margin: auto 14rem;
+    margin: auto 0;
 
     .Navbar__start {
       > img {
@@ -97,6 +116,8 @@
     background-color: $hp-white;
     padding: $padding-xs;
 
+    @extend %box;
+
     > a {
       margin: 0;
       margin-bottom: $margin-xs;
@@ -104,6 +125,43 @@
 
     &--active {
       opacity: 1;
+    }
+  }
+
+  &--transparent {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+
+    a, button {
+      color: $hp-white;
+      font-weight: bold;
+
+      &::after {
+        background-color: $hp-white;
+        height: 2px;
+      }
+    }
+
+    & .Navbar__dropdown {
+      background-color: transparent;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      top: 3rem;
+    }
+
+    & .Navbar__left {
+      flex: 0 1 20%;
+
+      a {
+        margin: 0;
+
+        &::after {
+          height: 0;
+        }
+      }
     }
   }
 }

@@ -8,8 +8,6 @@ import Container from '../components/share/Container/Container'
 
 
 export const PortfolioPageTemplate = ({ title, description,imageTeasers }) => {
-
-console.log("imageTeasers:", imageTeasers)
   return (
           <Container variant={["full-height","starter"]}>
             <div className="PortfolioPage">

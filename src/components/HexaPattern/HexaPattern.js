@@ -7,7 +7,6 @@ import './HexaPattern.scss'
 import HexaImage from '../share/HexaImage/HexaImage'
 
 const HexaPattern =({imageList}) => {
-    console.log("imageList:",imageList)
 
     return (
         imageList &&
@@ -15,7 +14,7 @@ const HexaPattern =({imageList}) => {
                 <div className="HexaPattern__content">
 
                     {imageList.map((element, index) => {
-                        return <a><HexaImage imageInfo={element.image} key={index}/></a>
+                        return <button><HexaImage imageInfo={element.image} key={index}/></button>
                     })}
                 </div>
             </div>

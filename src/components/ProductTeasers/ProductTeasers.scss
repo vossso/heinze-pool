@@ -1,0 +1,14 @@
+@import "../../styles/_global";
+.ProductTeasers {
+  // ToDo row reverse
+
+  &__products > div:nth-child(odd) {
+    & .ProductTeaser__gallery {
+      margin: 0 0 0 35%;
+    }
+    & .ProductTeaser__description {
+      right: 60%;
+      left: 0;
+    }
+  }
+}

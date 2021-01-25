@@ -13,9 +13,9 @@ const FaqBox = ({ description, title }) => {
         <button className={`FaqBox${isActive?' FaqBox--active':''}`} onClick={() => {
             setIsActive(!isActive)
         }}>
-            <h3 className="FaqBox__question">
+            <h4 className="FaqBox__question">
                 {title}
-            </h3>
+            </h4>
             <AnimateHeight height={isActive? 'auto' : 0} duration={300}>
                 <p className="FaqBox__answer">
                     {description}

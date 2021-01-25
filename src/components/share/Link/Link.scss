@@ -1,0 +1,12 @@
+@import "../../../styles/_global.scss";
+@import "../../../styles/_extends.scss";
+
+.Link {
+    @extend %link;
+
+    // font-size: $fs-p;
+    // text-transform: uppercase;
+    // color: $hp-blue-3;
+
+
+}

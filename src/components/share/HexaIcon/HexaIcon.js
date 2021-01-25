@@ -1,5 +1,5 @@
 import React from 'react'
-import hexa from '../../../img/hexa_blue.svg'
+import hexa from '../../../img/icons/hexa.svg'
 import PreviewCompatibleImage from '../Image/PreviewCompatibleImage';
 
 
@@ -18,7 +18,7 @@ const HexaIcon = ({ variant, size, icon, number }) => {
                 <img className="HexaIcon__hexa" src={hexa} alt="Poool"/>
                 <div className="HexaIcon__image">
                     {icon && <PreviewCompatibleImage imageInfo={icon} />}
-                    {!icon && number && <h2>{number}</h2>}
+                    {!icon && number && <h4>{number}</h4>}
                 </div>
             </div>
     )

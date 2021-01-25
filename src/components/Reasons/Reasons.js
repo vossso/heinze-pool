@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import './Reasons.scss'
 import Container from '../share/Container/Container'
 import HexaIcon from '../share/HexaIcon/HexaIcon'
+import TextBox from '../share/TextBox/TextBox'
 
 const Reasons =({title, reasonsList}) => {
 
@@ -17,8 +18,7 @@ const Reasons =({title, reasonsList}) => {
                 const {reason, description} = element;
                 return <div className="Reasons__reason" key={index}>
                         <HexaIcon size="5rem" number={index+1}/>
-                        <h4>{reason}</h4>
-                        <p>{description}</p>
+                        <TextBox title={reason} text={description} />
                     </div>
             })}
           </div>

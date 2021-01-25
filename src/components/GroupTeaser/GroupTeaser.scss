@@ -1,10 +1,12 @@
 @import "../../styles/_global.scss";
+@import "../../styles/_extends.scss";
 
 .GroupTeaser {
+    height: 100%;
+    
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
-
-    // margin: $spacer-xl auto;
 
     &__content {
         flex: 1 1 auto;
@@ -17,7 +19,8 @@
         position: relative;
         z-index: 1;
 
-        height: 20rem;
+        height: 30%;
+        max-height: 30rem;
         overflow: hidden;
         width: 100%;
 
@@ -28,17 +31,14 @@
         z-index: 2;
 
         height: auto;
-        max-height: 20rem;
-        width: 80%;
-        max-width: 50rem;
+        min-height: 20rem;
+        max-height: 50rem;
+        width: 90%;
+        max-width: 80rem;
 
         margin: 0 auto;
-        margin-top: calc(-20rem/2);
-        padding: $margin-m;
-        background-color: $hp-white;
-        box-shadow: $bs-standard;
-        border-radius: $br-standard;
-        border: $border-xs;
+        margin-top: calc(-10rem/2);
+
     }
     &__title {
         text-align: left;

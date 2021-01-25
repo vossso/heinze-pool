@@ -1,6 +1,8 @@
 @import "../../styles/_global.scss";
 
 .Reasons {
+    margin-top: $margin-menu + $margin-m;
+
     &__content {
         display: flex;
         flex-direction: row;
@@ -11,26 +13,19 @@
         position: relative;
         flex: 0 0 28%;
 
-        background-color: $hp-white;
-        box-shadow: $bs-standard;
-        border-radius: $br-standard;
-        border: $border-xs;
-
-        padding: $margin-m;
-        padding-left: 4rem;
-        margin-bottom: $margin-m;
+        margin-bottom: $margin-l;
 
         &:nth-child(2) {
-            margin-left: $spacer-l;
+            margin-left: $spacer-m;
         }
         &:nth-child(2), &:nth-child(4) {
-            margin-right: $spacer-l;
+            margin-right: $spacer-m;
         }
 
         & .HexaIcon {
             position: absolute;
-            top: 2rem;
-            margin-left: -6.5rem;
+            top: 4.5rem;
+            margin-left: -2.5rem;
         }
     }
 }

@@ -2,6 +2,7 @@
 
 
 .Brands {
+    padding-top: $margin-menu + $margin-m;
     height: 100%;
     overflow: hidden;
 
@@ -10,11 +11,12 @@
     flex-wrap: wrap;
 
     &__element {
-        flex: 0 1 31%;
+        flex: 0 1 auto;
 
-        max-height: 10rem;
+        max-height: 20rem;
         height: max-content;
+        min-width: 40rem;
         overflow: hidden;
-        margin-bottom: $margin-s;
+        margin-bottom: $margin-m;
     }
 }

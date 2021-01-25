@@ -2,20 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ArrowLink from '../share/ArrowLink/ArrowLink'
 import './ProductLink.scss'
+import TextBox from '../share/TextBox/TextBox'
 
-const ProductLink = ({ lable, text, path }) => {
+const ProductLink = ({ label, text, path }) => {
 
    return   <a className="ProductLink" href={`/product/${path}`}>  
-                <h3 className="ProductLink__lable">{lable}</h3>
-                <p className="ProductLink__description">{text}</p>
+                <TextBox title={label} text={text} variant="auto-height"/>
                 <div className="ProductLink__button">
-                    <ArrowLink/>
+                    <ArrowLink />
                 </div>
             </a> 
 }
 
   ProductLink.propTypes = {
-    lable: PropTypes.string,
+    label: PropTypes.string,
     text: PropTypes.string,
     path: PropTypes.string,
   }

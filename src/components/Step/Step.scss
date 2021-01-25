@@ -1,51 +1,45 @@
 @import "../../styles/_global.scss";
 
 .Step {
-    width: 100%;
+  width: 50%;
 
-    &:nth-child(even) {
-        //rehts und links boxen anorden 
+  &:nth-child(even) {
+    margin-left: 50%;
 
-        .Step__content {
-            flex-direction: row-reverse;
-            margin-left: 0; 
-            margin-right: auto;
-        }
-        .Step__hexa {
-            margin: auto -2rem auto $margin-m;
-        }
+    .Step__content {
+      float: left;
+      flex-direction: row-reverse;
     }
-
-    &__content {
-        background-color: $hp-white;
-        box-shadow: $bs-standard;
-        border-radius: $br-standard;
-        border: $border-xs;
-
-        width: 35rem;
-        margin-left: auto; 
-        margin-right: 0;
-
-        padding: $margin-s;
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: row;
-
-        > h4 {
-            width: auto;
-        }
+    .Step__hexa {
+      margin: auto -2.5rem auto $margin-m;
     }
-    &__hexa {
-        height: 2rem;
-        width: 2rem;
+  }
 
-        margin: auto $margin-m auto -2rem;
+  &__content {
+    margin-top: -$margin-m/2;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
-        > img {
-            width: 100%;
-            height: auto;
-        }
+    > .TextBox {
+      padding: $padding-s $padding-m;
 
-
+      > h4 {
+        margin: 0;
+      }
     }
+  }
+  &__hexa {
+    height: auto;
+    width: 5rem;
+    z-index: 2;
+
+    margin: auto $margin-m auto -2.5rem;
+
+    > img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }

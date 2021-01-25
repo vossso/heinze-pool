@@ -1,16 +1,12 @@
 @import "../../styles/_global.scss";
+@import "../../styles/extends";
 
 .FaqBox {
     width: 100%;
     height: auto;
     padding: $margin-m;
-    margin-bottom: $margin-s;
-
-
-    background-color: $hp-white;
-    box-shadow: $bs-standard;
-    border-radius: $br-standard;
-    border: $border-xs;
+    margin-bottom: $margin-m;
+    @extend %round-box;
 
     position: relative;
     display: block;
@@ -19,7 +15,6 @@
     &__question {
         margin: 0;
         text-align: left;
-        
     }
     &__answer {
         margin-top: $margin-s;
@@ -29,7 +24,7 @@
         width: 3rem;
         position: absolute;
         top: $margin-m;
-        right: - 1.5rem;
+        right: 0;
     }
 
 }

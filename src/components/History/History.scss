@@ -1,14 +1,13 @@
 @import "../../styles/_global.scss";
 
 .History {
+    margin-top: $margin-menu + $spacer-l;
     height: auto;
     width: 100%;
 
-    > h3, > p {
-        text-align: center;    
-    }
-    > p {
-        // font-size: $fs-m;    
+    > h3{
+        text-align: center; 
+        margin-bottom: $margin-l;   
     }
 
     &__teasers {

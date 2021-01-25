@@ -1,48 +1,70 @@
 @import "../../../styles/_global";
 @import "../../../styles/media-queries";
 
+* {
+  scroll-snap-type: y mandatory;
+  &.proximity {
+    scroll-snap-type: y proximity;
+  }
+}
+
 .Container {
-    max-width: 100%;
+  max-width: 100%;
+  margin: $margin-menu auto 0;
+  width: 95%;
+
+  @include respond-to(s) {
+    width: $max-width-xs;
+  }
+
+  @include respond-to(m) {
     width: $max-width-s;
-    margin: $margin-menu auto 0;
+  }
 
-    @include respond-to(l) {
-        width: $max-width-s;
-    }
+  @include respond-to(l) {
+    width: $max-width-m;
+  }
+  @include respond-to(xl) {
+    width: $max-width-l;
+  }
+
+  &--no-top {
+    margin-top: 0;
+  }
+  &--no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  &--padding-s {
+    padding-top: $margin-m;
+  }
+  &--full-height {
+    margin-top: 0;
+    min-height: 100vh;
+    // border: solid red 2px;
+
     @include respond-to(xl) {
-        width: $max-width-m;
+      height: 100vh;
     }
-    @include respond-to(xxl) {
-        width: $max-width-l;
-    }
+  }
+  &--half-height {
+    margin-top: 0;
+    min-height: 50vh;
+    // border: solid blue 2px;
 
-    &--no-top {
-        margin-top: 0;   
+    @include respond-to(xl) {
+      height: 50vh;
     }
-    &--no-padding {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    &--padding-s{
-        padding-top: $margin-m;
-    } 
-    &--full-height {
-        margin-top: 0;
-        height: 100vh;
-        // border: solid red 2px;
-    }
-    &--half-height {
-        margin-top: 0;
-        height: 50vh;
-        // border: solid blue 2px;
-    }
-    &--full-width {
-        padding-left: 0;
-        padding-right: 0;
-        width: 100%;
-    }
+  }
+  &--full-width {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
 
-    &--starter {
-        scroll-snap-align: start
+  &--starter {
+    @include respond-to(xl) {
+      scroll-snap-align: start;
     }
+  }
 }
