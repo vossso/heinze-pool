@@ -7,36 +7,49 @@ description: Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id
   auctor fringilla.
 productElement:
   - single: true
-    title: GFK
-    description: Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Maecenas sed diam eget risus varius blandit sit
-      amet non magna.
+    title: Polypropylen Pools...
+    description: >-
+      Thermoplastischer Kunststoff, welcher sich nur für Sie, ganz individuell
+      und auf den Zentimeter genau zu Ihrem Wunschpool formen lässt.
+
+
+      …sind immer ein Unikat. Treffen Sie selbst die Entscheidung nach der exakten Größe, der Anzahl und Form der Treppen, welche Sprudelbank und Gegenstromanlage oder ob Ihr Boden dieselbe Farbe wie Ihre Wand tragen soll. Vollkommende Flexibilität ist einer, wenn nicht der größte Vorteil dieser in höchster Qualität für Sie zusammengeschweißten Polypropylenplatten. Rechtwinklige Treppenkanten und Innenecken, sowie perfekt gerade Wände sprechen eine klare Linie für modernes Design und eignen sich daher auch hervorragend für Überlaufpools. 
+    images:
+      - image: /img/202011221137-01.png
+        alt: poly
+  - single: true
+    title: GFK Pools...
+    description: >-
+      Glasfaserverstärkter Kunststoff, mit oder ohne Ceramic Schicht in fester
+      Form, abgerundeten Ecken und nahtloser Schönheit.
+
+
+      …tragen Ihre weichen, nahtlosen Kanten geschmeidig mit stolz und fügen sich homogen in jedes Landschaftsbild mit ein. Durch Ihre festen Formen und das Schichtsystem bieten diese Becken eine extrem hohe Steifigkeit, sind UV-beständig und resistent gegen alle üblichen Chemikalien. Zur Auswahl steht eine große Varianten- und Farbvielfalt mit dem gewissen Extra oder schlicht elegant. Als Ceramic Pool werden Becken bezeichnet dessen Festigkeit durch eine zusätzliche Schicht, der sogenannten Ceramic Schicht, erhöht werden.
     images:
       - image: /img/p1020287-edit.jpg
         alt: tag1
   - single: true
-    title: Polypropylen
-    description: Nulla vitae elit libero, a pharetra augue. Cum sociis natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    images:
-      - image: /img/202011221137-01.png
-        alt: poly
-  - single: false
-    title: Container
-    description: Cras mattis consectetur purus sit amet fermentum. Morbi leo risus,
-      porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac
-      facilisis in, egestas eget quam.
+    title: Segmentbecken...
+    description: >-
+      Durch den Zusammenbau der Segmente, erst in der Grube, für wirklich jeden
+      Garten realisierbar. Geht nicht? Gibt’s nicht!
+
+
+      ... bezeichnen Pools die aus einzelnen Segmenten und je nach Hersteller aus unterschiedlichen Materialien bestehen. Diese können in Ihrer Bauweise individuell zusammengesetzt werden um verschiedene Formen und Größen zu erreichen. Durch das Zusammensetzen der Elemente in der Grube ist ein Einbau an schwer zugänglichen Orten, wie zum Beispiel einem Hinterhaus mit engem Garten, möglich. Dementsprechend entfallen die Krankosten.
     images:
       - image: /img/1200_alles_aus_dina4.jpg
         alt: Container
   - single: false
     title: Whirlpool
-    description: Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis
-      risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a
-      pharetra augue.
+    description: Genießer oder Individualist? Wie wäre es mal mit Anders? Entdecken
+      Sie unsere Whirlpools und Containerpools.
     images:
       - image: /img/dsc_0204-2.jpg
         alt: tag whirlpool
+  - single: false
+    title: Container Pools
+    description: Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id
+      elit non mi porta gravida at eget metus.
 brands:
   - image: /img/bayrol_logo_web_rgb.png
     name: marke1
