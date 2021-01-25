@@ -9,7 +9,7 @@ description: "Seit über 50 Jahren bieten wir Ihnen aus unserem Standort in
   Rat und Tat.  Verschaffen Sie sich nachfolgend einen detaillierteren Überblick
   über unser Leistungs- und Serviceangebot:"
 sOverview:
-  - image: /img/bayrol_logo_web_rgb.png
+  - image: /img/icons_hp-22.png
     alt: Installation Pool
     title: Poolbau
     text: >
