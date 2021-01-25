@@ -1,8 +1,9 @@
 ---
 path: /portfolio
 templateKey: portfolio-page
-title: Portfolio
-description: Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui.
+title: Projekte
+description: Klicken Sie sich durch eine kleine Auswahl unserer Projekte und
+  überzeugen Sie sich von unserem Handwerk!
 imageTeasers:
   - image: /img/dsc_0204-2.jpg
     description: Beschreibung
