@@ -51,12 +51,12 @@ productElement:
     description: Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id
       elit non mi porta gravida at eget metus.
 brands:
-  - image: /img/bayrol_logo_web_rgb.png
+  - image: /img/bayrol_logo_web_rgb_small.jpg
     name: Bayrol
   - image: /img/alukov_bez_r.jpg
     name: Alukov
   - image: /img/rivierapool_logo_de.jpg
     name: Riviera Pool
-  - image: /img/bayrol_logo_web_rgb.png
+  - image: /img/bayrol_logo_web_rgb_small.jpg
     name: logo4
 ---
