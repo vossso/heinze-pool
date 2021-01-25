@@ -5,7 +5,7 @@ links:
     path: /service
   - name: Produkte
     path: /products
-  - name: Referenzen
+  - name: Projekte
     path: /portfolio
   - name: Über uns
     path: /about
