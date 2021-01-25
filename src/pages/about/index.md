@@ -95,5 +95,5 @@ contactblock:
       daysend: Samstag
       timebegin: 10
       timeend: 13
-      specialinfo: Oktober bis März Samstags geschlossen
+      specialinfo: Oktober bis März Samstags geschlossen.
 ---
