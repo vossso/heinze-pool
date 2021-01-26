@@ -6,7 +6,9 @@ description: Klicken Sie sich durch eine kleine Auswahl unserer Projekte und
   überzeugen Sie sich von unserem Handwerk!
 imageTeasers:
   - image: /img/dsc_0204-2.jpg
-    description: Beschreibung
+    description: Vestibulum id ligula porta felis euismod semper. Nulla vitae elit
+      libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac,
+      vestibulum at eros.
     title: Foto Titel
     alt: key key key
     imageObject:
