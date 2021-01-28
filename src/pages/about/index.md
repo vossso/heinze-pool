@@ -43,26 +43,25 @@ history:
 reasonsArea:
   reasonsList:
     - reason: Erfahrung
-      description: Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-        eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis
-        ornare vel eu leo.
+      description: Professionalität durch Erfahrung! Seit über 50 Jahren entwickeln
+        wir uns stetig weiter um Ihnen das bestmögliche Poolerlebnis bieten zu
+        können.
     - reason: Familienunternehmen
-      description: >
-        Wir leben Pool! Und das seit über 50 Jahren als Familienunternehmen in
-        3. Generation. In jedes Projekt fließt unser vollstes Herzblut, damals,
-        wie heute und in Zukunft!
+      description: Wir leben Pool! Und das als Familienunternehmen in 3. Generation.
+        In jedes Projekt fließt unser vollstes Herzblut, damals, wie heute und
+        in Zukunft!
     - reason: Qualität
-      description: Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
-        vestibulum.
+      description: Qualitativ hochwertiges Handwerk! Durch unser zuverlässiges,
+        starkes Team und unsere gewissenhaft ausgewählten Partner erfüllen wir
+        Ihre Wünsche mit höchstem Qualitätsanspruch.
     - reason: Loakl
-      description: Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Cras mattis consectetur purus sit amet
-        fermentum. Maecenas faucibus mollis interdum.
+      description: Ihre Anlaufstelle direkt vor Ort! Profitieren Sie von uns als Ihr
+        lokaler Ansprechpartner durch persönliche Beratung und einem schnellen
+        Vor-Ort-Service.
     - reason: Unabhängig
-      description: Curabitur blandit tempus porttitor. Donec sed odio dui. Cum sociis
-        natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-        mus.
+      description: Wir entscheiden selbst! Als unabhängiger Poolbauer können wir Ihnen
+        das Beste aus einer Vielzahl ausgewählter Produkte verschiedener
+        Hersteller zusammenstellen.
   title: 5 Gründe für Heinze-Pool
 contactblock:
   adress:
