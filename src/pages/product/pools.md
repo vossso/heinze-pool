@@ -40,16 +40,24 @@ productElement:
       - image: /img/1200_alles_aus_dina4.jpg
         alt: Container
   - single: false
+    title: Container Pools
+    description: >
+      …sind stilvoll, individuell gestaltbar und extravagant. Abgesehen vom
+      „Wow-Faktor“ bieten unsere Containerpools Ihnen jede Menge Vorteile. Durch
+      die stabile Bauweise eines Container Die 
+
+      Schick, design, industrial, alles in einem, made in germany, hinstellbar, stilvoll
+  - single: false
     title: Whirlpool
-    description: Genießer oder Individualist? Wie wäre es mal mit Anders? Entdecken
-      Sie unsere Whirlpools und Containerpools.
+    description: >
+      Genießer oder Individualist? Wie wäre es mal mit Anders? Entdecken Sie
+      unsere Whirlpools und Containerpools.
+
+
+      …beleben Körper und Geist und helfen Ihnen dem stressigen Alltag zu entfliehen. Die drei elementaren Faktoren Wärme, Wasser und Massage spiegeln den Inbegriff von Sinnlichkeit und Ruhe wider. Sie fördern die Durchblutung, entlasten die Gelenke und lösen verspannte Muskelpartien.
     images:
       - image: /img/dsc_0204-2.jpg
         alt: tag whirlpool
-  - single: false
-    title: Container Pools
-    description: Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id
-      elit non mi porta gravida at eget metus.
 brands:
   - image: /img/bayrol_logo_web_rgb_small.jpg
     name: Bayrol
