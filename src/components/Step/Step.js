@@ -5,9 +5,9 @@ import "./Step.scss";
 import hexa from "../../img/icons/hexa.svg";
 import TextBox from "../share/TextBox/TextBox";
 
-const Step = ({ title }) => {
+const Step = ({ title, className }) => {
   return (
-    <div className="Step">
+    <div className={`Step${className ? ' '+className: ''}`}>
       <div className="Step__content">
         <TextBox title={title} variant="auto-height" />
         <div className="Step__hexa">

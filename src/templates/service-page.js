@@ -14,13 +14,13 @@ export const ServicePageTemplate = ({ title, image, description, sOverview, step
   return (
             <div className="ServicePage">
               <div className="ServicePage__stage">
-                <Stage title={title} image={image} description={description}/>
+                <Stage title={title} image={image}/>
               </div>
               <div className="ServicePage__content">
-                <ServiceOverview services={sOverview} />
+                <ServiceOverview services={sOverview} description={description}/>
                 <StepByStep steps={steps} />
                 <ServiceTeaser content={laborArea}/>
-                <ProductTeaser title={shop.title} images={[shop.imageObject]} description={shop.text}/>
+                <ProductTeaser title={shop.title} images={[shop.imageObject]} description={shop.text} link="/about" linkLabel="Vereinbaren Sie einen Termin"/>
               </div>
             </div>
   )

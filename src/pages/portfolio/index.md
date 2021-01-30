@@ -5,12 +5,10 @@ title: Projekte
 description: Klicken Sie sich durch eine kleine Auswahl unserer Projekte und
   überzeugen Sie sich von unserem Handwerk!
 imageTeasers:
-  - image: /img/dsc_0204-2.jpg
-    description: Vestibulum id ligula porta felis euismod semper. Nulla vitae elit
+  - description: Vestibulum id ligula porta felis euismod semper. Nulla vitae elit
       libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac,
       vestibulum at eros.
-    title: Foto Titel
-    alt: key key key
+    title: Foto Titel 1
     imageObject:
       image: /img/2400_alles_aus.jpg
       alt: alukov Image
@@ -18,6 +16,105 @@ imageTeasers:
       image: /img/dsc_0204-2.jpg
       alt: Rivera Pool GFK
     title: Footo Titel 2
+    description: Nullam quis risus eget urna mollis ornare vel eu leo. Donec
+      ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam.
+      Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas
+      faucibus mollis interdum.
+    alt: Rivera Pool GFK
+  - imageObject:
+      image: /img/dsc_0204-2.jpg
+      alt: Rivera Pool GFK
+    title: Footo Titel 3
+    description: Nullam quis risus eget urna mollis ornare vel eu leo. Donec
+      ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam.
+      Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas
+      faucibus mollis interdum.
+    alt: Rivera Pool GFK
+  - imageObject:
+      image: /img/dsc_0204-2.jpg
+      alt: Rivera Pool GFK
+    title: Footo Titel 4
+    description: Nullam quis risus eget urna mollis ornare vel eu leo. Donec
+      ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam.
+      Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas
+      faucibus mollis interdum.
+    alt: Rivera Pool GFK
+  - imageObject:
+      image: /img/dsc_0204-2.jpg
+      alt: Rivera Pool GFK
+    title: Footo Titel 5
+    description: Nullam quis risus eget urna mollis ornare vel eu leo. Donec
+      ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam.
+      Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas
+      faucibus mollis interdum.
+    alt: Rivera Pool GFK
+  - imageObject:
+      image: /img/dsc_0204-2.jpg
+      alt: Rivera Pool GFK
+    title: Footo Titel 6
+    description: Nullam quis risus eget urna mollis ornare vel eu leo. Donec
+      ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam.
+      Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas
+      faucibus mollis interdum.
+    alt: Rivera Pool GFK
+  - imageObject:
+      image: /img/dsc_0204-2.jpg
+      alt: Rivera Pool GFK
+    title: Footo Titel 7
+    description: Nullam quis risus eget urna mollis ornare vel eu leo. Donec
+      ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam.
+      Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas
+      faucibus mollis interdum.
+    alt: Rivera Pool GFK
+  - imageObject:
+      image: /img/dsc_0204-2.jpg
+      alt: Rivera Pool GFK
+    title: Footo Titel 8
+    description: Nullam quis risus eget urna mollis ornare vel eu leo. Donec
+      ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam.
+      Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas
+      faucibus mollis interdum.
+    alt: Rivera Pool GFK
+  - imageObject:
+      image: /img/dsc_0204-2.jpg
+      alt: Rivera Pool GFK
+    title: Footo Titel 9
+    description: Nullam quis risus eget urna mollis ornare vel eu leo. Donec
+      ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam.
+      Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas
+      faucibus mollis interdum.
+    alt: Rivera Pool GFK
+  - imageObject:
+      image: /img/dsc_0204-2.jpg
+      alt: Rivera Pool GFK
+    title: Footo Titel 10
+    description: Nullam quis risus eget urna mollis ornare vel eu leo. Donec
+      ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam.
+      Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas
+      faucibus mollis interdum.
+    alt: Rivera Pool GFK
+  - imageObject:
+      image: /img/dsc_0204-2.jpg
+      alt: Rivera Pool GFK
+    title: Footo Titel 11
+    description: Nullam quis risus eget urna mollis ornare vel eu leo. Donec
+      ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam.
+      Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas
+      faucibus mollis interdum.
+    alt: Rivera Pool GFK
+  - imageObject:
+      image: /img/dsc_0204-2.jpg
+      alt: Rivera Pool GFK
+    title: Footo Titel 12
+    description: Nullam quis risus eget urna mollis ornare vel eu leo. Donec
+      ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam.
+      Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas
+      faucibus mollis interdum.
+    alt: Rivera Pool GFK
+  - imageObject:
+      image: /img/dsc_0204-2.jpg
+      alt: Rivera Pool GFK
+    title: Footo Titel 13
     description: Nullam quis risus eget urna mollis ornare vel eu leo. Donec
       ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam.
       Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas

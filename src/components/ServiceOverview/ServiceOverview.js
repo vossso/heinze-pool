@@ -7,7 +7,7 @@ import ServiceOverviewElement from "../ServiceOverviewElement/ServiceOverviewEle
 import test from '../../img/service.jpg'
 
 
-const ServiceOverview = ({ services }) => {
+const ServiceOverview = ({ services, description }) => {
   return services ? (
     <div className="ServiceOverview">
       <Container variant="half-height">
@@ -22,11 +22,9 @@ const ServiceOverview = ({ services }) => {
           </div>
           <div className="ServiceOverview__right">
               {/* ToDo Pflegbar machen */}
-            <h4>Unser großes Leistungsspektrum</h4>
+            <h4>Unsere Leistungen im Überblick</h4>
             <p>
-              Nullam id dolor id nibh ultricies vehicula ut id elit. Duis
-              mollis, est non commodo luctus, nisi erat porttitor ligula, eget
-              lacinia odio sem nec elit. Maecenas faucibus mollis interdum.
+             {description}
             </p>
           </div>
         </div>
@@ -53,6 +51,7 @@ const ServiceOverview = ({ services }) => {
 
 ServiceOverview.propTypes = {
   services: PropTypes.array,
+  description: PropTypes.string,
 };
 
 export default ServiceOverview;

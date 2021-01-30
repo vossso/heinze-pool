@@ -1,38 +1,47 @@
-import React from "react";
+import React, {useState} from "react";
 
 import "./HexaImage.scss";
+import Overlay from "../Overlay/Overlay";
+import Hexagon from "react-hexagon";
 
-const HexaImage = ({ imageInfo }) => {
+const HexaImage = ({ title, description, imageInfo }) => {
+  const [showOverlay, setShowOverlay] = useState(false);
   const getImagePath = () => {
     const { childImageSharp, image } = imageInfo;
     if (!!image && !!image.childImageSharp) {
-      return (
-        // <Img style={imageStyle} fluid={image.childImageSharp.fluid} alt={alt} />
-        image.childImageSharp.fluid
-      );
+      return image.childImageSharp.fluid.src;
     }
 
     if (!!childImageSharp) {
-      return (
-        // <Img style={imageStyle} fluid={childImageSharp.fluid} alt={alt} />
-        childImageSharp.fluid
-      );
+      return childImageSharp.fluid.src;
     }
 
-    if (!!image && typeof image === "string")
-      return (
-        // <img style={imageStyle} src={image} alt={alt} />
-        image
-      );
+    if (!!image && typeof image === "string") return image.src;
 
     return null;
   };
 
   return (
     <div className="HexaImage">
-      <div class="r-hex">
-        <div class="r-hex-inner"></div>
-      </div>
+      <button onClick={() => setShowOverlay(!showOverlay)}>
+        <Hexagon
+          className="HexaImage__poly"
+          backgroundImage={getImagePath()}
+          flatTop
+          onClick={() => console.log("clicked")}
+          style={{ stroke: "transparent" }}
+          backgroundScale={2}
+          hexProps={{ strokeLinecap: "round" }}
+        />
+      </button>
+      {showOverlay && (
+        <Overlay
+          title={title}
+          image={imageInfo}
+          description={description}
+          onClick={() => setShowOverlay(!showOverlay)}
+        />
+      )}
     </div>
   );
 };

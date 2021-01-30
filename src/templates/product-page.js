@@ -7,10 +7,10 @@ import ProductTeasers from '../components/ProductTeasers/ProductTeasers'
 import Brands from '../components/Brands/Brands'
 
 
-export const ProductPageTemplate = ({title, description, image, productElement, brands}) => {
+export const ProductPageTemplate = ({title, image, productElement, brands}) => {
 
     return <div className="ProductPage">
-                <Stage title={title} description={description} image={image} />
+                <Stage title={title} image={image} />
                 <div className="ProductPage__overview">
                 </div>
                 <div className="ProductPage__content">
@@ -23,7 +23,6 @@ export const ProductPageTemplate = ({title, description, image, productElement, 
 
 ProductPageTemplate.propTypes={
     title: PropTypes.string,
-    description: PropTypes.string,
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     productElement: PropTypes.array,
     brands: PropTypes.array,
@@ -36,7 +35,6 @@ const ProductPage = ({ data }) => {
       <Layout>
         <ProductPageTemplate
           title={frontmatter.title}
-          description={frontmatter.description}
           image={frontmatter.image}
           productElement={frontmatter.productElement}
           brands={frontmatter.brands}
@@ -69,7 +67,6 @@ export const ProductPageQuery = graphql`
                 }
             }
         }
-        description
         productElement {
             title
             single

@@ -7,7 +7,7 @@ import ImageGallery from '../share/ImageGallery/ImageGallery'
 import Container from '../share/Container/Container'
 import TextBox from '../share/TextBox/TextBox'
 
-const ProductTeaser =({title, description, images}) => {
+const ProductTeaser =({title, description, images, link, linkLabel}) => {
 
     return (
       <Container variant={["full-height", "starter"]} id={title}>
@@ -16,7 +16,7 @@ const ProductTeaser =({title, description, images}) => {
             <ImageGallery images={images} />
           </div>}
           <div className="ProductTeaser__description">
-            <TextBox title={title} text={description} />
+            <TextBox title={title} text={description} link={link} label={linkLabel} />
           </div>
         </div>
       </Container>

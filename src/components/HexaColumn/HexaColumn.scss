@@ -1,0 +1,18 @@
+@import "../../styles/_global.scss";
+
+.HexaColumn {
+    height: 100%;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    &:not(:first-child) {
+        margin-left: $spacer-m;
+    }
+
+    &__element {
+        flex: 0 0 auto;
+    }
+}

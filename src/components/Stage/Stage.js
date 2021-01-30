@@ -4,7 +4,7 @@ import "./Stage.scss";
 import Container from "../share/Container/Container";
 import Navbar from "../Navbar";
 
-const Stage = ({ image, title, description }) => {
+const Stage = ({ image, title }) => {
 
   return (
     <Container variant={["half-height", "full-width", "no-padding", "starter"]}>
@@ -36,7 +36,6 @@ const Stage = ({ image, title, description }) => {
 Stage.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
   title: PropTypes.string,
-  description: PropTypes.string,
 };
 
 export default Stage;

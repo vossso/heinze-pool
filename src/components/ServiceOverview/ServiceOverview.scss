@@ -2,8 +2,8 @@
 @import "../../styles/media-queries";
 
 .ServiceOverview {
-  &__intro {
 
+  &__intro {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -15,16 +15,15 @@
 
     @include respond-to(s) {
       display: block;
-     }
-
-    & img {
-        height: 100%;
-        width: auto;
-
-        max-height: 40rem;
-        object-fit: cover;
     }
 
+    & img {
+      height: 100%;
+      width: auto;
+
+      max-height: 40rem;
+      object-fit: cover;
+    }
   }
   &__right {
     flex: 0 0 70%;
