@@ -1,24 +1,25 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
-import './ProductOverviewElement.scss'
-import ArrowLink from '../share/ArrowLink/ArrowLink'
-import TextBox from '../share/TextBox/TextBox'
+import "./ProductOverviewElement.scss";
+import ArrowLink from "../share/ArrowLink/ArrowLink";
+import TextBox from "../share/TextBox/TextBox";
 
-const ProductOverviewElement =({title, description}) => {
-
-    return (
-      <div className="ProductOverviewElement">
-            <TextBox title={title} text={description} />
-            <div className="ProductOverviewElement__button" >
-                <ArrowLink link={`#${title}`}/>
-            </div>
+const ProductOverviewElement = ({ title, description }) => {
+  return (
+    <div className="ProductOverviewElement">
+      <div className="ProductOverviewElement__content">
+        <TextBox title={title} text={description} variant="full-height" />
+        <div className="ProductOverviewElement__button">
+          <ArrowLink link={`#${title}`} />
+        </div>
       </div>
-    )
-  }
+    </div>
+  );
+};
 
 ProductOverviewElement.propTypes = {
   products: PropTypes.array,
-}
+};
 
-export default ProductOverviewElement
+export default ProductOverviewElement;
