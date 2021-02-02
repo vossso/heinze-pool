@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
@@ -6,8 +6,12 @@ import Stage from "../components/Stage/Stage";
 import ProductTeasers from "../components/ProductTeasers/ProductTeasers";
 import Brands from "../components/Brands/Brands";
 
-export const ProductPageTemplate = ({title, image, productElement, brands}) => {
-
+export const ProductPageTemplate = ({
+  title,
+  image,
+  productElement,
+  brands,
+}) => {
   return (
     <div className="ProductPage">
       <Stage title={title} image={image} />
@@ -30,10 +34,15 @@ ProductPageTemplate.propTypes = {
 
 const ProductPage = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
-  const product = edges.find((page) =>
-    page.node.fields.slug.includes(window.location.pathname)
-  );
-  console.log(product)
+  const [path, setPath] = useState("");
+  const [product, setProduct] = useState(edges[0]);
+
+  useEffect(() => {
+    if (window && window.location) {
+      setPath(window.location.pathname);
+      setProduct(edges.find((page) => page.node.fields.slug.includes(path)));
+    }
+  }, [data]);
 
   const { title, image, productElement, brands } = product.node.frontmatter;
 

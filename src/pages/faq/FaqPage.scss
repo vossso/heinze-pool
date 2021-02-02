@@ -1,0 +1,11 @@
+@import '../../styles/global';
+@import '../../styles/media-queries';
+
+.FaqPage {
+    h3 {
+        font-size: $fs-h3-mobile;
+        @include respond-to(m) {
+            font-size: $fs-h3;
+        }
+    }
+}

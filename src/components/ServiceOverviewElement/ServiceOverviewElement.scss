@@ -2,23 +2,26 @@
 @import "../../styles/_media-queries.scss";
 
 .ServiceOverviewElement {
-    margin-bottom: $margin-xl;
+  margin-bottom: $margin-xl;
 
-    &__content {
-        position: relative;
-        display: flex;
-        justify-content: center;
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
 
-        text-align: center;
+    text-align: center;
 
-        > .HexaIcon {
-            position: absolute;
-            margin-top: -4.5rem;
-        }
-
-        > .TextBox {
-            padding-top: $padding-l;
-            max-width: 40rem;
-        }
+    > .HexaIcon {
+      position: absolute;
+      margin-top: -4.5rem;
     }
+    > .TextBox {
+        padding-top: $padding-m;
+
+      @include respond-to(m) {
+        padding-top: $padding-l;
+        max-width: 40rem;
+      }
+    }
+  }
 }

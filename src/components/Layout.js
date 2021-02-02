@@ -1,7 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import Navbar from './Navbar/Navbar'
+import ScrollArrow from './share/ScrollArrow/ScrollArrow'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
@@ -47,6 +48,7 @@ const TemplateWrapper = ({ hasFooter = true, children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
+      <ScrollArrow />
       <Navbar />
       <div>{children}</div>
       {hasFooter && <Footer />}

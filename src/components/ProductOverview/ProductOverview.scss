@@ -1,23 +1,25 @@
 @import "../../styles/media-queries";
 
 .ProductOverview {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 
-  margin-top: $margin-m;
-  z-index: 10;
+    margin-top: $margin-m;
+    z-index: 10;
 
-  overflow-x: scroll;
-  overflow-y: visible;
-  width: 100vw;
-  padding-right: $margin-l;
+    overflow-x: scroll;
+    overflow-y: visible;
+    width: 100vw;
+    padding-right: $margin-l;
 
-  @include respond-to(xl) {
-    width: 100%;
-    overflow: visible;
-    margin-left: 0;
-    margin-top: -5rem;
+    @include respond-to(xl) {
+      width: 100%;
+      overflow: visible;
+      margin-left: 0;
+      margin-top: -5rem;
+    }
   }
 }

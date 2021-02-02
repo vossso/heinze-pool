@@ -1,14 +1,17 @@
 @import "../../styles/_global";
+@import "../../styles/media-queries";
+
 .ProductTeasers {
   // ToDo row reverse
+  z-index: 51;
+  position: relative;
 
-  &__products > div:nth-child(odd) {
-    & .ProductTeaser__gallery {
-      margin: 0 0 0 35%;
-    }
-    & .ProductTeaser__description {
-      right: 60%;
-      left: 0;
+  @include respond-to(m) {
+    &__products > div:nth-child(odd) {
+      & .ProductTeaser__description {
+        right: 50%;
+        left: 0;
+      }
     }
   }
 }

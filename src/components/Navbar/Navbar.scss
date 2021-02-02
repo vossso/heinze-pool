@@ -1,16 +1,22 @@
-@import "../styles/_global";
-@import "../styles/_extends";
-@import "../styles/_media-queries";
+@import "../../styles/_global";
+@import "../../styles/_extends";
+@import "../../styles/_media-queries";
 
 .Navbar {
   position: fixed;
+  top: 0;
   z-index: 50;
-  width: 100%;
+  width: 100vw;
   @extend %box;
 
-  height: $margin-menu;
+  height: $margin-menu-mobile;
 
-  a, button {
+  @include respond-to(m) {
+    height: $margin-menu;
+  }
+
+  a,
+  button {
     @extend %link;
     color: $hp-blue;
     margin-right: $margin-l;
@@ -26,28 +32,32 @@
   &__desktop {
     height: 100%;
   }
+  &__container {
+    position: relative;
+    z-index: 1;
+  }
 
   &__desktop {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-
-    width: $max-width-s;
+    width: auto;
+    padding: 0 $padding-m;
     margin: 0 auto;
 
-    @include respond-to(s) {
-      width: $max-width-xs;
-    }
-
     @include respond-to(m) {
-      width: $max-width-s;
+      padding: 0;
+      width: $max-width-s-inner;
     }
 
     @include respond-to(l) {
-      width: $max-width-m;
+      width: $max-width-m-inner;
     }
     @include respond-to(xl) {
-      width: $max-width-l;
+      width: $max-width-m;
+    }
+    @include respond-to(xxl) {
+      width: $max-width-l-inner;
     }
   }
 
@@ -59,20 +69,26 @@
     .Navbar__start {
       > img {
         width: auto;
-        height: 3.5rem;
+        height: 2rem;
         object-fit: cover;
+
+        @include respond-to(m) {
+          height: 3.5rem;
+        }
       }
     }
   }
 
   &__left {
-    flex: 0 1 20%;
+    flex: 1 1 20%;
 
     a {
       margin: 0;
+      line-height: 1;
 
       &::after {
         height: 0;
+        display: none;
       }
     }
   }
@@ -128,13 +144,49 @@
     }
   }
 
+  &__mobile {
+    flex: 0 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    & > button {
+      margin: 0;
+
+      &:hover::after {
+        width: 0;
+      }
+    }
+  }
+  &__burger {
+    > div {
+      margin-bottom: 0.5rem;
+
+      &::after {
+        display: block;
+        width: 3rem;
+        content: "";
+        height: 1.5px;
+        background-color: $hp-blue;
+      }
+    }
+  }
+  &__mobile-screen {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+  }
+
   &--transparent {
     position: relative;
     background-color: transparent;
     border: none;
     box-shadow: none;
 
-    a, button {
+    a,
+    button {
       color: $hp-white;
       font-weight: bold;
 
@@ -161,6 +213,11 @@
         &::after {
           height: 0;
         }
+      }
+    }
+    & .Navbar__burger {
+      > div::after {
+        background-color: $hp-white;
       }
     }
   }

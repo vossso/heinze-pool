@@ -1,30 +1,60 @@
 @import "../../styles/_global.scss";
+@import "../../styles/media-queries";
 
 .ServiceTeaser {
-    margin-top: $margin-menu + $margin-l;
+  margin-top: $margin-menu + $margin-l;
 
-    &__boxes {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
+  > h3 {
+    font-size: $fs-h3-mobile;
+    margin-bottom: $margin-m;
+
+    @include respond-to(m) {
+      font-size: $fs-h3;
+      margin-bottom: initial;
     }
-    &__box {
-       display: flex;
-       justify-content: space-between;
-       align-content: center;
+  }
 
-       &:not(:last-child) {
-           margin-right: $margin-s;
-       }
+  &__boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 
-       > a {
-           flex: 1 0 10%;
-           margin: auto;
-           height: auto;
-       }
-       > div {
-           flex: 0 1 auto;
-       }
-
+    @include respond-to(m) {
+      flex-direction: row;
     }
+  }
+  &__box {
+
+    &:not(:last-child) {
+      margin-bottom: $margin-s;
+    }
+
+    > .ArrowLink {
+      display: none;
+    }
+    @include respond-to(m) {
+      justify-content: space-between;
+      flex-direction: row;
+
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-right: $margin-s;
+      }
+
+      > .ArrowLink {
+        display: block;
+      }
+    }
+
+    > a {
+      flex: 1 0 10%;
+      margin: auto;
+      height: auto;
+    }
+    > div {
+      flex: 0 1 auto;
+    }
+  }
 }

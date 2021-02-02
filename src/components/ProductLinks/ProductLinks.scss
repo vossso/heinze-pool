@@ -1,6 +1,12 @@
 @import "../../styles/_global.scss";
+@import "../../styles/media-queries";
 
 .ProductLinks {
-    width: 30%;
-    margin: $margin-m 0 0 $spacer-l;
+    width: 80%;
+    margin: $margin-m  auto 0;
+
+    @include respond-to(m) {
+        width: 30%;
+        margin: $margin-m 0 0 $spacer-l;
+    }
 }

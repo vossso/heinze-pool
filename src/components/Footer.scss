@@ -1,76 +1,95 @@
 @import "../styles/global";
-    
+@import "../styles/media-queries";
+
 .Footer {
-    background-color: $hp-blue;
-    font-family: $hp-ff;
-    font-size: $fs-s;
+  background-color: $hp-blue;
+  font-family: $hp-ff;
+  font-size: $fs-s;
+  min-height: 100vh;
+  overflow: hidden;
 
-    h3 {
-        color: $hp-white;
-        text-align: left;
-        margin-bottom: 0;
+  @include respond-to(m) {
+    height: 100%;
+  }
+
+  h3 {
+    color: $hp-white;
+    text-align: left;
+    // margin-bottom: 0;
+  }
+
+  > div {
+    margin-top: $margin-menu-mobile + $margin-m;
+  }
+
+  &__content {
+    height: 100%;
+    margin-bottom: $spacer-m;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include respond-to(m) {
+      width: 100%;
+    }
+  }
+
+  &__col {
+    flex: 1 1 50%;
+    margin-bottom: $margin-l;
+
+    @include respond-to(m) {
+      flex: 1 1 auto;
+      margin-bottom: 0;
     }
 
-    > div {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+    p,
+    span {
+      color: $hp-white;
+      margin-bottom: $margin-s/2;
     }
+    span {
+      text-transform: uppercase;
+      font-weight: $fw-light;
+      display: inline-block;
+    }
+    p {
+      font-weight: $fw-bold;
+    }
+    img {
+      width: auto;
+      height: 20rem;
+      margin: auto;
+      margin-top: -6rem;
+    }
+  }
+  &__hours-block {
+    display: flex;
+    flex-direction: row;
+  }
+  &__hours {
+    flex: 1 1 auto;
+    margin-right: $margin-m;
 
-    &__content {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    & span {
+      display: inline-block;
+      margin-bottom: $margin-xs;
     }
+    > p::after {
+      content: " Uhr";
+    }
+  }
 
-    &__col {
-        flex: 0 0 auto;
-        p, span {
-            color: $hp-white;
-            margin-bottom: $margin-s/2;
-        }
-        span {
-            text-transform: uppercase;
-            font-weight: $fw-light;
-            display: inline-block;
-        }
-        p {
-            font-weight: $fw-bold;
-        }
-        img {
-            width: auto;
-            height: 20rem;
-            margin: auto;
-            margin-top: -6rem;
-        }
+  // width: 100vw;
+  &__subline {
+    margin-bottom: $margin-m;
+    p {
+      color: $hp-white;
+      display: inline;
+      margin: $margin-m $margin-m 0 0;
+      text-align: right;
     }
-    &__hours-block {
-        display: flex;
-        flex-direction: row;
-    }
-    &__hours {
-        flex: 1 1 auto;
-        margin-right: $margin-m;
-
-        & span {
-            display: inline-block;
-            margin-bottom: $margin-xs;
-
-        }
-        >  p::after {
-            content: ' Uhr';
-        }
-        
-    }
-
-    // width: 100vw;
-    &__subline {
-        p {
-            color: $hp-white;
-            display: inline;
-            margin: $margin-xs $margin-m 0 0 ;
-            text-align: right;
-        }
-    }
+  }
 }

@@ -1,7 +1,12 @@
 @import "../../styles/_global.scss";
+@import "../../styles/media-queries";
 
 .Step {
-  width: 50%;
+  width:auto;
+  margin:0 auto $margin-l;
+
+  @include respond-to(m) {
+    width: 50%;
 
   &:nth-child(even) {
     margin-left: 50%;
@@ -14,28 +19,45 @@
       margin: auto -2.5rem auto $margin-m;
     }
   }
+}
 
   &__content {
-    margin-top: -$margin-m/2;
-    float: right;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    position: relative;
+    // display: flex;
+    // align-items: center;
 
     > .TextBox {
       padding: $padding-s $padding-m;
 
       > h4 {
+        font-size: $fs-p;
+        text-transform: none;
         margin: 0;
       }
     }
+
+
+    @include respond-to(m) {
+      margin-top: -$margin-m/2;
+      float: right;
+      justify-content: flex-end;
+    }
   }
   &__hexa {
-    height: auto;
-    width: 5rem;
+    position: absolute;
     z-index: 2;
 
+    top: -1.5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: auto;
+    width: 3rem;
+
+    @include respond-to(m) {
+      width: 5rem;
     margin: auto $margin-m auto -2.5rem;
+  }
 
     > img {
       width: 100%;

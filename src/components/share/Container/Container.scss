@@ -11,7 +11,7 @@
 .Container {
   max-width: 100%;
   margin: $margin-menu auto 0;
-  width: 95%;
+  width: 90%;
 
   @include respond-to(s) {
     width: $max-width-xs;
@@ -40,7 +40,7 @@
   }
   &--full-height {
     margin-top: 0;
-    min-height: 100vh;
+    min-height: auto;
     // border: solid red 2px;
 
     @include respond-to(xl) {
@@ -49,7 +49,7 @@
   }
   &--half-height {
     margin-top: 0;
-    min-height: 50vh;
+    min-height: auto;
     // border: solid blue 2px;
 
     @include respond-to(xl) {

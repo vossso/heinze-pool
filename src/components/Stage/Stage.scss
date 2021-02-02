@@ -1,17 +1,25 @@
 @import "../../styles/_global.scss";
+@import "../../styles/media-queries";
 
 .Stage {
     z-index: 51;
-    height: 100%;
-    max-height: 50rem;
+    height: 100vh;
+    width: 100vw;
+    max-height: 100rem;
 
     position: relative;
     overflow: hidden;
+    margin-bottom: $margin-l;
 
     background: $hp-blue; 
     background: -webkit-linear-gradient(rgba($hp-blue, 1), rgba($hp-blue, 0.9));
     background: linear-gradient(rgba($hp-blue, 1), rgba($hp-blue, 0.9)); 
 
+    @include respond-to(m) {
+        height: 100%;
+        max-height: 50rem;
+        margin-bottom: 0;
+    }
 
     &__image {
         position: absolute;
@@ -24,10 +32,17 @@
         opacity: 0.5;
 
         & img {
-            width: 100%;
-            height: auto;
+            width: auto;
+            height: 100%;
 
             object-fit: cover;
+        }
+
+        @include respond-to(m) {
+            & img {
+                width: 100%;
+                height: auto;
+            }
         }
 
     }
@@ -37,10 +52,25 @@
         position: relative;
         height: auto;
 
-        margin: 20rem 0 2rem;
+        margin: 90% auto 2rem;
+        text-align: center;
 
         & h2 {
             color: $hp-white;
+            font-size: $fs-h2-mobile;
+
+            @include respond-to(m) {
+                font-size: $fs-h2;
+            }
+        }
+
+        @include respond-to(m) {
+            margin: 20rem 0 2rem;
+            text-align: left;
+        }
+
+        @include respond-to(xl) {
+            margin: 17rem 0 5rem; 
         }
     }
 }
