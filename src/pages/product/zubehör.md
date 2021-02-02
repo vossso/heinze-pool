@@ -55,4 +55,11 @@ productElement:
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
       blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur
       adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+brands:
+  - image: /img/bayrol_logo_web_rgb_small.jpg
+    name: Bayrol
+  - image: /img/alukov_bez_r.jpg
+    name: Alukov
+  - image: /img/rivierapool_logo_de.jpg
+    name: Riviera Pool
 ---
