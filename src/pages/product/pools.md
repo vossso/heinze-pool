@@ -1,6 +1,6 @@
 ---
 templateKey: product-page
-image: /img/dsc_0204-2.jpg
+image: /img/p1020238.jpg
 title: Pools
 description: Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id
   dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus
@@ -59,6 +59,9 @@ productElement:
       die stabile Bauweise eines Container Die 
 
       Schick, design, industrial, alles in einem, made in germany, hinstellbar, stilvoll
+    images:
+      - image: /img/p1020238.jpg
+        alt: Container Pools
   - single: false
     title: Whirlpool
     description: >
