@@ -1,0 +1,106 @@
+@import "../../styles/_global.scss";
+
+.MobileNav {
+  position: relative;
+  z-index: 2;
+  height: auto;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: $hp-white;
+
+  transition: opacity $duration-m;
+  opacity: 1;
+
+  &--active {
+    opacity: 1;
+  }
+
+  &__bg-image {
+    background: $hp-blue;
+    background: -webkit-linear-gradient(
+      rgba($hp-blue, 0.8),
+      rgba($hp-blue, 0.5)
+    );
+    background: linear-gradient(rgba($hp-blue, 0.8), rgba($hp-blue, 0.5));
+    width: auto;
+    height: 100%;
+
+    & img {
+      opacity: 0.5;
+      width: auto;
+      height: 100%;
+    }
+  }
+  &__content {
+    position: absolute;
+    top: 10%;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    > img {
+      flex: 0 1 20%;
+      max-width: 30rem;
+    }
+    > a,
+    button {
+      color: $hp-white;
+      font-weight: $fw-bold;
+      font-size: $fs-h4;
+      margin: 0;
+
+      &::after {
+        background-color: $hp-white;
+        height: 2px;
+      }
+    }
+    & .MobileNav__dropdown {
+      background-color: transparent;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      top: 3rem;
+    }
+  }
+  &__ext {
+    position: relative;
+    width: auto;
+    height: auto;
+  }
+
+  &__plus {
+    font-size: 2rem;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: $margin-xs;
+
+    transition: all $duration-s;
+
+    &--active {
+      transform: rotate(45deg);
+    }
+  }
+  &__dropdown {
+    // position: absolute;
+    height: auto;
+    width: auto;
+    max-width: 15rem;
+    top: 0;
+    left: 0;
+    transition: opacity $duration-s;
+
+    padding: $padding-xs;
+    background-color: transparent;
+    background-color: transparent;
+
+    > a {
+      margin-bottom: $margin-xs;
+    }
+  }
+}

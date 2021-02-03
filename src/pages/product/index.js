@@ -10,7 +10,7 @@ class ProductIndexPage extends React.Component {
 
     return (
         <>
-        <h1>Hier sind wir auf der product/index</h1>
+        <h2>Hier sind wir auf der product/index</h2>
       </>
     )
   }

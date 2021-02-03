@@ -1,29 +1,51 @@
 @import "../../styles/_global.scss";
-    
+@import "../../styles/media-queries";
+
 .HistoryTeaser {
+    position: relative;
+    margin-top: auto 0 0 ;
+
+  &__wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     justify-content: space-evenly;
 
     margin-bottom: $spacer-m;
 
-    &__content {
-        flex: 0 1 40%;
-        position: relative;
-
-        & > span {
-            font-weight: $fw-light;
-            font-size: 6.8rem;
-            color: $hp-blue-3;
-
-            position: absolute;
-            top: -4rem;
-            right: 2rem;
-        }
+    @include respond-to(m) {
+      flex-direction: row;
+      margin-bottom: 0;
+      padding-top: $margin-menu;
     }
-    &__image {
-        flex: 0 1 40%;
-        margin-left: 1rem;
+  }
+  &__content {
+    position: relative;
+    padding: 0 $padding-xs;
+    margin-top: -$margin-m;
+
+    & > span {
+      font-weight: $fw-light;
+      font-size: 6.8rem;
+      color: $hp-blue-3;
+
+      position: absolute;
+      top: -4rem;
+      right: 2rem;
     }
+
+    & .TextBox {
+      min-height: 0;
+    }
+    @include respond-to(m) {
+      flex: 0 1 40%;
+      padding: 0;
+      margin: auto 0;
+    }
+  }
+  &__image {
+    @include respond-to(m) {
+      flex: 0 1 40%;
+      margin-left: 1rem;
+    }
+  }
 }
-    

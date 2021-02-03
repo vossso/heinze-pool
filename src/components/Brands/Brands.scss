@@ -1,22 +1,29 @@
 @import "../../styles/_global.scss";
-
+@import "../../styles/media-queries";
 
 .Brands {
-    padding-top: $margin-menu + $margin-m;
-    height: 100%;
-    overflow: hidden;
+  padding-top: $margin-menu + $margin-m;
+  height: 100%;
+  overflow: hidden;
 
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
-    &__element {
-        flex: 0 1 auto;
+  &__element {
+    flex: 1 1 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: $margin-m;
 
-        max-height: 20rem;
-        height: max-content;
-        min-width: 40rem;
-        overflow: hidden;
-        margin-bottom: $margin-m;
+    > img {
+      object-fit: cover;
     }
+
+    @include respond-to(m) {
+      flex: 0 1 30%;
+      max-height: 30rem;
+      overflow: hidden;
+    }
+  }
 }

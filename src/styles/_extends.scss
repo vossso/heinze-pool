@@ -1,4 +1,5 @@
 @import "./_global";
+@import "./media-queries";
 
 // %hexa {
 //     margin: auto -2.5rem;
@@ -33,10 +34,15 @@
 }
 %round-box {
   @extend %box;
+
   border-radius: $br-standard;
 
   height: auto;
-  padding: $padding-box-verti $padding-box-hori;
+  padding: $padding-box-verti-mobile $padding-box-hori-mobile;
+
+  @include respond-to(m) {
+    padding: $padding-box-verti $padding-box-hori;
+  }
 }
 %link {
   color: $hp-blue-3;

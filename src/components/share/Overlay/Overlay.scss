@@ -1,0 +1,31 @@
+@import "../../../styles/_global.scss";
+
+.Overlay {
+  z-index: 60;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -webkit-filter: blur(4px);
+    background: rgba($hp-white, 0.8);
+  }
+
+  & button {
+      cursor: pointer;
+      float: right;
+      margin-top: $margin-m;
+  }
+}

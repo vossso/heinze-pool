@@ -1,0 +1,72 @@
+@import "../../styles/_global.scss";
+@import "../../styles/media-queries";
+
+$padding-s: calc(9.5rem / 2);
+$padding-m: calc(13rem / 2);
+$padding-l: calc(18rem / 2);
+
+.HexaPattern {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 80vh;
+  width: 100%;
+
+  @include respond-to(s) {
+    width: $max-width-xs-inner;
+  }
+  @include respond-to(l) {
+    width: $max-width-m-inner;
+  }
+  @include respond-to(xl) {
+    width: $max-width-l-inner;
+  }
+
+  &__content {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    height: 100%;
+  }
+  &__column {
+    width: auto;
+
+    &:not(:first-child) {
+      margin-left: -3.5rem;
+    }
+    &:nth-child(odd) {
+      padding-top: $padding-s;
+    }
+    &:nth-child(even) {
+      padding-bottom: $padding-s;
+    }
+
+    @include respond-to(s) {
+      &:not(:first-child) {
+        margin-left: -4rem;
+      }
+      &:nth-child(odd) {
+        padding-top: $padding-m;
+      }
+      &:nth-child(even) {
+        padding-bottom: $padding-m;
+      }
+    }
+    @include respond-to(m) {
+      &:not(:first-child) {
+        margin-left: -5.5rem;
+      }
+      &:nth-child(odd) {
+        padding-top: $padding-l;
+      }
+      &:nth-child(even) {
+        padding-bottom: $padding-l;
+      }
+    }
+  }
+}

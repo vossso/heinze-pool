@@ -1,21 +1,25 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import './Quote.scss'
+import React from "react";
+import PropTypes from "prop-types";
+import "./Quote.scss";
+import Container from "../share/Container/Container";
 
-const Quote = ({ quote }) => (
-    quote.text ? 
-    <div className="Quote">  
-        <p className="Quote__text">{quote.text}</p>
-        {quote.author && <p className="Quote__author">{quote.author}</p>}
-    </div> : null
-  )
+const Quote = ({ quote }) =>
+  quote.text ? (
+    <div className="Quote">
+      <Container variant={["half-height"]}>
+        <div className="Quote__wrapper">
+          <p className="Quote__text">{quote.text}</p>
+          {quote.author && <p className="Quote__author">{quote.author}</p>}
+        </div>
+      </Container>
+    </div>
+  ) : null;
 
-  Quote.propTypes = {
-      quote: PropTypes.shape({
-        text: PropTypes.string,
-        author: PropTypes.string
-      })
-  }
-  
+Quote.propTypes = {
+  quote: PropTypes.shape({
+    text: PropTypes.string,
+    author: PropTypes.string,
+  }),
+};
 
-export default Quote
+export default Quote;

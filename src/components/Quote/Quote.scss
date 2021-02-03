@@ -1,15 +1,19 @@
 @import "../../styles/_global.scss";
+@import "../../styles/media-queries";
 
 .Quote {
-    width: 96rem;
-    height: auto;
-    font-size: 2.4rem;
+position: relative;
+    &__wrapper {
+        padding-top: $spacer-s;
+        text-align: center;
 
-    padding: 20rem;
-    text-align: center;
-    margin: 20rem auto;
+        @include respond-to(m) {
+            padding-top: $spacer-l;
+        }
+    }
 
     &__text { 
+        font-size: $fs-h4;
         &::before {
             content: '„';
         }
@@ -19,7 +23,7 @@
     }
 
     &__author {
-        font-size: 1.4rem;
+        color: $hp-blue-3;
         &::before {
             content: '- ';
         }

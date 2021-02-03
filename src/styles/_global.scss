@@ -13,8 +13,11 @@ $fs-s: 1.4rem;
 $fs-p-mobile: 1.6rem;
 $fs-p: 1.8rem;
 $fs-h5-footer: 1.6rem;
+$fs-h4-mobile:2.2rem;
 $fs-h4: 2.8rem;
+$fs-h3-mobile: 2.8rem;
 $fs-h3: 4.5rem;
+$fs-h2-mobile: 4.8rem;
 $fs-h2: 5.8rem;
 $fs-h1: 24rem;
 
@@ -33,6 +36,7 @@ $margin-s: 1rem;
 $margin-m: 3rem;
 $margin-l: 5rem;
 $margin-xl: 7rem;
+$margin-menu-mobile: 5rem;
 $margin-menu: 8rem;
 
 $spacer-s: 5rem;
@@ -44,8 +48,10 @@ $padding-xs: 1.5rem;
 $padding-s: 3rem;
 $padding-m: 5rem;
 $padding-l: 8rem;
-$padding-box-verti: 5rem;
-$padding-box-hori: 4rem;
+$padding-box-verti-mobile: 3rem;
+$padding-box-hori-mobile: 2rem;
+$padding-box-verti: 4rem;
+$padding-box-hori: 3rem;
 
 
 $max-width-xl: 1920px;
@@ -123,7 +129,7 @@ button {
 }
 img {
     width: 100%;
-    height: 100%;
+    height: auto;
 
     object-fit: cover;
 }

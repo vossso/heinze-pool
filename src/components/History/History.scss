@@ -1,28 +1,38 @@
 @import "../../styles/_global.scss";
+@import "../../styles/media-queries";
 
 .History {
+  margin-top: $spacer-m;
+  height: auto;
+  width: 100%;
+
+  > h3 {
+    text-align: center;
+    margin-bottom: $margin-l;
+    font-size: $fs-h3-mobile;
+  }
+  @include respond-to(m) {
     margin-top: $margin-menu + $spacer-l;
-    height: auto;
-    width: 100%;
 
-    > h3{
-        text-align: center; 
-        margin-bottom: $margin-l;   
+    > h3 {
+      font-size: $fs-h3;
     }
+  }
 
-    &__teasers {
-        & .HistoryTeaser:nth-child(odd) {
-            flex-direction: row-reverse;
+  &__teasers {
+    & .HistoryTeaser:nth-child(odd) .HistoryTeaser__wrapper {
+      flex-direction: column-reverse;
+      @include respond-to(m) {
+        flex-direction: row-reverse;
+      }
 
-            .HistoryTeaser__image {
-                    margin: 0;  
-            }
-            
-            .HistoryTeaser__content {
-                    margin-left: 1rem;
-            }
-        } 
+      .HistoryTeaser__image {
+        margin: 0;
+      }
+
+      .HistoryTeaser__content {
+        margin-left: 1rem;
+      }
     }
+  }
 }
-        
-    

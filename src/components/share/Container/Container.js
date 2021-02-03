@@ -4,7 +4,7 @@ import getVariantClasses from '../../../helpers/getVariantClass'
 
 import './Container.scss'
 
-const Container = ({ children, variant, id }) => {
+const Container = ({ children, variant, id = '' }) => {
 
     const className = getVariantClasses("Container", variant);
     

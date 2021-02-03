@@ -1,13 +1,43 @@
 @import "../../styles/_global.scss";
+@import "../../styles/media-queries";
 
 .ProductOverviewElement {
-    flex: 0 0 25%;
-    max-width: 40rem;
-    position: relative;
+  flex: 0 0 auto;
+  position: relative;
+  margin-bottom: $margin-m;
 
-    &__button {
-        position: absolute;
-        bottom: -2rem;
-        right: $margin-m/2;
+  position: relative;
+
+  &:last-child .ProductOverviewElement__content {
+    margin-right: $margin-l;
+
+    & .ProductOverviewElement__button {
+      right: $margin-xl;
     }
+  }
+  @include respond-to(xl) {
+    &:not(:first-child) .ProductOverviewElement__content {
+      margin-left: $margin-l;
+    }
+  }
+
+  &__content {
+    max-width: 30rem;
+    height: 100%;
+
+    margin-left: $margin-s;
+
+    @include respond-to(m) {
+    margin-left: $margin-l;
+  }
+
+    @include respond-to(xl) {
+      margin-left: 0;
+    }
+  }
+  &__button {
+    position: absolute;
+    bottom: -3rem;
+    right: $margin-l/2;
+  }
 }

@@ -1,28 +1,41 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import ProductOverviewElement from '../ProductOverviewElement/ProductOverviewElement'
+import React from "react";
+import PropTypes from "prop-types";
+import ProductOverviewElement from "../ProductOverviewElement/ProductOverviewElement";
+import useBreakpoint from "../../hooks/useBreakpoint";
 
+import "./ProductOverview.scss";
+import Container from "../share/Container/Container";
 
-import './ProductOverview.scss'
-import Container from '../share/Container/Container'
+const ProductOverview = ({ primeProducts, secondProducts }) => {
+  const Breakpoint = useBreakpoint("xl");
+  const variant = Breakpoint ? ["half-height", "full-width"] : "half-height";
 
-const ProductOverview =({primeProducts, secondProducts}) => {
-
-    return (
-        <Container variant="half-height">
-            <div className="ProductOverview">
-                    {primeProducts.map((product, index) => {
-                        const {title, description} = product
-                        return <ProductOverviewElement key={index} title={title} description={description} />
-                    })}
-                    <ProductOverviewElement title="Sonstige" description="Hier findest du noch weitere Produkte" />
-            </div>
-        </Container>
-    )
-  }
+  return (
+    <div className="ProductOverview">
+      <Container variant={variant}>
+        <div className="ProductOverview__content">
+          {primeProducts.map((product, index) => {
+            const { title, introtext } = product;
+            return (
+              <ProductOverviewElement
+                key={index}
+                title={title}
+                description={introtext}
+              />
+            );
+          })}
+          <ProductOverviewElement
+            title="Sonstige"
+            description="Hier findest du noch weitere Produkte"
+          />
+        </div>
+      </Container>
+    </div>
+  );
+};
 
 ProductOverview.propTypes = {
   products: PropTypes.array,
-}
+};
 
-export default ProductOverview
+export default ProductOverview;

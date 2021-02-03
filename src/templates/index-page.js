@@ -17,7 +17,7 @@ export const IndexPageTemplate = ({ links }) => (
     </div>
     <div className="IndexPage__content">
       <div className="IndexPage__menu-left">
-        {links.map((link, index) => {
+        {links && links.map((link, index) => {
           if (index < 3) {
             return (
               <Link key={index} className="IndexPage__link" to={link.path}>
@@ -28,7 +28,7 @@ export const IndexPageTemplate = ({ links }) => (
         })}
       </div>
       <div className="IndexPage__menu-right">
-        {links.map((link, index) => {
+        {links && links.map((link, index) => {
           if (index >= 3) {
             return (
               <Link key={index} className="IndexPage__link" to={link.path}>
