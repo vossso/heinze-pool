@@ -10,7 +10,7 @@ links:
   - name: Über uns
     path: /about
   - name: Kontakt
-    path: /about
+    path: /about#contact
   - name: FAQ
     path: /faq
 ---
