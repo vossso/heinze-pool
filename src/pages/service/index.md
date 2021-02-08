@@ -61,7 +61,7 @@ steps:
 laborArea:
   title: Professionelle Wasseranalyse
   labor:
-    - image: /img/wa-dreckig.svg
+    - image: /img/hp_iconset_v1_icon_wa-dreckig.svg
       alt: Wasserprobleme
       title: Wasserprobleme
       text: Die volle Pracht Ihres Pools entfaltet sich erst bei kristallklarem
