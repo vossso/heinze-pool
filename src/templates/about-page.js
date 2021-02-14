@@ -36,7 +36,9 @@ export const AboutPageTemplate = ({
         )}
         {history && <History data={history} />}
       </div>
-      <Footer hasMap={true} id="contact" />
+      <div id="contact">
+        <Footer />
+      </div>
     </div>
   );
 };

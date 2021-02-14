@@ -1,16 +1,16 @@
 ---
 templateKey: index-page
 links:
-  - name: Leistungen
+  - label: Leistungen
     path: /service
-  - name: Produkte
+  - label: Produkte
     path: /products
-  - name: Projekte
+  - label: Projekte
     path: /portfolio
-  - name: Über uns
+  - label: Über uns
     path: /about
-  - name: Kontakt
-    path: /about
-  - name: FAQ
+  - label: Kontakt
+    path: /about#contact
+  - label: FAQ
     path: /faq
 ---

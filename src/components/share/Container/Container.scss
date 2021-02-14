@@ -63,7 +63,7 @@
   }
 
   &--starter {
-    @include respond-to(xl) {
+    @include respond-to(l) {
       scroll-snap-align: start;
     }
   }

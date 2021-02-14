@@ -1,23 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import ProductLink from "../ProductLink/ProductLink";
 import "./ProductLinks.scss";
 
 const ProductLinks = ({ products }) => {
-  return (
+  const [activeId, setActiveId] = useState(4);
+
+  return products ? (
     <div className="ProductLinks">
-      {/* ToDo Pool einbauen */}
-      {products &&
-        products.map((element, index) => (
+      <div className="ProductLinks__links">
+        {products.map((element, index) => (
           <ProductLink
             label={element.lable}
             text={element.text}
             path={element.productPage}
             key={index}
+            onMouseEnter={() => {
+              setActiveId(index);
+              console.log("mouse over " + index);
+            }}
+            onMouseLeave={() => {
+              setActiveId(4);
+            }}
           />
         ))}
+      </div>
+      <div
+        className={`ProductLinks__image${" ProductLinks__image--" + activeId}`}
+      ></div>
     </div>
-  );
+  ) : null;
 };
 
 ProductLinks.propTypes = {

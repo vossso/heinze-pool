@@ -1,6 +1,9 @@
 @import "../../styles/media-queries";
 
 .ProductOverview {
+  height: 100%;
+  margin-bottom: 5rem;
+
   &__content {
     position: relative;
     display: flex;

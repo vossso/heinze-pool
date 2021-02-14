@@ -1,12 +1,54 @@
 @import "../../styles/_global.scss";
 @import "../../styles/media-queries";
 
+$duration: 0.5s;
+
 .ProductLinks {
-    width: 80%;
-    margin: $margin-m  auto 0;
+  width: 100%;
+
+  @include respond-to(m) {
+    display: flex;
+    flex-direction: row;
+    margin-left: $margin-m;
+
+    &__image {
+      flex: 1 1 auto;
+      margin: $margin-l 0 0 $margin-l;
+
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+
+      &--0 {
+        transition: background-image $duration ease-in-out;
+        background-image: url("../../img/Pool_pool.jpg");
+      }
+      &--1 {
+        transition: background-image $duration ease-in-out;
+        background-image: url("../../img/Pool_wasser.jpg");
+      }
+      &--2 {
+        transition: background-image $duration ease-in-out;
+        background-image: url("../../img/Pool_roof.jpg");
+      }
+      &--3 {
+        transition: background-image $duration ease-in-out;
+        background-image: url("../../img/Pool_zub.jpg");
+      }
+      &--4 {
+        transition: background-image $duration ease-in-out;
+        background-image: url("../../img/Pool_all.jpg");
+      }
+    }
+  }
+
+  &__links {
+    width: 90%;
+    margin: 0 auto;
 
     @include respond-to(m) {
-        width: 30%;
-        margin: $margin-m 0 0 $spacer-l;
+      flex: 0 0 35%;
+      margin: 0;
     }
+  }
 }

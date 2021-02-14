@@ -8,11 +8,18 @@ import "./ProductTeasers.scss";
 import useBreakpoint from "../../hooks/useBreakpoint";
 
 const ProductTeasers = ({ products }) => {
-  const BreakpointL = useBreakpoint('l');
-  const productTeasers = BreakpointL ? products : products.filter((element) => element.single);
-  const groupTeasers = BreakpointL ?  [] :products.filter((element) => !element.single);
+  const BreakpointL = useBreakpoint("l");
+  const productTeasers = products
+    ? BreakpointL
+      ? products
+      : products.filter((element) => element.single)
+    : [];
+  const groupTeasers =
+    BreakpointL || !products
+      ? []
+      : products.filter((element) => !element.single);
 
-  return (
+  return productTeasers ? (
     <div className="ProductTeasers">
       <ProductOverview
         primeProducts={productTeasers}
@@ -33,7 +40,7 @@ const ProductTeasers = ({ products }) => {
       </div>
       {groupTeasers.length > 0 && <GroupTeaser products={groupTeasers} />}
     </div>
-  );
+  ) : null;
 };
 
 ProductTeasers.propTypes = {

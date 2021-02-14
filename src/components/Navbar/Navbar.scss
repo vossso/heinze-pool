@@ -5,7 +5,7 @@
 .Navbar {
   position: fixed;
   top: 0;
-  z-index: 50;
+  z-index: 52;
   width: 100vw;
   @extend %box;
 
@@ -13,10 +13,17 @@
 
   @include respond-to(m) {
     height: $margin-menu;
+    opacity: 0;
+    transition: opacity $duration-s;
+
+    &--shown {
+      opacity: 1;
+    }
   }
 
   a,
   button {
+    font-weight: $fw-regular;
     @extend %link;
     color: $hp-blue;
     margin-right: $margin-l;
@@ -132,6 +139,10 @@
     background-color: $hp-white;
     padding: $padding-xs;
 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
     @extend %box;
 
     > a {
@@ -184,6 +195,7 @@
     background-color: transparent;
     border: none;
     box-shadow: none;
+    opacity: 1;
 
     a,
     button {

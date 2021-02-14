@@ -31,7 +31,8 @@ const Stage = ({ image, title }) => {
   return BreakpointM ? (
     getContent
   ) : (
-    <Container variant={["half-height", "full-width", "no-padding", "starter"]}>
+    <Container variant={["half-height", "full-width", "no-padding"]}>
+      {/* ToDo Starter */}
       {getContent}
     </Container>
   );

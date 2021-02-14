@@ -3,6 +3,7 @@
 
 .ProductTeaser {
     position: relative;
+    z-index: 0;
 
     @include respond-to(s) {
         height: 100%;

@@ -2,7 +2,10 @@
 @import "../styles/global";
 
 .ProductsPage {
-  padding-top: $margin-menu-mobile + $margin-m;
+  padding-top: $margin-menu-mobile + $margin-l;
+  position: relative;
+  margin-bottom: $margin-l;
+
   h3 {
     font-size: $fs-h3-mobile;
     margin-bottom: $margin-xs;
@@ -11,6 +14,6 @@
     }
   }
   &__content{
-
+    width: 100%;
   }
 }

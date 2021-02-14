@@ -30,7 +30,7 @@ sOverview:
     text: Zusätzlich zur Beratung und Verkauf können Sie sich auch alle bei uns
       erworbenen Produkte von unseren Monteuren fachgerecht installieren lassen.
     description: ???
-  - image: /img/wart-white.svg
+  - image: /img/hp_iconset_v1_icon_wart-white.svg
     alt: Poolwartung
     title: Wartung
     text: Jede Poolanlage ist einzigartig und möchte gepflegt und gewartet werden um

@@ -2,9 +2,12 @@
 @import "../../styles/media-queries";
 
 .History {
-  margin-top: $spacer-m;
   height: auto;
   width: 100%;
+
+  > div {
+    padding: $spacer-m 0;
+  }
 
   > h3 {
     text-align: center;

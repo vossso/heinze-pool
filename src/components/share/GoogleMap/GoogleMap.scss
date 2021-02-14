@@ -1,0 +1,26 @@
+@import "../../../styles/_global";
+@import "../../../styles/_extends";
+@import "../../../styles/_media-queries";
+
+.GoogleMap {
+  margin-bottom: $margin-l;
+
+  &__wrapper {
+    width: 100%;
+    position: relative;
+  }
+  &__map {
+    width: 100%;
+    height: 49rem;
+    background-image: #fff;
+  }
+  &__link {
+    position: absolute;
+    width: auto;
+    @extend %box;
+    padding: $padding-xs;
+
+    top: $margin-m;
+    left: -$margin-xs;
+  }
+}

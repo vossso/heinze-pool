@@ -2,29 +2,11 @@
 @import "../../styles/media-queries";
 
 .Step {
-  width:auto;
-  margin:0 auto $margin-l;
-
-  @include respond-to(m) {
-    width: 50%;
-
-  &:nth-child(even) {
-    margin-left: 50%;
-
-    .Step__content {
-      float: left;
-      flex-direction: row-reverse;
-    }
-    .Step__hexa {
-      margin: auto -2.5rem auto $margin-m;
-    }
-  }
-}
+  width: auto;
+  margin: 0 auto $margin-l;
 
   &__content {
     position: relative;
-    // display: flex;
-    // align-items: center;
 
     > .TextBox {
       padding: $padding-s $padding-m;
@@ -36,11 +18,11 @@
       }
     }
 
-
     @include respond-to(m) {
       margin-top: -$margin-m/2;
       float: right;
       justify-content: flex-end;
+      height: 100%;
     }
   }
   &__hexa {
@@ -56,12 +38,37 @@
 
     @include respond-to(m) {
       width: 5rem;
-    margin: auto $margin-m auto -2.5rem;
-  }
+      top: 2rem;
+      bottom: 0;
+      left: auto;
+      right: -2rem;
+      margin: auto;
+    }
 
     > img {
       width: 100%;
       height: auto;
+    }
+  }
+
+  @include respond-to(m) {
+    width: 100%;
+    position: relative;
+    height: auto;
+    padding-right: 55%;
+
+    &:nth-child(odd) {
+      padding-right: 0;
+      padding-left: 55%;
+
+      .Step__content {
+        float: left;
+        flex-direction: row-reverse;
+      }
+      .Step__hexa {
+        left: -2rem;
+        right: auto;
+      }
     }
   }
 }

@@ -14,11 +14,13 @@ const StepByStep = ({ steps }) => {
         {/* <div className="StepByStep__line" /> */}
         <h3>Schritt für Schritt zu deinem Pool</h3>
         <p>Von der Idee in Ihrem Kopf bis hin zum fertigen Pool.</p>
-        {steps.map((element, index) => {
-          return (
-            <Step title={element.text} key={index} className={`no${index}`} />
-          );
-        })}
+        <div className="StepByStep__steps">
+          {steps.map((element, index) => {
+            return (
+              <Step title={element.text} key={index} className={`no${index}`} />
+            );
+          })}
+        </div>
       </div>
       {/* <SteppedLineTo
         from={`Step no0`}

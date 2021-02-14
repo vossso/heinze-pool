@@ -4,14 +4,18 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import ProductLinks from "../components/ProductLinks/ProductLinks";
 import Container from "../components/share/Container/Container";
+import useBreakpoint from "../hooks/useBreakpoint"
 
 import "./products-page.scss";
 
 export const ProductsPageTemplate = ({ title, products }) => {
+const BreakpointM = useBreakpoint('m');
+  const cVariant = BreakpointM ? ["full-height", "no-padding", "full-width"] :["full-height", "no-padding", "starter"]
+
   return (
     <div className="ProductsPage">
       <Container
-        variant={["full-height", "no-padding", "full-width", "starter"]}
+        variant={cVariant}
       >
         <div className="ProductsPage__content">
           <h3>{title}</h3>
