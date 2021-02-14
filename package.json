@@ -47,7 +47,8 @@
     "sass-loader": "10.1.0",
     "seamless-immutable": "7.1.4",
     "uuid": "3.4.0",
-    "webpack": "4.44.2"
+    "webpack": "4.44.2",
+    "yoga-layout-prebuilt": "^1.10.0"
   },
   "keywords": [
     "gatsby"
