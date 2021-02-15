@@ -1,11 +1,11 @@
 ---
 templateKey: faq-post
-title: Machen Sie auch die Gartengestaltung?
+title: Mein Wasser ist grün. Was soll ich tun?
 date: 2021-02-15T18:50:27.316Z
 description: >-
-  Nein, wir sind Spezialisten im Poolbau und fokussieren uns zu 100% auf das was
-  wir können und lieben. Gerne empfehlen wir Ihnen einen Garten- und
-  Landschaftsbauer aus Ihrer Nähe, der uns in der Vergangenheit überzeugen
-  konnte.
+  Diese Frage per Ferndiagnose zu beantworten ist sehr schwierig und lässt sich
+  nicht pauschal beantworten. Sie können uns gern jederzeit mit einer
+  Wasserprobe in unserem Geschäft in Altwarmbüchen, Hannover, für ein
+  ausführliches Fachgespräch oder eine professionelle Wasseranalyse besuchen.
 ---
 
