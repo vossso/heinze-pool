@@ -2,59 +2,90 @@
 templateKey: product-page
 image: /img/dsc_0204-2.jpg
 title: Zubehör
-description: Maecenas faucibus mollis interdum. Nullam id dolor id nibh
-  ultricies vehicula ut id elit.
 productElement:
-  - single: true
+  - description: >-
+      …erfreuen sich immer größerer Beliebtheit. Dank modernster Technik
+      ersparen die Roboter jede Menge Zeit und meistern ihre Aufgabe zuverlässig
+      und akkurat. Poolroboter arbeiten mit eigenem Motor und Filterkorb, so
+      dass sie Ihren Beckenboden, die Poolwände und die Wasserlinie unabhängig
+      von der Filteranlage reinigen können. Bitte beachten Sie, dass nicht jeder
+      Reinigungsroboter für jeden Pool geeignet ist. Er sollte daher speziell
+      für Ihre Gegebenheiten ausgesucht werden.
+    images:
+      - alt: Poolchemie
+        image: /img/p1020287-edit.jpg
+    introtext: >-
+      Unsere kleinen Helfer. Automatische Reinigungsroboter zur Reinigung des
+      Bodens, der Wände und der Wasserlinie.
+    single: true
     title: Poolroboter
-    introtext: Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-    description: Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor
-      mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-      Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis
-      dis parturient montes, nascetur ridiculus mus.
+  - description: >-
+      …sind für unsere Breitengrade eine sehr attraktive Erweiterung der
+      Poolanlage und im nachträglichen Einbau möglich. Wohltuende Temperaturen,
+      wann immer Sie das möchten, unabhängig von Wind und Wetter führen zu einem
+      erhöhten und häufigeren Badespaß. Am beliebtesten sind Luftwärmepumpen
+      (mit oder ohne Invertertechnik). Diese sollten stets richtig dimensioniert
+      werden. Bitte beachten Sie, dass eine Beckenbeheizung nur bei abgedeckten
+      Pools ihre volle Effizienz entfalten kann.
     images:
-      - image: /img/p1020287-edit.jpg
-        alt: Poolchemie
-  - single: true
-    title: Beckenheizung
-    introtext: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-      auctor. Donec ullamcorper nulla non metus auctor fringilla.
-    description: Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-      Vestibulum id ligula porta felis euismod semper. Integer posuere erat a
-      ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada
-      magna mollis euismod.
-    images:
-      - image: /img/p1020287-edit.jpg
-        alt: Beckenheizung
-  - single: true
-    title: Gegenstromanlage
+      - alt: Beckenheizung Poolheizungen
+        image: /img/p1020287-edit.jpg
+    introtext: >-
+      Wärmepumpen und Wärmetauscher bringen Ihnen Ihre Wunschwassertemperatur
+      unabhängig vom Wetter.
+    single: true
+    title: Poolheizungen
+  - description: >-
+      …erhöhen die Nutzungsmöglichkeiten Ihres Pools um ein Vielfaches. Für den
+      Hobbysportler, der morgens seine Trainingseinheit absolvieren möchte oder
+      den Triathleten als Vorbereitung, als Kinderattraktion, zur
+      Wassergymnastik oder punktuellen Massage. So werden auch kleine Becken zum
+      Endlospool. Wir finden für Sie die richtige Anlage, angepasst an Ihre
+      Bedürfnisse und den Gegebenheiten Ihres Gartens. Selbstverständlich
+      erhalten Sie bei uns auch alle weiteren Arten von Wasserattraktionen für
+      Ihren Pool.
     images:
       - alt: Gegenstromanlage
         image: /img/old_1987.png
-    introtext: Nullam quis risus eget urna mollis ornare vel eu leo.
-    description: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-      auctor. Vestibulum id ligula porta felis euismod semper. Nullam quis risus
-      eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at
-      eget metus.
-  - single: true
-    title: Einbauteile
-    introtext: Aenean lacinia bibendum nulla sed consectetur.
-    description: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
-      vestibulum. Aenean lacinia bibendum nulla sed consectetur. Donec
-      ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est
-      at lobortis.
+    introtext: >-
+      Verändern Sie Ihr komplettes Poolerlebnis mit einer Entscheidung. Als
+      Sportgerät, Spaßbringer oder Attraktion.
+    single: true
+    title: Gegenstromanlage
+  - description: >-
+      …gehören zum Pool wie das Wasser selbst. Doch der Begriff ist sehr dehnbar
+      und umfasst alle fest im Pool verbauten Teile, deren Wichtigkeit
+      unumstritten ist. Darunter fallen unter anderem die Ein- und Ablaufdüsen
+      oder der Skimmer. Richtig platziert sorgen diese Teile für die
+      Wasserhydraulik und ebnen den Weg zur und von der Filteranlage. Des
+      Weiteren fällt die Poolbeleuchtung unter diese Rubrik. Erst sie bringt das
+      Ambiente und einen ganzen eigenen Charme am Abend und bei Nacht in Ihren
+      Garten.
     images:
-      - alt: Einbauteile
+      - alt: Pool Einbauteile
         image: /img/old_1993-kopie.jpg
-  - single: true
-    title: PVC Fittinge
+    introtext: >-
+      Düsen, Skimmer, Beleuchtung und noch vieles mehr machen Ihre Anlage erst
+      vollständig und funktionsfähig.
+    single: true
+    title: Einbauteile
+  - description: >-
+      …gibt es in einer Vielzahl von Formen, Größen und Qualitäten. Sie dienen
+      als Verbindung Ihrer Komponenten und Leiter der Wasserwege und sind daher
+      für eine problemlose Funktionsweise unverzichtbar. Das Streckennetz sollte
+      sorgfältig geplant und die PVC Fittinge korrekt ausgesucht werden.
+      Selbstverständlich erhalten Sie bei uns neben einer großen Auswahl von PVC
+      Fittingen, auch PVC Rohre und PVC Flexschläuche, sowie den passenden
+      Kleber und Reiniger um Ihr Poolprojekt professionell und sicher zu
+      gestalten.
     images:
       - alt: PVC Fittinge
         image: /img/dsc_0204-2.jpg
-    introtext: Nullam id dolor id nibh ultricies vehicula ut id elit.
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-      blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    introtext: >-
+      Winkel, Bögen, Verschraubungen, Kugelhähne, T-Stücke, Muffen und weitere
+      sind die Träger Ihres Wassersystems
+    single: true
+    title: PVC Fittinge
 brands:
   - image: /img/bayrol_logo_web_rgb_small.jpg
     name: Bayrol
@@ -63,3 +94,4 @@ brands:
   - image: /img/rivierapool_logo_de.jpg
     name: Riviera Pool
 ---
+
