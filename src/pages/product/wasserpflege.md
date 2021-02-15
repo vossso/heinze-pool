@@ -2,59 +2,76 @@
 templateKey: product-page
 image: /img/old_1993-kopie.jpg
 title: Wasserpflege
-description: Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed
-  odio dui. Maecenas faucibus mollis interdum.
 productElement:
-  - single: true
+  - description: >-
+      …ist das Herzstück von Ihrem Pool. Sie sorgt für sauberes und gesundes
+      Wasser und sollte dementsprechend in Art und Größe richtig gewählt werden.
+      In unserem Sortiment finden Sie Filterkessel, klassisch als Sandfilter
+      oder weiteren Filtermedien, Kartuschenfilter und Cyclonefilter in
+      verschiedenen Ausführungen. Gemeinsam finden wir die optimale
+      Filtertechnik für Sie als Besitzer und Ihren Pool um die Wasserreinigung
+      so einfach und effizient wie möglich zu gestalten.
+    images:
+      - alt: Filtertechnik
+        image: /img/p1020287-edit.jpg
+    introtext: >-
+      Die Basis einer jeden Pooltechnik und der Grundstein für sauberes und
+      klares Wasser in vielerlei Variationen.
+    single: true
     title: Filtertechnik
-    introtext: Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.
-    description: Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec
-      sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at
-      eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta
-      sem malesuada magna mollis euismod.
+  - description: >-
+      …sind die Motoren Ihrer Poolanlage. Sie dienen nicht nur dem
+      Wassertransport zwischen Becken und Filter, sondern definieren auch eine
+      der vier Grundsäulen der Wasseraufbereitung, der Wasserhydraulik. Erst
+      durch eine optimal dimensionierte Pumpe wird die gewünschte
+      Wasserumwälzung erreicht und somit auch die Verteilung der Wasserchemie.
+      Hierfür spielen Laufzeit und Leistung der Poolpumpe eine signifikante
+      Rolle. Des Weiteren werden Pumpen für zahlreiche Wasserattraktionen, wie
+      Gegenstromanlagen, Schwallduschen oder Massagedüsen verwendet.
     images:
-      - image: /img/p1020287-edit.jpg
-        alt: Filtertechnik
-  - single: true
+      - alt: Pumpen
+        image: /img/202011221137-01.png
+    introtext: >-
+      Maschinen los, Wasser marsch! Qualitätspumpen für jeden Zweck und in jeder
+      Stärke sorgen für den richtigen Wassertransport.
+    single: true
     title: Pumpen
-    introtext: Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus
-      porttitor.
-    description: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-      auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-      auctor. Etiam porta sem malesuada magna mollis euismod. Curabitur blandit
-      tempus porttitor. Curabitur blandit tempus porttitor.
+  - description: >-
+      …vereinfachen und automatisieren die Wasserpflege. Die eingebaute Sensorik
+      misst kontinuierlich die Wasserwerte und dosiert dementsprechend die
+      Poolchemie, wodurch ein gleichbleibendes Desinfektionslevel gehalten wird.
+      Dies beugt verschiedenen Umwelteinflüssen vor, die zum schnelleren Abbau
+      der Poolchemie im Wasser führen können. Dosieranlagen gibt es in
+      verschiedenen Ausführungen. Sie können mit flüssigem Chlor, Brom oder
+      Aktivsauerstoff betrieben werden. Des Weiteren ist die Desinfektion über
+      Salzelektrolyse möglich. Eine automatische pH-Regulierung ist bei allen
+      unseren Dosieranlagen inbegriffen.
     images:
-      - image: /img/202011221137-01.png
-        alt: Pumpen
-  - single: true
+      - alt: Dosieranlagen
+        image: /img/old_1987.png
+    introtext: >-
+      Automatische Messung und Dosierung der Poolchemie, angepasst an Ihre
+      Beckenverhältnisse und äußere Gegebenheiten.
+    single: true
     title: Dosieranlagen
-    introtext: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-      auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-      eget lacinia odio sem nec elit.
-    description: Nullam quis risus eget urna mollis ornare vel eu leo. Lorem ipsum
-      dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam.
-      Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere
-      consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel
-      eu leo. Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis
-      parturient montes, nascetur ridiculus mus.
+  - description: >-
+      …sind unumgänglich und fester Bestandteil einer Poolanlage. Sie töten
+      Bakterien ab, bekämpfen Pilze und Algen und sorgen für kristallklares
+      Wasser. Voraussetzung dafür ist eine richtige und vor allem sichere
+      Verwendung. Bei der Wasserpflege wird zwischen den vier Hauptbestandteilen
+      pH-Regulierung, Desinfektion, Algenverhütung und Flockung/
+      Trübungsentfernung unterschieden. Jedoch hat jeder Pool seine ganz eigenen
+      Herausforderungen und sollte eine individuell angepasste Wasserpflege
+      erhalten. Bei starken Verschmutzungen und unlösbaren Wasserproblemen
+      profitieren Sie von unserer professionellen Wasseranalyse.
     images:
-      - image: /img/old_1987.png
-        alt: Dosieranlagen
-  - single: true
-    title: Poolchemie
-    introtext: Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus.
-    description: Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis
-      parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a
-      pharetra augue. Donec id elit non mi porta gravida at eget metus. Sed
-      posuere consectetur est at lobortis. Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo,
-      tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-    images:
-      - image: /img/old_1987.png
-        alt: Poolchemie
+      - alt: Poolchemie Wasserpflegemittel
+        image: /img/old_1987.png
+    introtext: >-
+      Desinfektion und Notwendigkeit. Nur sauberes und gesundes Wasser
+      garantiert einen unbeschwerten Badespaß
+    single: true
+    title: Wasserpflegemittel
 brands:
   - image: /img/alukov_bez_r.jpg
     name: Alukov
@@ -63,3 +80,4 @@ brands:
   - image: /img/rivierapool_logo_de.jpg
     name: Riviera Pool
 ---
+
