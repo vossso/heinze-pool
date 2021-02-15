@@ -11,20 +11,20 @@ reasonsArea:
         stetig weiter um Ihnen das bestmögliche Poolerlebnis bieten zu können.
       reason: Erfahrung
     - description: >-
-        Wir leben Pool! Und das als Familienunternehmen in 3. Generation. In
-        jedes Projekt fließt unser vollstes Herzblut, damals, wie heute und in
-        Zukunft!
+        Wir leben Pool! Und das als Familienunternehmen in der dritten
+        Generation. In jedes Projekt fließt unser vollstes Herzblut, damals, wie
+        heute und in Zukunft!
       reason: Familienunternehmen
     - description: >-
         Qualitativ hochwertiges Handwerk! Durch unser zuverlässiges, starkes
-        Team und unsere gewissenhaft ausgewählten Partner erfüllen wir Ihre
-        Wünsche mit höchstem Qualitätsanspruch.
+        Team und unsere ausgewählten Partner realisieren wir Ihre Poolwünsche
+        mit höchstem Qualitätsanspruch.
       reason: Qualität
-    - description: >-
+    - description: >
         Ihre Anlaufstelle direkt vor Ort! Profitieren Sie von uns als Ihr
         lokaler Ansprechpartner durch persönliche Beratung und einem schnellen
         Vor-Ort-Service.
-      reason: Loakl
+      reason: Lokal
     - description: >-
         Wir entscheiden selbst! Als unabhängiger Poolbauer können wir Ihnen das
         Beste aus einer Vielzahl ausgewählter Produkte verschiedener Hersteller
