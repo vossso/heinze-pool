@@ -67,7 +67,7 @@ productElement:
     introtext: >-
       Düsen, Skimmer, Beleuchtung und noch vieles mehr machen Ihre Anlage erst
       vollständig und funktionsfähig.
-    single: true
+    single: false
     title: Einbauteile
   - description: >-
       …gibt es in einer Vielzahl von Formen, Größen und Qualitäten. Sie dienen
@@ -84,7 +84,7 @@ productElement:
     introtext: >-
       Winkel, Bögen, Verschraubungen, Kugelhähne, T-Stücke, Muffen und weitere
       sind die Träger Ihres Wassersystems
-    single: true
+    single: false
     title: PVC Fittinge
 brands:
   - image: /img/bayrol_logo_web_rgb_small.jpg
