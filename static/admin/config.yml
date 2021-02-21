@@ -93,7 +93,6 @@ collections:
                   { label: Icon, name: image, widget: image },
                   { label: Keywords, name: alt, widget: string },
                   { label: Title, name: title, widget: string },
-                  { label: Einführungstext, name: description, widget: text },
                   { label: Text, name: text, widget: text },
                 ],
             }
@@ -228,7 +227,7 @@ collections:
               label: Zeitstrahl,
               name: history,
               widget: list,
-              label_singular: "Jahr hinzufügen",
+              label_singular: "year",
               fields:
                 [
                   {
@@ -257,7 +256,6 @@ collections:
                     widget: object,
                     fields:
                       [
-                        { label: Icon, name: image, widget: image },
                         { label: "Straße", name: street, widget: string },
                         { label: "PLZ & Ort", name: city, widget: string },
                       ],
@@ -268,7 +266,6 @@ collections:
                     widget: object,
                     fields:
                       [
-                        { label: Icon, name: image, widget: image },
                         { label: "Telefon", name: phone, widget: string },
                         { label: "Fax", name: fax, widget: string },
                       ],
@@ -279,7 +276,6 @@ collections:
                     widget: object,
                     fields:
                       [
-                        { label: Icon, name: image, widget: image },
                         { label: "E-Mail", name: mail, widget: string },
                         { label: "Webseite", name: web, widget: string },
                       ],
@@ -430,7 +426,7 @@ collections:
       - { label: "Erstellungsdatum", name: "date", widget: "datetime" }
       - { label: "Antwort", name: "description", widget: text }
   - name: "meta"
-    label: "META"
+    label: "Fußzeile"
     folder: "src/pages/meta"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"

@@ -1,62 +1,76 @@
 ---
 templateKey: product-page
 image: /img/p1020238.jpg
-title: Überdachung
-description: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-  nibh, ut fermentum massa justo sit amet risus. Duis mollis, est non commodo
-  luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean
-  lacinia bibendum nulla sed consectetur.
+title: Abdeckung
 productElement:
-  - single: true
-    title: Leichtbauhallen
+  - description: >-
+      …werden Ihrem „Gewächshausruf“ nicht gerecht. Vielmehr verbinden unsere
+      Abdeckungen praktischen Nutzen und modernes Design. Sie verlängern die
+      Badesaison, bieten vollsten Unfallschutz und weisen Schmutz und Dreck ab.
+      Das pulverbeschichtete Aluminium schmiegt sich in einer Vielzahl von
+      Formen und Farben zu Ihrer Poolüberdachung zusammen, als Universallösung
+      oder ganz individuell auf Maß. Höchste Qualität für Ihren Pool. Und wenn
+      es draußen mal zu heiß ist? Dank Schienenverlängerung können Sie die
+      Poolhalle einfach nach hinten verschieben.
     images:
       - alt: Leichtbauhallen
         image: /img/dsc_0204-2.jpg
-    introtext: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-      auctor. Etiam porta sem malesuada magna mollis euismod.
-    description: Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Aenean
-      lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
-      scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet
-      fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.
-  - single: true
-    title: Rolladen
-    introtext: Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit.
-    description: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-      nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur
-      purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper.
-      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient
-      montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget
-      metus. Vestibulum id ligula porta felis euismod semper.
+    introtext: >-
+      Pulverbeschichtetes Aluminium gepaart mit klarem Polycarbonat im modernen
+      Design als Halle für jeden Garten.
+    single: true
+    title: Überdachungen
+  - description: >-
+      … erhalten den Blick auf Ihren Pool, wunderschön wie er ist und das
+      Highlight in jedem Garten. Die elektrische Rollladenabdeckung ist in
+      verschiedenen Einbautechniken verfügbar. So ist die Ausführung am
+      Beckenrand, vollständig verschwunden hinter dem Pool oder als praktische
+      Sitzbank im Becken möglich. Die Abdeckung liegt auf dem Wasser auf und
+      kann bei Bedarf automatisch ein- und ausgefahren werden. Im geschlossenen
+      Zustand hält sie die Wärme im Becken, schützt vor Verdunstung und
+      Verschmutzung und heizt als Solarvariante das Wasser auf.
     images:
       - alt: Rolladen
         image: /img/2400_alles_aus.jpg
-  - single: true
-    title: Rollschutzplane
-    introtext: Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-      Donec sed odio dui.
-    description: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
-      vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
-      venenatis vestibulum. Curabitur blandit tempus porttitor. Praesent commodo
-      cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus
-      mollis interdum. Donec id elit non mi porta gravida at eget metus. Donec
-      ullamcorper nulla non metus auctor fringilla.
+    introtext: >-
+      Erhalten die Ästhetik Ihres Pools bei maximaler Effizienz und verschwinden
+      auf Knopfdruck.
+    single: true
+    title: Rolladen
+  - description: >-
+      …setzen auf Funktionalität und vereinen so die meisten praktischen
+      Vorteile. Sie schützen nicht nur vor Schmutz, sondern bieten ebenfalls
+      mehr Sicherheit für Kleinkinder und Tiere. Zudem werden Wärmeverlust und
+      Wasserverdunstung erheblich reduziert. Durch ihre stabile Bauweise, der
+      hohen Qualität des Polyestergewebes und der damit gegebenen Sicherheit
+      eignen sich die Rollschutzplanen hervorragend als Winterabdeckung. Sie
+      halten allen Witterungsverhältnissen stand, sind antibakteriell und
+      UV-beständig.
     images:
       - alt: Rollschutzplane
         image: /img/1200_alles_aus_dina4.jpg
-  - single: true
-    title: Luftpolsterplane
-    introtext: Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-      Vestibulum id ligula porta felis euismod semper.
-    description: Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio
-      dui. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo
-      risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit
-      tempus porttitor.
+    introtext: >-
+      Preiswerter Alleskönner. Sicherheitsabdeckung für die Sommer- und
+      Wintersaison in verschiedenen Farben.
+    single: true
+    title: Rollschutzplane
+  - description: >-
+      … oder auch Solarfolien genannt, sind schnell aufgelegt, beziehungsweise
+      abgerollt und daher die einfachste Art um Ihren Pool abzudecken. Dies
+      sollte bei Nichtbenutzung auch bestenfalls so sein um Ihre gewonnene Wärme
+      nicht wieder zu verlieren und eine übermäßige Verdreckung des
+      Beckenwassers zu verhindern. Dadurch wird die Filteranlage entlastet und
+      der Bedarf an Poolchemie im Becken kann reduziert werden. Unsere Planen
+      sind chlor- und UV-beständig und weise eine Stärke von mindestens 400 μm
+      auf.
     images:
       - alt: Luftpolsterplane
         image: /img/1200_ohne-alles.jpg
+    introtext: >-
+      Das Mindestmaß und die wohl einfachste Art sämtliche Vorteile einer
+      Abdeckung für sich zu nutzen.
+    single: true
+    title: Luftpolsterplanen
 brands:
   - image: /img/bayrol_logo_web_rgb_small.jpg
     name: Bayrol
@@ -65,3 +79,4 @@ brands:
   - image: /img/rivierapool_logo_de.jpg
     name: Riviera Pool
 ---
+

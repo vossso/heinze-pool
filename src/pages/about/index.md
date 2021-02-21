@@ -1,90 +1,94 @@
 ---
 templateKey: about-page
-path: /about
 title: Über uns
 titleimage:
-  image: /img/old_1993-kopie.jpg
   alt: helloo
-history:
-  - historyimage:
-      image: /img/202011221137-01.png
-      alt: Pool 1998
-    title: "1998"
-    description: Integer posuere erat a ante venenatis dapibus posuere velit
-      aliquet. Integer posuere erat a ante venenatis dapibus posuere velit
-      aliquet. **Maecenas** sed diam eget risus varius blandit sit amet non
-      magna.
-  - historyimage:
-      image: /img/old_1993-kopie.jpg
-      alt: hello
-    title: "1993"
-    description: Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-      eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet
-      fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.
-      Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam.
-  - historyimage:
-      image: /img/1200_alles_aus_dina4.jpg
-      alt: "1998"
-    title: "1998"
-    description: Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit
-      libero, a pharetra augue.
-  - historyimage:
-      image: /img/old_1987.png
-      alt: "1990"
-    title: "1990"
-    description: Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a
-      pharetra augue. Sed posuere consectetur est at lobortis.
-  - historyimage:
-      image: /img/1200_ohne-alles.jpg
-      alt: "2001"
-    title: "2001"
-    description: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-      auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+  image: /img/old_1993-kopie.jpg
 reasonsArea:
   reasonsList:
-    - reason: Erfahrung
-      description: Professionalität durch Erfahrung! Seit über 50 Jahren entwickeln
-        wir uns stetig weiter um Ihnen das bestmögliche Poolerlebnis bieten zu
-        können.
-    - reason: Familienunternehmen
-      description: Wir leben Pool! Und das als Familienunternehmen in 3. Generation.
-        In jedes Projekt fließt unser vollstes Herzblut, damals, wie heute und
-        in Zukunft!
-    - reason: Qualität
-      description: Qualitativ hochwertiges Handwerk! Durch unser zuverlässiges,
-        starkes Team und unsere gewissenhaft ausgewählten Partner erfüllen wir
-        Ihre Wünsche mit höchstem Qualitätsanspruch.
-    - reason: Loakl
-      description: Ihre Anlaufstelle direkt vor Ort! Profitieren Sie von uns als Ihr
+    - description: >-
+        Professionalität durch Erfahrung! Seit über 50 Jahren entwickeln wir uns
+        stetig weiter um Ihnen das bestmögliche Poolerlebnis bieten zu können.
+      reason: Erfahrung
+    - description: >-
+        Wir leben Pool! Und das als Familienunternehmen in der dritten
+        Generation. In jedes Projekt fließt unser vollstes Herzblut, damals, wie
+        heute und in Zukunft!
+      reason: Familienunternehmen
+    - description: >-
+        Qualitativ hochwertiges Handwerk! Durch unser zuverlässiges, starkes
+        Team und unsere ausgewählten Partner realisieren wir Ihre Poolwünsche
+        mit höchstem Qualitätsanspruch.
+      reason: Qualität
+    - description: >
+        Ihre Anlaufstelle direkt vor Ort! Profitieren Sie von uns als Ihr
         lokaler Ansprechpartner durch persönliche Beratung und einem schnellen
         Vor-Ort-Service.
-    - reason: Unabhängig
-      description: Wir entscheiden selbst! Als unabhängiger Poolbauer können wir Ihnen
-        das Beste aus einer Vielzahl ausgewählter Produkte verschiedener
-        Hersteller zusammenstellen.
+      reason: Lokal
+    - description: >-
+        Wir entscheiden selbst! Als unabhängiger Poolbauer können wir Ihnen das
+        Beste aus einer Vielzahl ausgewählter Produkte verschiedener Hersteller
+        zusammenstellen.
+      reason: Unabhängig
   title: 5 Gründe für Heinze-Pool
+history:
+  - description: "<h3>dam. Alte Celler Heerstraße (heute Lister Meile), Hannover\r</h3>\n\nAm Raschplatz fing alles an. Hier gründete Horst Heinze das Unternehmen als sogenannter Kiesplatzhändler in bester Lage direkt am Hauptbahnhof in Hannover."
+    historyimage:
+      alt: 'Lister Meile '
+      image: /img/202011221137-01.png
+    title: '1968'
+  - description: "<h3>1973 Lavesstraße, Hannover\r</h3>\n\nDurch Freundlichkeit, Expertise und viel Fleiß konnten wir 1973 unser erstes kleines Ladengeschäft in der Mitte von Hannover eröffnen. Nach dem Umzug in die Lavesstraße setzte sich unsere Erfolgsgeschichte fort."
+    historyimage:
+      alt: Lavesstraße Hannover
+      image: /img/1200_alles_aus_dina4.jpg
+    title: '1973'
+  - description: >-
+      <h3>Infa Hannover</h3>
+
+
+      Wir besuchten unzählige Messen als Aussteller und Gast. Ein Highlight als
+      Aussteller stellte dabei 1976 die Infa mit einem im Boden versenktem
+      Ausstellungspool und zwei Hallen dar.
+    historyimage:
+      alt: Info Hannover
+      image: /img/old_1987.png
+    title: '1976'
+  - description: "<h3>Schlehenweg, Langenhagen\r</h3>\n\nMit der Erweiterung unseres Angebots im Poolbereich wurde der Platz knapp und wir benötigten mehr Ausstellungsfläche. Der Schlehenweg in Langenhagen, am Rande von Hannover stellte sich als geeignetes Objekt heraus."
+    historyimage:
+      alt: 'Schlehenweg, Langenhagen'
+      image: /img/old_1993-kopie.jpg
+    title: '1990'
+  - description: >-
+      <h3>Merkurstraße, Garbsen</h3>
+
+
+      Mit dem Kunden weiterhin im Fokus stehend bauten wir aus, um unser Lager
+      zu vergrößern und schneller liefern zu können. Willkommen in der
+      Merkurstraße, Garbsen.
+    historyimage:
+      alt: 'Merkurstraße, Garbsen'
+      image: /img/1200_ohne-alles.jpg
+    title: '2001'
+  - description: >-
+      <h3>Daimlerstraße, Isernhagen</h3>
+
+
+      Heute finden Sie uns professioneller und erfahrender als je zuvor in der
+      Daimlerstraße in Isernhagen vor, mit einem wunderbaren Team und viel
+      Freude an dem was wir tun.
+    historyimage:
+      alt: Daimlerstraße Iserrnhagen
+      image: /img/p1020238.jpg
+    title: Heute
 contactblock:
   adress:
-    image: /img/icons_hp-22.png
-    street: "Daimlerstr. 9 "
     city: 30916 Isernhagen
+    image: /img/icons_hp-22.png
+    street: 'Daimlerstr. 9 '
   numbers:
+    fax: 0511 2713147
     image: /img/icons_hp-26.png
     phone: 0511 2713145
-    fax: 0511 2713147
-  webadress:
-    image: /img/icons_hp-25.png
-    mail: info@heinze-pool.de
-    web: heinze-pool.de
-  openhours:
-    image: /img/202011221137-01.png
-    regularhours: |-
-      Mo - Fr
-      10 - 16 Uhr
-
-      Sa
-      10 - 13 Uhr
-    specialinfo: Oktober bis März Samstags geschlossen
   openinghours:
     - daysbegin: Montag
       daysend: Freitag
@@ -92,7 +96,12 @@ contactblock:
       timeend: 16
     - daysbegin: Samstag
       daysend: Samstag
+      specialinfo: Oktober bis März Samstags geschlossen.
       timebegin: 10
       timeend: 13
-      specialinfo: Oktober bis März Samstags geschlossen.
+  webadress:
+    image: /img/icons_hp-25.png
+    mail: info@heinze-pool.de
+    web: heinze-pool.de
 ---
+
