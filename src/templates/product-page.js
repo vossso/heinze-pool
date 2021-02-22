@@ -13,8 +13,6 @@ export const ProductPageTemplate = ({ data }) => {
   const location = useWindowLocation();
   const pathname = decodeURI(location.pathname);
 
-  // console.log("edges", edges);
-  // console.log(pathname);
 
   const products = {
     pools: edges
@@ -39,12 +37,8 @@ export const ProductPageTemplate = ({ data }) => {
 
   useEffect(() => {
     var sliced = pathname.split("/");
-    // console.log(products[sliced[sliced.length - 1]]);
     setProduct(products[sliced[sliced.length - 1]]);
-    // console.log("Product", product);
   }, [pathname, products]);
-
-  // const { title, image, productElement, brands } = product.node.frontmatter;
 
   return (
     <div>

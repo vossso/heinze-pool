@@ -16,8 +16,10 @@ const ProductPageTemp: React.FC<IProductPageTempProps> = ({ product }) => {
   useEffect(() => {
     if (product && product.node) {
       setContent(product.node.frontmatter);
+    } else if (product && product.templateKey) {
+      setContent(product);
     }
-  }, []);
+  }, [product]);
 
   return content ? (
     <div className="ProductPageTemp">

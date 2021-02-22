@@ -8,11 +8,11 @@ import TextBox from "../share/TextBox/TextBox";
 import useBreakpoint from "../../hooks/useBreakpoint";
 
 const Reasons = ({ title, reasonsList }) => {
-  const BreakpointM = useBreakpoint("m");
+  const BreakpointL = useBreakpoint("l");
   return reasonsList.length > 0 ? (
     <div className="Reasons">
       {/* ToDo Starter */}
-      <Container variant={["full-height"]}>
+      <Container variant={["full-height", "starter"]}>
         <div className="Reasons__wrapper">
           <h3>{title}</h3>
           <div className="Reasons__content">
@@ -26,7 +26,7 @@ const Reasons = ({ title, reasonsList }) => {
                   <TextBox
                     title={reason}
                     text={description}
-                    variant={BreakpointM ? "auto-height" : null}
+                    variant={BreakpointL ? "auto-height" : null}
                   />
                 </div>
               );

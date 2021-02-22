@@ -99,7 +99,6 @@ export const ServicePageQuery = graphql`
           }
           text
           title
-          description
         }
         shop {
           text

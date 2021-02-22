@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import ProductTeaser from "../ProductTeaser/ProductTeaser";
 import GroupTeaser from "../GroupTeaser/GroupTeaser";
@@ -8,7 +8,7 @@ import "./ProductTeasers.scss";
 import useBreakpoint from "../../hooks/useBreakpoint";
 
 const ProductTeasers = ({ products }) => {
-  const BreakpointL = useBreakpoint("l");
+  const BreakpointL = useBreakpoint("s");
   const productTeasers = products
     ? BreakpointL
       ? products

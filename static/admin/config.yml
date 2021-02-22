@@ -47,7 +47,7 @@ collections:
               default: "portfolio-page",
             }
           - { label: Titel, name: title, widget: string }
-          - { label: Einführungstext, name: description, widget: text }
+          - { label: Einführungstext, name: description, widget: markdown }
           - {
               label: Bilder,
               name: imageTeasers,

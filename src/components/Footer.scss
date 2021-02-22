@@ -87,7 +87,9 @@
   // width: 100vw;
   &__subline {
     margin-bottom: $margin-m;
+    a,
     p {
+      text-decoration: none;
       color: $hp-white;
       display: inline;
       margin: $margin-m $margin-m 0 0;

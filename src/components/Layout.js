@@ -7,7 +7,7 @@ import { withPrefix } from "gatsby";
 import "./Layout.scss";
 
 const TemplateWrapper = ({ hasFooter = true, children }) => {
-  const { title, description } = useSiteMetadata();
+  const { title, description } = useSiteMetadata(); 
   return (
     <div>
       <Helmet>
@@ -49,7 +49,7 @@ const TemplateWrapper = ({ hasFooter = true, children }) => {
           content={`${withPrefix("/")}img/og-image.jpg`}
         />
       </Helmet>
-      <Navbar />
+      <Navbar/>
       <div>{children}</div>
       {hasFooter && <Footer />}
     </div>

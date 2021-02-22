@@ -77,7 +77,7 @@ const Footer: React.FC<IFooterProps> = ({ data }) => {
           />
         </div>}
         <div className="Footer__subline">
-          <p>Impressum</p>
+          <a href='./meta/impressum'>Impressum</a>
           <p>Datenschutz</p>
         </div>
       </Container>

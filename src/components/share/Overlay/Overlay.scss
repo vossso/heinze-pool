@@ -9,6 +9,7 @@
   left: 0;
 
   &__bg {
+    z-index: 1;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -23,9 +24,28 @@
     background: rgba($hp-white, 0.8);
   }
 
-  & button {
-      cursor: pointer;
-      float: right;
-      margin-top: $margin-m;
+  &__content {
+    margin-top: $margin-xl + $margin-menu;
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  &__text {
+    flex: 0 0 20%;
+  }
+  &__image {
+    flex: 1 1 auto;
+    margin-left: $spacer-m;
+  }
+  &__close {
+    position: absolute;
+    top: $margin-l;
+    right: $margin-l;
+    z-index: 2;
+    cursor: pointer;
   }
 }

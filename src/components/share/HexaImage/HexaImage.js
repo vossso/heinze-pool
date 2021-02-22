@@ -1,17 +1,18 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 import "./HexaImage.scss";
 import Overlay from "../Overlay/Overlay";
 import Hexagon from "react-hexagon";
+import { CSSTransition } from "react-transition-group";
 
 const HexaImage = ({ title, description, imageInfo }) => {
   const [showOverlay, setShowOverlay] = useState(false);
+
   const getImagePath = () => {
     const { childImageSharp, image } = imageInfo;
     if (!!image && !!image.childImageSharp) {
       return image.childImageSharp.fluid.src;
     }
-
     if (!!childImageSharp) {
       return childImageSharp.fluid.src;
     }
@@ -21,27 +22,37 @@ const HexaImage = ({ title, description, imageInfo }) => {
     return null;
   };
 
+  const onClick = () => {
+    setShowOverlay(!showOverlay);
+  };
+
   return (
     <div className="HexaImage">
-      <button onClick={() => setShowOverlay(!showOverlay)}>
+      <button onClick={onClick}>
         <Hexagon
           className="HexaImage__poly"
           backgroundImage={getImagePath()}
           flatTop
-          onClick={() => console.log("clicked")}
           style={{ stroke: "transparent" }}
           backgroundScale={2}
           hexProps={{ strokeLinecap: "round" }}
         />
       </button>
-      {showOverlay && (
-        <Overlay
-          title={title}
-          image={imageInfo}
-          description={description}
-          onClick={() => setShowOverlay(!showOverlay)}
-        />
-      )}
+      {
+        <CSSTransition
+          in={showOverlay}
+          timeout={300}
+          classNames="alert"
+          unmountOnExit
+        >
+          <Overlay
+            title={title}
+            image={imageInfo}
+            description={description}
+            onClick={onClick}
+          />
+        </CSSTransition>
+      }
     </div>
   );
 };

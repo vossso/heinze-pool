@@ -5,10 +5,13 @@ import "./GroupTeaser.scss";
 import PreviewCompatibleImage from "../share/Image/PreviewCompatibleImage";
 import Container from "../share/Container/Container";
 import TextBox from "../share/TextBox/TextBox";
+import useBreakpoint from "../../hooks/useBreakpoint";
 
 const GroupTeaser = ({ products }) => {
+  const BreakpointM = useBreakpoint('l');
+  const variant = BreakpointM ? "" : ["full-height", "starter"];
   return (
-    <Container variant={["full-height", "starter"]} id="Sonstige">
+    <Container variant={variant} id="Sonstige">
       <div className="GroupTeaser">
         {products.map((product, index) => {
           const { title, description, images } = product;

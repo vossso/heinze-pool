@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import ProductLink from "../ProductLink/ProductLink";
 import "./ProductLinks.scss";
@@ -17,7 +17,6 @@ const ProductLinks = ({ products }) => {
             key={index}
             onMouseEnter={() => {
               setActiveId(index);
-              console.log("mouse over " + index);
             }}
             onMouseLeave={() => {
               setActiveId(4);

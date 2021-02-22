@@ -9,6 +9,11 @@ import Container from "../share/Container/Container";
 const ProductOverview = ({ primeProducts, secondProducts }) => {
   const Breakpoint = useBreakpoint("xl");
   const variant = Breakpoint ? ["half-height", "full-width"] : "half-height";
+  const secondIntro = [];
+
+  secondProducts.forEach( element => {
+    secondIntro.push(element.introtext)
+  });
 
   return (
     <div className="ProductOverview">
@@ -24,10 +29,10 @@ const ProductOverview = ({ primeProducts, secondProducts }) => {
               />
             );
           })}
-          <ProductOverviewElement
-            title="Sonstige"
-            description="Hier findest du noch weitere Produkte"
-          />
+          {secondProducts.length > 0 && <ProductOverviewElement
+            title="Sontige"
+            description={secondIntro[0]}
+          />}
         </div>
       </Container>
     </div>

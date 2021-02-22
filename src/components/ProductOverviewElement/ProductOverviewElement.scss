@@ -39,5 +39,10 @@
     position: absolute;
     bottom: -3rem;
     right: $margin-l/2;
+    transition: transform $duration-s;
+
+    &:hover {
+      transform: rotate(90deg);
+    }
   }
 }

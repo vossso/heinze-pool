@@ -1,7 +1,5 @@
-import React, { useRef } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-// import SteppedLineTo from "react-lineto";
-import CSSTransitionGroup from "react-transition-group";
 
 import "./StepByStep.scss";
 import Container from "../share/Container/Container";
@@ -22,17 +20,6 @@ const StepByStep = ({ steps }) => {
           })}
         </div>
       </div>
-      {/* <SteppedLineTo
-        from={`Step no0`}
-        fromAnchor="center right"
-        to={`Step no1`}
-        toAnchor="center left"
-        borderColor="#1E3769"
-        borderWidth="2px"
-
-        orientation="h"
-
-      /> */}
     </Container>
   ) : null;
 };

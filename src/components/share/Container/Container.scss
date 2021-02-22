@@ -45,6 +45,7 @@
 
     @include respond-to(xl) {
       height: 100vh;
+      max-height: 100rem;
     }
   }
   &--half-height {
@@ -54,6 +55,7 @@
 
     @include respond-to(xl) {
       height: 50vh;
+      max-height: 50rem;
     }
   }
   &--full-width {
