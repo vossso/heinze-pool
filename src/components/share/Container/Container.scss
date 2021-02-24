@@ -54,7 +54,7 @@
     // border: solid blue 2px;
 
     @include respond-to(xl) {
-      height: calc(50vh - $margin-menu/2);
+      height: calc(50vh - 8rem/2);
       max-height: 50rem;
     }
   }
