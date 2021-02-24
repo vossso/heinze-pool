@@ -12,6 +12,7 @@ productElement:
       Rechtwinklige Treppenkanten und Innenecken, sowie perfekt gerade Wände
       sprechen eine klare Linie für modernes Design und eignen sich daher auch
       hervorragend für Überlaufpools. 
+    image: /img/hp_iconset_v1_icon_wart-white.svg
     images:
       - alt: poly
         image: /img/202011221137-01.png
@@ -28,6 +29,7 @@ productElement:
       steht eine große Varianten- und Farbvielfalt oder ein schlicht elegantes
       Design. Als Ceramic Pool werden Becken bezeichnet dessen Festigkeit durch
       eine zusätzliche Schicht, der sogenannten Ceramic Schicht, erhöht werden.
+    image: /img/hp_iconset_v1_icon_wart-white.svg
     images:
       - alt: tag1
         image: /img/p1020287-edit.jpg
@@ -43,6 +45,7 @@ productElement:
       erreichen. Durch das Zusammensetzen der Elemente in der Grube ist ein
       Einbau an schwer zugänglichen Orten, wie zum Beispiel einem Hinterhaus mit
       engem Garten, möglich. Dementsprechend entfallen die Krankosten.
+    image: /img/hp_iconset_v1_icon_wa-dreckig.svg
     images:
       - alt: Container
         image: /img/1200_alles_aus_dina4.jpg
@@ -57,6 +60,7 @@ productElement:
       ein Highlight in Ihren Garten. Durch die stabile, freitragende Bauweise
       der Container und der bereits vormontierten Technik ist die Montage sowohl
       oberirdisch als auch teileingelassen möglich.
+    image: /img/hp_iconset_v1_icon_wa-dreckig.svg
     images:
       - alt: Container Pools
         image: /img/p1020238.jpg
@@ -71,6 +75,7 @@ productElement:
       spiegeln den Inbegriff von Sinnlichkeit und Ruhe wider. So fördern Sie
       Ihre Durchblutung, entlasten Ihre Gelenke und lösen Ihre verspannten
       Muskelpartien.
+    image: /img/hp_iconset_v1_icon_wa-dreckig.svg
     images:
       - alt: tag whirlpool
         image: /img/dsc_0204-2.jpg
