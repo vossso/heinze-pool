@@ -15,6 +15,13 @@
     }
   }
 
+  > p {
+    @include respond-to(m) {
+      font-size: $fs-p;
+      line-height: 1.6;
+    }
+  }
+
   > a {
     margin-top: $margin-m;
   }

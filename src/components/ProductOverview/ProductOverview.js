@@ -7,7 +7,7 @@ import "./ProductOverview.scss";
 import Container from "../share/Container/Container";
 
 const ProductOverview = ({ primeProducts, secondProducts }) => {
-  const Breakpoint = useBreakpoint("xl");
+  const Breakpoint = useBreakpoint("xxl");
   const variant = Breakpoint ? ["half-height", "full-width"] : "half-height";
   const secondIntro = [];
 
@@ -20,17 +20,18 @@ const ProductOverview = ({ primeProducts, secondProducts }) => {
       <Container variant={variant}>
         <div className="ProductOverview__content">
           {primeProducts.map((product, index) => {
-            const { title, introtext } = product;
+            const { title, introtext, image } = product;
             return (
               <ProductOverviewElement
                 key={index}
                 title={title}
                 description={introtext}
+                image={image}
               />
             );
           })}
           {secondProducts.length > 0 && <ProductOverviewElement
-            title="Sontige"
+            title="Sonstige"
             description={secondIntro[0]}
           />}
         </div>

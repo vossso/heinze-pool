@@ -25,7 +25,6 @@ const GoogleMap: React.FC<IGoogleMap> = ({ address }) => {
     position
   );
 
-  console.log(currentPos);
   const isMaxVpS = useBreakpoint("s");
 
   const offset =

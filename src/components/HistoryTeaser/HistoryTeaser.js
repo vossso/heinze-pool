@@ -10,7 +10,7 @@ import useBreakpoint from "../../hooks/useBreakpoint";
 const HistoryTeaser = ({ data }) => {
   const { title: year, description, historyimage } = data;
   const BreakpointM = useBreakpoint("m");
-  const variant = BreakpointM ? "full-width" : ["no-padding", "starter","no-top"];
+  const variant = BreakpointM ? "full-width" : ["no-padding", "no-top", "no-bottom"];
 
   return (
     <div className="HistoryTeaser">

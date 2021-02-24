@@ -5,8 +5,8 @@
   height: auto;
   width: 100%;
 
-  > div {
-    padding: 0 $spacer-m $spacer-m;
+  > .Contianer {
+    padding: $margin-menu+$margin-m $spacer-m $margin-m;
   }
 
   > h3 {

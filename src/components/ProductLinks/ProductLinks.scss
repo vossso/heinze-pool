@@ -9,35 +9,34 @@ $duration: 0.5s;
   @include respond-to(m) {
     display: flex;
     flex-direction: row;
-    margin-left: $margin-m;
 
     &__image {
       flex: 1 1 auto;
-      margin: $margin-l 0 0 $margin-l;
+      margin-left: $margin-xl;
 
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
-      transition: background-image $duration ease-in-out;
+      transition: all $duration ease-in-out;
 
       &--0 {
-        transition: background-image $duration ease-in-out;
+        transition: all $duration ease-in-out;
         background-image: url("../../img/Pool_pool.jpg");
       }
       &--1 {
-        transition: background-image $duration ease-in-out;
-        background-image: url("../../img/Pool_wasser.jpg");
-      }
-      &--2 {
-        transition: background-image $duration ease-in-out;
+        transition: all $duration ease-in-out;
         background-image: url("../../img/Pool_roof.jpg");
       }
+      &--2 {
+        transition: all $duration ease-in-out;
+        background-image: url("../../img/Pool_wasser.jpg");
+      }
       &--3 {
-        transition: background-image $duration ease-in-out;
+        transition: all $duration ease-in-out;
         background-image: url("../../img/Pool_zub.jpg");
       }
       &--4 {
-        transition: background-image $duration ease-in-out;
+        transition: all $duration ease-in-out;
         background-image: url("../../img/Pool_all.jpg");
       }
     }
@@ -48,7 +47,7 @@ $duration: 0.5s;
     margin: 0 auto;
 
     @include respond-to(m) {
-      flex: 0 0 35%;
+      flex: 0 0 40%;
       margin: 0;
     }
   }

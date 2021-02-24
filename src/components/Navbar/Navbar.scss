@@ -5,13 +5,14 @@
 .Navbar {
   position: fixed;
   top: 0;
-  z-index: 52;
+  z-index: 101;
   width: 100vw;
   @extend %box;
 
   height: $margin-menu-mobile;
 
   @include respond-to(m) {
+    z-index: 52;
     height: $margin-menu;
     transition: opacity $duration-s;
 
@@ -148,7 +149,6 @@
 
     background-color: $hp-white;
     padding: $padding-xs;
-    margin-left: -$padding-xs;
 
     display: flex;
     justify-content: space-between;

@@ -12,7 +12,6 @@ const useGeoPosition = (key, address) => {
       const res = await axios.get(
         `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${key}`
       );
-      console.log(res);
 
       const result = res.data.results[0].geometry.location;
       if (result.lat !== null && result.lng !== null) {

@@ -367,6 +367,7 @@ collections:
           label_singular: "Teaser hinzufügen",
           fields:
             [
+              { label: Icon, name: image, widget: image },
               { label: Title, name: title, widget: string, required: false },
               {
                 label: Einführungstext,

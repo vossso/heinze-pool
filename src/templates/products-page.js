@@ -10,7 +10,7 @@ import "./products-page.scss";
 
 export const ProductsPageTemplate = ({ title, products }) => {
 const BreakpointM = useBreakpoint('m');
-  const cVariant = BreakpointM ? ["full-height", "no-padding", "full-width"] :["full-height", "no-padding", "starter"]
+  const cVariant = BreakpointM ? ["full-height", "no-padding", "full-width"] :["full-height", "no-padding", "starter", "full-width"]
 
   return (
     <div className="ProductsPage">

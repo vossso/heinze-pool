@@ -23,6 +23,7 @@
     margin: 0;
     text-align: left;
     font-size: $fs-h4-mobile;
+    text-transform: unset;
 
     @include respond-to(m) {
       font-size: $fs-h4;

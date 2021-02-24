@@ -29,6 +29,7 @@ productElement:
       kann bei Bedarf automatisch ein- und ausgefahren werden. Im geschlossenen
       Zustand hält sie die Wärme im Becken, schützt vor Verdunstung und
       Verschmutzung und heizt als Solarvariante das Wasser auf.
+    image: /img/wa-dreckig.svg
     images:
       - alt: Rolladen
         image: /img/2400_alles_aus.jpg
@@ -46,6 +47,7 @@ productElement:
       eignen sich die Rollschutzplanen hervorragend als Winterabdeckung. Sie
       halten allen Witterungsverhältnissen stand, sind antibakteriell und
       UV-beständig.
+    image: /img/wa-dreckig.svg
     images:
       - alt: Rollschutzplane
         image: /img/1200_alles_aus_dina4.jpg
@@ -63,6 +65,7 @@ productElement:
       der Bedarf an Poolchemie im Becken kann reduziert werden. Unsere Planen
       sind chlor- und UV-beständig und weise eine Stärke von mindestens 400 μm
       auf.
+    image: /img/wa-dreckig.svg
     images:
       - alt: Luftpolsterplane
         image: /img/1200_ohne-alles.jpg

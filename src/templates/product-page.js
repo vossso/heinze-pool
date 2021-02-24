@@ -101,6 +101,13 @@ export const ProductPageQuery = graphql`
               }
             }
             productElement {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 500) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
               title
               single
               introtext

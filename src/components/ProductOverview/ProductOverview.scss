@@ -3,6 +3,9 @@
 .ProductOverview {
   height: 100%;
   margin-bottom: 5rem;
+  padding-left: $padding-m;
+  position: relative;
+  z-index: 100;
 
   &__content {
     position: relative;
@@ -13,10 +16,12 @@
     margin-top: $margin-m;
     z-index: 10;
 
-    overflow-x: scroll;
+    overflow: scroll;
     overflow-y: visible;
     width: 100vw;
     padding-right: $margin-l;
+
+    min-height: 40rem;
 
     @include respond-to(xl) {
       width: 100%;
