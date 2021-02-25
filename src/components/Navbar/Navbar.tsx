@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import "./Navbar.scss";
 
@@ -6,61 +6,26 @@ import logo from "../../img/hp-logo_typo.jpg";
 import logo2 from "../../img/hp-logo_typo-white.png";
 import getVariantClasses from "../../helpers/getVariantClass";
 import useBreakpoint from "../../hooks/useBreakpoint";
-import useScrollPos from "../../hooks/useScrollPos";
 import MobileNav from "../MobileNav/MobileNav";
-import useWindowLocation from "../../hooks/useWindowLocation";
 
 interface INavbarProps {
   variant: string;
-  offset: number;
 }
 
-const Navbar: React.FC<INavbarProps> = ({ variant, offset }) => {
+const Navbar: React.FC<INavbarProps> = ({ variant }) => {
   const [showDrop, setShowDrop] = useState(false);
-  const [showDefaultNav, setShowDefaultNav] = useState(false);
-  const location = useWindowLocation().pathname;
+  const [showMobileNav, setShowMobileNav] = useState(false);
 
   const BreakpointM = useBreakpoint("m");
+
   const className = getVariantClasses("Navbar", variant);
-  const currentScrollY = useScrollPos();
-
-  const ignorePages = ["/portfolio", "/meta/impressum", "/products"];
-
-  if(location == "/faq") {
-    offset = 450;
-  }
-
-  useEffect(() => {
-    const diff = BreakpointM ? window.innerHeight - 100 : offset ? offset : (window.innerHeight - 20);
-    if (
-      currentScrollY >= diff ||
-      ignorePages.find((element) => element === location)
-    ) {
-      setShowDefaultNav(true);
-    } else {
-      setShowDefaultNav(false);
-    }
-  }, [currentScrollY, location]);
-
-  const getLink = (to, label) => {
-    return (
-      <Link className={`Navbar__link${location && location.includes(to) ? " Navbar__link--active" : ""}`} to={to}>
-        {label}
-      </Link>
-    );
-  };
-
   return (
-    <nav
-      className={variant ? className : "Navbar"+ `${showDefaultNav ? "" : " Navbar--transparent"}`}
-      role="navigation"
-      aria-label="main-navigation"
-    >
+    <nav className={className} role="navigation" aria-label="main-navigation">
       <div className="Navbar__container">
         <div id="navMenu" className={`Navbar__desktop`}>
           <div className="Navbar__left">
             <Link to="/" className="Navbar__start" title="Logo">
-              {variant === "transparent" || !showDefaultNav ? (
+              {variant === "transparent" ? (
                 <img src={logo2} alt="Heinze-Pool" />
               ) : (
                 <img src={logo} alt="Heinze-Pool" />
@@ -69,45 +34,69 @@ const Navbar: React.FC<INavbarProps> = ({ variant, offset }) => {
           </div>
 
           {BreakpointM ? (
-            <MobileNav />
+            <div className="Navbar__mobile">
+              <button
+                className="Navbar__burger"
+                onClick={() => setShowMobileNav(true)}
+              >
+                <div />
+                <div />
+                <div />
+              </button>
+            </div>
           ) : (
             <div className="Navbar__right">
-              {getLink("/service","Leistungen")}
+              <Link className="navbar-item" to="/service">
+                Leistungen
+              </Link>
               <div className="Navbar__ext">
-                <div
-                  className={`Navbar__link${
-                    showDrop ? " Navbar__link--active" : ""
-                  }`}
-                  onClick={() => {
-                    setShowDrop(!showDrop);
-                  }}
+                <button
+                  className="Navbar__link"
+                  onClick={() => setShowDrop(!showDrop)}
                 >
-                  {/* <span
+                  <div
                     className={`Navbar__plus${
                       showDrop ? " Navbar__plus--active" : ""
                     }`}
                   >
                     +
-                  </span> */}
+                  </div>
                   Produkte
-                </div>
+                </button>
                 <div
                   className={`Navbar__dropdown${
                     showDrop ? " Navbar__dropdown--active" : ""
                   }`}
                 >
-                  {getLink("/products", "Übersicht")}
-                  {getLink("/product/pools", "Pools")}
-                  {getLink("/product/überdachung", "Abdeckung")}
-                  {getLink("/product/wasserpflege", "Wasserpflege")}
-                  {getLink("/product/zubehör", "Zubehör")}
+                  <Link className="navbar-item" to="/products">
+                    Übersicht
+                  </Link>
+                  <Link className="navbar-item" to="/product/pools">
+                    Pools
+                  </Link>
+                  <Link className="navbar-item" to="/product/überdachung">
+                    Überdachung
+                  </Link>
+                  <Link className="navbar-item" to="/product/wasserpflege">
+                    Wasserpflege
+                  </Link>
+                  <Link className="navbar-item" to="/product/zubehör">
+                    Zubehör
+                  </Link>
                 </div>
               </div>
-              {getLink("/about", "Über uns")}
-              {getLink("/faq", "FAQ")}
+              <Link className="navbar-item" to="/about">
+                Über uns
+              </Link>
+              <Link className="navbar-item" to="/faq">
+                FAQ
+              </Link>
             </div>
           )}
         </div>
+      </div>
+      <div className="Navbar__mobile-screen">
+        <MobileNav show={showMobileNav} />
       </div>
     </nav>
   );

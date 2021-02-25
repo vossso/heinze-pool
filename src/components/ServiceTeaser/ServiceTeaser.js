@@ -19,7 +19,7 @@ const ServiceTeaser = ({ content }) => {
             labor.map((element, index) => {
               const { title, text, image, alt } = element;
               return (
-                <div className="ServiceTeaser__box" key={index}>
+                <div className="ServiceTeaser__box">
                   <ServiceTeaserElement
                     title={title}
                     text={text}

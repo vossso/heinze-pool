@@ -6,7 +6,7 @@ import Container from "../share/Container/Container";
 const Quote = ({ quote }) =>
   quote.text ? (
     <div className="Quote">
-      <Container variant={["half-height--start"]}>
+      <Container variant={["half-height"]}>
         <div className="Quote__wrapper">
           <p className="Quote__text">{quote.text}</p>
           {quote.author && <p className="Quote__author">{quote.author}</p>}

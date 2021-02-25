@@ -6,7 +6,6 @@ $padding-m: calc(13rem / 2);
 $padding-l: calc(18rem / 2);
 
 .HexaPattern {
-  margin-top: $margin-xl;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -60,7 +59,7 @@ $padding-l: calc(18rem / 2);
     }
     @include respond-to(m) {
       &:not(:first-child) {
-        margin-left: -4.5rem;
+        margin-left: -5.5rem;
       }
       &:nth-child(odd) {
         padding-top: $padding-l;

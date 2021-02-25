@@ -1,44 +1,30 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { graphql } from "gatsby";
-import Layout from "../components/Layout";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+import Layout from '../components/Layout'
 
-import Stage from "../components/Stage/Stage";
-import ServiceOverview from "../components/ServiceOverview/ServiceOverview";
-import StepByStep from "../components/StepByStep/StepByStep";
-import ServiceTeaser from "../components/ServiceTeaser/ServiceTeaser";
-import ProductTeaser from "../components/ProductTeaser/ProductTeaser";
-import ScrollArrow from "../components/share/ScrollArrow/ScrollArrow";
+import Stage from '../components/Stage/Stage'
+import ServiceOverview from '../components/ServiceOverview/ServiceOverview'
+import StepByStep from '../components/StepByStep/StepByStep'
+import ServiceTeaser from '../components/ServiceTeaser/ServiceTeaser'
+import ProductTeaser from '../components/ProductTeaser/ProductTeaser'
 
-export const ServicePageTemplate = ({
-  title,
-  image,
-  description,
-  sOverview,
-  steps,
-  laborArea,
-  shop,
-}) => {
+export const ServicePageTemplate = ({ title, image, description, sOverview, steps, laborArea, shop }) => {
+
   return (
-    <div className="ServicePage">
-      <div className="ServicePage__stage">
-        <Stage title={title} image={image} />
-      </div>
-      <div className="ServicePage__content">
-        <ServiceOverview services={sOverview} description={description} />
-        <StepByStep steps={steps} />
-        <ServiceTeaser content={laborArea} />
-        <ProductTeaser
-          title={shop.title}
-          images={[shop.imageObject]}
-          description={shop.text}
-          link="/about"
-          linkLabel="Vereinbaren Sie einen Termin"
-        />
-      </div>
-    </div>
-  );
-};
+            <div className="ServicePage">
+              <div className="ServicePage__stage">
+                <Stage title={title} image={image}/>
+              </div>
+              <div className="ServicePage__content">
+                <ServiceOverview services={sOverview} description={description}/>
+                <StepByStep steps={steps} />
+                <ServiceTeaser content={laborArea}/>
+                <ProductTeaser title={shop.title} images={[shop.imageObject]} description={shop.text} link="/about" linkLabel="Vereinbaren Sie einen Termin"/>
+              </div>
+            </div>
+  )
+}
 
 ServicePageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -48,10 +34,10 @@ ServicePageTemplate.propTypes = {
   steps: PropTypes.array,
   laborArea: PropTypes.object,
   shop: PropTypes.object,
-};
+}
 
 const ServicePage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
@@ -59,28 +45,27 @@ const ServicePage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         description={frontmatter.description}
-        sOverview={frontmatter.sOverview}
+        sOverview= {frontmatter.sOverview}
         steps={frontmatter.steps}
         laborArea={frontmatter.laborArea}
         shop={frontmatter.shop}
       />
-      <ScrollArrow />
     </Layout>
-  );
-};
+  )
+}
 
 ServicePage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
-};
+    data: PropTypes.shape({
+        markdownRemark: PropTypes.shape({
+          frontmatter: PropTypes.object,
+        }),
+      }),
+}
 
-export default ServicePage;
+export default ServicePage
 
 export const ServicePageQuery = graphql`
-  query ServicePage {
+query ServicePage {
     markdownRemark(frontmatter: { templateKey: { eq: "service-page" } }) {
       frontmatter {
         title
@@ -95,7 +80,11 @@ export const ServicePageQuery = graphql`
         sOverview {
           alt
           image {
-            publicURL
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
           }
           text
           title
@@ -114,12 +103,16 @@ export const ServicePageQuery = graphql`
             }
           }
         }
-        laborArea {
-          title
+        laborArea { 
+          title 
           labor {
             alt
             image {
-              publicURL
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
             text
             title
@@ -131,4 +124,5 @@ export const ServicePageQuery = graphql`
       }
     }
   }
-`;
+
+`

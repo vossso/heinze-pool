@@ -12,7 +12,7 @@ productElement:
       Rechtwinklige Treppenkanten und Innenecken, sowie perfekt gerade Wände
       sprechen eine klare Linie für modernes Design und eignen sich daher auch
       hervorragend für Überlaufpools. 
-    image: /img/wa-dreckig.svg
+    image: /img/hp_iconset_v1_icon_wart-white.svg
     images:
       - alt: poly
         image: /img/202011221137-01.png
@@ -20,7 +20,7 @@ productElement:
       Thermoplastischer Kunststoff, welcher sich nur für Sie, ganz individuell
       und auf den Zentimeter genau zu Ihrem Wunschpool formen lässt.
     single: true
-    title: Polypropylen Pools
+    title: Polypropylen Pools...
   - description: >-
       …tragen ihre weichen, nahtlosen Kanten mit Stolz und fügen sich
       geschmeidig in jedes Landschaftsbild ein. Durch Ihre festen Formen und das
@@ -29,7 +29,7 @@ productElement:
       steht eine große Varianten- und Farbvielfalt oder ein schlicht elegantes
       Design. Als Ceramic Pool werden Becken bezeichnet dessen Festigkeit durch
       eine zusätzliche Schicht, der sogenannten Ceramic Schicht, erhöht werden.
-    image: /img/wa-dreckig.svg
+    image: /img/hp_iconset_v1_icon_wart-white.svg
     images:
       - alt: tag1
         image: /img/p1020287-edit.jpg
@@ -37,7 +37,7 @@ productElement:
       Glasfaserverstärkter Kunststoff, mit oder ohne Ceramic Schicht in fester
       Form, abgerundeten Ecken und nahtloser Schönheit.
     single: true
-    title: GFK Pools
+    title: GFK Pools...
   - description: >-
       …bezeichnen Pools die aus einzelnen Segmenten und je nach Hersteller aus
       unterschiedlichen Materialien bestehen. Diese können in Ihrer Bauweise
@@ -45,7 +45,7 @@ productElement:
       erreichen. Durch das Zusammensetzen der Elemente in der Grube ist ein
       Einbau an schwer zugänglichen Orten, wie zum Beispiel einem Hinterhaus mit
       engem Garten, möglich. Dementsprechend entfallen die Krankosten.
-    image: /img/wa-dreckig.svg
+    image: /img/hp_iconset_v1_icon_wa-dreckig.svg
     images:
       - alt: Container
         image: /img/1200_alles_aus_dina4.jpg
@@ -53,14 +53,14 @@ productElement:
       Durch den Zusammenbau der Segmente, direkt in der Grube, für ausnahmslos
       jeden Garten flexibel realisierbar.
     single: true
-    title: Segmentbecken
+    title: Segmentbecken...
   - description: >-
       …sind stilvoll, individuell gestaltbar und extravagant. Abgesehen vom
       „Wow-Effekt“ bieten Ihnen unsere Containerpools viele Vorteile und bringen
       ein Highlight in Ihren Garten. Durch die stabile, freitragende Bauweise
       der Container und der bereits vormontierten Technik ist die Montage sowohl
       oberirdisch als auch teileingelassen möglich.
-    image: /img/wa-dreckig.svg
+    image: /img/hp_iconset_v1_icon_wa-dreckig.svg
     images:
       - alt: Container Pools
         image: /img/p1020238.jpg
@@ -75,7 +75,7 @@ productElement:
       spiegeln den Inbegriff von Sinnlichkeit und Ruhe wider. So fördern Sie
       Ihre Durchblutung, entlasten Ihre Gelenke und lösen Ihre verspannten
       Muskelpartien.
-    image: /img/wa-dreckig.svg
+    image: /img/hp_iconset_v1_icon_wa-dreckig.svg
     images:
       - alt: tag whirlpool
         image: /img/dsc_0204-2.jpg

@@ -59,7 +59,7 @@ productPages:
     text: Polyproplyen Pools, GFK Pools, Segmentbecken, Containerpools, Whirlpools,
       Ceramic Pool
     productPage: pools
-  - lable: Abdeckung
+  - lable: Überdachung
     path: /ueberdachung
     text: Leichtbauhallen, Rollladen, Rollschutzplanen, Luftpolsterplanen
     productPage: überdachung

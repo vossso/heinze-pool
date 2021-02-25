@@ -8,7 +8,6 @@ import Stage from "../components/Stage/Stage";
 import Reasons from "../components/Reasons/Reasons";
 import Quote from "../components/Quote/Quote";
 import Footer from "../components/Footer";
-import ScrollArrow from "../components/share/ScrollArrow/ScrollArrow";
 
 export const AboutPageTemplate = ({
   title,
@@ -24,7 +23,10 @@ export const AboutPageTemplate = ({
       <div className="AboutPage__content">
         <Quote
           quote={{
-            text: "Unsere Geschichte und fünf Gründe warum Sie sich für uns entscheiden sollten"          }}
+            author: "William Shakespear",
+            text:
+              "There is nothing either good or bad, but thinking makes it so.",
+          }}
         />
         {reasonsArea.reasonsList.length > 0 && (
           <Reasons
@@ -34,9 +36,7 @@ export const AboutPageTemplate = ({
         )}
         {history && <History data={history} />}
       </div>
-      <div id="contact">
-        <Footer />
-      </div>
+      <Footer hasMap={true} id="contact" />
     </div>
   );
 };
@@ -62,7 +62,6 @@ const AboutPage = ({ data }) => {
         history={frontmatter.history}
         reasonsArea={frontmatter.reasonsArea}
       />
-      <ScrollArrow />
     </Layout>
   );
 };

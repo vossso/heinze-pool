@@ -32,7 +32,7 @@ collections:
               label_singular: "Link hinzufügen",
               fields:
                 [
-                  { label: "Link Name", name: label, widget: string },
+                  { label: "Link Name", name: name, widget: string },
                   { label: Pfad, name: path, widget: string },
                 ],
             }
@@ -47,7 +47,7 @@ collections:
               default: "portfolio-page",
             }
           - { label: Titel, name: title, widget: string }
-          - { label: Einführungstext, name: description, widget: markdown }
+          - { label: Einführungstext, name: description, widget: text }
           - {
               label: Bilder,
               name: imageTeasers,
@@ -93,6 +93,7 @@ collections:
                   { label: Icon, name: image, widget: image },
                   { label: Keywords, name: alt, widget: string },
                   { label: Title, name: title, widget: string },
+                  { label: Einführungstext, name: description, widget: text },
                   { label: Text, name: text, widget: text },
                 ],
             }
@@ -103,26 +104,6 @@ collections:
               label_singular: "Step",
               max: 6,
               fields: [{ label: Text, name: text, widget: string }],
-            }
-          - {
-              label: "Shop Abschnitt",
-              name: shop,
-              widget: object,
-              fields:
-                [
-                  { label: Titel, name: title, widget: string },
-                  { label: Text, name: text, widget: text },
-                  {
-                    label: Bild-Object,
-                    name: imageObject,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Bild, name: image, widget: image },
-                        { label: Keywords, name: alt, widget: string },
-                      ],
-                  },
-                ],
             }
           - {
               label: "Labor Abschnitt",
@@ -136,13 +117,33 @@ collections:
                     name: labor,
                     widget: list,
                     max: 3,
-                    label_singular: "Labor Step",
+                    label_singular: "labor Step",
                     fields:
                       [
                         { label: Icon, name: image, widget: image },
                         { label: Keywords, name: alt, widget: string },
-                        { label: Titel, name: title, widget: string },
+                        { label: Title, name: title, widget: string },
                         { label: Text, name: text, widget: text },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: "Shop Abschnitt",
+              name: shop,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Text, name: text, widget: text },
+                  {
+                    label: Bild-Object,
+                    name: imageObject,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Bild, name: image, widget: image },
+                        { label: Keywords, name: alt, widget: string },
                       ],
                   },
                 ],
@@ -227,7 +228,7 @@ collections:
               label: Zeitstrahl,
               name: history,
               widget: list,
-              label_singular: "year",
+              label_singular: "Jahr hinzufügen",
               fields:
                 [
                   {
@@ -256,6 +257,7 @@ collections:
                     widget: object,
                     fields:
                       [
+                        { label: Icon, name: image, widget: image },
                         { label: "Straße", name: street, widget: string },
                         { label: "PLZ & Ort", name: city, widget: string },
                       ],
@@ -266,6 +268,7 @@ collections:
                     widget: object,
                     fields:
                       [
+                        { label: Icon, name: image, widget: image },
                         { label: "Telefon", name: phone, widget: string },
                         { label: "Fax", name: fax, widget: string },
                       ],
@@ -276,6 +279,7 @@ collections:
                     widget: object,
                     fields:
                       [
+                        { label: Icon, name: image, widget: image },
                         { label: "E-Mail", name: mail, widget: string },
                         { label: "Webseite", name: web, widget: string },
                       ],
@@ -367,7 +371,6 @@ collections:
           label_singular: "Teaser hinzufügen",
           fields:
             [
-              { label: Icon, name: image, widget: image },
               { label: Title, name: title, widget: string, required: false },
               {
                 label: Einführungstext,
@@ -426,18 +429,3 @@ collections:
       - { label: "Frage", name: "title", widget: "string" }
       - { label: "Erstellungsdatum", name: "date", widget: "datetime" }
       - { label: "Antwort", name: "description", widget: text }
-  - name: "meta"
-    label: "Fußzeile"
-    folder: "src/pages/meta"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "meta-text",
-        }
-      - { label: "Überschrift", name: "title", widget: "string" }
-      - { label: "Erstellungsdatum", name: "date", widget: "datetime" }
-      - { label: "Text", name: "text", widget: markdown }

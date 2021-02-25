@@ -13,7 +13,7 @@ position: relative;
     }
 
     &__text { 
-        font-size: $fs-h3-mobile;
+        font-size: $fs-h4;
         &::before {
             content: '„';
         }
