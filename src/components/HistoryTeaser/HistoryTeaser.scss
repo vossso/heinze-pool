@@ -35,12 +35,6 @@
 
     & .TextBox {
       min-height: 0;
-
-      & h3 {
-        font-size: $fs-p;
-        margin-bottom: $margin-s;
-        text-align: left;
-      }
     }
     @include respond-to(m) {
       flex: 0 1 40%;

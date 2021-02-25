@@ -1,4 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables";
+// @import "./_fonts.scss";
 
 $hp-blue: #1E3769;
 $hp-blue-2: #1E73B9;
@@ -6,7 +7,7 @@ $hp-blue-3: #78B4D7;
 $hp-white: #fff;
 $hp-light-gray: rgb(236, 236, 236);
 
-$hp-ff: 'Brandon Text', sans-serif ;
+$hp-ff: 'Brandon Text',Fallback, sans-serif ;
 
 $fs-s: 1.4rem;
 $fs-p-mobile: 1.6rem;
@@ -21,8 +22,8 @@ $fs-h2: 5.8rem;
 $fs-h1: 24rem;
 
 //TODO importieren Font-weoght
-$fw-light: 400;
-$fw-regular: 600;
+$fw-light: 300;
+$fw-regular: 500;
 $fw-bold: 800;
 
 $border-xs: $hp-light-gray 1px solid;
@@ -49,7 +50,7 @@ $padding-m: 5rem;
 $padding-l: 8rem;
 $padding-box-verti-mobile: 3rem;
 $padding-box-hori-mobile: 2rem;
-$padding-box-verti: 3.2rem;
+$padding-box-verti: 4rem;
 $padding-box-hori: 3rem;
 
 
@@ -118,7 +119,6 @@ h5 {
 }
 p {
     font-size: $fs-p-mobile;
-    font-weight: $fw-regular;
 }
 a, button {
     text-decoration: none;
@@ -133,3 +133,4 @@ img {
 
     object-fit: cover;
 }
+    

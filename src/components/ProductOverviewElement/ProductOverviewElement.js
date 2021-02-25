@@ -5,11 +5,11 @@ import "./ProductOverviewElement.scss";
 import ArrowLink from "../share/ArrowLink/ArrowLink";
 import TextBox from "../share/TextBox/TextBox";
 
-const ProductOverviewElement = ({ title, description, image }) => {
+const ProductOverviewElement = ({ title, description }) => {
   return (
     <div className="ProductOverviewElement">
       <div className="ProductOverviewElement__content">
-        <TextBox title={title} text={description} variant="full-height" icon={image}/>
+        <TextBox title={title} text={description} variant="full-height" />
         <div className="ProductOverviewElement__button">
           <ArrowLink link={`#${title}`} />
         </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import ProductTeaser from "../ProductTeaser/ProductTeaser";
 import GroupTeaser from "../GroupTeaser/GroupTeaser";
@@ -8,18 +8,11 @@ import "./ProductTeasers.scss";
 import useBreakpoint from "../../hooks/useBreakpoint";
 
 const ProductTeasers = ({ products }) => {
-  const BreakpointL = useBreakpoint("s");
-  const productTeasers = products
-    ? BreakpointL
-      ? products
-      : products.filter((element) => element.single)
-    : [];
-  const groupTeasers =
-    BreakpointL || !products
-      ? []
-      : products.filter((element) => !element.single);
+  const BreakpointL = useBreakpoint('l');
+  const productTeasers = BreakpointL ? products : products.filter((element) => element.single);
+  const groupTeasers = BreakpointL ?  [] :products.filter((element) => !element.single);
 
-  return productTeasers ? (
+  return (
     <div className="ProductTeasers">
       <ProductOverview
         primeProducts={productTeasers}
@@ -40,7 +33,7 @@ const ProductTeasers = ({ products }) => {
       </div>
       {groupTeasers.length > 0 && <GroupTeaser products={groupTeasers} />}
     </div>
-  ) : null;
+  );
 };
 
 ProductTeasers.propTypes = {

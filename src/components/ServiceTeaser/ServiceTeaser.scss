@@ -2,7 +2,7 @@
 @import "../../styles/media-queries";
 
 .ServiceTeaser {
-  padding-top: $margin-menu + $margin-l;
+  margin-top: $margin-menu + $margin-l;
 
   > h3 {
     font-size: $fs-h3-mobile;
@@ -15,8 +15,6 @@
   }
 
   &__boxes {
-    margin-top: $margin-m;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -35,22 +33,28 @@
       display: none;
     }
     @include respond-to(m) {
-      flex: 0 0 33%;
-      height: 100%;
-      display: flex;
       justify-content: space-between;
       flex-direction: row;
+
+      display: flex;
       align-items: center;
+
+      &:not(:last-child) {
+        margin-right: $margin-s;
+      }
 
       > .ArrowLink {
         display: block;
-        flex: 0 0 5rem;
-        height: auto;
       }
+    }
 
-      > .ServiceTeaser {
-        flex: 0 0 auto;
-      }
+    > a {
+      flex: 1 0 10%;
+      margin: auto;
+      height: auto;
+    }
+    > div {
+      flex: 0 1 auto;
     }
   }
 }

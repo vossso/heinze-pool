@@ -11,7 +11,6 @@ productElement:
       von der Filteranlage reinigen können. Bitte beachten Sie, dass nicht jeder
       Reinigungsroboter für jeden Pool geeignet ist. Er sollte daher speziell
       für Ihre Gegebenheiten ausgesucht werden.
-    image: /img/wa-dreckig.svg
     images:
       - alt: Poolchemie
         image: /img/p1020287-edit.jpg
@@ -28,7 +27,6 @@ productElement:
       (mit oder ohne Invertertechnik). Diese sollten stets richtig dimensioniert
       werden. Bitte beachten Sie, dass eine Beckenbeheizung nur bei abgedeckten
       Pools ihre volle Effizienz entfalten kann.
-    image: /img/wa-dreckig.svg
     images:
       - alt: Beckenheizung Poolheizungen
         image: /img/p1020287-edit.jpg
@@ -46,7 +44,6 @@ productElement:
       Bedürfnisse und den Gegebenheiten Ihres Gartens. Selbstverständlich
       erhalten Sie bei uns auch alle weiteren Arten von Wasserattraktionen für
       Ihren Pool.
-    image: /img/wa-dreckig.svg
     images:
       - alt: Gegenstromanlage
         image: /img/old_1987.png
@@ -64,7 +61,6 @@ productElement:
       Weiteren fällt die Poolbeleuchtung unter diese Rubrik. Erst sie bringt das
       Ambiente und einen ganzen eigenen Charme am Abend und bei Nacht in Ihren
       Garten.
-    image: /img/wa-dreckig.svg
     images:
       - alt: Pool Einbauteile
         image: /img/old_1993-kopie.jpg
@@ -82,7 +78,6 @@ productElement:
       Fittingen, auch PVC Rohre und PVC Flexschläuche, sowie den passenden
       Kleber und Reiniger um Ihr Poolprojekt professionell und sicher zu
       gestalten.
-    image: /img/wa-dreckig.svg
     images:
       - alt: PVC Fittinge
         image: /img/dsc_0204-2.jpg

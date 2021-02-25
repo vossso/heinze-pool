@@ -2,14 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Stage.scss";
 import Container from "../share/Container/Container";
+import Navbar from "../Navbar/Navbar";
 import useBreakpoint from "../../hooks/useBreakpoint";
 
-const Stage = ({ image, title, isStarter = true }) => {
+const Stage = ({ image, title }) => {
   const BreakpointM = useBreakpoint("m");
-  const variant = isStarter ? ["half-height--start", "full-width", "no-padding", "starter"] : ["half-height", "full-width", "no-padding"]
 
   const getContent = (
     <div className="Stage">
+      <Navbar variant="transparent" />
       {image && (
         <div className="Stage__image">
           <img
@@ -30,8 +31,7 @@ const Stage = ({ image, title, isStarter = true }) => {
   return BreakpointM ? (
     getContent
   ) : (
-    <Container variant={variant}>
-      {/* ToDo Starter */}
+    <Container variant={["half-height", "full-width", "no-padding", "starter"]}>
       {getContent}
     </Container>
   );

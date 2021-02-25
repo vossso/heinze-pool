@@ -1,6 +1,5 @@
 @import "../../../styles/_global.scss";
 @import "../../../styles/media-queries";
-@import "../../../styles/mixins";
 
 $size-s: 12rem;
 $size-m: 15rem;
@@ -8,48 +7,27 @@ $size-l: 20rem;
 
 .HexaImage {
   position: relative;
+  height: auto;
+  max-height: $size-s;
+  width: 100%;
+  max-width: $size-s;
+
   margin-bottom: 0.5rem;
 
   @include respond-to(s) {
+    max-height: $size-m;
+    max-width: $size-m;
     margin-bottom: 1rem;
   }
   @include respond-to(m) {
-    margin-bottom: 1.5rem;
+    max-height: $size-l;
+    max-width: $size-l;
+    margin-bottom: 2rem;
   }
 
   &__poly {
     image {
       transform: translateY(-200px);
-    }
-  }
-
-  > button {
-    cursor: pointer;
-    height: auto;
-    height: auto;
-    width: 100%;
-    width: $size-s;
-
-    @include respond-to(s) {
-      height: auto;
-      width: $size-m;
-    }
-    @include respond-to(m) {
-      height: auto;
-      width: $size-l;
-    }
-  }
-
-  &__overlay {
-    pointer-events: visible;
-    opacity: 0;
-    transition: opacity 5s;
-    transition-delay: 10s;
-
-    &--show {
-      opacity: 1;
-      transition: opacity 5s;
-      transition-delay: 10s;
     }
   }
 }

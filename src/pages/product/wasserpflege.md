@@ -11,7 +11,6 @@ productElement:
       verschiedenen Ausführungen. Gemeinsam finden wir die optimale
       Filtertechnik für Sie als Besitzer und Ihren Pool um die Wasserreinigung
       so einfach und effizient wie möglich zu gestalten.
-    image: /img/wa-dreckig.svg
     images:
       - alt: Filtertechnik
         image: /img/p1020287-edit.jpg
@@ -29,7 +28,6 @@ productElement:
       Hierfür spielen Laufzeit und Leistung der Poolpumpe eine signifikante
       Rolle. Des Weiteren werden Pumpen für zahlreiche Wasserattraktionen, wie
       Gegenstromanlagen, Schwallduschen oder Massagedüsen verwendet.
-    image: /img/wa-dreckig.svg
     images:
       - alt: Pumpen
         image: /img/202011221137-01.png
@@ -48,7 +46,6 @@ productElement:
       Aktivsauerstoff betrieben werden. Des Weiteren ist die Desinfektion über
       Salzelektrolyse möglich. Eine automatische pH-Regulierung ist bei allen
       unseren Dosieranlagen inbegriffen.
-    image: /img/wa-dreckig.svg
     images:
       - alt: Dosieranlagen
         image: /img/old_1987.png
@@ -67,7 +64,6 @@ productElement:
       Herausforderungen und sollte eine individuell angepasste Wasserpflege
       erhalten. Bei starken Verschmutzungen und unlösbaren Wasserproblemen
       profitieren Sie von unserer professionellen Wasseranalyse.
-    image: /img/wa-dreckig.svg
     images:
       - alt: Poolchemie Wasserpflegemittel
         image: /img/old_1987.png

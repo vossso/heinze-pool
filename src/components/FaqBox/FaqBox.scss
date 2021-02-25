@@ -6,7 +6,6 @@
   width: 90%;
   height: auto;
   padding: $margin-m;
-  margin: 0 auto;
   margin-bottom: $margin-m;
   @extend %round-box;
 
@@ -16,14 +15,12 @@
 
   @include respond-to(m) {
     width: 100%;
-    max-width: 100rem;
   }
 
   &__question {
     margin: 0;
     text-align: left;
     font-size: $fs-h4-mobile;
-    text-transform: unset;
 
     @include respond-to(m) {
       font-size: $fs-h4;
@@ -32,10 +29,6 @@
   &__answer {
     margin-top: $margin-s;
     text-align: left;
-    
-    @include respond-to(m) {
-      font-size: $fs-p;
-    }
   }
   &__button {
     width: 3rem;

@@ -1,16 +1,19 @@
-import React from "react";
-import getVariantClasses from "../../../helpers/getVariantClass";
+import React from 'react'
+import getVariantClasses from '../../../helpers/getVariantClass'
 
-import "./Container.scss";
 
-const Container = ({ children, variant, id = "" }) => {
-  const className = getVariantClasses("Container", variant);
+import './Container.scss'
 
-  return children ? (
-    <div className={className} id={id}>
-      {children}
-    </div>
-  ) : null;
-};
+const Container = ({ children, variant, id = '' }) => {
 
-export default Container;
+    const className = getVariantClasses("Container", variant);
+    
+    return (
+        children && 
+            <div className={className} id={id}>
+                {children}
+            </div>
+    )
+}
+
+export default Container

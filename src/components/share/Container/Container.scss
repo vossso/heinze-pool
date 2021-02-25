@@ -24,7 +24,7 @@
   @include respond-to(l) {
     width: $max-width-m;
   }
-  @include respond-to(xxl) {
+  @include respond-to(xl) {
     width: $max-width-l;
   }
 
@@ -45,7 +45,6 @@
 
     @include respond-to(xl) {
       height: 100vh;
-      max-height: 100rem;
     }
   }
   &--half-height {
@@ -54,18 +53,7 @@
     // border: solid blue 2px;
 
     @include respond-to(xl) {
-      height: calc(50vh - 8rem/2);
-      max-height: 50rem;
-    }
-  }
-  &--half-height--start {
-    margin-top: 0;
-    min-height: auto;
-    // border: solid blue 2px;
-
-    @include respond-to(xl) {
       height: 50vh;
-      max-height: 50rem;
     }
   }
   &--full-width {
@@ -75,7 +63,7 @@
   }
 
   &--starter {
-    @include respond-to(l) {
+    @include respond-to(xl) {
       scroll-snap-align: start;
     }
   }

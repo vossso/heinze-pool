@@ -17,7 +17,6 @@ export default class FaqIndexPage extends React.Component {
           title="Fragen & Antworten"
           image={titleImg}
           description="Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue."
-          isStarter={false}
         />
         <Container>
           <h3>Häufig gestellte Fragen</h3>

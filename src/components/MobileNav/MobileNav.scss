@@ -2,55 +2,16 @@
 
 .MobileNav {
   position: relative;
-  z-index: 50;
-  width: 100vw;
+  z-index: 2;
   height: auto;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: $hp-white;
 
-  &__bar {
-    z-index: 1;
-    flex: 0 0 auto;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  transition: opacity $duration-m;
+  opacity: 1;
 
-    & > button {
-      margin: 0;
-
-      &:hover::after {
-        width: 0;
-      }
-    }
-  }
-
-  &__wrapper {
-    position: relative;
-    z-index: 2;
-    height: auto;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background: $hp-white;
-
-    transition: opacity $duration-m;
-    opacity: 1;
-    top: 0;
-    left: 0;
-  }
-
-  &__burger {
-    > div {
-      margin-bottom: 0.5rem;
-
-      &::after {
-        display: block;
-        width: 3rem;
-        content: "";
-        height: 1.5px;
-        background-color: $hp-blue;
-      }
-    }
-  }
   &--active {
     opacity: 1;
   }
@@ -64,8 +25,6 @@
     background: linear-gradient(rgba($hp-blue, 0.8), rgba($hp-blue, 0.5));
     width: auto;
     height: 100%;
-    top: 0;
-    right: 0;
 
     & img {
       opacity: 0.5;
