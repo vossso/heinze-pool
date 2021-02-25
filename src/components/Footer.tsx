@@ -1,14 +1,18 @@
 import React from "react";
 import "./Footer.scss";
 import PropTypes from "prop-types";
+import GoogleMap from "./share/GoogleMap/GoogleMap";
+import useWindowLocation from "../hooks/useWindowLocation"
 
 import { graphql, StaticQuery } from "gatsby";
 
 import Container from "./share/Container/Container";
-import logo from "../img/hp-logo_white.png";
 
-const Footer = (props) => {
-  const { data } = props;
+interface IFooterProps {
+  data: any;
+}
+
+const Footer: React.FC<IFooterProps> = ({ data }) => {
   const {
     adress,
     numbers,
@@ -16,20 +20,27 @@ const Footer = (props) => {
     webadress,
   } = data.markdownRemark.frontmatter.contactblock;
 
+  const location = useWindowLocation().pathname;
+
+  const hasMap = location === '/about';
+  const variant = hasMap ? ["no-top", "full-height", "padding-s", "starter"] : ["no-top", "half-height", "padding-s"]
+
   return (
     <footer className="Footer">
-      <Container variant={["no-top", "half-height", "padding-s"]}>
+      <Container variant={variant} id="contact">
         <h3>Kontakt</h3>
         <div className="Footer__content">
           <div className="Footer__col">
             <h5>Öffnungszeiten</h5>
             <div className="Footer__hours-block">
               {openinghours.map((element, index) => {
-                const {daysbegin, daysend, timebegin, timeend} = element
+                const { daysbegin, daysend, timebegin, timeend } = element;
                 return (
                   <div className="Footer__hours" key={index}>
                     <h5>
-                      {daysbegin === daysend ? daysbegin : `${daysbegin} - ${daysend}`}
+                      {daysbegin === daysend
+                        ? daysbegin
+                        : `${daysbegin} - ${daysend}`}
                     </h5>
                     <p>
                       {timebegin} - {timeend}
@@ -55,12 +66,18 @@ const Footer = (props) => {
               {adress.city}
             </p>
           </div>
-          {/* <div className="Footer__col">
-            <img src={logo} alt="Heinze Pool Logo" />
-          </div> */}
         </div>
+        {hasMap && <div className="Footer__map">
+          <GoogleMap
+            address={{
+              location: "Heinze Pool GmbH",
+              street: "Daimlerstraße 9",
+              plz: "30916",
+            }}
+          />
+        </div>}
         <div className="Footer__subline">
-          <p>Impressum</p>
+          <a href='./meta/impressum'>Impressum</a>
           <p>Datenschutz</p>
         </div>
       </Container>

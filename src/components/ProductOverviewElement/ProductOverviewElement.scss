@@ -17,19 +17,33 @@
   }
   @include respond-to(xl) {
     &:not(:first-child) .ProductOverviewElement__content {
-      margin-left: $margin-l;
+      margin-left: $margin-s;
     }
   }
 
   &__content {
-    max-width: 30rem;
+    max-width: 28rem;
     height: 100%;
 
     margin-left: $margin-s;
 
+    > .TextBox {
+      display: flex;
+      flex-direction: column;
+
+      > h4 {
+        font-size: $fs-h4-mobile;
+        display: inline-block;
+        flex: 0 0 15%;
+      }
+      > p {
+        flex: 0 0 auto;
+      }
+    }
+
     @include respond-to(m) {
-    margin-left: $margin-l;
-  }
+      margin-left: $margin-s;
+    }
 
     @include respond-to(xl) {
       margin-left: 0;
@@ -39,5 +53,10 @@
     position: absolute;
     bottom: -3rem;
     right: $margin-l/2;
+    transition: transform $duration-s;
+
+    &:hover {
+      transform: rotate(90deg);
+    }
   }
 }
