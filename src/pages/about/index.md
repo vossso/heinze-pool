@@ -32,12 +32,12 @@ reasonsArea:
       reason: Unabhängig
   title: 5 Gründe für Heinze-Pool
 history:
-  - description: "<h3>dam. Alte Celler Heerstraße (heute Lister Meile), Hannover\r</h3>\n\nAm Raschplatz fing alles an. Hier gründete Horst Heinze das Unternehmen als sogenannter Kiesplatzhändler in bester Lage direkt am Hauptbahnhof in Hannover."
+  - description: "<h3>Lister Meile, Hannover\r</h3>\n\nAm Raschplatz fing alles an. Hier gründete Horst Heinze das Unternehmen als sogenannter Kiesplatzhändler in bester Lage direkt am Hauptbahnhof in Hannover."
     historyimage:
       alt: 'Lister Meile '
       image: /img/202011221137-01.png
     title: '1968'
-  - description: "<h3>1973 Lavesstraße, Hannover\r</h3>\n\nDurch Freundlichkeit, Expertise und viel Fleiß konnten wir 1973 unser erstes kleines Ladengeschäft in der Mitte von Hannover eröffnen. Nach dem Umzug in die Lavesstraße setzte sich unsere Erfolgsgeschichte fort."
+  - description: "<h3>Lavesstraße, Hannover\r</h3>\n\nDurch Freundlichkeit, Expertise und viel Fleiß konnten wir 1973 unser erstes kleines Ladengeschäft in der Mitte von Hannover eröffnen. Nach dem Umzug in die Lavesstraße setzte sich unsere Erfolgsgeschichte fort."
     historyimage:
       alt: Lavesstraße Hannover
       image: /img/1200_alles_aus_dina4.jpg

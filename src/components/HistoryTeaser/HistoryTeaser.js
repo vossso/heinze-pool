@@ -9,30 +9,30 @@ import useBreakpoint from "../../hooks/useBreakpoint";
 
 const HistoryTeaser = ({ data }) => {
   const { title: year, description, historyimage } = data;
-  const BreakpointM = useBreakpoint('m');
-  const variant = BreakpointM ? ["full-width"] :["half-height", "starter"];
+  const BreakpointM = useBreakpoint("m");
+  const variant = BreakpointM ? "full-width" : ["no-padding", "no-top", "no-bottom"];
 
   return (
     <div className="HistoryTeaser">
       <Container variant={variant}>
-      <div className="HistoryTeaser__wrapper">
-        <div className="HistoryTeaser__content">
-          <span>{year}</span>
-          <TextBox text={<Markdown>{description}</Markdown>} />
-        </div>
-        {historyimage && (
-          <div className="HistoryTeaser__image">
-            <img
-              src={
-                !!historyimage.image.childImageSharp
-                  ? historyimage.image.childImageSharp.fluid.src
-                  : historyimage.image
-              }
-              style={{ height: "100%", width: "100%" }}
-              alt="oldpic"
-            />
+        <div className="HistoryTeaser__wrapper">
+          <div className="HistoryTeaser__content">
+            <span>{year}</span>
+            <TextBox text={<Markdown>{description}</Markdown>} />
           </div>
-        )}
+          {historyimage && (
+            <div className="HistoryTeaser__image">
+              <img
+                src={
+                  !!historyimage.image.childImageSharp
+                    ? historyimage.image.childImageSharp.fluid.src
+                    : historyimage.image
+                }
+                style={{ height: "100%", width: "100%" }}
+                alt="oldpic"
+              />
+            </div>
+          )}
         </div>
       </Container>
     </div>

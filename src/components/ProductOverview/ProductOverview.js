@@ -7,27 +7,33 @@ import "./ProductOverview.scss";
 import Container from "../share/Container/Container";
 
 const ProductOverview = ({ primeProducts, secondProducts }) => {
-  const Breakpoint = useBreakpoint("xl");
+  const Breakpoint = useBreakpoint("xxl");
   const variant = Breakpoint ? ["half-height", "full-width"] : "half-height";
+  const secondIntro = [];
+
+  secondProducts.forEach( element => {
+    secondIntro.push(element.introtext)
+  });
 
   return (
     <div className="ProductOverview">
       <Container variant={variant}>
         <div className="ProductOverview__content">
           {primeProducts.map((product, index) => {
-            const { title, introtext } = product;
+            const { title, introtext, image } = product;
             return (
               <ProductOverviewElement
                 key={index}
                 title={title}
                 description={introtext}
+                image={image}
               />
             );
           })}
-          <ProductOverviewElement
+          {secondProducts.length > 0 && <ProductOverviewElement
             title="Sonstige"
-            description="Hier findest du noch weitere Produkte"
-          />
+            description={secondIntro[0]}
+          />}
         </div>
       </Container>
     </div>

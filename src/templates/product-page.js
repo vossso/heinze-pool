@@ -2,58 +2,74 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
-import Stage from "../components/Stage/Stage";
-import ProductTeasers from "../components/ProductTeasers/ProductTeasers";
-import Brands from "../components/Brands/Brands";
+import ScrollArrow from "../components/share/ScrollArrow/ScrollArrow";
+import useScrollPos from "../hooks/useScrollPos";
+import ProductPageTemp from "./ProductPageTemp/ProductPageTemp";
+import useWindowLocation from "../hooks/useWindowLocation";
 
-export const ProductPageTemplate = ({
-  title,
-  image,
-  productElement,
-  brands,
-}) => {
+export const ProductPageTemplate = ({ data }) => {
+  const { edges } = data.allMarkdownRemark;
+  const [product, setProduct] = useState(null);
+  const location = useWindowLocation();
+  const pathname = decodeURI(location.pathname);
+
+
+  const products = {
+    pools: edges
+      ? edges.find((page) => page.node.fields.slug.includes("/product/pools/"))
+      : null,
+    überdachung: edges
+      ? edges.find((page) =>
+          page.node.fields.slug.includes("/product/überdachung/")
+        )
+      : null,
+    wasserpflege: edges
+      ? edges.find((page) =>
+          page.node.fields.slug.includes("/product/wasserpflege/")
+        )
+      : null,
+    zubehör: edges
+      ? edges.find((page) =>
+          page.node.fields.slug.includes("/product/zubehör/")
+        )
+      : null,
+  };
+
+  useEffect(() => {
+    var sliced = pathname.split("/");
+    setProduct(products[sliced[sliced.length - 1]]);
+  }, [pathname, products]);
+
   return (
-    <div className="ProductPage">
-      <Stage title={title} image={image} />
-      <div className="ProductPage__overview"></div>
-      <div className="ProductPage__content">
-        <ProductTeasers products={productElement} />
-
-        <Brands brands={brands} />
-      </div>
+    <div>
+      <ProductPageTemp product={product} />
     </div>
   );
 };
 
 ProductPageTemplate.propTypes = {
-  title: PropTypes.string,
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  productElement: PropTypes.array,
-  brands: PropTypes.array,
+  data: PropTypes.object,
 };
 
 const ProductPage = ({ data }) => {
-  const { edges } = data.allMarkdownRemark;
-  const [path, setPath] = useState("");
-  const [product, setProduct] = useState(edges[0]);
+  const [whiteArrow, setWhiteArrow] = useState(false);
+  const currentScrollY = useScrollPos();
 
   useEffect(() => {
-    if (window && window.location) {
-      setPath(window.location.pathname);
-      setProduct(edges.find((page) => page.node.fields.slug.includes(path)));
+    if (
+      currentScrollY >= window.innerHeight &&
+      currentScrollY < window.innerHeight * 4
+    ) {
+      setWhiteArrow(true);
+    } else {
+      setWhiteArrow(false);
     }
-  }, [data]);
-
-  const { title, image, productElement, brands } = product.node.frontmatter;
+  }, [currentScrollY]);
 
   return (
     <Layout>
-      <ProductPageTemplate
-        title={title}
-        image={image}
-        productElement={productElement}
-        brands={brands}
-      />
+      <ProductPageTemplate data={data} />
+      <ScrollArrow color={whiteArrow ? "white" : ""} />
     </Layout>
   );
 };
@@ -85,6 +101,13 @@ export const ProductPageQuery = graphql`
               }
             }
             productElement {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 500) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
               title
               single
               introtext
