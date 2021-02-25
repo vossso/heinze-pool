@@ -83,7 +83,6 @@ laborArea:
         Baden teilweise unangenehm und im schlimmsten Fall gefährlich. Hier
         entsteht Handlungsbedarf um die Brillanz hervorzubringen oder aktuelle
         Wasserprobleme zu bekämpfen.
-      title: Wasserprobleme
     - alt: Wasseranalyse
       image: /img/wa-analy.svg
       text: >
