@@ -75,10 +75,10 @@ shop:
   title: Wir – für Sie – vor Ort
 laborArea:
   labor:
-    - alt: Wasserprobleme
-      image: /img/hp_iconset_v1_icon_wa-dreckig.svg
-      text: >-
-        Die volle Pracht Ihres Pools entfaltet sich erst bei kristallklarem
+    - image: /img/wa-dreckig.svg
+      alt: Wasserprobleme
+      title: Wasserprobleme
+      text: Die volle Pracht Ihres Pools entfaltet sich erst bei kristallklarem
         Wasser. Bei grober Verschmutzung und verminderter Wasserqualität ist das
         Baden teilweise unangenehm und im schlimmsten Fall gefährlich. Hier
         entsteht Handlungsbedarf um die Brillanz hervorzubringen oder aktuelle

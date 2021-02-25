@@ -3,7 +3,7 @@
 
 .Reasons {
   margin-top: $margin-menu-mobile + $margin-m;
-  @include respond-to(m) {
+  @include respond-to(l) {
     margin-top: 0;
   }
   &__wrapper {
@@ -11,7 +11,7 @@
     > h3 {
       font-size: $fs-h3-mobile;
     }
-    @include respond-to(m) {
+    @include respond-to(l) {
       padding-top: $margin-menu + $margin-m;
       > h3 {
         font-size: $fs-h3;
@@ -28,7 +28,7 @@
 
     text-align: center;
 
-    @include respond-to(m) {
+    @include respond-to(l) {
       flex-direction: row;
       text-align: left;
     }
@@ -43,7 +43,7 @@
       padding-top: $padding-m;
     }
 
-    @include respond-to(m) {
+    @include respond-to(l) {
       flex: 0 0 25%;
 
       &:nth-child(2) {
@@ -67,7 +67,7 @@
       margin: 0 auto;
     }
 
-    @include respond-to(m) {
+    @include respond-to(l) {
       position: absolute;
       top: 4.5rem;
       margin-left: -2.5rem;

@@ -8,9 +8,10 @@ import TextBox from "../share/TextBox/TextBox";
 import useBreakpoint from "../../hooks/useBreakpoint";
 
 const Reasons = ({ title, reasonsList }) => {
-  const BreakpointM = useBreakpoint('m');
-  return (
+  const BreakpointL = useBreakpoint("l");
+  return reasonsList.length > 0 ? (
     <div className="Reasons">
+      {/* ToDo Starter */}
       <Container variant={["full-height", "starter"]}>
         <div className="Reasons__wrapper">
           <h3>{title}</h3>
@@ -22,7 +23,11 @@ const Reasons = ({ title, reasonsList }) => {
                   <div className="Reasons__hexa">
                     <HexaIcon size="5rem" number={index + 1} />
                   </div>
-                  <TextBox title={reason} text={description} variant={BreakpointM ? "auto-height" : null}/>
+                  <TextBox
+                    title={reason}
+                    text={description}
+                    variant={BreakpointL ? "auto-height" : null}
+                  />
                 </div>
               );
             })}
@@ -30,7 +35,7 @@ const Reasons = ({ title, reasonsList }) => {
         </div>
       </Container>
     </div>
-  );
+  ) : null;
 };
 
 Reasons.propTypes = {

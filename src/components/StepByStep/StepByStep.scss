@@ -2,8 +2,9 @@
 @import "../../styles/media-queries";
 
 .StepByStep {
-  margin-top: $margin-menu + $margin-m;
+  padding-top: $margin-menu + $margin-m;
   position: relative;
+  height: 100%;
 
   text-align: center;
 
@@ -20,7 +21,6 @@
   > p {
     margin-bottom: $margin-l;
   }
-
   &__line {
     width: 2px;
     position: absolute;
@@ -42,4 +42,3 @@
     height: 100%;
   }
 }
-
