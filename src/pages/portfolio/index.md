@@ -6,108 +6,70 @@ description: >-
   sich von unserem Handwerk.
 imageTeasers:
   - description: >-
-      Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero,
-      a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at
-      eros.
+      Größe: 1000 x 370 x 150 cm | Farbe: Sand | Material: Polypropylen
+    title: ""
     imageObject:
-      alt: alukov Image
-      image: /img/p1020287-edit.jpg
-    title: Foto Titel
+      alt: Polypropylen Sand Pool
+      image: /img/Projekt-01.jpg
   - description: >-
-      Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
-      nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare
-      sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum.
+      Größe: 750 x 370 x 150 cm | Farbe: Dunkelblau | Material: Polypropylen
+    title: ""
     imageObject:
-      alt: Rivera Pool GFK
-      image: /img/p1020287-edit.jpg
-    title: Footo Titel 2
+      alt: Polypropylen Dunkelblau Pool
+      image: /img/Projekt-02.jpg
   - description: >-
-      Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
-      nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare
-      sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum.
+      Größe: 1000 x 360 x 150 | Farbe: Weiß | Material: Polypropylen
+    title: ""
     imageObject:
-      alt: Rivera Pool GFK
-      image: /img/p1020287-edit.jpg
-    title: Footo Titel 3
+      alt: Polypropylen Weiß Pool
+      image: /img/Projekt-03.jpg
   - description: >-
-      Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
-      nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare
-      sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum.
+      Größe: 700 x 330 x 150 cm | Farbe: Weiß | Material: Polypropylen
+    title: ""
     imageObject:
-      alt: Rivera Pool GFK
-      image: /img/p1020287-edit.jpg
-    title: Footo Titel 4
+      alt: Polypropylen Weiß Pool
+      image: /img/Projekt-04.jpg
   - description: >-
-      Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
-      nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare
-      sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum.
+      Größe: 500 x 250 x 135 cm | Farbe: Weiß | Material: Polypropylen
+    title: ""
     imageObject:
-      alt: Rivera Pool GFK
-      image: /img/p1020287-edit.jpg
-    title: Footo Titel 5
+      alt: Polypropylen Weiß Pool
+      image: /img/Projekt-05.jpg
   - description: >-
-      Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
-      nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare
-      sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum.
+      Größe: 800 x 370 x 150 cm | Farbe: Sand | Material: Polypropylen
+    title: ""
     imageObject:
-      alt: Rivera Pool GFK
-      image: /img/p1020287-edit.jpg
-    title: Footo Titel 6
+      alt: Polypropylen Sand Pool
+      image: /img/Projekt-06.jpg
   - description: >-
-      Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
-      nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare
-      sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum.
+      Größe: 700 x 350 x 150 cm | Farbe: Hellblau | Material: Polypropylen
+    title: ""
     imageObject:
-      alt: Rivera Pool GFK
-      image: /img/p1020287-edit.jpg
-    title: Footo Titel 7
+      alt: Polypropylen Hellblau Pool
+      image: /img/Projekt-07.jpg
   - description: >-
-      Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
-      nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare
-      sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum.
+      Größe: 700 x 350 x 150 cm | Farbe: Weiß | Material: Polypropylen
+    title: ""
     imageObject:
-      alt: Rivera Pool GFK
-      image: /img/p1020287-edit.jpg
-    title: Footo Titel 8
+      alt: Polypropylen Dunkelblau Pool
+      image: /img/Projekt-08.jpg
   - description: >-
-      Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
-      nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare
-      sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum.
+      Größe: 500 x 300 x 150 cm | Farbe: Weiß | Material: Polypropylen
+    title: ""
     imageObject:
-      alt: Rivera Pool GFK
-      image: /img/p1020287-edit.jpg
-    title: Footo Titel 9
+      alt: Polypropylen Weiß Pool
+      image: /img/Projekt-09.jpg
   - description: >-
-      Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
-      nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare
-      sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum.
+      Größe: 900 x 350 x 150 cm | Farbe: Grau | Material: Polypropylen
+    title: ""
     imageObject:
-      alt: Rivera Pool GFK
-      image: /img/p1020287-edit.jpg
-    title: Footo Titel 10
+      alt: Polypropylen Grau Pool
+      image: /img/Projekt-10.jpg
   - description: >-
-      Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
-      nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare
-      sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum.
+      Größe: 875 x 380 x 150 cm | Farbe: Novastone grau | Material: GFK mit Carbonschicht
+    title: ""
     imageObject:
-      alt: Rivera Pool GFK
-      image: /img/p1020287-edit.jpg
-    title: Footo Titel 11
-  - description: >-
-      Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
-      nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare
-      sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum.
-    imageObject:
-      alt: Rivera Pool GFK
-      image: /img/p1020287-edit.jpg
-    title: Footo Titel 12
-  - description: >-
-      Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
-      nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare
-      sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum.
-    imageObject:
-      alt: Rivera Pool GFK
-      image: /img/p1020287-edit.jpg
-    title: Footo Titel 13
+      alt: GFK Novastone grau Carbonschicht Pool
+      image: /img/Projekt-11.jpg
 ---
 

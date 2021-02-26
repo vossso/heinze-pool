@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import ProductOverviewElement from "../ProductOverviewElement/ProductOverviewElement";
 import useBreakpoint from "../../hooks/useBreakpoint";
+import dots from '../../img/icons/icon_Dots-blue.png'
 
 import "./ProductOverview.scss";
 import Container from "../share/Container/Container";
@@ -33,6 +34,7 @@ const ProductOverview = ({ primeProducts, secondProducts }) => {
           {secondProducts.length > 0 && <ProductOverviewElement
             title="Sonstige"
             description={secondIntro[0]}
+            image={dots}
           />}
         </div>
       </Container>

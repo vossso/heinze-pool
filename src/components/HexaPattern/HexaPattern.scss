@@ -1,26 +1,31 @@
 @import "../../styles/_global.scss";
 @import "../../styles/media-queries";
 
-$padding-s: calc(9.5rem / 2);
-$padding-m: calc(13rem / 2);
-$padding-l: calc(18rem / 2);
+$padding-s: calc(13rem / 2);
+$padding-m: calc(18rem / 2);
+$padding-l: calc(23rem / 2);
 
 .HexaPattern {
   margin-top: $margin-xl;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  height: 80vh;
-  width: 100%;
+  position: relative;
+  width: 95vw;
 
   @include respond-to(s) {
-    width: $max-width-xs-inner;
+    width: $max-width-xs;
+  }
+  @include respond-to(m) {
+    width: $max-width-s;
   }
   @include respond-to(l) {
-    width: $max-width-m-inner;
+    width: $max-width-m;
   }
   @include respond-to(xl) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 80vh;
+    width: 100%;
     width: $max-width-l-inner;
   }
 
@@ -30,7 +35,7 @@ $padding-l: calc(18rem / 2);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
 
     height: 100%;
   }

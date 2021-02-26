@@ -1,6 +1,6 @@
 ---
 templateKey: product-page
-image: /img/old_1993-kopie.jpg
+image: /img/2001.jpg
 title: Wasserpflege
 productElement:
   - description: >-
@@ -11,10 +11,10 @@ productElement:
       verschiedenen Ausführungen. Gemeinsam finden wir die optimale
       Filtertechnik für Sie als Besitzer und Ihren Pool um die Wasserreinigung
       so einfach und effizient wie möglich zu gestalten.
-    image: /img/wa-dreckig.svg
+    image: /img/icon_Fltr-blue.png
     images:
       - alt: Filtertechnik
-        image: /img/p1020287-edit.jpg
+        image: /img/2001.jpg
     introtext: >-
       Die Basis einer jeden Pooltechnik und der Grundstein für sauberes und
       klares Wasser in vielerlei Variationen.
@@ -29,10 +29,10 @@ productElement:
       Hierfür spielen Laufzeit und Leistung der Poolpumpe eine signifikante
       Rolle. Des Weiteren werden Pumpen für zahlreiche Wasserattraktionen, wie
       Gegenstromanlagen, Schwallduschen oder Massagedüsen verwendet.
-    image: /img/wa-dreckig.svg
+    image: /img/icon_Pump-blue.png
     images:
       - alt: Pumpen
-        image: /img/202011221137-01.png
+        image: /img/2001.jpg
     introtext: >-
       Maschinen los, Wasser marsch! Qualitätspumpen für jeden Zweck und in jeder
       Stärke sorgen für den richtigen Wassertransport.
@@ -48,10 +48,10 @@ productElement:
       Aktivsauerstoff betrieben werden. Des Weiteren ist die Desinfektion über
       Salzelektrolyse möglich. Eine automatische pH-Regulierung ist bei allen
       unseren Dosieranlagen inbegriffen.
-    image: /img/wa-dreckig.svg
+    image: /img/icon_Dos-blue.png
     images:
       - alt: Dosieranlagen
-        image: /img/old_1987.png
+        image: /img/2001.jpg
     introtext: >-
       Automatische Messung und Dosierung der Poolchemie, angepasst an Ihre
       Beckenverhältnisse und äußere Gegebenheiten.
@@ -67,21 +67,21 @@ productElement:
       Herausforderungen und sollte eine individuell angepasste Wasserpflege
       erhalten. Bei starken Verschmutzungen und unlösbaren Wasserproblemen
       profitieren Sie von unserer professionellen Wasseranalyse.
-    image: /img/wa-dreckig.svg
+    image: /img/icon_WP-blue.png
     images:
       - alt: Poolchemie Wasserpflegemittel
-        image: /img/old_1987.png
+        image: /img/2001.jpg
     introtext: >-
       Desinfektion und Notwendigkeit. Nur sauberes und gesundes Wasser
       garantiert einen unbeschwerten Badespaß
     single: true
     title: Wasserpflegemittel
 brands:
-  - image: /img/alukov_bez_r.jpg
+  - image: /img/alukov.jpg
     name: Alukov
-  - image: /img/bayrol_logo_web_rgb_small.jpg
+  - image: /img/bayrol.jpg
     name: Bayrol
-  - image: /img/rivierapool_logo_de.jpg
+  - image: /img/rivierapool.jpg
     name: Riviera Pool
 ---
 

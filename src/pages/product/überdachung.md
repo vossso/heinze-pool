@@ -1,6 +1,6 @@
 ---
 templateKey: product-page
-image: /img/p1020238.jpg
+image: /img/2001.jpg
 title: Abdeckung
 productElement:
   - description: >-
@@ -14,12 +14,13 @@ productElement:
       Poolhalle einfach nach hinten verschieben.
     images:
       - alt: Leichtbauhallen
-        image: /img/dsc_0204-2.jpg
+        image: /img/2001.jpg
     introtext: >-
       Pulverbeschichtetes Aluminium gepaart mit klarem Polycarbonat im modernen
       Design als Halle für jeden Garten.
     single: true
     title: Überdachungen
+    image: /img/icon_Hall-blue.png
   - description: >-
       … erhalten den Blick auf Ihren Pool, wunderschön wie er ist und das
       Highlight in jedem Garten. Die elektrische Rollladenabdeckung ist in
@@ -29,10 +30,10 @@ productElement:
       kann bei Bedarf automatisch ein- und ausgefahren werden. Im geschlossenen
       Zustand hält sie die Wärme im Becken, schützt vor Verdunstung und
       Verschmutzung und heizt als Solarvariante das Wasser auf.
-    image: /img/wa-dreckig.svg
+    image: /img/icon_Roll-blue.png
     images:
       - alt: Rolladen
-        image: /img/2400_alles_aus.jpg
+        image: /img/2001.jpg
     introtext: >-
       Erhalten die Ästhetik Ihres Pools bei maximaler Effizienz und verschwinden
       auf Knopfdruck.
@@ -47,10 +48,10 @@ productElement:
       eignen sich die Rollschutzplanen hervorragend als Winterabdeckung. Sie
       halten allen Witterungsverhältnissen stand, sind antibakteriell und
       UV-beständig.
-    image: /img/wa-dreckig.svg
+    image: /img/icon_Plane-blue.png
     images:
       - alt: Rollschutzplane
-        image: /img/1200_alles_aus_dina4.jpg
+        image: /img/2001.jpg
     introtext: >-
       Preiswerter Alleskönner. Sicherheitsabdeckung für die Sommer- und
       Wintersaison in verschiedenen Farben.
@@ -65,21 +66,21 @@ productElement:
       der Bedarf an Poolchemie im Becken kann reduziert werden. Unsere Planen
       sind chlor- und UV-beständig und weise eine Stärke von mindestens 400 μm
       auf.
-    image: /img/wa-dreckig.svg
+    image: /img/icon_Luft-blue.png
     images:
       - alt: Luftpolsterplane
-        image: /img/1200_ohne-alles.jpg
+        image: /img/2001.jpg
     introtext: >-
       Das Mindestmaß und die wohl einfachste Art sämtliche Vorteile einer
       Abdeckung für sich zu nutzen.
     single: true
     title: Luftpolsterplanen
 brands:
-  - image: /img/bayrol_logo_web_rgb_small.jpg
+  - image: /img/bayrol.jpg
     name: Bayrol
-  - image: /img/alukov_bez_r.jpg
+  - image: /img/alukov.jpg
     name: Alukov
-  - image: /img/rivierapool_logo_de.jpg
+  - image: /img/rivierapool.jpg
     name: Riviera Pool
 ---
 

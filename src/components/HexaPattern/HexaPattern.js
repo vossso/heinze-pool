@@ -4,21 +4,23 @@ import PropTypes from "prop-types";
 import "./HexaPattern.scss";
 
 import HexaColumn from "../HexaColumn/HexaColumn";
-// import useBreakpoint from "../../hooks/useBreakpoint";
+import useBreakpoint from "../../hooks/useBreakpoint";
 
 const HexaPattern = ({ imageList }) => {
   const [content, setContent] = useState(() => null);
+  const [mobileSize, setMobileSize] = useState(5)
 
-  // const BreakpointS = useBreakpoint('s');
-  // console.log(BreakpointS)
-
-  const pattern = [2, 2, 2, 2, 2, 2];
+  const BreakpointM = useBreakpoint("m");
+  console.log(BreakpointM)
 
   var all = [];
   var column = [];
 
   useEffect(() => {
     var i = 0;
+    setMobileSize(Math.ceil(imageList.length/3))
+    const pattern = BreakpointM ? [mobileSize, mobileSize, mobileSize] : [2, 2, 2, 2, 2, 2];
+    console.log(pattern)
     imageList &&
       imageList.forEach((element, index) => {
         if (index % pattern[i] === 0 && index !== 0) {
@@ -36,7 +38,7 @@ const HexaPattern = ({ imageList }) => {
   }, [imageList]);
 
   useEffect(() => {
-    setContent(() =>
+    all && setContent(() =>
       all.map((element, index) => (
         <div className="HexaPattern__column" key={index}>
           <HexaColumn elements={element} />

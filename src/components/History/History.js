@@ -9,7 +9,7 @@ import "./History.scss";
 const History = ({ data }) => {
   return data ? (
     <div className="History">
-      <Container variant={["starter"]}>
+      <Container>
         <h3>Unsere Geschichte</h3>
         <p>
           Seit über 50 Jahren haben wir als Familie das große Glück unsere
