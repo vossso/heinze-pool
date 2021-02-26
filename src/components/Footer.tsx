@@ -23,7 +23,7 @@ const Footer: React.FC<IFooterProps> = ({ data }) => {
   const location = useWindowLocation().pathname;
 
   const hasMap = location === '/about';
-  const variant = hasMap ? ["no-top", "full-height", "padding-s", "starter"] : ["no-top", "half-height", "padding-s"]
+  const variant = hasMap ? ["no-top", "full-height", "padding-s"] : ["no-top", "half-height", "padding-s"]
 
   return (
     <footer className="Footer">

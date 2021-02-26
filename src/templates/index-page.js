@@ -26,7 +26,7 @@ export const IndexPageTemplate = ({ links }) => {
   useEffect(() => {
     setTimeout(() => {
       setShowLogo(true);
-    }, 2000);
+    }, 500);
   }, []);
 
   return (

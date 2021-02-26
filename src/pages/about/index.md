@@ -2,8 +2,8 @@
 templateKey: about-page
 title: Über uns
 titleimage:
-  alt: helloo
-  image: /img/old_1993-kopie.jpg
+  alt: Heinze Pool
+  image: /img/1968.png
 reasonsArea:
   reasonsList:
     - description: >-
@@ -35,12 +35,12 @@ history:
   - description: "<h3>Lister Meile, Hannover\r</h3>\n\nAm Raschplatz fing alles an. Hier gründete Horst Heinze das Unternehmen als sogenannter Kiesplatzhändler in bester Lage direkt am Hauptbahnhof in Hannover."
     historyimage:
       alt: 'Lister Meile '
-      image: /img/202011221137-01.png
+      image: /img/1968.png
     title: '1968'
   - description: "<h3>Lavesstraße, Hannover\r</h3>\n\nDurch Freundlichkeit, Expertise und viel Fleiß konnten wir 1973 unser erstes kleines Ladengeschäft in der Mitte von Hannover eröffnen. Nach dem Umzug in die Lavesstraße setzte sich unsere Erfolgsgeschichte fort."
     historyimage:
       alt: Lavesstraße Hannover
-      image: /img/1200_alles_aus_dina4.jpg
+      image: /img/1973.jpg
     title: '1973'
   - description: >-
       <h3>Infa Hannover</h3>
@@ -51,12 +51,12 @@ history:
       Ausstellungspool und zwei Hallen dar.
     historyimage:
       alt: Info Hannover
-      image: /img/old_1987.png
+      image: /img/1976.png
     title: '1976'
   - description: "<h3>Schlehenweg, Langenhagen\r</h3>\n\nMit der Erweiterung unseres Angebots im Poolbereich wurde der Platz knapp und wir benötigten mehr Ausstellungsfläche. Der Schlehenweg in Langenhagen, am Rande von Hannover stellte sich als geeignetes Objekt heraus."
     historyimage:
       alt: 'Schlehenweg, Langenhagen'
-      image: /img/old_1993-kopie.jpg
+      image: /img/1990.jpg
     title: '1990'
   - description: >-
       <h3>Merkurstraße, Garbsen</h3>
@@ -67,7 +67,7 @@ history:
       Merkurstraße, Garbsen.
     historyimage:
       alt: 'Merkurstraße, Garbsen'
-      image: /img/1200_ohne-alles.jpg
+      image: /img/2001.jpg
     title: '2001'
   - description: >-
       <h3>Daimlerstraße, Isernhagen</h3>
@@ -78,16 +78,14 @@ history:
       Freude an dem was wir tun.
     historyimage:
       alt: Daimlerstraße Iserrnhagen
-      image: /img/p1020238.jpg
+      image: /img/2001.jpg
     title: Heute
 contactblock:
   adress:
     city: 30916 Isernhagen
-    image: /img/icons_hp-22.png
     street: 'Daimlerstr. 9 '
   numbers:
     fax: 0511 2713147
-    image: /img/icons_hp-26.png
     phone: 0511 2713145
   openinghours:
     - daysbegin: Montag
@@ -100,7 +98,6 @@ contactblock:
       timebegin: 10
       timeend: 13
   webadress:
-    image: /img/icons_hp-25.png
     mail: info@heinze-pool.de
     web: heinze-pool.de
 ---

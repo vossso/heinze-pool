@@ -1,6 +1,6 @@
 ---
 templateKey: product-page
-image: /img/dsc_0204-2.jpg
+image: /img/2001.jpg
 title: Zubehör
 productElement:
   - description: >-
@@ -11,10 +11,10 @@ productElement:
       von der Filteranlage reinigen können. Bitte beachten Sie, dass nicht jeder
       Reinigungsroboter für jeden Pool geeignet ist. Er sollte daher speziell
       für Ihre Gegebenheiten ausgesucht werden.
-    image: /img/wa-dreckig.svg
+    image: /img/icon_Rob-blue.png
     images:
-      - alt: Poolchemie
-        image: /img/p1020287-edit.jpg
+      - alt: Poolroboter
+        image: /img/2001.jpg
     introtext: >-
       Unsere kleinen Helfer. Automatische Reinigungsroboter zur Reinigung des
       Bodens, der Wände und der Wasserlinie.
@@ -28,7 +28,7 @@ productElement:
       (mit oder ohne Invertertechnik). Diese sollten stets richtig dimensioniert
       werden. Bitte beachten Sie, dass eine Beckenbeheizung nur bei abgedeckten
       Pools ihre volle Effizienz entfalten kann.
-    image: /img/wa-dreckig.svg
+    image: /img/icon_Hz-blue.png
     images:
       - alt: Beckenheizung Poolheizungen
         image: /img/p1020287-edit.jpg
@@ -46,10 +46,10 @@ productElement:
       Bedürfnisse und den Gegebenheiten Ihres Gartens. Selbstverständlich
       erhalten Sie bei uns auch alle weiteren Arten von Wasserattraktionen für
       Ihren Pool.
-    image: /img/wa-dreckig.svg
+    image: /img/icon_GSA-blue.png
     images:
       - alt: Gegenstromanlage
-        image: /img/old_1987.png
+        image: /img/old_1987.jpg
     introtext: >-
       Verändern Sie Ihr komplettes Poolerlebnis mit einer Entscheidung. Als
       Sportgerät, Spaßbringer oder Attraktion.
@@ -64,10 +64,10 @@ productElement:
       Weiteren fällt die Poolbeleuchtung unter diese Rubrik. Erst sie bringt das
       Ambiente und einen ganzen eigenen Charme am Abend und bei Nacht in Ihren
       Garten.
-    image: /img/wa-dreckig.svg
+    image: /img/icon_Light-blue.png
     images:
       - alt: Pool Einbauteile
-        image: /img/old_1993-kopie.jpg
+        image: /img/2001.jpg
     introtext: >-
       Düsen, Skimmer, Beleuchtung und noch vieles mehr machen Ihre Anlage erst
       vollständig und funktionsfähig.
@@ -82,21 +82,21 @@ productElement:
       Fittingen, auch PVC Rohre und PVC Flexschläuche, sowie den passenden
       Kleber und Reiniger um Ihr Poolprojekt professionell und sicher zu
       gestalten.
-    image: /img/wa-dreckig.svg
+    image: /img/icon_Fit-blue.png
     images:
       - alt: PVC Fittinge
-        image: /img/dsc_0204-2.jpg
+        image: /img/2001.jpg
     introtext: >-
       Winkel, Bögen, Verschraubungen, Kugelhähne, T-Stücke, Muffen und weitere
       sind die Träger Ihres Wassersystems
     single: false
     title: PVC Fittinge
 brands:
-  - image: /img/bayrol_logo_web_rgb_small.jpg
+  - image: /img/bayrol.jpg
     name: Bayrol
-  - image: /img/alukov_bez_r.jpg
+  - image: /img/alukov.jpg
     name: Alukov
-  - image: /img/rivierapool_logo_de.jpg
+  - image: /img/rivierapool.jpg
     name: Riviera Pool
 ---
 

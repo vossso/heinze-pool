@@ -1,10 +1,12 @@
 @import "../../styles/_global.scss";
 
 .MobileNav {
-  position: relative;
+  position: absolute;
   z-index: 50;
   width: 100vw;
   height: auto;
+  top: 0;
+  left: 0;
 
   &__bar {
     z-index: 1;

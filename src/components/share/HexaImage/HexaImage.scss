@@ -2,24 +2,26 @@
 @import "../../../styles/media-queries";
 @import "../../../styles/mixins";
 
-$size-s: 12rem;
-$size-m: 15rem;
-$size-l: 20rem;
+$size-s: 15rem;
+$size-m: 20rem;
+$size-l: 25rem;
 
 .HexaImage {
   position: relative;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
 
   @include respond-to(s) {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
   @include respond-to(m) {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
   }
 
   &__poly {
     image {
-      transform: translateY(-200px);
+      transform: translateY(-200px) translateX(-100px);
+      opacity: 0.5;
+      background-color: $hp-blue;
     }
   }
 

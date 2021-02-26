@@ -1,7 +1,7 @@
 ---
 templateKey: service-page
 title: Leistungen
-image: /img/dsc_0204-2.jpg
+image: /img/2001.jpg
 description: >-
   Seit über 50 Jahren bieten wir Ihnen aus unserem Standort in Hannover ein
   umfassendes Dienstleistungsspektrum rund um das Thema Pool. Hierbei
@@ -9,12 +9,12 @@ description: >-
   Verschaffen Sie sich nachfolgend einen detaillierten Überblick über unser
   Leistungs- und Serviceangebot:
 sOverview:
-  - alt: Installation Pool
+  - alt: Swimmingpoolbau
     text: >-
       Wir realisieren jeden Pool individuell nach Ihren Vorstellungen und
       Wünschen von der Planung, über den Bau bis hin zur Inbetriebnahme. 
     title: Poolbau
-    image: /img/bau-white.svg
+    image: /img/icon_Bau2-white.png
     description: '???'
   - alt: Hannover Isernhagen
     text: >-
@@ -22,14 +22,14 @@ sOverview:
       Erwerb eines unserer vielfältigen Produkte besuchen Sie uns gerne
       persönlich in Isernhagen, Hannover.
     title: Geschäft
-    image: /img/store-white.svg
+    image: /img/icon_Store-white.png
     description: '???'
   - alt: Poolinstallation
     text: >-
       Zusätzlich zu Beratung und Verkauf können Sie sich auch alle bei uns
       erworbenen Produkte von unseren Monteuren fachgerecht installieren lassen.
     title: Installation
-    image: /img/inst-white.svg
+    image: /img/icon_Inst-white.png
     description: '???'
   - alt: Poolwartung
     text: >-
@@ -37,7 +37,7 @@ sOverview:
       langfristig sorgenfrei Freude zu bereiten. Hierfür steht Ihnen unser
       Wartungsdienst zur Verfügung.
     title: Wartung
-    image: /img/hp_iconset_v1_icon_wart-white.svg
+    image: /img/icon_Wart-white.png
     description: '???'
   - alt: Poolreparatur
     text: >-
@@ -45,7 +45,7 @@ sOverview:
       Reparatur und Sanierung gewachsen, um Ihnen wieder Freude an Ihrer
       Poolanlage bescheren zu können.
     title: Reparatur
-    image: /img/rep-white.svg
+    image: /img/icon_Rep-white.png
     description: '???'
   - alt: Wasseranalyse
     text: >-
@@ -53,7 +53,7 @@ sOverview:
       Wasserqualität in Ihrem Pool und finden bei Verschmutzung die richtige
       Lösung. 
     title: Wasseranalyse
-    image: /img/wasa-white.svg
+    image: /img/icon_Lupe-white.png
     description: '???'
 steps:
   - text: Die erste Kontaktaufnahme
@@ -65,7 +65,7 @@ steps:
 shop:
   imageObject:
     alt: Poolshop Daimlerstr
-    image: /img/1200_ohne-alles.jpg
+    image: /img/2001.jpg
   text: >-
     In unserem Geschäft können sie sich rund um das Thema Pool informieren, eine
     professionelle Wasseranalyse durchführen lassen, etliche Muster begutachten
@@ -75,7 +75,7 @@ shop:
   title: Wir – für Sie – vor Ort
 laborArea:
   labor:
-    - image: /img/wa-dreckig.svg
+    - image: /img/icon_WA-dreckig.png
       alt: Wasserprobleme
       title: Wasserprobleme
       text: Die volle Pracht Ihres Pools entfaltet sich erst bei kristallklarem
@@ -84,7 +84,7 @@ laborArea:
         entsteht Handlungsbedarf um die Brillanz hervorzubringen oder aktuelle
         Wasserprobleme zu bekämpfen.
     - alt: Wasseranalyse
-      image: /img/wa-analy.svg
+      image: /img/icon_WA-analy.png
       text: >
         Mit Hilfe einer aktuellen Probe Ihres Poolwassers und gewissen
         Parametern können Sie bei uns eine professionelle Wasseranalyse mit
@@ -94,7 +94,7 @@ laborArea:
         Wir bitten dafür um eine telefonische Anmeldung.
       title: Wasseranalyse
     - alt: Problemlösung
-      image: /img/wa-sauber.svg
+      image: /img/icon_WA-sauber.png
       text: >-
         Im Anschluss erhalten Sie eine umfangreiche Beratung, ein Analyse des
         dazugehörigen Prüfprotokolls sowie eine entsprechende Schritt für

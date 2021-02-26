@@ -1,6 +1,6 @@
 ---
 templateKey: product-page
-image: /img/p1020238.jpg
+image: /img/2001.jpg
 title: Pools
 productElement:
   - description: >-
@@ -12,10 +12,10 @@ productElement:
       Rechtwinklige Treppenkanten und Innenecken, sowie perfekt gerade Wände
       sprechen eine klare Linie für modernes Design und eignen sich daher auch
       hervorragend für Überlaufpools. 
-    image: /img/wa-dreckig.svg
+    image: /img/icon_PP-blue.png
     images:
       - alt: poly
-        image: /img/202011221137-01.png
+        image: /img/2001.jpg
     introtext: >-
       Thermoplastischer Kunststoff, welcher sich nur für Sie, ganz individuell
       und auf den Zentimeter genau zu Ihrem Wunschpool formen lässt.
@@ -29,10 +29,10 @@ productElement:
       steht eine große Varianten- und Farbvielfalt oder ein schlicht elegantes
       Design. Als Ceramic Pool werden Becken bezeichnet dessen Festigkeit durch
       eine zusätzliche Schicht, der sogenannten Ceramic Schicht, erhöht werden.
-    image: /img/wa-dreckig.svg
+    image: /img/icon_GFK-blue.png
     images:
       - alt: tag1
-        image: /img/p1020287-edit.jpg
+        image: /img/2001.jpg
     introtext: >-
       Glasfaserverstärkter Kunststoff, mit oder ohne Ceramic Schicht in fester
       Form, abgerundeten Ecken und nahtloser Schönheit.
@@ -45,10 +45,10 @@ productElement:
       erreichen. Durch das Zusammensetzen der Elemente in der Grube ist ein
       Einbau an schwer zugänglichen Orten, wie zum Beispiel einem Hinterhaus mit
       engem Garten, möglich. Dementsprechend entfallen die Krankosten.
-    image: /img/wa-dreckig.svg
+    image: /img/icon_Seg-blue.png
     images:
-      - alt: Container
-        image: /img/1200_alles_aus_dina4.jpg
+      - alt: Segmentbecken
+        image: /img/2001.jpg
     introtext: >-
       Durch den Zusammenbau der Segmente, direkt in der Grube, für ausnahmslos
       jeden Garten flexibel realisierbar.
@@ -60,10 +60,10 @@ productElement:
       ein Highlight in Ihren Garten. Durch die stabile, freitragende Bauweise
       der Container und der bereits vormontierten Technik ist die Montage sowohl
       oberirdisch als auch teileingelassen möglich.
-    image: /img/wa-dreckig.svg
+    image: /img/icon_CP-blue.png
     images:
       - alt: Container Pools
-        image: /img/p1020238.jpg
+        image: /img/2001.jpg
     introtext: >-
       Genießer oder Individualist? Überzeugen Sie sich von etwas
       Außergewöhnlichem. Entdecken Sie unsere Whirlpools und Containerpools.
@@ -75,23 +75,23 @@ productElement:
       spiegeln den Inbegriff von Sinnlichkeit und Ruhe wider. So fördern Sie
       Ihre Durchblutung, entlasten Ihre Gelenke und lösen Ihre verspannten
       Muskelpartien.
-    image: /img/wa-dreckig.svg
+    image: /img/icon_WP-blue.png
     images:
       - alt: tag whirlpool
-        image: /img/dsc_0204-2.jpg
+        image: /img/2001.jpg
     introtext: >-
       Genießer oder Individualist? Wie wäre es mal mit Anders? Entdecken Sie
       unsere Whirlpools und Containerpools.
     single: false
     title: Whirlpool
 brands:
-  - image: /img/bayrol_logo_web_rgb_small.jpg
+  - image: /img/bayrol.jpg
     name: Bayrol
-  - image: /img/alukov_bez_r.jpg
+  - image: /img/alukov.jpg
     name: Alukov
-  - image: /img/rivierapool_logo_de.jpg
+  - image: /img/rivierapool.jpg
     name: Riviera Pool
-  - image: /img/bayrol_logo_web_rgb_small.jpg
+  - image: /img/bayrol.jpg
     name: logo4
 ---
 
