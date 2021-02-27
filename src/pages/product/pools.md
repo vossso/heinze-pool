@@ -7,11 +7,14 @@ productElement:
       …sind immer ein Unikat. Treffen Sie selbst die Entscheidung über die
       exakte Größe, die Anzahl und Form der Treppen, welche Sprudelbank und
       Gegenstromanlage oder ob Ihr Boden dieselbe Farbe wie Ihre Wand tragen
-      soll. Vollkommene Flexibilität ist einer der größten Vorteile dieser in
-      höchster Qualität für Sie zusammengefügten Polypropylenplatten.
-      Rechtwinklige Treppenkanten und Innenecken, sowie perfekt gerade Wände
-      sprechen eine klare Linie für modernes Design und eignen sich daher auch
-      hervorragend für Überlaufpools. 
+      soll. 
+
+
+      Vollkommene Flexibilität ist einer der größten Vorteile dieser in höchster
+      Qualität für Sie zusammengefügten Polypropylenplatten. Rechtwinklige
+      Treppenkanten und Innenecken, sowie perfekt gerade Wände sprechen eine
+      klare Linie für modernes Design und eignen sich daher auch hervorragend
+      für Überlaufpools.
     image: /img/icon_PP-blue.png
     images:
       - alt: poly
