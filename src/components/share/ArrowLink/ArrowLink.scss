@@ -7,6 +7,10 @@
     width: 5rem;
     cursor: pointer;
 
+    -webkit-transition: transform $duration-s;
+    -moz-transition: transform $duration-s;
+    -ms-transition: transform $duration-s;
+    -o-transition: transform $duration-s;
     transition: transform $duration-s;
 
     @include respond-to(m) {

@@ -4,7 +4,7 @@ import Layout from "../../components/Layout";
 import FaqRoll from "../../components/FaqRoll/FaqRoll";
 import Stage from "../../components/Stage/Stage";
 
-import titleImg from "../../img/water.jpg";
+import titleImg from "../../img/FAQ_stage.jpg";
 import Container from "../../components/share/Container/Container";
 import "./FaqPage.scss";
 

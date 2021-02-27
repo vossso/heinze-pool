@@ -45,13 +45,19 @@ $size-l: 25rem;
   &__overlay {
     pointer-events: visible;
     opacity: 0;
-    transition: opacity 5s;
-    transition-delay: 10s;
+    -webkit-transition: opacity 5s 10s;
+    -moz-transition: opacity 5s 10s;
+    -ms-transition: opacity 5s 10s;
+    -o-transition: opacity 5s 10s;
+    transition: opacity 5s 10s;
 
     &--show {
       opacity: 1;
-      transition: opacity 5s;
-      transition-delay: 10s;
+      -webkit-transition: opacity 5s 10s;
+      -moz-transition: opacity 5s 10s;
+      -ms-transition: opacity 5s 10s;
+      -o-transition: opacity 5s 10s;
+      transition: opacity 5s 10s;
     }
   }
 }

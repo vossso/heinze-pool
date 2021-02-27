@@ -55,6 +55,10 @@
     position: absolute;
     bottom: -3rem;
     right: $margin-l/2;
+    -webkit-transition: transform $duration-s;
+    -moz-transition: transform $duration-s;
+    -ms-transition: transform $duration-s;
+    -o-transition: transform $duration-s;
     transition: transform $duration-s;
 
     &:hover {

@@ -9,6 +9,7 @@
 }
 
 .Container {
+  pointer-events: visible;
   max-width: 100%;
   margin: $margin-menu auto 0;
   width: 90%;

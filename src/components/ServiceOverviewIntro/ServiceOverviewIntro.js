@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import "./ServiceOverviewIntro.scss";
 import Container from "../share/Container/Container";
-import test from '../../img/service.jpg'
+import serviceImg from '../../img/service.png'
 
 
 const ServiceOverviewIntro = ({ services, description }) => {
@@ -17,7 +17,7 @@ const ServiceOverviewIntro = ({ services, description }) => {
               services.map((element, index) => {
                 return <HexaIcon icon={element} key={index} />;
               })} */}
-              <img className="HexaIcon__hexa" src={test} alt="Poool"/>
+              <img className="HexaIcon__hexa" src={serviceImg} alt="Poool"/>
           </div>
           <div className="ServiceOverviewIntro__right">
               {/* ToDo Pflegbar machen */}

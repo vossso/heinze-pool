@@ -3,8 +3,9 @@ templateKey: product-page
 image: /img/Pool_stage.jpg
 title: Pools
 productElement:
-  - description: >-
-      …sind immer ein Unikat. Treffen Sie selbst die Entscheidung über die
+  - description: 
+      …sind immer ein Unikat. 
+      Treffen Sie selbst die Entscheidung über die
       exakte Größe, die Anzahl und Form der Treppen, welche Sprudelbank und
       Gegenstromanlage oder ob Ihr Boden dieselbe Farbe wie Ihre Wand tragen
       soll. 
@@ -26,7 +27,8 @@ productElement:
     title: Polypropylen Pools
   - description: >-
       …tragen ihre weichen, nahtlosen Kanten mit Stolz und fügen sich
-      geschmeidig in jedes Landschaftsbild ein. Durch Ihre festen Formen und das
+      geschmeidig in jedes Landschaftsbild ein. 
+      Durch Ihre festen Formen und das
       Schichtsystem bieten diese Becken eine extrem hohe Steifigkeit, sind
       UV-beständig und resistent gegen alle üblichen Chemikalien. Zur Auswahl
       steht eine große Varianten- und Farbvielfalt oder ein schlicht elegantes

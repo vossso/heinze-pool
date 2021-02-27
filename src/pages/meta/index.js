@@ -7,7 +7,6 @@ export default class MetaIndexPage extends React.Component {
     return (
       <Layout>
         <section className="FaqPage">
-
           Meta
         </section>
       </Layout>

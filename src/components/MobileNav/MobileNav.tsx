@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 import bgImage from "../../img/water.jpg";
-import logo from "../../img/hp-logo_white.png";
+import logo from "../../img/Logo-line_white.png";
 import AnimateHeight from "react-animate-height";
 
 import "./MobileNav.scss";
 import getVariantClasses from "../../helpers/getVariantClass";
-import HexaIcon from "../share/HexaIcon/HexaIcon";
 
 interface IMobileNavProps {
   variant?: string;

@@ -20,10 +20,12 @@
 
     @include respond-to(m) {
       min-width: 50rem;
-      margin-top: -$margin-m/2;
       float: right;
-      justify-content: flex-end;
       height: 100%;
+
+      &:not(:first-child) {
+        margin-top: 0;
+      }
     }
   }
   &__hexa {

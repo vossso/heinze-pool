@@ -14,6 +14,10 @@
   @include respond-to(m) {
     z-index: 52;
     height: $margin-menu;
+    -webkit-transition: opacity $duration-s;
+    -moz-transition: opacity $duration-s;
+    -ms-transition: opacity $duration-s;
+    -o-transition: opacity $duration-s;
     transition: opacity $duration-s;
 
     &--shown {

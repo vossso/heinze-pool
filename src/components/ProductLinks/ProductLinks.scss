@@ -17,25 +17,49 @@ $duration: 0.5s;
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
+      -webkit-transition: all $duration ease-in-out;
+      -moz-transition: all $duration ease-in-out;
+      -ms-transition: all $duration ease-in-out;
+      -o-transition: all $duration ease-in-out;
       transition: all $duration ease-in-out;
 
       &--0 {
+        -webkit-transition: all $duration ease-in-out;
+        -moz-transition: all $duration ease-in-out;
+        -ms-transition: all $duration ease-in-out;
+        -o-transition: all $duration ease-in-out;
         transition: all $duration ease-in-out;
         background-image: url("../../img/Pool_pool.jpg");
       }
       &--1 {
+        -webkit-transition: all $duration ease-in-out;
+        -moz-transition: all $duration ease-in-out;
+        -ms-transition: all $duration ease-in-out;
+        -o-transition: all $duration ease-in-out;
         transition: all $duration ease-in-out;
         background-image: url("../../img/Pool_roof.jpg");
       }
       &--2 {
+        -webkit-transition: all $duration ease-in-out;
+        -moz-transition: all $duration ease-in-out;
+        -ms-transition: all $duration ease-in-out;
+        -o-transition: all $duration ease-in-out;
         transition: all $duration ease-in-out;
         background-image: url("../../img/Pool_wasser.jpg");
       }
       &--3 {
+        -webkit-transition: all $duration ease-in-out;
+        -moz-transition: all $duration ease-in-out;
+        -ms-transition: all $duration ease-in-out;
+        -o-transition: all $duration ease-in-out;
         transition: all $duration ease-in-out;
         background-image: url("../../img/Pool_zub.jpg");
       }
       &--4 {
+        -webkit-transition: all $duration ease-in-out;
+        -moz-transition: all $duration ease-in-out;
+        -ms-transition: all $duration ease-in-out;
+        -o-transition: all $duration ease-in-out;
         transition: all $duration ease-in-out;
         background-image: url("../../img/Pool_all.jpg");
       }

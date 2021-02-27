@@ -1,7 +1,7 @@
 ---
 templateKey: service-page
 title: Leistungen
-image: /img/2001.jpg
+image: /img/Service_stage.jpg
 description: >-
   Seit über 50 Jahren bieten wir Ihnen aus unserem Standort in Hannover ein
   umfassendes Dienstleistungsspektrum rund um das Thema Pool. Hierbei
@@ -65,7 +65,7 @@ steps:
 shop:
   imageObject:
     alt: Poolshop Daimlerstr
-    image: /img/2001.jpg
+    image: /img/Service_shop.jpg
   text: >-
     In unserem Geschäft können sie sich rund um das Thema Pool informieren, eine
     professionelle Wasseranalyse durchführen lassen, etliche Muster begutachten
