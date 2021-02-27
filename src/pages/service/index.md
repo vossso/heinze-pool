@@ -1,7 +1,7 @@
 ---
 templateKey: service-page
 title: Leistungen
-image: /img/2001.jpg
+image: /img/Service_stage.jpg
 description: >-
   Seit über 50 Jahren bieten wir Ihnen aus unserem Standort in Hannover ein
   umfassendes Dienstleistungsspektrum rund um das Thema Pool. Hierbei

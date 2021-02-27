@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
 import "./Navbar.scss";
 
-import logo from "../../img/hp-logo_typo.jpg";
-import logo2 from "../../img/hp-logo_typo-white.png";
+import logo from "../../img/Logo-line_color.png";
+import logo2 from "../../img/Logo-line_white.png";
 import getVariantClasses from "../../helpers/getVariantClass";
 import useBreakpoint from "../../hooks/useBreakpoint";
 import useScrollPos from "../../hooks/useScrollPos";

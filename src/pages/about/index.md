@@ -3,7 +3,7 @@ templateKey: about-page
 title: Über uns
 titleimage:
   alt: Heinze Pool
-  image: /img/1968.png
+  image: /img/About_stage.jpg
 reasonsArea:
   reasonsList:
     - description: >-
@@ -78,7 +78,7 @@ history:
       Freude an dem was wir tun.
     historyimage:
       alt: Daimlerstraße Iserrnhagen
-      image: /img/2001.jpg
+      image: /img/Today.jpg
     title: Heute
 contactblock:
   adress:
