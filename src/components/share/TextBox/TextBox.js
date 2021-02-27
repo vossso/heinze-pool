@@ -7,7 +7,6 @@ import "./TextBox.scss";
 
 const TextBox = ({ title, text, label, link, variant, icon }) => {
   const className = getVariantClasses("TextBox", variant);
-
   return (
     <div className={className}>
       {icon && (

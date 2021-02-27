@@ -53,15 +53,15 @@ $padding-box-verti: 3.2rem;
 $padding-box-hori: 3rem;
 
 
-$max-width-xl: 1920px;
-$max-width-l: 1380px;
-$max-width-l-inner: 1280px;
-$max-width-m: 1060px;
-$max-width-m-inner: 960px;
-$max-width-s: 940px;
-$max-width-s-inner: 840px;
-$max-width-xs: 540px;
 $max-width-xs-inner: 440px;
+$max-width-xs: 540px;
+$max-width-s-inner: 840px;
+$max-width-s: 940px;
+$max-width-m-inner: 960px;
+$max-width-m: 1060px;
+$max-width-l-inner: 1280px;
+$max-width-l: 1380px;
+$max-width-xl: 1920px;
 
 $breakpoints: (
   'xxs': 360px,

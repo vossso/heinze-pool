@@ -1,6 +1,6 @@
 ---
 templateKey: product-page
-image: /img/2001.jpg
+image: /img/Wass_stage.jpg
 title: Zubehör
 productElement:
   - description: >-
@@ -14,7 +14,7 @@ productElement:
     image: /img/icon_Rob-blue.png
     images:
       - alt: Poolroboter
-        image: /img/2001.jpg
+        image: /img/Pool_PP.jpg
     introtext: >-
       Unsere kleinen Helfer. Automatische Reinigungsroboter zur Reinigung des
       Bodens, der Wände und der Wasserlinie.
@@ -31,7 +31,7 @@ productElement:
     image: /img/icon_Hz-blue.png
     images:
       - alt: Beckenheizung Poolheizungen
-        image: /img/p1020287-edit.jpg
+        image: /img/Zub_HZ.jpg
     introtext: >-
       Wärmepumpen und Wärmetauscher bringen Ihnen Ihre Wunschwassertemperatur
       unabhängig vom Wetter.
@@ -49,7 +49,7 @@ productElement:
     image: /img/icon_GSA-blue.png
     images:
       - alt: Gegenstromanlage
-        image: /img/old_1987.jpg
+        image: /img/Zub_GS.jpg
     introtext: >-
       Verändern Sie Ihr komplettes Poolerlebnis mit einer Entscheidung. Als
       Sportgerät, Spaßbringer oder Attraktion.
@@ -67,7 +67,7 @@ productElement:
     image: /img/icon_Light-blue.png
     images:
       - alt: Pool Einbauteile
-        image: /img/2001.jpg
+        image: /img/Zub_Einb.jpg
     introtext: >-
       Düsen, Skimmer, Beleuchtung und noch vieles mehr machen Ihre Anlage erst
       vollständig und funktionsfähig.
@@ -85,7 +85,7 @@ productElement:
     image: /img/icon_Fit-blue.png
     images:
       - alt: PVC Fittinge
-        image: /img/2001.jpg
+        image: /img/Zub_PVC.jpg
     introtext: >-
       Winkel, Bögen, Verschraubungen, Kugelhähne, T-Stücke, Muffen und weitere
       sind die Träger Ihres Wassersystems

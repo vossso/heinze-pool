@@ -22,7 +22,7 @@ const Overlay = ({ title, description, image, variant, onClick }) => {
           </div>
         </div>
         <button className="Overlay__close" onClick={onClick}>
-          <HexaIcon number="X" />
+          <HexaIcon number="X" size="4rem"/>
         </button>
       </Container>
     </div>

@@ -6,6 +6,7 @@ $padding-m: calc(18rem / 2);
 $padding-l: calc(23rem / 2);
 
 .HexaPattern {
+  margin: 0 auto;
   margin-top: $margin-xl;
   position: relative;
   width: 95vw;
@@ -14,19 +15,16 @@ $padding-l: calc(23rem / 2);
     width: $max-width-xs;
   }
   @include respond-to(m) {
-    width: $max-width-s;
+    width: $max-width-s-inner;
   }
   @include respond-to(l) {
-    width: $max-width-m;
+    width: $max-width-m-inner;
   }
   @include respond-to(xl) {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
-    height: 80vh;
     width: 100%;
-    width: $max-width-l-inner;
   }
 
   &__content {

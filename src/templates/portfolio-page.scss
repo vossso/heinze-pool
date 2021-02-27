@@ -2,6 +2,21 @@
 @import "../styles/media-queries";
 
 .PortfolioPage {
+  &__stage {
+    padding-top: $margin-menu-mobile+$margin-s;
+    text-align: center;
+
+    > h3 {
+      margin-bottom: $margin-s;
+      font-size: $fs-h3-mobile;
+    }
+    @include respond-to(xl) {
+      padding-top: $margin-menu+$margin-m;
+      > h3 {
+        font-size: $fs-h3;
+      }
+    }
+  }
 
   &__content {
     position: relative;

@@ -8,8 +8,8 @@ import "./ProductOverview.scss";
 import Container from "../share/Container/Container";
 
 const ProductOverview = ({ primeProducts, secondProducts }) => {
-  const Breakpoint = useBreakpoint("xxl");
-  const variant = Breakpoint ? ["half-height", "full-width"] : "half-height";
+  const Breakpoint = useBreakpoint("l");
+  const variant = Breakpoint ? ["half-height--start", "full-width"] : "half-height--start";
   const secondIntro = [];
 
   secondProducts.forEach( element => {

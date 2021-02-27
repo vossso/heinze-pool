@@ -9,7 +9,7 @@ import test from '../../img/service.jpg'
 const ServiceOverviewIntro = ({ services, description }) => {
   return services ? (
     <div className="ServiceOverviewIntro">
-      <Container variant="half-height">
+      <Container variant="half-height--start">
         <div className="ServiceOverviewIntro__intro">
             {/* ToDo Image mit Elementen */}
           <div className="ServiceOverviewIntro__left">
