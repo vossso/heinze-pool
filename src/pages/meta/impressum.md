@@ -1,6 +1,6 @@
 ---
 templateKey: meta-text
-title: Test
+title: Impressum
 date: 2021-02-14T19:08:29.348Z
 text: >-
   Heinze Pool GmbH

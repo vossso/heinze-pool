@@ -56,6 +56,10 @@
     height: 1px;
     display: block;
     background-color: $hp-blue-2;
+    -webkit-transition: width $duration-s;
+    -moz-transition: width $duration-s;
+    -ms-transition: width $duration-s;
+    -o-transition: width $duration-s;
     transition: width $duration-s;
   }
 

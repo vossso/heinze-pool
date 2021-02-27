@@ -378,7 +378,7 @@ collections:
               {
                 label: Text,
                 name: "description",
-                widget: text,
+                widget: markdown,
                 required: false,
               },
               {

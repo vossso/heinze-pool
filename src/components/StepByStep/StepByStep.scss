@@ -1,36 +1,33 @@
 @import "../../styles/_global.scss";
 @import "../../styles/media-queries";
 
+$duration: 0.5s;
+
 .StepByStep {
-  padding-top: $margin-menu + $margin-m;
   position: relative;
-  height: 100%;
+  &__wrapper {
+    padding-top: $margin-menu + $margin-m;
+    position: relative;
+    height: 100%;
 
-  text-align: center;
+    text-align: center;
 
-  > h3 {
-    font-size: $fs-h3-mobile;
-    margin-bottom: $margin-s;
+    > h3 {
+      font-size: $fs-h3-mobile;
+      margin-bottom: $margin-s;
 
-    @include respond-to(m) {
-      font-size: $fs-h3;
-      margin-bottom: initial;
+      @include respond-to(m) {
+        font-size: $fs-h3;
+        margin-bottom: initial;
+      }
+    }
+
+    > p {
+      margin-bottom: $margin-l;
     }
   }
-
-  > p {
-    margin-bottom: $margin-l;
-  }
-  &__line {
-    width: 2px;
-    position: absolute;
-    top: 12rem;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-
-    background-color: $hp-blue;
-    animation: move 3000ms 1;
+  &__steps {
+    height: 100%;
   }
 }
 
@@ -40,5 +37,100 @@
   }
   to {
     height: 100%;
+  }
+}
+
+.LineAnimation {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin-top: 28.2rem;
+
+  & .zigzag {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 35.1rem;
+    margin-top: -2rem;
+  }
+
+  .line-0,
+  .line-even,
+  .line-odd {
+    flex: 0 0 auto;
+    opacity: 1;
+    position: relative;
+    background-color: $hp-blue;
+    height: 3px;
+    width: 0;
+    -webkit-transition: width $duration;
+    -moz-transition: width $duration;
+    -ms-transition: width $duration;
+    -o-transition: width $duration;
+    transition: width $duration;
+  }
+
+  .line-0 {
+    left: 0;
+    top: 0;
+  }
+  .line-even {
+    transform: rotate(35deg);
+    transform-origin: 0% 100%;
+  }
+  .line-odd {
+    transform: rotate(-35deg);
+    transform-origin: 100% 100%;
+  }
+
+  &--start {
+    .line-0 {
+      width: 100rem;
+    }
+    .line-even,
+    .line-odd {
+      width: 18rem;
+    }
+
+    .no1 {
+      -webkit-transition: width $duration $duration;
+      -moz-transition: width $duration $duration;
+      -ms-transition: width $duration $duration;
+      -o-transition: width $duration $duration;
+      transition: width $duration $duration;
+    }
+    .no2 {
+      -webkit-transition: width $duration $duration * 2;
+      -moz-transition: width $duration $duration * 2;
+      -ms-transition: width $duration $duration * 2;
+      -o-transition: width $duration $duration * 2;
+      transition: width $duration $duration * 2;
+    }
+    .no3 {
+      -webkit-transition: width $duration $duration * 3;
+      -moz-transition: width $duration $duration * 3;
+      -ms-transition: width $duration $duration * 3;
+      -o-transition: width $duration $duration * 3;
+      transition: width $duration $duration * 3;
+    }
+    .no4 {
+      -webkit-transition: width $duration $duration * 4;
+      -moz-transition: width $duration $duration * 4;
+      -ms-transition: width $duration $duration * 4;
+      -o-transition: width $duration $duration * 4;
+      transition: width $duration $duration * 4;
+    }
+    .no5 {
+      -webkit-transition: width $duration $duration * 5;
+      -moz-transition: width $duration $duration * 5;
+      -ms-transition: width $duration $duration * 5;
+      -o-transition: width $duration $duration * 5;
+      transition: width $duration $duration * 5;
+    }
   }
 }

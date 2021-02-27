@@ -36,6 +36,10 @@
     overflow: hidden;
     background: $hp-white;
 
+    -webkit-transition: opacity $duration-m;
+    -moz-transition: opacity $duration-m;
+    -ms-transition: opacity $duration-m;
+    -o-transition: opacity $duration-m;
     transition: opacity $duration-m;
     opacity: 1;
     top: 0;

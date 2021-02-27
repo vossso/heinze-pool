@@ -65,7 +65,7 @@ steps:
 shop:
   imageObject:
     alt: Poolshop Daimlerstr
-    image: /img/2001.jpg
+    image: /img/Service_shop.jpg
   text: >-
     In unserem Geschäft können sie sich rund um das Thema Pool informieren, eine
     professionelle Wasseranalyse durchführen lassen, etliche Muster begutachten
