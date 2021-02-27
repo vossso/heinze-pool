@@ -69,7 +69,7 @@ const Navbar: React.FC<INavbarProps> = ({ variant, offset }) => {
           </div>
 
           {BreakpointM ? (
-            <MobileNav />
+            <MobileNav variant={!showDefaultNav  && "white" }/>
           ) : (
             <div className="Navbar__right">
               {getLink("/service","Leistungen")}

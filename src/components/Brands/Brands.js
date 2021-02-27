@@ -8,7 +8,7 @@ import Container from '../share/Container/Container'
 const Brands =({brands}) => {
 
     return (
-        brands ? <Container variant={["half-height", "starter"]}>
+        brands ? <Container variant={["half-height--top", "starter"]}>
             <div className="Brands">
                 {brands.map((brand, index) => {
                     return <div className="Brands__element" key={index}>

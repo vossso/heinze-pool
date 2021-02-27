@@ -11,7 +11,7 @@ import "./portfolio-page.scss";
 export const PortfolioPageTemplate = ({ title, description, imageTeasers }) => {
   return (
     <div className="PortfolioPage">
-      <Container variant={["full-height", "starter"]}>
+      <Container variant={["full-height", "starter", "full-width"]}>
         <div className="PortfolioPage__stage">
           <h3>{title}</h3>
           <p>{description}</p>

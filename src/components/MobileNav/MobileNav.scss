@@ -1,12 +1,14 @@
 @import "../../styles/_global.scss";
+@import "../../styles/media-queries";
 
 .MobileNav {
   position: absolute;
   z-index: 50;
-  width: 100vw;
-  height: auto;
   top: 0;
+  right: 0;
   left: 0;
+  width: auto;
+  height: 100%;
 
   &__bar {
     z-index: 1;
@@ -43,6 +45,7 @@
   &__burger {
     > div {
       margin-bottom: 0.5rem;
+      margin-right: 2rem;
 
       &::after {
         display: block;
@@ -75,6 +78,41 @@
       height: 100%;
     }
   }
+  &__close {
+    position: absolute;
+    top: $margin-m;
+    right: 0;
+    margin: 0;
+
+    > div {
+      position: relative;
+      padding: 20px;
+      overflow: hidden; //hide overflow of pseudo elements
+    }
+
+    > div:before,
+    > div:after {
+      position: absolute;
+      content: "";
+      background: $hp-white;
+      display: block;
+      width: 100%;
+      height: 2px;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      //center the X vertically and horizontally:
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    > div:after {
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
   &__content {
     position: absolute;
     top: 10%;
@@ -92,7 +130,7 @@
       max-width: 30rem;
     }
     > a,
-    button {
+    .MobileNav__ext > a {
       color: $hp-white;
       font-weight: $fw-bold;
       font-size: $fs-h4;
@@ -130,7 +168,6 @@
     }
   }
   &__dropdown {
-    // position: absolute;
     height: auto;
     width: auto;
     max-width: 15rem;
@@ -140,10 +177,18 @@
 
     padding: $padding-xs;
     background-color: transparent;
-    background-color: transparent;
 
     > a {
       margin-bottom: $margin-xs;
+      color: $hp-white;
+      font-size: $fs-h4;
+      text-align: center;
+    }
+  }
+
+  &--white {
+    .MobileNav__burger div::after {
+      background-color: $hp-white;
     }
   }
 }

@@ -1,6 +1,6 @@
 ---
 templateKey: product-page
-image: /img/2001.jpg
+image: /img/Wass_stage.jpg
 title: Wasserpflege
 productElement:
   - description: >-
@@ -14,7 +14,7 @@ productElement:
     image: /img/icon_Fltr-blue.png
     images:
       - alt: Filtertechnik
-        image: /img/2001.jpg
+        image: /img/Wass_Fltr.jpg
     introtext: >-
       Die Basis einer jeden Pooltechnik und der Grundstein für sauberes und
       klares Wasser in vielerlei Variationen.
@@ -32,7 +32,7 @@ productElement:
     image: /img/icon_Pump-blue.png
     images:
       - alt: Pumpen
-        image: /img/2001.jpg
+        image: /img/Wass_Pmp.jpg
     introtext: >-
       Maschinen los, Wasser marsch! Qualitätspumpen für jeden Zweck und in jeder
       Stärke sorgen für den richtigen Wassertransport.
@@ -51,7 +51,7 @@ productElement:
     image: /img/icon_Dos-blue.png
     images:
       - alt: Dosieranlagen
-        image: /img/2001.jpg
+        image: /img/Wass_Dos.jpg
     introtext: >-
       Automatische Messung und Dosierung der Poolchemie, angepasst an Ihre
       Beckenverhältnisse und äußere Gegebenheiten.
@@ -70,7 +70,7 @@ productElement:
     image: /img/icon_WP-blue.png
     images:
       - alt: Poolchemie Wasserpflegemittel
-        image: /img/2001.jpg
+        image: /img/Wass_Chem.jpg
     introtext: >-
       Desinfektion und Notwendigkeit. Nur sauberes und gesundes Wasser
       garantiert einen unbeschwerten Badespaß

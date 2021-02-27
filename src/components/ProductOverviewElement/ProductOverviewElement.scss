@@ -17,12 +17,12 @@
   }
   @include respond-to(xl) {
     &:not(:first-child) .ProductOverviewElement__content {
-      margin-left: $margin-s;
+      margin-left: $margin-xl;
     }
   }
 
   &__content {
-    max-width: 28rem;
+    max-width: 32rem;
     height: 100%;
 
     margin-left: $margin-s;
@@ -30,23 +30,25 @@
     > .TextBox {
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
+
+      & .TextBox__icon {
+        flex: 0 0 30%;
+        width: 10rem;
+        margin-bottom: 2rem;
+        margin-left: -1.5rem;
+      }
 
       > h4 {
         font-size: $fs-h4-mobile;
         display: inline-block;
-        flex: 0 0 15%;
+        flex: 0 0 12%;
       }
       > p {
         flex: 0 0 auto;
+        margin-bottom: $margin-s;
+        font-size: 1.6rem;
       }
-    }
-
-    @include respond-to(m) {
-      margin-left: $margin-s;
-    }
-
-    @include respond-to(xl) {
-      margin-left: 0;
     }
   }
   &__button {

@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.scss";
 import PropTypes from "prop-types";
 import GoogleMap from "./share/GoogleMap/GoogleMap";
-import useWindowLocation from "../hooks/useWindowLocation"
+import useWindowLocation from "../hooks/useWindowLocation";
 
 import { graphql, StaticQuery } from "gatsby";
 
@@ -22,8 +22,10 @@ const Footer: React.FC<IFooterProps> = ({ data }) => {
 
   const location = useWindowLocation().pathname;
 
-  const hasMap = location === '/about';
-  const variant = hasMap ? ["no-top", "full-height", "padding-s"] : ["no-top", "half-height", "padding-s"]
+  const hasMap = location === "/about";
+  const variant = hasMap
+    ? ["no-top", "full-height", "padding-s"]
+    : ["no-top", "half-height--bottom", "padding-s"];
 
   return (
     <footer className="Footer">
@@ -67,17 +69,18 @@ const Footer: React.FC<IFooterProps> = ({ data }) => {
             </p>
           </div>
         </div>
-        {hasMap && <div className="Footer__map">
-          <GoogleMap
-            address={{
-              location: "Heinze Pool GmbH",
-              street: "Daimlerstraße 9",
-              plz: "30916",
-            }}
-          />
-        </div>}
+        {hasMap && (
+          <div className="Footer__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.9117750436635!2d9.83388421594464!3d52.42639625091423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b00df8991b0f5f%3A0x73828ef50bcf9bd2!2sHeinze%20Pool%20GmbH!5e0!3m2!1sde!2sde!4v1614376945520!5m2!1sde!2sde"
+              width="100%"
+              height="450"
+              loading="lazy"
+            ></iframe>
+          </div>
+        )}
         <div className="Footer__subline">
-          <a href='./meta/impressum'>Impressum</a>
+          <a href="./meta/impressum">Impressum</a>
           <p>Datenschutz</p>
         </div>
       </Container>

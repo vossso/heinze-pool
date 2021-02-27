@@ -1,6 +1,6 @@
 ---
 templateKey: product-page
-image: /img/2001.jpg
+image: /img/Pool_stage.jpg
 title: Pools
 productElement:
   - description: >-
@@ -15,7 +15,7 @@ productElement:
     image: /img/icon_PP-blue.png
     images:
       - alt: poly
-        image: /img/2001.jpg
+        image: /img/Pool_PP.jpg
     introtext: >-
       Thermoplastischer Kunststoff, welcher sich nur für Sie, ganz individuell
       und auf den Zentimeter genau zu Ihrem Wunschpool formen lässt.
@@ -31,8 +31,8 @@ productElement:
       eine zusätzliche Schicht, der sogenannten Ceramic Schicht, erhöht werden.
     image: /img/icon_GFK-blue.png
     images:
-      - alt: tag1
-        image: /img/2001.jpg
+      - alt: GFK Pool
+        image: /img/Pool_GFK.jpg
     introtext: >-
       Glasfaserverstärkter Kunststoff, mit oder ohne Ceramic Schicht in fester
       Form, abgerundeten Ecken und nahtloser Schönheit.
@@ -48,7 +48,7 @@ productElement:
     image: /img/icon_Seg-blue.png
     images:
       - alt: Segmentbecken
-        image: /img/2001.jpg
+        image: /img/Pool_Seg.jpg
     introtext: >-
       Durch den Zusammenbau der Segmente, direkt in der Grube, für ausnahmslos
       jeden Garten flexibel realisierbar.
@@ -63,7 +63,7 @@ productElement:
     image: /img/icon_CP-blue.png
     images:
       - alt: Container Pools
-        image: /img/2001.jpg
+        image: /img/Pool_CP.jpg
     introtext: >-
       Genießer oder Individualist? Überzeugen Sie sich von etwas
       Außergewöhnlichem. Entdecken Sie unsere Whirlpools und Containerpools.
@@ -78,7 +78,7 @@ productElement:
     image: /img/icon_WP-blue.png
     images:
       - alt: tag whirlpool
-        image: /img/2001.jpg
+        image: /img/Pool_WP.jpg
     introtext: >-
       Genießer oder Individualist? Wie wäre es mal mit Anders? Entdecken Sie
       unsere Whirlpools und Containerpools.

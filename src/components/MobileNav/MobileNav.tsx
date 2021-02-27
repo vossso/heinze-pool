@@ -5,14 +5,17 @@ import logo from "../../img/hp-logo_white.png";
 import AnimateHeight from "react-animate-height";
 
 import "./MobileNav.scss";
+import getVariantClasses from "../../helpers/getVariantClass";
+import HexaIcon from "../share/HexaIcon/HexaIcon";
 
 interface IMobileNavProps {
-  show?: boolean;
+  variant?: string;
 }
 
-const MobileNav: React.FC<IMobileNavProps> = () => {
+const MobileNav: React.FC<IMobileNavProps> = ({ variant }) => {
   const [showDrop, setShowDrop] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const className = getVariantClasses("MobileNav", variant);
 
   const getLink = (to, label) => {
     return (
@@ -23,7 +26,7 @@ const MobileNav: React.FC<IMobileNavProps> = () => {
   };
 
   return (
-    <div className="MobileNav">
+    <div className={className}>
       {!showMenu ? (
         <div className="MobileNav__bar">
           <button
@@ -40,23 +43,22 @@ const MobileNav: React.FC<IMobileNavProps> = () => {
           <div className="MobileNav__bg-image">
             <img src={bgImage} alt="Poool" />
           </div>
+          <button
+            className="MobileNav__close"
+            onClick={() => setShowMenu(false)}
+          >
+            <div></div>
+          </button>
           <div className="MobileNav__content">
             <img src={logo} alt="Poool" />
             {getLink("/service", "Leistungen")}
             <div className="MobileNav__ext">
-              <button
+              <a
                 className="MobileNav__link"
                 onClick={() => setShowDrop(!showDrop)}
               >
-                <div
-                  className={`Navbar__plus${
-                    showDrop ? " Navbar__plus--active" : ""
-                  }`}
-                >
-                  +
-                </div>
                 Produkte
-              </button>
+              </a>
               <AnimateHeight height={showDrop ? "auto" : 0} duration={300}>
                 <div className={`MobileNav__dropdown`}>
                   {getLink("/products", "Übersicht")}
@@ -67,10 +69,10 @@ const MobileNav: React.FC<IMobileNavProps> = () => {
                 </div>
               </AnimateHeight>
             </div>
-            {getLink("/portfolio","Projekte")}
-            {getLink("/about","Über uns")}
-            {getLink("/about#contact","Kontakt")}
-            {getLink("/faq","FAQ")}
+            {getLink("/portfolio", "Projekte")}
+            {getLink("/about", "Über uns")}
+            {getLink("/about#contact", "Kontakt")}
+            {getLink("/faq", "FAQ")}
           </div>
         </div>
       )}

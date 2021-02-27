@@ -6,7 +6,7 @@ import useBreakpoint from "../../hooks/useBreakpoint";
 
 const Stage = ({ image, title, isStarter = true }) => {
   const BreakpointM = useBreakpoint("m");
-  const variant = isStarter ? ["half-height--start", "full-width", "no-padding", "starter"] : ["half-height", "full-width", "no-padding"]
+  const variant = isStarter ? ["half-height--start", "full-width", "no-padding", "starter"] : ["half-height--start", "full-width", "no-padding"]
 
   const getContent = (
     <div className="Stage">

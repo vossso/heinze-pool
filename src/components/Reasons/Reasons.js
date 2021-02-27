@@ -12,7 +12,7 @@ const Reasons = ({ title, reasonsList }) => {
   return reasonsList.length > 0 ? (
     <div className="Reasons">
       {/* ToDo Starter */}
-      <Container variant={["full-height", "starter"]}>
+      <Container variant={["full-height"]}>
         <div className="Reasons__wrapper">
           <h3>{title}</h3>
           <div className="Reasons__content">

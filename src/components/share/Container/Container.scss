@@ -48,14 +48,23 @@
       max-height: 100rem;
     }
   }
-  &--half-height {
+  &--half-height--bottom {
     margin-top: 0;
     min-height: auto;
-    // border: solid blue 2px;
 
     @include respond-to(xl) {
-      height: calc(50vh - 8rem/2);
+      height: calc(50vh - 8rem);
       max-height: 50rem;
+    }
+  }
+  &--half-height--top{
+    margin-top: 0;
+    min-height: auto;
+
+    @include respond-to(xl) {
+      height: calc(50vh + 8rem);
+      max-height: 50rem;
+      padding-top: 8rem;
     }
   }
   &--half-height--start {

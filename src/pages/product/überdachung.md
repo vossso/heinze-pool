@@ -1,6 +1,6 @@
 ---
 templateKey: product-page
-image: /img/2001.jpg
+image: /img/Abd_stage.jpg
 title: Abdeckung
 productElement:
   - description: >-
@@ -14,7 +14,7 @@ productElement:
       Poolhalle einfach nach hinten verschieben.
     images:
       - alt: Leichtbauhallen
-        image: /img/2001.jpg
+        image: /img/Abd_Ueb.jpg
     introtext: >-
       Pulverbeschichtetes Aluminium gepaart mit klarem Polycarbonat im modernen
       Design als Halle für jeden Garten.
@@ -33,7 +33,7 @@ productElement:
     image: /img/icon_Roll-blue.png
     images:
       - alt: Rolladen
-        image: /img/2001.jpg
+        image: /img/Abd_Roll.jpg
     introtext: >-
       Erhalten die Ästhetik Ihres Pools bei maximaler Effizienz und verschwinden
       auf Knopfdruck.
@@ -51,7 +51,7 @@ productElement:
     image: /img/icon_Plane-blue.png
     images:
       - alt: Rollschutzplane
-        image: /img/2001.jpg
+        image: /img/Abd_RollP.jpg
     introtext: >-
       Preiswerter Alleskönner. Sicherheitsabdeckung für die Sommer- und
       Wintersaison in verschiedenen Farben.
@@ -69,7 +69,7 @@ productElement:
     image: /img/icon_Luft-blue.png
     images:
       - alt: Luftpolsterplane
-        image: /img/2001.jpg
+        image: /img/Abd_Lupo.jpg
     introtext: >-
       Das Mindestmaß und die wohl einfachste Art sämtliche Vorteile einer
       Abdeckung für sich zu nutzen.

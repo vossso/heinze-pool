@@ -9,7 +9,7 @@ const ProductOverviewElement = ({ title, description, image }) => {
   return (
     <div className="ProductOverviewElement">
       <div className="ProductOverviewElement__content">
-        <TextBox title={title} text={description} variant="full-height" icon={image}/>
+        <TextBox title={title} text={description} variant="full-height" icon={{image}}/>
         <div className="ProductOverviewElement__button">
           <ArrowLink link={`#${title}`} />
         </div>

@@ -1,4 +1,5 @@
 @import "../../../styles/_global.scss";
+@import "../../../styles/media-queries";
 
 .Overlay {
   z-index: 60;
@@ -31,7 +32,12 @@
 
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
+    height: 70vh;
+
+    @include respond-to(m) {
+      flex-direction: row;
+    }
   }
 
   &__text {
@@ -39,13 +45,32 @@
   }
   &__image {
     flex: 1 1 auto;
-    margin-left: $spacer-m;
+    overflow: hidden;
+    height: 100%;
+
+    > div {
+      height: 100%;
+      width: auto;
+    }
+    @include respond-to(m) {
+      margin-left: $spacer-m;
+    }
   }
   &__close {
     position: absolute;
     top: $margin-l;
-    right: $margin-l;
+    right: $margin-s;
     z-index: 2;
     cursor: pointer;
+
+    > .HexaIcon h4 {
+      font-size: $fs-h4-mobile;
+      margin-top: -0.5rem;
+    }
+
+    @include respond-to(m) {
+      top: $margin-l;
+      right: $margin-l;
+    }
   }
 }

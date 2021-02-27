@@ -19,7 +19,7 @@ export const AboutPageTemplate = ({
   return (
     <div className="AboutPage">
       <div className="AboutPage__stage">
-        <Stage title={title} image={titleimage.image} alt={titleimage.alt} />
+        <Stage title={title} image={titleimage.image} alt={titleimage.alt} isStarter={false}/>
       </div>
       <div className="AboutPage__content">
         <Quote

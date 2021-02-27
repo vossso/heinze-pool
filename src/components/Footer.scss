@@ -25,7 +25,7 @@
 
   &__content {
     height: 100%;
-    margin-bottom: $spacer-m;
+    margin-bottom: $spacer-s;
 
     display: flex;
     flex-direction: row;
@@ -83,7 +83,9 @@
       content: " Uhr";
     }
   }
-
+  &__map {
+    margin-bottom: $margin-m;
+  }
   // width: 100vw;
   &__subline {
     margin-bottom: $margin-m;
