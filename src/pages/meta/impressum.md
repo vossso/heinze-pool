@@ -29,9 +29,7 @@ text: >-
 
 
 
-  Inhalte dieser Website
-
-
+  <h4>Inhalte dieser Website</h4>
 
 
   Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt erstellt. Der
@@ -42,9 +40,7 @@ text: >-
   des Anbieters wieder.
 
 
-
-
-  Externe Links
+  <h4>Externe Links</h4>
 
 
   Diese Website enthält Verknüpfungen zu Websites Dritter („externe Links“).
@@ -60,9 +56,7 @@ text: >-
   werden jedoch derartige externe Links unverzüglich gelöscht.
 
 
-
-
-  Urheberrecht
+  <h4>Urheberrecht</h4>
 
 
   Die auf dieser Website veröffentlichten Inhalte und Werke sind
@@ -80,9 +74,7 @@ text: >-
   dieser Website in fremden Frames ist nur mit Erlaubnis zulässig.
 
 
-
-
-  Datenschutz
+  <h4>Datenschutz</h4>
 
 
   Der Anbieter weist ausdrücklich darauf hin, dass die Datenübertragung im
@@ -97,9 +89,7 @@ text: >-
   Daten.
 
 
-
-
-  Google Analytics
+  <h4>Google Analytics</h4>
 
 
   Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc.
@@ -108,8 +98,6 @@ text: >-
   Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen
   über Ihre Benutzung dieser Website werden in der Regel an einen Server von
   Google in den USA übertragen und dort gespeichert.
-
-
 
 
   Im Falle der Aktivierung der IP-Anonymisierung auf dieser Webseite, wird Ihre
@@ -122,8 +110,6 @@ text: >-
   Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen
   und um weitere mit der Websitenutzung und der Internetnutzung verbundene
   Dienstleistungen gegenüber dem Websitebetreiber zu erbringen.
-
-
 
 
   Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse
