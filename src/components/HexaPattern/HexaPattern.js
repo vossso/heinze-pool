@@ -23,8 +23,6 @@ const HexaPattern = ({ imageList }) => {
       : [2, 2, 2, 2, 2, 2];
 
 
-    console.log(BreakpointL, pattern)
-
     imageList &&
       imageList.forEach((element, index) => {
         if (index % pattern[i] === 0 && index !== 0) {
