@@ -3,12 +3,11 @@ templateKey: product-page
 image: /img/Pool_stage.jpg
 title: Pools
 productElement:
-  - description: 
-      …sind immer ein Unikat. 
-      Treffen Sie selbst die Entscheidung über die
+  - description: >-
+      …sind immer ein Unikat. Treffen Sie selbst die Entscheidung über die
       exakte Größe, die Anzahl und Form der Treppen, welche Sprudelbank und
       Gegenstromanlage oder ob Ihr Boden dieselbe Farbe wie Ihre Wand tragen
-      soll. 
+      soll.
 
 
       Vollkommene Flexibilität ist einer der größten Vorteile dieser in höchster
@@ -27,9 +26,8 @@ productElement:
     title: Polypropylen Pools
   - description: >-
       …tragen ihre weichen, nahtlosen Kanten mit Stolz und fügen sich
-      geschmeidig in jedes Landschaftsbild ein. 
-      Durch Ihre festen Formen und das
-      Schichtsystem bieten diese Becken eine extrem hohe Steifigkeit, sind
+      geschmeidig in jedes Landschaftsbild ein.  Durch Ihre festen Formen und
+      das Schichtsystem bieten diese Becken eine extrem hohe Steifigkeit, sind
       UV-beständig und resistent gegen alle üblichen Chemikalien. Zur Auswahl
       steht eine große Varianten- und Farbvielfalt oder ein schlicht elegantes
       Design. Als Ceramic Pool werden Becken bezeichnet dessen Festigkeit durch
@@ -91,12 +89,13 @@ productElement:
     title: Whirlpool
 brands:
   - image: /img/bayrol.jpg
+    link: 'https://www.bayrol.de/'
     name: Bayrol
   - image: /img/alukov.jpg
+    link: 'https://www.alukov.de/'
     name: Alukov
   - image: /img/rivierapool.jpg
+    link: 'https://www.rivierapool.com/'
     name: Riviera Pool
-  - image: /img/bayrol.jpg
-    name: logo4
 ---
 
