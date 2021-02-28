@@ -4,7 +4,7 @@
   margin-bottom: 12rem;
   position: relative;
   z-index: 100;
-  padding-left: $margin-xl;
+  // padding-left: $margin-xl;
 
   @include respond-to(l) {
     padding-left: 0;

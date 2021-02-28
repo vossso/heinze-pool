@@ -13,6 +13,7 @@
   position: relative;
   display: block;
   cursor: pointer;
+  overflow: visible;
 
   @include respond-to(m) {
     width: 100%;

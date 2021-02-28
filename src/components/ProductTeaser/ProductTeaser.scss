@@ -2,59 +2,58 @@
 @import "../../styles/media-queries";
 
 .ProductTeaser {
+  position: relative;
+  z-index: 0;
+  
+  &__gallery {
     position: relative;
-    z-index: 0;
+    z-index: 1;
 
-    @include respond-to(s) {
-        height: 100%;
+    width: 100vw;
+    height: 100%;
+
+    @include respond-to(m) {
+      overflow: hidden;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
     }
+  }
 
-    &__gallery {
-        position: relative;
-        z-index: 1;
+  &__description {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    margin: -10rem auto $margin-l;
 
-        width: 100vw;
-        height: 100%;
+    @include respond-to(m) {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 50%;
+      height: 100%;
+      width: 40%;
 
-        @include respond-to(m) {
-            overflow: hidden;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            top: 0;
-        }
+      display: flex;
+      align-items: center;
 
+      div {
+        padding: $margin-l;
+      }
     }
-
-    &__description {
-        position: relative;
-        z-index: 2;
-        width: 90%;
-        margin: -10rem auto $margin-l;
-
-        @include respond-to(m) {
-            position: absolute;
-            top:0;
-            bottom: 0;
-            right: 0;
-            left: 50%;
-            height: 100%;
-            width: 40%;
-    
-            display: flex;
-            align-items: center;
-        }
-    }
-    &__text {
-        height: max-content;
-        padding: $margin-m;
-        background-color: $hp-white;
-        box-shadow: $bs-standard;
-        border-radius: $br-standard;
-        border: $border-xs;
-    }
-    &__title {
-        text-align: left;
-        margin-bottom: $margin-xs;
-    }
+  }
+  &__text {
+    height: max-content;
+    padding: $margin-m;
+    background-color: $hp-white;
+    box-shadow: $bs-standard;
+    border-radius: $br-standard;
+    border: $border-xs;
+  }
+  &__title {
+    text-align: left;
+    margin-bottom: $margin-xs;
+  }
 }

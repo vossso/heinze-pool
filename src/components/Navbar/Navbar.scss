@@ -46,6 +46,10 @@
         width: 100%;
       }
     }
+    > img {
+      height: 2rem;
+      margin-top: 0.5rem;
+    }
   }
 
   &__container,
@@ -101,6 +105,8 @@
 
   &__left {
     flex: 1 1 20%;
+    display: flex;
+    align-items: center;
 
     a {
       margin: 0;
@@ -117,7 +123,7 @@
 
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
   }
 
   &__ext {

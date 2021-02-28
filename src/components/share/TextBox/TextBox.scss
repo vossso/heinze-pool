@@ -37,6 +37,7 @@
   }
 
   &--auto-height {
+    min-height: 8rem;
     min-height: max-content;
   }
   &--full-height {

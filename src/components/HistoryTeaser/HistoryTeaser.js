@@ -18,7 +18,7 @@ const HistoryTeaser = ({ data }) => {
         <div className="HistoryTeaser__wrapper">
           <div className="HistoryTeaser__content">
             <span>{year}</span>
-            <TextBox text={<Markdown>{description}</Markdown>} />
+            <TextBox text={description} isRichText={true}/>
           </div>
           {historyimage && (
             <div className="HistoryTeaser__image">

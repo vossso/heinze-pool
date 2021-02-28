@@ -55,37 +55,41 @@ $duration: 0.5s;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    height: 35.1rem;
-    margin-top: -2rem;
+    height: 36.1rem;
+    margin-top: 4rem;
   }
 
-  .line-0,
   .line-even,
   .line-odd {
     flex: 0 0 auto;
-    opacity: 1;
     position: relative;
     background-color: $hp-blue;
+    background: linear-gradient(to left, $hp-blue 50%, #fff 50%);
+    background-size: 200% 100%;
+
+    width: 18rem;
     height: 3px;
-    width: 0;
-    -webkit-transition: width $duration;
-    -moz-transition: width $duration;
-    -ms-transition: width $duration;
-    -o-transition: width $duration;
-    transition: width $duration;
   }
 
   .line-0 {
-    left: 0;
-    top: 0;
+    position: relative;
+    height: 3px;
+    width: 0rem;
+    background: none;
+    background-color: $hp-blue;
+    -webkit-transition: width $duration $duration;
+    -moz-transition: width $duration $duration;
+    -ms-transition: width $duration $duration;
+    -o-transition: width $duration $duration;
+    transition: width $duration;
   }
   .line-even {
-    transform: rotate(35deg);
-    transform-origin: 0% 100%;
+    transform: rotate(-146deg);
+    background-position: bottom left;
   }
   .line-odd {
-    transform: rotate(-35deg);
-    transform-origin: 100% 100%;
+    transform: rotate(-33deg);
+    background-position: bottom left;
   }
 
   &--start {
@@ -95,42 +99,43 @@ $duration: 0.5s;
     .line-even,
     .line-odd {
       width: 18rem;
+      background-position: bottom right;
     }
 
     .no1 {
-      -webkit-transition: width $duration $duration;
-      -moz-transition: width $duration $duration;
-      -ms-transition: width $duration $duration;
-      -o-transition: width $duration $duration;
-      transition: width $duration $duration;
+      -webkit-transition: background-position $duration $duration;
+      -moz-transition: background-position $duration $duration;
+      -ms-transition: background-position $duration $duration;
+      -o-transition: background-position $duration $duration;
+      transition: background-position $duration $duration;
     }
     .no2 {
-      -webkit-transition: width $duration $duration * 2;
-      -moz-transition: width $duration $duration * 2;
-      -ms-transition: width $duration $duration * 2;
-      -o-transition: width $duration $duration * 2;
-      transition: width $duration $duration * 2;
+      -webkit-transition: background-position $duration $duration * 2;
+      -moz-transition: background-position $duration $duration * 2;
+      -ms-transition: background-position $duration $duration * 2;
+      -o-transition: background-position $duration $duration * 2;
+      transition: background-position $duration $duration * 2;
     }
     .no3 {
-      -webkit-transition: width $duration $duration * 3;
-      -moz-transition: width $duration $duration * 3;
-      -ms-transition: width $duration $duration * 3;
-      -o-transition: width $duration $duration * 3;
-      transition: width $duration $duration * 3;
+      -webkit-transition: background-position $duration $duration * 3;
+      -moz-transition: background-position $duration $duration * 3;
+      -ms-transition: background-position $duration $duration * 3;
+      -o-transition: background-position $duration $duration * 3;
+      transition: background-position $duration $duration * 3;
     }
     .no4 {
-      -webkit-transition: width $duration $duration * 4;
-      -moz-transition: width $duration $duration * 4;
-      -ms-transition: width $duration $duration * 4;
-      -o-transition: width $duration $duration * 4;
-      transition: width $duration $duration * 4;
+      -webkit-transition: background-position $duration $duration * 4;
+      -moz-transition: background-position $duration $duration * 4;
+      -ms-transition: background-position $duration $duration * 4;
+      -o-transition: background-position $duration $duration * 4;
+      transition: background-position $duration $duration * 4;
     }
     .no5 {
-      -webkit-transition: width $duration $duration * 5;
-      -moz-transition: width $duration $duration * 5;
-      -ms-transition: width $duration $duration * 5;
-      -o-transition: width $duration $duration * 5;
-      transition: width $duration $duration * 5;
+      -webkit-transition: background-position $duration $duration * 5;
+      -moz-transition: background-position $duration $duration * 5;
+      -ms-transition: background-position $duration $duration * 5;
+      -o-transition: background-position $duration $duration * 5;
+      transition: background-position $duration $duration * 5;
     }
   }
 }

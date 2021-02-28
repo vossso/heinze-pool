@@ -19,6 +19,10 @@ $size-l: 25rem;
 
   &__poly {
     image {
+      -webkit-transition: translateY(-200px) translateX(-100px);
+      -moz-transition: translateY(-200px) translateX(-100px);
+      -ms-transition: translateY(-200px) translateX(-100px);
+      -o-transition: translateY(-200px) translateX(-100px);
       transform: translateY(-200px) translateX(-100px);
       opacity: 0.5;
       background-color: $hp-blue;

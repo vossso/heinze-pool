@@ -38,7 +38,7 @@ export const ProductPageTemplate = ({ data }) => {
   useEffect(() => {
     var sliced = pathname.split("/");
     setProduct(products[sliced[sliced.length - 1]]);
-  }, [pathname, products]);
+  }, [pathname]);
 
   return (
     <div>
@@ -132,6 +132,7 @@ export const ProductPageQuery = graphql`
                 }
               }
               name
+              link
             }
           }
           fields {
