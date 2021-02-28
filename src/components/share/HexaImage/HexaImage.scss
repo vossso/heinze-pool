@@ -8,7 +8,7 @@ $size-l: 25rem;
 
 .HexaImage {
   position: relative;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.5rem;
 
   @include respond-to(s) {
     margin-bottom: 1.5rem;

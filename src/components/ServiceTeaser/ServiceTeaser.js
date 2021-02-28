@@ -5,13 +5,15 @@ import "./ServiceTeaser.scss";
 import Container from "../share/Container/Container";
 import ServiceTeaserElement from "../ServiceTeaserElement/ServiceTeaserElement";
 import ArrowLink from '../share/ArrowLink/ArrowLink';
+import useBreakpoint from "../../hooks/useBreakpoint";
 
 
 const ServiceTeaser = ({ content }) => {
   const { title, labor } = content;
+  const BreakpointL = useBreakpoint("l");
 
   return content ? (
-    <Container variant={["full-height", "starter"]}>
+    <Container variant={BreakpointL ? "" :["full-height", "starter"]}>
       <div className="ServiceTeaser">
         <h3>{title}</h3>
         <div className="ServiceTeaser__boxes">

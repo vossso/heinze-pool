@@ -8,7 +8,7 @@
     font-size: $fs-h3-mobile;
     margin-bottom: $margin-m;
 
-    @include respond-to(m) {
+    @include respond-to(l) {
       font-size: $fs-h3;
       margin-bottom: initial;
     }
@@ -21,7 +21,7 @@
     justify-content: space-between;
     flex-direction: column;
 
-    @include respond-to(m) {
+    @include respond-to(l) {
       flex-direction: row;
     }
   }
@@ -34,7 +34,7 @@
     > .ArrowLink {
       display: none;
     }
-    @include respond-to(m) {
+    @include respond-to(l) {
       flex: 0 0 33%;
       height: 100%;
       display: flex;

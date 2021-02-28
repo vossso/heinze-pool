@@ -10,7 +10,7 @@
       margin-bottom: $margin-s;
       font-size: $fs-h3-mobile;
     }
-    @include respond-to(xl) {
+    @include respond-to(m) {
       padding-top: $margin-menu+$margin-m;
       > h3 {
         font-size: $fs-h3;

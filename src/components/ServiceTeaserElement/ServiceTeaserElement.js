@@ -7,12 +7,12 @@ import FaqBox from "../FaqBox/FaqBox";
 import useBreakpoint from "../../hooks/useBreakpoint";
 
 const ServiceTeaserElement = ({ title, text, image, alt }) => {
-  const BreakpointM = useBreakpoint("m");
+  const BreakpointL = useBreakpoint("l");
 
   return (
     <div className="ServiceTeaserElement">
       <div className="ServiceTeaserElement__content">
-        {BreakpointM ? (
+        {BreakpointL ? (
           <FaqBox title={title} description={text} />
         ) : (
           <TextBox
