@@ -1,15 +1,15 @@
 @import "../../styles/_global.scss";
 @import "../../styles/media-queries";
 
-$padding-s: calc(13rem / 2);
+$padding-s: calc(12rem / 2);
 $padding-m: calc(18rem / 2);
 $padding-l: calc(23rem / 2);
 
 .HexaPattern {
   margin: 0 auto;
-  margin-top: $margin-xl;
+  margin-top: $margin-m;
   position: relative;
-  width: 95vw;
+  width: 100vw;
 
   @include respond-to(s) {
     width: $max-width-xs;
@@ -41,7 +41,7 @@ $padding-l: calc(23rem / 2);
     width: auto;
 
     &:not(:first-child) {
-      margin-left: -3.5rem;
+      margin-left: -4.5rem;
     }
     &:nth-child(odd) {
       padding-top: $padding-s;

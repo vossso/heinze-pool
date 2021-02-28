@@ -3,10 +3,18 @@
 
 .Link {
     @extend %link;
+    transform: translateX(0);
+    transition: all 0.5s;
 
-    // font-size: $fs-p;
-    // text-transform: uppercase;
-    // color: $hp-blue-3;
+    &:hover {
+        transform: translateX(0.5rem);
+    }
+
+    > img {
+        width: 2rem;
+        color: $hp-blue-2;
+        margin-right: $margin-xs;
+    }
 
 
 }

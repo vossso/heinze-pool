@@ -5,6 +5,7 @@
 .TextBox {
   @extend %round-box;
   min-height: 25rem;
+  min-height: auto;
   max-height: 50rem;
 
   > h4 {
@@ -37,6 +38,7 @@
   }
 
   &--auto-height {
+    min-height: 8rem;
     min-height: max-content;
   }
   &--full-height {

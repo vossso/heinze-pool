@@ -4,7 +4,7 @@
 .ServiceTeaserElement {
   &:not(:last-child) {
     margin-bottom: $margin-m;
-    @include respond-to(m) {
+    @include respond-to(l) {
       margin-right: $margin-s;
     }
   }
@@ -13,7 +13,7 @@
     > .FaqBox > .FaqBox__button {
       top: 1.5rem;
     }
-    @include respond-to(m) {
+    @include respond-to(l) {
       min-height: 50rem;
     }
   }

@@ -34,6 +34,8 @@ const ProductTeasers = ({ products }) => {
               title={title}
               description={description}
               images={images}
+              link={"/about#contact"}
+              linkLabel={"Nehmen Sie mit uns Kontakt auf"}
             />
           );
         })}

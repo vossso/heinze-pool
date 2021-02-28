@@ -1,5 +1,14 @@
 @import '../styles/global';
 
 .MetaPage {
-    margin-bottom: $margin-l;
+    margin: $margin-l+$margin-menu 0 $margin-l;
+
+    h3 {
+        margin-bottom: $margin-s;
+        text-align: left;
+    }
+    h4 {
+        margin-top: $margin-m;
+        text-transform: unset;
+    }
 }

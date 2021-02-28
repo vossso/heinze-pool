@@ -4,6 +4,8 @@ import "./Navbar.scss";
 
 import logo from "../../img/Logo-line_color.png";
 import logo2 from "../../img/Logo-line_white.png";
+import pin from "../../img/icons/icon_Loc-blue.png";
+import pin2 from "../../img/icons/icon_Loc-white.png";
 import getVariantClasses from "../../helpers/getVariantClass";
 import useBreakpoint from "../../hooks/useBreakpoint";
 import useScrollPos from "../../hooks/useScrollPos";
@@ -105,6 +107,11 @@ const Navbar: React.FC<INavbarProps> = ({ variant, offset }) => {
               </div>
               {getLink("/about", "Über uns")}
               {getLink("/faq", "FAQ")}
+              {getLink("/about#contact", variant === "transparent" || !showDefaultNav ? (
+                <img src={pin2} alt="location" />
+              ) : (
+                <img src={pin} alt="location" />
+              ))}
             </div>
           )}
         </div>

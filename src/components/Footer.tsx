@@ -80,8 +80,7 @@ const Footer: React.FC<IFooterProps> = ({ data }) => {
           </div>
         )}
         <div className="Footer__subline">
-          <a href="./meta/impressum">Impressum</a>
-          <p>Datenschutz</p>
+          <a href="/meta/impressum">Impressum & Datenschutz</a>
         </div>
       </Container>
     </footer>

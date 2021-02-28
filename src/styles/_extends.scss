@@ -45,15 +45,16 @@
   }
 }
 %link {
-  color: $hp-blue-3;
+  color: $hp-blue-2;
   font-size: 1.6rem;
   text-transform: uppercase;
   display: inline-block;
+  font-weight: $fw-regular;
 
   &::after {
     content: "";
     width: 0px;
-    height: 1px;
+    height: 1.5px;
     display: block;
     background-color: $hp-blue-2;
     -webkit-transition: width $duration-s;

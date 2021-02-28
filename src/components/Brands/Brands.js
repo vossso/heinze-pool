@@ -11,9 +11,9 @@ const Brands =({brands}) => {
         brands ? <Container variant={["half-height--top", "starter"]}>
             <div className="Brands">
                 {brands.map((brand, index) => {
-                    return <div className="Brands__element" key={index}>
+                    return <a className="Brands__element" key={index} href={brand.link}>
                             {brand && <PreviewCompatibleImage imageInfo={brand} />}
-                        </div>
+                        </a>
                 })}
             </div>
         </Container> : null

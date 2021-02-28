@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import bgImage from "../../img/water.jpg";
 import logo from "../../img/Logo-line_white.png";
 import AnimateHeight from "react-animate-height";
+import useWindowLocation from "../../hooks/useWindowLocation";
 
 import "./MobileNav.scss";
 import getVariantClasses from "../../helpers/getVariantClass";
@@ -15,9 +16,12 @@ const MobileNav: React.FC<IMobileNavProps> = ({ variant }) => {
   const [showDrop, setShowDrop] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const className = getVariantClasses("MobileNav", variant);
+  const location = useWindowLocation().pathname;
 
   const getLink = (to, label) => {
-    return (
+    return to.includes(location) ? (
+      <a className="navbar-item" href={to} onClick={() => setShowMenu(false)} >{label}</a>
+    ) : (
       <Link className="navbar-item" to={to}>
         {label}
       </Link>
@@ -49,7 +53,9 @@ const MobileNav: React.FC<IMobileNavProps> = ({ variant }) => {
             <div></div>
           </button>
           <div className="MobileNav__content">
-            <img src={logo} alt="Poool" />
+            <div className="MobileNav__logo">
+              {getLink("/", <img src={logo} alt="Poool" />)}
+            </div>
             {getLink("/service", "Leistungen")}
             <div className="MobileNav__ext">
               <a
@@ -58,14 +64,16 @@ const MobileNav: React.FC<IMobileNavProps> = ({ variant }) => {
               >
                 Produkte
               </a>
-              <AnimateHeight height={showDrop ? "auto" : 0} duration={300}>
-                <div className={`MobileNav__dropdown`}>
-                  {getLink("/products", "Übersicht")}
-                  {getLink("/product/pools", "Pools")}
-                  {getLink("/product/überdachung", "Überdachung")}
-                  {getLink("/product/wasserpflege", "Wasserpflege")}
-                  {getLink("/product/zubehör", "Zubehör")}
-                </div>
+              <AnimateHeight
+                height={showDrop ? "auto" : 0}
+                duration={300}
+                className={`MobileNav__dropdown`}
+              >
+                {getLink("/products", "Übersicht")}
+                {getLink("/product/pools", "Pools")}
+                {getLink("/product/überdachung", "Überdachung")}
+                {getLink("/product/wasserpflege", "Wasserpflege")}
+                {getLink("/product/zubehör", "Zubehör")}
               </AnimateHeight>
             </div>
             {getLink("/portfolio", "Projekte")}

@@ -2,18 +2,18 @@ import React from "react";
 
 import PropTypes from "prop-types";
 import Layout from "../components/Layout";
-import Container from "../components/share/Container/Container"
+import Container from "../components/share/Container/Container";
 import { graphql } from "gatsby";
 import Markdown from "markdown-to-jsx";
 
-import "./meta-text.scss"
+import "./meta-text.scss";
 
 export const MetaPageTemplate = ({ title, text }) => {
   return (
     <div className="MetaPage">
       <Container>
-      {title && <h2>{title}</h2>}
-      {text && <Markdown>{text}</Markdown>}
+        {title && <h3>{title}</h3>}
+        {text && <Markdown>{text}</Markdown>}
       </Container>
     </div>
   );
