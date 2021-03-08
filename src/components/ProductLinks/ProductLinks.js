@@ -26,7 +26,7 @@ const ProductLinks = ({ products }) => {
       </div>
       <div
         className={`ProductLinks__image${" ProductLinks__image--" + activeId}`}
-      ></div>
+      />
     </div>
   ) : null;
 };

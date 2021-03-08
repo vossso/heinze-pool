@@ -32,7 +32,7 @@ export const ServicePageTemplate = ({
           title={shop.title}
           images={[shop.imageObject]}
           description={shop.text}
-          link="/about"
+          link="/about#contact"
           linkLabel="Vereinbaren Sie einen Termin"
         />
       </div>

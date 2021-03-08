@@ -4,6 +4,7 @@ import getVariantClasses from "../../../helpers/getVariantClass";
 import PreviewCompatibleImage from "../Image/PreviewCompatibleImage";
 import Markdown from "markdown-to-jsx";
 import { CSSTransition } from "react-transition-group";
+import useBreakpoint from "../../../hooks/useBreakpoint";
 
 import "./TextBox.scss";
 
@@ -18,6 +19,7 @@ const TextBox = ({
   isAnimated,
   isOver,
 }) => {
+  const BreakpointL = useBreakpoint("m");
   const className = getVariantClasses("TextBox", variant);
   const getContent = (
     <div className={className}>
@@ -31,7 +33,7 @@ const TextBox = ({
       {link && <Link label={label} link={link} />}
     </div>
   );
-  return isAnimated ? (
+  return isAnimated && !BreakpointL ? (
     <CSSTransition
       in={isOver}
       timeout={300}

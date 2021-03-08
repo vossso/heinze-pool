@@ -6,20 +6,32 @@
   width: 100%;
   margin-bottom: $margin-l;
 
-  > .Contianer {
-    padding: $margin-menu+$margin-m $spacer-m $margin-m;
+  > .Container {
+    padding: 0 $spacer-m $margin-m;
+    @include respond-to(xl) {
+      padding: 0 $spacer-l $margin-l;
+    }
   }
 
-  > h3 {
+  &__intro {
     text-align: center;
-    margin-bottom: $margin-l;
-    font-size: $fs-h3-mobile;
-  }
-  @include respond-to(m) {
-    margin-top: $margin-menu + $spacer-l;
 
     > h3 {
-      font-size: $fs-h3;
+      margin-bottom: $margin-s;
+      font-size: $fs-h3-mobile;
+    }
+    > p {
+      text-align: center;
+    }
+    @include respond-to(xl) {
+      margin-top: $margin-menu + $spacer-l;
+
+      > h3 {
+        font-size: $fs-h3;
+      }
+      > p {
+        font-size: $fs-p;
+      }
     }
   }
 
@@ -35,7 +47,8 @@
       }
 
       .HistoryTeaser__content {
-        margin-left: 1rem;
+        margin-left: -10rem;
+        margin-right: 0;
       }
     }
   }

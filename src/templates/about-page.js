@@ -19,13 +19,15 @@ export const AboutPageTemplate = ({
   return (
     <div className="AboutPage">
       <div className="AboutPage__stage">
-        <Stage title={title} image={titleimage.image} alt={titleimage.alt} isStarter={false}/>
+        <Stage
+          title={title}
+          image={titleimage.image}
+          alt={titleimage.alt}
+          isStarter={false}
+          description="Unsere Geschichte und fünf Gründe warum Sie sich für uns entscheiden sollten"
+        />
       </div>
       <div className="AboutPage__content">
-        <Quote
-          quote={{
-            text: "Unsere Geschichte und fünf Gründe warum Sie sich für uns entscheiden sollten"          }}
-        />
         {reasonsArea.reasonsList.length > 0 && (
           <Reasons
             title={reasonsArea.title}

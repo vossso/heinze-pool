@@ -2,19 +2,21 @@
 @import "../../../styles/_extends.scss";
 
 .Link {
-    @extend %link;
-    transform: translateX(0);
-    transition: all 0.5s;
+  @extend %link;
+  transform: translateX(0);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 
-    &:hover {
-        transform: translateX(0.5rem);
-    }
+  &:hover {
+    transform: translateX(0.5rem);
+  }
 
-    > img {
-        width: 2rem;
-        color: $hp-blue-2;
-        margin-right: $margin-xs;
-    }
-
-
+  > img {
+    width: 2rem;
+    color: $hp-blue-2;
+    margin-right: $margin-xs;
+  }
 }

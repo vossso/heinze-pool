@@ -13,7 +13,6 @@ export const ProductPageTemplate = ({ data }) => {
   const location = useWindowLocation();
   const pathname = decodeURI(location.pathname);
 
-
   const products = {
     pools: edges
       ? edges.find((page) => page.node.fields.slug.includes("/product/pools/"))
@@ -34,6 +33,10 @@ export const ProductPageTemplate = ({ data }) => {
         )
       : null,
   };
+  // useEffect(() => {
+  //   var sliced = pathname.split("/");
+  //   setProduct(products[sliced[sliced.length - 1]]);
+  // }, []);
 
   useEffect(() => {
     var sliced = pathname.split("/");

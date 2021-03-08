@@ -28,15 +28,21 @@ const Footer: React.FC<IFooterProps> = ({ data }) => {
     : ["no-top", "half-height--bottom", "padding-s"];
 
   return (
-    <footer className="Footer">
-      <Container variant={variant} id="contact">
+    <footer className={`Footer${hasMap ? " Footer--full-height" : ""}`}>
+      <Container variant={variant}>
         <h3>Kontakt</h3>
         <div className="Footer__content">
           <div className="Footer__col">
             <h5>Öffnungszeiten</h5>
             <div className="Footer__hours-block">
               {openinghours.map((element, index) => {
-                const { daysbegin, daysend, timebegin, timeend } = element;
+                const {
+                  daysbegin,
+                  daysend,
+                  timebegin,
+                  timeend,
+                  specialinfo,
+                } = element;
                 return (
                   <div className="Footer__hours" key={index}>
                     <h5>
@@ -47,6 +53,7 @@ const Footer: React.FC<IFooterProps> = ({ data }) => {
                     <p>
                       {timebegin} - {timeend}
                     </p>
+                    <span>{specialinfo}</span>
                   </div>
                 );
               })}
@@ -111,6 +118,7 @@ export default () => (
                 daysend
                 timebegin
                 timeend
+                specialinfo
               }
               webadress {
                 mail

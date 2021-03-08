@@ -16,9 +16,9 @@ const ProductLink = ({
   const BreakpointM = useBreakpoint("m");
   const size = BreakpointM ? "4rem" : "6rem";
 
-  return (
-    path ? <a
-      className={`ProductLink${className ? "" + className : ""}`}
+  return path ? (
+    <a
+      className={`ProductLink${className ? " " + className : ""}`}
       href={`/product/${path}`}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
@@ -27,8 +27,8 @@ const ProductLink = ({
       <div className="ProductLink__button">
         <ArrowLink size={size} />
       </div>
-    </a> : null
-  );
+    </a>
+  ) : null;
 };
 
 ProductLink.propTypes = {

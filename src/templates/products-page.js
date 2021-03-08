@@ -4,21 +4,20 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import ProductLinks from "../components/ProductLinks/ProductLinks";
 import Container from "../components/share/Container/Container";
-import useBreakpoint from "../hooks/useBreakpoint"
+import useBreakpoint from "../hooks/useBreakpoint";
 
 import "./products-page.scss";
 
 export const ProductsPageTemplate = ({ title, products }) => {
-const BreakpointM = useBreakpoint('m');
-  const cVariant = BreakpointM ? ["full-height", "no-padding", "full-width"] :["full-height", "no-padding", "starter", "full-width"]
+  const BreakpointM = useBreakpoint("m");
+  const cVariant = BreakpointM
+    ? ["full-height", "no-padding", "full-width"]
+    : ["full-height", "no-padding", "starter", "full-width"];
 
   return (
     <div className="ProductsPage">
-      <Container
-        variant={cVariant}
-      >
+      <Container variant={cVariant}>
         <div className="ProductsPage__content">
-          <h3>{title}</h3>
           <div className="ProductsPage__links">
             <ProductLinks products={products} />
           </div>
@@ -37,7 +36,7 @@ const ProductsPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
-    <Layout>
+    <Layout hasFooter={false}>
       <ProductsPageTemplate
         title={frontmatter.title}
         products={frontmatter.productPages}

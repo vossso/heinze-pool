@@ -5,9 +5,11 @@ import Navbar from "./Navbar/Navbar";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 import "./Layout.scss";
+import useBreakpoint from "../hooks/useBreakpoint";
 
 const TemplateWrapper = ({ hasFooter = true, children }) => {
-  const { title, description } = useSiteMetadata(); 
+  const { title, description } = useSiteMetadata();
+  const BreakpointM = useBreakpoint("l");
   return (
     <div>
       <Helmet>
@@ -49,9 +51,17 @@ const TemplateWrapper = ({ hasFooter = true, children }) => {
           content={`${withPrefix("/")}img/og-image.jpg`}
         />
       </Helmet>
-      <Navbar/>
+      <Navbar />
       <div>{children}</div>
-      {hasFooter && <Footer />}
+      {hasFooter ? (
+        <Footer />
+      ) : (
+        !BreakpointM && (
+          <div className="Layout__footer">
+            <a href="/meta/impressum">Impressum & Datenschutz</a>
+          </div>
+        )
+      )}
     </div>
   );
 };

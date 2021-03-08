@@ -29,6 +29,10 @@ $duration: 0.5s;
   &__steps {
     height: 100%;
   }
+
+  // @include respond-to(xxl) {
+  //   margin-bottom: 50rem;
+  // }
 }
 
 @keyframes move {
@@ -47,7 +51,7 @@ $duration: 0.5s;
   right: 0;
   left: 0;
   bottom: 0;
-  margin-top: 28.2rem;
+  margin-top: 26.5rem;
 
   & .zigzag {
     position: relative;
@@ -55,8 +59,26 @@ $duration: 0.5s;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    height: 36.1rem;
+    height: 35.8rem;
     margin-top: 4rem;
+
+    @include respond-to(xxl) {
+      height: 36.1rem;
+    }
+  }
+
+  .line-single {
+    position: relative;
+    margin: 0 auto;
+    height: 0rem;
+    width: 3px;
+    background: none;
+    background-color: $hp-blue;
+    -webkit-transition: height $duration * 10 $duration;
+    -moz-transition: height $duration * 10 $duration;
+    -ms-transition: height $duration * 10 $duration;
+    -o-transition: height $duration * 10 $duration;
+    transition: height $duration * 10;
   }
 
   .line-even,
@@ -84,22 +106,37 @@ $duration: 0.5s;
     transition: width $duration;
   }
   .line-even {
-    transform: rotate(-146deg);
+    transform: rotate(-142deg);
     background-position: bottom left;
   }
   .line-odd {
-    transform: rotate(-33deg);
+    transform: rotate(-38deg);
     background-position: bottom left;
+  }
+  @include respond-to(xxl) {
+    .line-even {
+      transform: rotate(-149deg);
+    }
+    .line-odd {
+      transform: rotate(-31.5deg);
+    }
   }
 
   &--start {
+    .line-single {
+      height: 90%;
+    }
     .line-0 {
       width: 70%;
     }
     .line-even,
     .line-odd {
-      width: 18rem;
+      width: 12rem;
       background-position: bottom right;
+
+      @include respond-to(xxl) {
+        width: 18rem;
+      }
     }
 
     .no1 {

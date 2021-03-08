@@ -6,7 +6,7 @@ $duration: 0.5s;
 .ProductLinks {
   width: 100%;
 
-  @include respond-to(m) {
+  @include respond-to(xl) {
     display: flex;
     flex-direction: row;
 
@@ -70,7 +70,7 @@ $duration: 0.5s;
     width: 90%;
     margin: 0 auto;
 
-    @include respond-to(m) {
+    @include respond-to(xl) {
       flex: 0 0 40%;
       margin: 0;
     }

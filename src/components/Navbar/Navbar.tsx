@@ -22,18 +22,22 @@ const Navbar: React.FC<INavbarProps> = ({ variant, offset }) => {
   const [showDefaultNav, setShowDefaultNav] = useState(false);
   const location = useWindowLocation().pathname;
 
-  const BreakpointM = useBreakpoint("m");
+  const BreakpointXL = useBreakpoint("xl");
   const className = getVariantClasses("Navbar", variant);
   const currentScrollY = useScrollPos();
 
   const ignorePages = ["/portfolio", "/meta/impressum", "/products"];
 
-  if(location == "/faq") {
+  if (location == "/faq") {
     offset = 450;
   }
 
   useEffect(() => {
-    const diff = BreakpointM ? window.innerHeight - 100 : offset ? offset : (window.innerHeight - 20);
+    const diff = BreakpointXL
+      ? window.innerHeight - 100
+      : offset
+      ? offset
+      : window.innerHeight - 20;
     if (
       currentScrollY >= diff ||
       ignorePages.find((element) => element === location)
@@ -46,7 +50,12 @@ const Navbar: React.FC<INavbarProps> = ({ variant, offset }) => {
 
   const getLink = (to, label) => {
     return (
-      <Link className={`Navbar__link${location && location.includes(to) ? " Navbar__link--active" : ""}`} to={to}>
+      <Link
+        className={`Navbar__link${
+          location && location.includes(to) ? " Navbar__link--active" : ""
+        }`}
+        to={to}
+      >
         {label}
       </Link>
     );
@@ -54,7 +63,11 @@ const Navbar: React.FC<INavbarProps> = ({ variant, offset }) => {
 
   return (
     <nav
-      className={variant ? className : "Navbar"+ `${showDefaultNav ? "" : " Navbar--transparent"}`}
+      className={
+        variant
+          ? className
+          : "Navbar" + `${showDefaultNav ? "" : " Navbar--transparent"}`
+      }
       role="navigation"
       aria-label="main-navigation"
     >
@@ -70,11 +83,11 @@ const Navbar: React.FC<INavbarProps> = ({ variant, offset }) => {
             </Link>
           </div>
 
-          {BreakpointM ? (
-            <MobileNav variant={!showDefaultNav  && "white" }/>
+          {BreakpointXL ? (
+            <MobileNav variant={!showDefaultNav && "white"} />
           ) : (
             <div className="Navbar__right">
-              {getLink("/service","Leistungen")}
+              {getLink("/service", "Leistungen")}
               <div className="Navbar__ext">
                 <div
                   className={`Navbar__link${
@@ -107,11 +120,14 @@ const Navbar: React.FC<INavbarProps> = ({ variant, offset }) => {
               </div>
               {getLink("/about", "Über uns")}
               {getLink("/faq", "FAQ")}
-              {getLink("/about#contact", variant === "transparent" || !showDefaultNav ? (
-                <img src={pin2} alt="location" />
-              ) : (
-                <img src={pin} alt="location" />
-              ))}
+              {getLink(
+                "/about#contact",
+                variant === "transparent" || !showDefaultNav ? (
+                  <img src={pin2} alt="location" />
+                ) : (
+                  <img src={pin} alt="location" />
+                )
+              )}
             </div>
           )}
         </div>

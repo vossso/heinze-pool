@@ -18,7 +18,7 @@
       }
     }
 
-    @include respond-to(m) {
+    @include respond-to(xl) {
       min-width: 50rem;
       float: right;
       height: 100%;
@@ -39,7 +39,7 @@
     height: auto;
     width: 3rem;
 
-    @include respond-to(m) {
+    @include respond-to(xl) {
       width: 5rem;
       top: 2rem;
       bottom: 0;
@@ -54,7 +54,7 @@
     }
   }
 
-  @include respond-to(m) {
+  @include respond-to(xl) {
     width: 100%;
     position: relative;
     height: auto;

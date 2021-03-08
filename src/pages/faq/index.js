@@ -13,18 +13,16 @@ export default class FaqIndexPage extends React.Component {
     return (
       <Layout>
         <section className="FaqPage">
-        <Stage
-          title="Fragen & Antworten"
-          image={titleImg}
-          description="Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue."
-          isStarter={false}
-        />
-        <Container>
-          <h3>Häufig gestellte Fragen</h3>
-          <div className="content">
-            <FaqRoll />
-          </div>
-        </Container>
+          <Stage
+            title="Häufig gestellte Fragen"
+            image={titleImg}
+            isStarter={false}
+          />
+          <Container>
+            <div className="content">
+              <FaqRoll />
+            </div>
+          </Container>
         </section>
       </Layout>
     );

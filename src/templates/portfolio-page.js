@@ -34,7 +34,7 @@ const PortfolioPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
-    <Layout>
+    <Layout hasFooter={false}>
       <PortfolioPageTemplate
         title={frontmatter.title}
         description={frontmatter.description}

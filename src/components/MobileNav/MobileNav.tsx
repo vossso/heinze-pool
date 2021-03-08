@@ -20,7 +20,9 @@ const MobileNav: React.FC<IMobileNavProps> = ({ variant }) => {
 
   const getLink = (to, label) => {
     return to.includes(location) ? (
-      <a className="navbar-item" href={to} onClick={() => setShowMenu(false)} >{label}</a>
+      <a className="navbar-item" href={to} onClick={() => setShowMenu(false)}>
+        {label}
+      </a>
     ) : (
       <Link className="navbar-item" to={to}>
         {label}
@@ -80,6 +82,9 @@ const MobileNav: React.FC<IMobileNavProps> = ({ variant }) => {
             {getLink("/about", "Über uns")}
             {getLink("/about#contact", "Kontakt")}
             {getLink("/faq", "FAQ")}
+          </div>
+          <div className="MobileNav__meta">
+            <a href="/meta/impressum">Impressum & Datenschutz</a>
           </div>
         </div>
       )}

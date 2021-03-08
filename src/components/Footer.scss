@@ -8,7 +8,7 @@
   min-height: 100vh;
   overflow: hidden;
 
-  @include respond-to(m) {
+  @include respond-to(s) {
     min-height: 30rem;
     height: 100%;
   }
@@ -18,9 +18,10 @@
     text-align: left;
     // margin-bottom: 0;
   }
-
-  > div {
-    margin-top: $margin-menu-mobile + $margin-m;
+  &--full-height {
+    > div {
+      margin-top: $margin-menu-mobile + $margin-m;
+    }
   }
 
   &__content {
@@ -76,15 +77,19 @@
     flex-direction: row;
   }
   &__hours {
-    flex: 0 0 auto;
+    flex: 1 1 50%;
     margin-right: $margin-m;
 
     & span {
       display: inline-block;
       margin-bottom: $margin-xs;
+      text-transform: none;
     }
     > p::after {
       content: " Uhr";
+    }
+    @include respond-to(m) {
+      flex: 0 0 auto;
     }
   }
   &__map {

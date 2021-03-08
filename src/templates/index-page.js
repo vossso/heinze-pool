@@ -27,6 +27,9 @@ export const IndexPageTemplate = ({ links }) => {
     setTimeout(() => {
       setShowLogo(true);
     }, 500);
+    setTimeout(() => {
+      setTrans(true);
+    }, 5000);
   }, []);
 
   return (

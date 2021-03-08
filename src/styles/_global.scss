@@ -1,23 +1,23 @@
 @import "~bulma/sass/utilities/initial-variables";
 
-$hp-blue: #1E3769;
-$hp-blue-2: #1E73B9;
-$hp-blue-3: #78B4D7;
+$hp-blue: #1e3769;
+$hp-blue-2: #1e73b9;
+$hp-blue-3: #78b4d7;
 $hp-white: #fff;
 $hp-light-gray: rgb(236, 236, 236);
 
-$hp-ff: 'Brandon Text', sans-serif ;
+$hp-ff: "Brandon Text", sans-serif;
 
 $fs-s: 1.4rem;
 $fs-p-mobile: 1.6rem;
 $fs-p: 1.8rem;
 $fs-h5-footer: 1.6rem;
-$fs-h4-mobile:2.2rem;
-$fs-h4: 2.8rem;
-$fs-h3-mobile: 2.8rem;
-$fs-h3: 4.5rem;
-$fs-h2-mobile: 4.8rem;
-$fs-h2: 5.8rem;
+$fs-h4-mobile: 2rem;
+$fs-h4: 2.4rem;
+$fs-h3-mobile: 2.4rem;
+$fs-h3: 3.4rem;
+$fs-h2-mobile: 4.6rem;
+$fs-h2: 5rem;
 $fs-h1: 24rem;
 
 //TODO importieren Font-weoght
@@ -30,7 +30,7 @@ $border-xs: $hp-light-gray 1px solid;
 $bs-standard: 0px 10px 20px #00000029;
 $br-standard: 2rem;
 
-$margin-xs: 0.5rem; 
+$margin-xs: 0.5rem;
 $margin-s: 1rem;
 $margin-m: 3rem;
 $margin-l: 5rem;
@@ -52,9 +52,14 @@ $padding-box-hori-mobile: 2rem;
 $padding-box-verti: 3.2rem;
 $padding-box-hori: 3rem;
 
-
-$max-width-xs-inner: 440px;
-$max-width-xs: 540px;
+$max-width-s-mobile-inner: 340px;
+$max-width-s-mobile: 360px;
+$max-width-m-mobile-inner: 420px;
+$max-width-m-mobile: 440px;
+$max-width-l-mobile-inner: 540px;
+$max-width-l-mobile: 555px;
+$max-width-xs-inner: 690px;
+$max-width-xs: 720px;
 $max-width-s-inner: 840px;
 $max-width-s: 940px;
 $max-width-m-inner: 960px;
@@ -64,77 +69,86 @@ $max-width-l: 1380px;
 $max-width-xl: 1920px;
 
 $breakpoints: (
-  'xxs': 360px,
-  'xs': 480px,
-  's': 568px,
-  'm': 800px,
-  'l': 1024px,
-  'xl': 1280px,
-  'xxl': 1400px
+  "xxs": 360px,
+  "xs": 480px,
+  "s": 568px,
+  "m": 800px,
+  "l": 1024px,
+  "xl": 1280px,
+  "xxl": 1400px,
 );
 
 $duration-s: 0.5s;
 $duration-m: 1s;
 
-
-*, body {
-    box-sizing: border-box;
-    margin: 0;
-    -moz-hyphens: auto;
-   -o-hyphens: auto;
-   -webkit-hyphens: auto;
-   -ms-hyphens: auto;
-   hyphens: auto; 
+*,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 html {
-    font-size: 10/16 * 100%;
-    font-family: $hp-ff;
-    color: $hp-blue;
+  font-size: 10/16 * 100%;
+  font-family: $hp-ff;
+  color: $hp-blue;
 }
-h1, h2, h3, h4, p, span {
-    color: $hp-blue;
-    font-family: $hp-ff;
+h1,
+h2,
+h3,
+h4,
+p,
+span {
+  color: $hp-blue;
+  font-family: $hp-ff;
 }
 
-h1, h2, h3, h4 {
-    font-weight: $fw-bold;
-    text-transform: uppercase;
+h1,
+h2,
+h3,
+h4 {
+  font-weight: $fw-bold;
+  text-transform: uppercase;
 }
 h1 {
-    font-size: $fs-h1;
+  font-size: $fs-h1;
 }
 h2 {
-    font-size: $fs-h2;
+  font-size: $fs-h2;
 }
 h3 {
-    text-align: center;
-    font-size: $fs-h3;
-    margin-bottom: $margin-l;
+  text-align: center;
+  font-size: $fs-h3;
+  margin-bottom: $margin-l;
 }
 h4 {
-    font-size: $fs-h4;
-    margin-bottom: $margin-s;
+  font-size: $fs-h4;
+  margin-bottom: $margin-s;
 }
 h5 {
-    font-size: $fs-h5-footer;
-    text-transform: uppercase;
-    color: $hp-white;
-    font-weight: $fw-light;
+  font-size: $fs-h5-footer;
+  text-transform: uppercase;
+  color: $hp-white;
+  font-weight: $fw-light;
 }
 p {
-    font-size: $fs-p-mobile;
-    font-weight: $fw-regular;
+  font-size: $fs-p-mobile;
+  font-weight: $fw-regular;
 }
-a, button {
-    text-decoration: none;
+a,
+button {
+  text-decoration: none;
 }
 button {
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
 }
 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 
-    object-fit: cover;
+  object-fit: cover;
 }

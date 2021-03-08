@@ -50,6 +50,9 @@
         font-size: 1.6rem;
       }
     }
+    @include respond-to(xl) {
+      margin-left: 15rem;
+    }
   }
   &__button {
     position: absolute;

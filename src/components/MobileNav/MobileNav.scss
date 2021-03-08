@@ -11,12 +11,15 @@
   height: 100%;
 
   &__bar {
-    z-index: 1;
-    flex: 0 0 auto;
     height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 3%;
+
+    @include respond-to(xs) {
+      margin-right: 11%;
+    }
 
     & > button {
       margin: 0;
@@ -128,7 +131,8 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    > a, button,
+    > a,
+    button,
     .MobileNav__ext > a {
       color: $hp-white;
       font-weight: $fw-bold;
@@ -150,7 +154,11 @@
   }
   &__logo {
     flex: 0 0 10%;
-    width: 35rem;
+    width: 30rem;
+    display: flex;
+    > a {
+      margin: 0 auto;
+    }
     > img {
       width: 100%;
       height: 100%;
@@ -180,7 +188,7 @@
     height: auto;
     width: auto;
     max-width: 20rem;
-  
+
     top: 0;
     transition: opacity $duration-s;
 
@@ -204,6 +212,22 @@
   &--white {
     .MobileNav__burger div::after {
       background-color: $hp-white;
+    }
+  }
+
+  &__meta {
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    left: 0;
+    display: flex;
+
+    > a {
+      margin: 0 auto;
+      color: white;
+      &::after {
+        background-color: white;
+      }
     }
   }
 }
