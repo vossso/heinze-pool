@@ -8,9 +8,9 @@ import TextBox from "../share/TextBox/TextBox";
 import useBreakpoint from "../../hooks/useBreakpoint";
 
 const ProductTeaser = ({ title, description, images, link, linkLabel }) => {
-  const BreakpointM = useBreakpoint("m");
+  const BreakpointL = useBreakpoint("l");
   const [isOver, setIsOver] = useState(false);
-  const variant = BreakpointM
+  const variant = BreakpointL
     ? ["full-width"]
     : ["full-height", "starter", "full-width"];
 

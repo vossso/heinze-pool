@@ -99,7 +99,6 @@
   &--starter {
     @include respond-to(xl) {
       scroll-snap-align: start;
-      overflow: hidden;
     }
   }
 }

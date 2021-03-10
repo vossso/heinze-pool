@@ -21,7 +21,7 @@ const Reasons = ({ title, reasonsList }) => {
           <div className="Reasons__content">
             {reasonsList.map((element, index) => {
               const { reason, description } = element;
-              return BreakpointL ? (
+              return !BreakpointL ? (
                 <CSSTransition
                   in={isOver}
                   timeout={300}

@@ -71,32 +71,32 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: $max-width-s-mobile-inner;
+    width: $max-width-s-mobile;
     margin: 0 auto;
 
     @include respond-to(xs) {
-      width: $max-width-m-mobile-inner;
+      width: $max-width-m-mobile;
       // border: dotted yellow 2px;
     }
     @include respond-to(s) {
-      width: $max-width-l-mobile-inner;
+      width: $max-width-l-mobile;
       // border: dotted orange 2px;
     }
     @include respond-to(m) {
-      width: $max-width-xs-inner;
+      width: $max-width-xs;
       // border: dotted rgb(255, 0, 179) 2px;
     }
 
     @include respond-to(l) {
-      width: $max-width-s-inner;
+      width: $max-width-s;
       // border: dotted rgb(119, 4, 52) 2px;
     }
     @include respond-to(xl) {
-      width: $max-width-m-inner;
+      width: $max-width-m;
       // border: dotted blue 2px;
     }
     @include respond-to(xxl) {
-      width: $max-width-l-inner;
+      width: $max-width-l;
       // border: dotted  lightblue 2px;
     }
   }

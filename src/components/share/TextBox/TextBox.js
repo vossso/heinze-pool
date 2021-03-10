@@ -19,7 +19,7 @@ const TextBox = ({
   isAnimated,
   isOver,
 }) => {
-  const BreakpointL = useBreakpoint("m");
+  const BreakpointL = useBreakpoint("l");
   const className = getVariantClasses("TextBox", variant);
   const getContent = (
     <div className={className}>

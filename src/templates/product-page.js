@@ -33,15 +33,12 @@ export const ProductPageTemplate = ({ data }) => {
         )
       : null,
   };
-  // useEffect(() => {
-  //   var sliced = pathname.split("/");
-  //   setProduct(products[sliced[sliced.length - 1]]);
-  // }, []);
 
   useEffect(() => {
     var sliced = pathname.split("/");
+    if (sliced[sliced.length - 1] === "") sliced.pop();
     setProduct(products[sliced[sliced.length - 1]]);
-  }, [pathname]);
+  }, [pathname, products]);
 
   return (
     <div>
