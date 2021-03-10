@@ -15,8 +15,8 @@ const StepByStep = ({ steps }) => {
       <Container variant={["full-height", "starter"]}>
         <div className="StepByStep__wrapper">
           {/* <div className="StepByStep__line" /> */}
-          <h3>Schritt für Schritt zu deinem Pool</h3>
-          <p>Von der Idee in Ihrem Kopf bis hin zum fertigen Pool.</p>
+          <h3>Schritt für Schritt zu Ihrem Pool</h3>
+          <p>Von Ihrer Idee zum fertigen Pool.</p>
           <div className="StepByStep__steps">
             {steps.map((element, index) => {
               return (

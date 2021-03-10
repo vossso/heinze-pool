@@ -73,7 +73,7 @@ const MobileNav: React.FC<IMobileNavProps> = ({ variant }) => {
               >
                 {getLink("/products", "Übersicht")}
                 {getLink("/product/pools", "Pools")}
-                {getLink("/product/überdachung", "Überdachung")}
+                {getLink("/product/überdachung", "Abdeckung")}
                 {getLink("/product/wasserpflege", "Wasserpflege")}
                 {getLink("/product/zubehör", "Zubehör")}
               </AnimateHeight>

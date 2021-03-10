@@ -7,7 +7,7 @@
   margin-bottom: $margin-l;
 
   > .Container {
-    padding: 0 $spacer-m $margin-m;
+    padding: 0 $spacer-m;
     @include respond-to(xl) {
       padding: 0 $spacer-l $margin-l;
     }

@@ -18,6 +18,7 @@ const Reasons = ({ title, reasonsList }) => {
       <Container variant={["full-height"]}>
         <div className="Reasons__wrapper">
           <h3>{title}</h3>
+          <p>Unsere Geschichte und fünf Gründe, warum Sie sich für uns entscheiden sollten</p>
           <div className="Reasons__content">
             {reasonsList.map((element, index) => {
               const { reason, description } = element;

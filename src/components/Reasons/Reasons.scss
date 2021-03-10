@@ -8,14 +8,22 @@
     margin-top: 0;
   }
   &__wrapper {
+    text-align: center;
     padding-top: $margin-m;
     > h3 {
       font-size: $fs-h3-mobile;
+      margin-bottom: $margin-s;
+    }
+    > p {
+      margin-bottom: $margin-l;
     }
     @include respond-to(xl) {
       padding-top: $margin-menu + $margin-m;
       > h3 {
         font-size: $fs-h3;
+      }
+      > p {
+        margin-bottom: $margin-l;
       }
     }
   }
