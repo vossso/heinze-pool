@@ -29,6 +29,7 @@
     @include respond-to(xl) {
       margin-left: 0;
       margin-top: -10rem;
+      justify-content: space-between;
     }
 
     @include respond-to(xxl) {
