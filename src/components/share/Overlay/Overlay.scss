@@ -35,7 +35,7 @@
     flex-direction: column;
     height: 70vh;
 
-    @include respond-to(m) {
+    @include respond-to(l) {
       flex-direction: row;
     }
   }
@@ -52,7 +52,7 @@
       height: 100%;
       width: auto;
     }
-    @include respond-to(m) {
+    @include respond-to(l) {
       margin-left: $spacer-m;
     }
   }
@@ -68,7 +68,7 @@
       margin-top: -0.5rem;
     }
 
-    @include respond-to(m) {
+    @include respond-to(l) {
       top: $margin-l;
       right: $margin-l;
     }

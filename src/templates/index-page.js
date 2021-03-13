@@ -13,7 +13,6 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import "./index-page.scss";
 import useBreakpoint from "../hooks/useBreakpoint";
-import FadeIn from "../components/share/FadeIn/FadeIn";
 
 export const IndexPageTemplate = ({ links }) => {
   const [trans, setTrans] = useState(false);
@@ -29,12 +28,12 @@ export const IndexPageTemplate = ({ links }) => {
       setShowLogo(true);
     }, 300);
     setTimeout(() => {
-      // setTrans(true);
+      setTrans(true);
     }, 5000);
   }, []);
 
   return (
-    <div className="IndexPage" onClick={startAnimation}>
+    <div className="IndexPage" onClick={() => startAnimation()} onKeyDown={() => startAnimation()}>
       <div className="IndexPage__content">
           <div className="IndexPage__bg-image">
             <img src={bgImage} alt="Poool" />

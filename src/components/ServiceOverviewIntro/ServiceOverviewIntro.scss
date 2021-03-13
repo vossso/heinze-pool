@@ -2,7 +2,7 @@
 @import "../../styles/media-queries";
 
 .ServiceOverviewIntro {
-  margin-top: $margin-m;
+  margin-top: $margin-l;
   &__intro {
     display: flex;
     justify-content: space-between;
@@ -29,10 +29,11 @@
     flex: 1 1 100%;
 
     margin: auto 0;
-    padding: 0 $padding-m;
+    padding: 0 $padding-xs;
 
     @include respond-to(s) {
       flex: 1 1 70%;
+      padding: 0 $padding-m;
     }
   }
   &__hexa {

@@ -17,7 +17,7 @@
   }
 
   > p {
-    @include respond-to(m) {
+    @include respond-to(xxl) {
       font-size: $fs-p;
       line-height: 1.6;
     }

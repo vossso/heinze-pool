@@ -24,11 +24,11 @@ const Footer: React.FC<IFooterProps> = ({ data }) => {
 
   const hasMap = location === "/about";
   const variant = hasMap
-    ? ["no-top", "full-height", "padding-s"]
+    ? ["no-top", "padding-s"]
     : ["no-top", "half-height--bottom", "padding-s"];
 
   return (
-    <footer className={`Footer${hasMap ? " Footer--full-height" : ""}`}>
+    <footer className={`Footer${hasMap ? " Footer--full-height" : ""}`} id="contact">
       <Container variant={variant}>
         <h3>Kontakt</h3>
         <div className="Footer__content">

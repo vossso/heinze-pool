@@ -25,14 +25,13 @@ $duration: 0.5s;
     > p {
       margin-bottom: $margin-l;
     }
+    @include respond-to(l) {
+      padding-top: 0;
+    }
   }
   &__steps {
     height: 100%;
   }
-
-  // @include respond-to(xxl) {
-  //   margin-bottom: 50rem;
-  // }
 }
 
 .LineAnimation {
@@ -43,6 +42,9 @@ $duration: 0.5s;
   left: 0;
   bottom: 0;
   margin-top: 26.5rem;
+  @include respond-to(l) {
+    margin-top: 16rem;
+  }
 
   & .zigzag {
     position: relative;

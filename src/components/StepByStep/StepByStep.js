@@ -1,18 +1,20 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import PropTypes from "prop-types";
 
 import "./StepByStep.scss";
 import Container from "../share/Container/Container";
 import Step from "../Step/Step";
 import useBreakpoint from "../../hooks/useBreakpoint";
+import useElementScroll from "../../hooks/useElementScroll";
 
 const StepByStep = ({ steps }) => {
-  const [start, setStart] = useState(false);
   const BreakpointXL = useBreakpoint("xl");
+  const ref = useRef(null)
+  const [, isInView] = useElementScroll(ref)
 
   return steps ? (
-    <div className="StepByStep" onMouseOver={() => setStart(true)}>
-      <Container variant={["full-height", "starter"]}>
+    <div className="StepByStep" ref={ref}>
+      <Container variant={BreakpointXL ? "" : ["full-height", "starter"]}>
         <div className="StepByStep__wrapper">
           {/* <div className="StepByStep__line" /> */}
           <h3>Schritt für Schritt zu Ihrem Pool</h3>
@@ -30,7 +32,7 @@ const StepByStep = ({ steps }) => {
           </div>
         </div>
       </Container>
-      <div className={`LineAnimation${start ? " LineAnimation--start" : ""}`}>
+      <div className={`LineAnimation${isInView ? " LineAnimation--start" : ""}`}>
         {BreakpointXL ? (
           <div className="line-single" />
         ) : (
@@ -41,9 +43,9 @@ const StepByStep = ({ steps }) => {
                 if (index === 0) {
                   return null;
                 } else if (index % 2 === 0) {
-                  return <div className={`line-even no${index}`} />;
+                  return <div className={`line-even no${index}`} key={index}/>;
                 } else {
-                  return <div className={`line-odd no${index}`} />;
+                  return <div className={`line-odd no${index}`} key={index}/>;
                 }
               })}
             </div>

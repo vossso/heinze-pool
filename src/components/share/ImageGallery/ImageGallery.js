@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import "./ImageGallery.scss";
 import PreviewCompatibleImage from "../Image/PreviewCompatibleImage";
 
-const ImageGallery = ({ images }) => {
+const ImageGallery = ({ images, styles }) => {
   return (
     images && (
       <div className="ImageGallery">
@@ -14,7 +14,7 @@ const ImageGallery = ({ images }) => {
               <div className="ImageGallery__image" key={index}>
                 <PreviewCompatibleImage
                   imageInfo={element}
-                  styles={{ objectFit: "cover", height: "100%", width: "100%" }}
+                  styles={styles ? styles: { objectFit: "cover", height: "100%", width: "100%" }}
                 />
               </div>
             );

@@ -9,23 +9,22 @@
   position: relative;
 
   &:last-child .ProductOverviewElement__content {
-    margin-right: $margin-l;
-
-    & .ProductOverviewElement__button {
-      right: $margin-xl;
-    }
+    margin-right: $margin-m;
   }
   @include respond-to(m) {
     &:last-child .ProductOverviewElement__content {
-      margin-right:$margin-xl ;
+      margin-right:$margin-l ;
     }
     &:not(:first-child) .ProductOverviewElement__content {
-      margin-left: $margin-m;
+      margin-left: $margin-s;
     }
   }
   @include respond-to(xxl) {
+    &:last-child .ProductOverviewElement__content {
+      margin-right:0 ;
+    }
     &:not(:first-child) .ProductOverviewElement__content {
-      margin-left: $margin-xl;
+      margin-left: $margin-l;
     }
   }
 
@@ -35,10 +34,11 @@
 
     margin-left: $margin-s;
 
-    > .TextBox {
+    & .TextBox {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+      min-width: 25rem;
 
       & .TextBox__icon {
         flex: 0 0 30%;
@@ -46,32 +46,40 @@
         margin-left: -0.7rem;
       }
 
-      > h4 {
+      & h4 {
         font-size: $fs-h4-mobile;
         display: inline-block;
-        flex: 0 0 12%;
-      }
-      > p {
         flex: 0 0 auto;
-        margin-bottom: $margin-s;
-        font-size: 1.6rem;
+        text-align: left;
+      }
+      & p {
+        display: none;
       }
     }
     @include respond-to(m) {
       margin-left: 10rem;
       max-width: 25rem;
+
+      & .TextBox > p {
+        display: block;
+        flex: 0 0 auto;
+        margin-bottom: $margin-s;
+        font-size: 1.6rem;
+      }
+
       & .TextBox__icon {
         flex: 0 0 30%;
         margin-bottom: 2rem;
-        margin-left: -1.5rem;
+        margin-left: -1.7rem;
       }
     }
     @include respond-to(xxl) {
       max-width: 28rem;
-      margin-left: 15rem;
+      margin-left: 0;
     }
   }
   &__button {
+    display: none;
     position: absolute;
     bottom: -3rem;
     right: $margin-l/2;
@@ -80,6 +88,10 @@
     -ms-transition: transform $duration-s;
     -o-transition: transform $duration-s;
     transition: transform $duration-s;
+
+    @include respond-to(m) {
+      display: block;
+    }
 
     &:hover {
       transform: rotate(90deg);

@@ -33,11 +33,7 @@ const Navbar: React.FC<INavbarProps> = ({ variant, offset }) => {
   }
 
   useEffect(() => {
-    const diff = BreakpointXL
-      ? window.innerHeight - 100
-      : offset
-      ? offset
-      : window.innerHeight - 20;
+    const diff = offset ? offset : window.innerHeight / 2;
     if (
       currentScrollY >= diff ||
       ignorePages.find((element) => element === location)
