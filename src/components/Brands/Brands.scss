@@ -26,7 +26,4 @@
       overflow: hidden;
     }
   }
-  @include respond-to(m) {
-    padding: $margin-m 0;
-  }
 }

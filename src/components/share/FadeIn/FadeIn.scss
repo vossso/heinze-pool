@@ -1,0 +1,14 @@
+.FadeIn {
+    @media (prefers-reduced-motion: no-preference) {
+    animation-name: fadeIn;
+    animation-fill-mode: backwards;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

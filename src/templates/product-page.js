@@ -103,7 +103,7 @@ export const ProductPageQuery = graphql`
             productElement {
               image {
                 childImageSharp {
-                  fluid(maxWidth: 500) {
+                  fluid(maxWidth: 300) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -115,7 +115,7 @@ export const ProductPageQuery = graphql`
               images {
                 image {
                   childImageSharp {
-                    fluid(maxWidth: 500) {
+                    fluid(maxWidth: 1300) {
                       ...GatsbyImageSharpFluid
                     }
                   }
@@ -126,7 +126,7 @@ export const ProductPageQuery = graphql`
             brands {
               image {
                 childImageSharp {
-                  fluid(maxWidth: 300) {
+                  fluid(maxWidth: 500) {
                     ...GatsbyImageSharpFluid
                   }
                 }

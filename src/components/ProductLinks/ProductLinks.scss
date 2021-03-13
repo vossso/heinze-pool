@@ -13,6 +13,8 @@ $duration: 0.5s;
     &__image {
       flex: 1 1 auto;
       margin-left: $margin-xl;
+      height: auto;
+      width: 100%;
 
       background-repeat: no-repeat;
       background-size: contain;

@@ -35,15 +35,6 @@ $duration: 0.5s;
   // }
 }
 
-@keyframes move {
-  from {
-    height: 0%;
-  }
-  to {
-    height: 100%;
-  }
-}
-
 .LineAnimation {
   z-index: -1;
   position: absolute;

@@ -6,6 +6,7 @@ import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 import "./Layout.scss";
 import useBreakpoint from "../hooks/useBreakpoint";
+import FadeIn from "./share/FadeIn/FadeIn";
 
 const TemplateWrapper = ({ hasFooter = true, children }) => {
   const { title, description } = useSiteMetadata();
@@ -51,17 +52,19 @@ const TemplateWrapper = ({ hasFooter = true, children }) => {
           content={`${withPrefix("/")}img/og-image.jpg`}
         />
       </Helmet>
-      <Navbar />
-      <div>{children}</div>
-      {hasFooter ? (
-        <Footer />
-      ) : (
-        !BreakpointM && (
-          <div className="Layout__footer">
-            <a href="/meta/impressum">Impressum & Datenschutz</a>
-          </div>
-        )
-      )}
+        <Navbar />
+        <FadeIn>
+        <div>{children}</div>
+        {hasFooter ? (
+          <Footer />
+        ) : (
+          !BreakpointM && (
+            <div className="Layout__footer">
+              <a href="/meta/impressum">Impressum & Datenschutz</a>
+            </div>
+          )
+        )}
+      </FadeIn>
     </div>
   );
 };
