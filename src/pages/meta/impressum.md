@@ -27,8 +27,6 @@ text: >-
   Ust.-Id.-Nr.: DE115829513
 
 
-
-
   <h4>Inhalte dieser Website</h4>
 
 
@@ -123,5 +121,13 @@ text: >-
   durch Google verhindern, indem sie das unter dem folgenden Link verfügbare
   Browser-Plugin herunterladen und installieren:
   https://tools.google.com/dlpage/gaoptout?hl=de.
+
+
+
+
+  <h4>Design und Technische Realisierung</h4>
+
+
+  Torito Deisgn - http://torito-design.com/
 ---
 
