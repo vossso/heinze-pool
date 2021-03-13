@@ -17,6 +17,7 @@
 
   @include respond-to(m) {
     height: 100%;
+    min-height: 40rem;
     max-height: 50rem;
     margin-bottom: 0;
   }

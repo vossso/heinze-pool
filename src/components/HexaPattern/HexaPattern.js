@@ -8,20 +8,18 @@ import useBreakpoint from "../../hooks/useBreakpoint";
 
 const HexaPattern = ({ imageList }) => {
   const [content, setContent] = useState(() => null);
-  const [mobileSize, setMobileSize] = useState(5);
 
   const BreakpointL = useBreakpoint("l");
 
-  var all = [];
-  var column = [];
-
   useEffect(() => {
+    var all = [];
+    var column = [];
     var i = 0;
-    setMobileSize(Math.ceil(imageList.length / 3));
+    const mobileSize =
+      imageList.length > 0 ? Math.ceil(imageList.length / 3) : 5;
     const pattern = BreakpointL
       ? [mobileSize, mobileSize, mobileSize]
       : [2, 2, 2, 2, 2, 2];
-
 
     imageList &&
       imageList.forEach((element, index) => {
@@ -36,27 +34,16 @@ const HexaPattern = ({ imageList }) => {
           column.push(element);
         }
       });
-      setContent(() =>
-        all.map((element, index) => (
-          <div className="HexaPattern__column" key={index}>
-            <HexaColumn elements={element} />
-          </div>
-        ))
-      );
+    setContent(() =>
+      all.map((element, index) => (
+        <div className="HexaPattern__column" key={index}>
+          <HexaColumn elements={element} />
+        </div>
+      ))
+    );
   }, [imageList, BreakpointL]);
 
-  // useEffect(() => {
-  //   all &&
-  //     setContent(() =>
-  //       all.map((element, index) => (
-  //         <div className="HexaPattern__column" key={index}>
-  //           <HexaColumn elements={element} />
-  //         </div>
-  //       ))
-  //     );
-  // }, [imageList]);
-
-  return imageList && all ? (
+  return imageList ? (
     <div className="HexaPattern">
       <div className="HexaPattern__content">{content}</div>
     </div>

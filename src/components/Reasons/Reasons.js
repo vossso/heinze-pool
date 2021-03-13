@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import PropTypes from "prop-types";
 
 import "./Reasons.scss";
@@ -7,24 +7,34 @@ import HexaIcon from "../share/HexaIcon/HexaIcon";
 import TextBox from "../share/TextBox/TextBox";
 import useBreakpoint from "../../hooks/useBreakpoint";
 import { CSSTransition } from "react-transition-group";
+import useElementScroll from "../../hooks/useElementScroll";
 
 const Reasons = ({ title, reasonsList }) => {
-  const BreakpointL = useBreakpoint("xl");
-  const [isOver, setIsOver] = useState(false);
+  const BreakpointXL = useBreakpoint("xl");
+  const BreakpointXXL = useBreakpoint("xxl");
+  const ref = useRef(null);
+  const [, isInView] = useElementScroll(ref);
+
+  const contVariant = BreakpointXXL ? "" : ["full-height"];
 
   return reasonsList.length > 0 ? (
-    <div className="Reasons" onMouseEnter={() => setIsOver(true)}>
-      {/* ToDo Starter */}
-      <Container variant={["full-height"]}>
+    <div className="Reasons" ref={ref}>
+      <Container variant={contVariant}>
         <div className="Reasons__wrapper">
           <h3>{title}</h3>
-          <p>Unsere Geschichte und fünf Gründe, warum Sie sich für uns entscheiden sollten</p>
+          <p>
+            Seit über 50 Jahren haben wir als Familie das große Glück unsere
+            Leidenschaft für die Schwimmbadtechnik leben zu können. Dabei stehen
+            wir seither für höchste Qualität, Kundenzufriedenheit und Service.
+            Erschaffen Sie sich Ihr eigenes Bild und entdecken unsere
+            Geschichte:
+          </p>
           <div className="Reasons__content">
             {reasonsList.map((element, index) => {
               const { reason, description } = element;
-              return !BreakpointL ? (
+              return !BreakpointXL ? (
                 <CSSTransition
-                  in={isOver}
+                  in={isInView}
                   timeout={300}
                   classNames="slideIn"
                   unmountOnExit
@@ -38,7 +48,7 @@ const Reasons = ({ title, reasonsList }) => {
                     <TextBox
                       title={reason}
                       text={description}
-                      variant={BreakpointL ? "auto-height" : null}
+                      variant={BreakpointXL ? "auto-height" : null}
                     />
                   </div>
                 </CSSTransition>
@@ -50,7 +60,7 @@ const Reasons = ({ title, reasonsList }) => {
                   <TextBox
                     title={reason}
                     text={description}
-                    variant={BreakpointL ? "auto-height" : null}
+                    variant={BreakpointXL ? "auto-height" : null}
                   />
                 </div>
               );

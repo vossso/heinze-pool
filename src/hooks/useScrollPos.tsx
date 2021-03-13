@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-//ToDo @ilja @sophie add option to use ref
 
 const useScrollPos = () => {
   const [currentScrollY, setCurrentScrollY] = useState<number>(0);

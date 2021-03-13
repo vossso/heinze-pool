@@ -6,8 +6,6 @@ import Layout from "../components/Layout";
 import History from "../components/History/History";
 import Stage from "../components/Stage/Stage";
 import Reasons from "../components/Reasons/Reasons";
-import Quote from "../components/Quote/Quote";
-import Footer from "../components/Footer";
 import ScrollArrow from "../components/share/ScrollArrow/ScrollArrow";
 
 export const AboutPageTemplate = ({
@@ -24,7 +22,7 @@ export const AboutPageTemplate = ({
           image={titleimage.image}
           alt={titleimage.alt}
           isStarter={false}
-          description="Seit über 50 Jahren haben wir als Familie das große Glück unsere Leidenschaft für die Schwimmbadtechnik leben zu können. Dabei stehen wir seither für höchste Qualität, Kundenzufriedenheit und Service. Erschaffen Sie sich Ihr eigenes Bild und entdecken unsere Geschichte:"
+          // description="Seit über 50 Jahren haben wir als Familie das große Glück unsere Leidenschaft für die Schwimmbadtechnik leben zu können. Dabei stehen wir seither für höchste Qualität, Kundenzufriedenheit und Service. Erschaffen Sie sich Ihr eigenes Bild und entdecken unsere Geschichte:"
         />
       </div>
       <div className="AboutPage__content">
@@ -35,9 +33,6 @@ export const AboutPageTemplate = ({
           />
         )}
         {history && <History data={history} />}
-      </div>
-      <div id="contact">
-        <Footer />
       </div>
     </div>
   );
@@ -57,7 +52,7 @@ const AboutPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
-    <Layout hasFooter={false}>
+    <Layout>
       <AboutPageTemplate
         title={frontmatter.title}
         titleimage={frontmatter.titleimage}

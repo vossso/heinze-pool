@@ -15,7 +15,7 @@
   &__content {
     width: 100%;
     padding: $margin-menu-mobile + $margin-l 0 0;
-    @include respond-to(m) {
+    @include respond-to(xl) {
       padding: $margin-menu + $margin-s $margin-m 0 $margin-xl;
     }
   }

@@ -2,13 +2,14 @@
 @import "../../styles/media-queries";
 
 .Brands {
-  padding-top: $margin-menu + $margin-m;
+  padding: $margin-menu + $margin-m 0 $margin-l;
   height: auto;
   overflow: hidden;
 
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 
   &__element {
     flex: 1 1 100%;

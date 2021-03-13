@@ -8,10 +8,12 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    flex-direction: column;
 
     @include respond-to(l) {
       justify-content: space-between;
-      padding-top: $margin-menu + $margin-xl;
+      flex-direction: row;
+      padding-top: 0;
     }
   }
   &__element {

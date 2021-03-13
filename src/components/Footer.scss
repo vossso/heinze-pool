@@ -7,10 +7,12 @@
   font-size: $fs-s;
   min-height: 100vh;
   overflow: hidden;
+  padding-top: $margin-menu-mobile;
 
   @include respond-to(s) {
     min-height: 30rem;
     height: 100%;
+    padding-top: 0;
   }
 
   h3 {
@@ -18,11 +20,11 @@
     text-align: left;
     // margin-bottom: 0;
   }
-  &--full-height {
-    > div {
-      margin-top: $margin-menu-mobile + $margin-m;
-    }
-  }
+  // &--full-height {
+  //   > div {
+  //     margin-top: $margin-menu-mobile + $margin-m;
+  //   }
+  // }
 
   &__content {
     height: 100%;
@@ -33,7 +35,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    @include respond-to(m) {
+    @include respond-to(l) {
       width: 100%;
       height: auto;
     }
@@ -44,6 +46,10 @@
     margin-bottom: $margin-l;
 
     @include respond-to(m) {
+      flex: 0 0 51%;
+    }
+
+    @include respond-to(l) {
       flex: 1 1 auto;
       margin-bottom: 0;
     }
@@ -89,6 +95,9 @@
       content: " Uhr";
     }
     @include respond-to(m) {
+      flex: 0 0 51%;
+    }
+    @include respond-to(l) {
       flex: 0 0 auto;
     }
   }

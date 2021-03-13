@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./Link.scss";
-import arrow from "../../../img/icons/arrow-blue.svg";
+import arrow from "../../../img/icons/arrow-blue-2.svg";
 
 const Link = ({ label, link }) => {
   return link ? (

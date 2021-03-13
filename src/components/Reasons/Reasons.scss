@@ -9,7 +9,6 @@
   }
   &__wrapper {
     text-align: center;
-    padding-top: $margin-m;
     > h3 {
       font-size: $fs-h3-mobile;
       margin-bottom: $margin-s;
@@ -18,7 +17,7 @@
       margin-bottom: $margin-l;
     }
     @include respond-to(xl) {
-      padding-top: $margin-menu + $margin-m;
+      padding-top: $padding-m;
       > h3 {
         font-size: $fs-h3;
       }
@@ -31,8 +30,8 @@
   &__content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: space-evenly;
+    align-items: flex-start;
     flex-wrap: wrap;
 
     text-align: center;
@@ -40,6 +39,7 @@
     @include respond-to(l) {
       flex-direction: row;
       text-align: left;
+      margin-top: $spacer-l;
     }
   }
   &__reason {
@@ -53,17 +53,12 @@
     }
 
     @include respond-to(l) {
-      flex: 0 0 25%;
+      flex: 0 0 auto;
+      max-width: 40rem;
 
-      &:nth-child(2) {
-        margin-left: $spacer-m;
-      }
-      &:nth-child(2),
-      &:nth-child(4) {
-        margin-right: $spacer-m;
-      }
       & .TextBox {
         padding: 4rem 3rem 4rem 4rem;
+        min-height: 28rem;
       }
     }
   }
@@ -78,7 +73,7 @@
 
     @include respond-to(l) {
       position: absolute;
-      top: 4.5rem;
+      top: 3.5rem;
       margin-left: -2.5rem;
 
       > div {

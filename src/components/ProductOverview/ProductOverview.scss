@@ -16,7 +16,7 @@
     justify-content: flex-start;
     flex-direction: row;
 
-    margin-top: $margin-m;
+    margin-top: $margin-l;
     z-index: 10;
 
     overflow: scroll;
@@ -35,6 +35,8 @@
     @include respond-to(xxl) {
       width: 100%;
       overflow: visible;
+      max-width: $max-width-l;
+      margin: -10rem auto 0;
     }
   }
 }

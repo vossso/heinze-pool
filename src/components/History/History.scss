@@ -9,7 +9,7 @@
   > .Container {
     padding: 0 $spacer-m;
     @include respond-to(xl) {
-      padding: 0 $spacer-l $margin-l;
+      padding: 0 $spacer-l;
     }
   }
 
@@ -24,7 +24,7 @@
       text-align: center;
     }
     @include respond-to(xl) {
-      margin-top: $margin-menu + $spacer-l;
+      margin-top: $margin-menu ;
 
       > h3 {
         font-size: $fs-h3;
