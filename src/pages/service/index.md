@@ -9,7 +9,7 @@ sOverview:
     text: >-
      Wir realisieren jeden Pool individuell nach Ihren Vorstellungen und Wünschen von der Planung, über den Bau bis hin zur Inbetriebnahme. 
     title: Poolbau
-    image: /img/icon_Bau2-white.png
+    image: /img/icon_Bau-white.png
     description: '???'
   - alt: Hannover Isernhagen
     text: >-
@@ -22,7 +22,7 @@ sOverview:
       Zusätzlich zu Beratung und Verkauf können Sie sich auch alle bei uns
       erworbenen Produkte von unseren Monteuren fachgerecht installieren lassen.
     title: Installation
-    image: /img/icon_Inst-white.png
+    image: /img/icon_Inst2-white.png
     description: '???'
   - alt: Poolwartung
     text: >-
