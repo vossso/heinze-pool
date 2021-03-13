@@ -8,7 +8,7 @@ import "./ProductTeasers.scss";
 import useBreakpoint from "../../hooks/useBreakpoint";
 
 const ProductTeasers = ({ products }) => {
-  const BreakpointL = useBreakpoint("s");
+  const BreakpointL = useBreakpoint("l");
   const productTeasers = products
     ? BreakpointL
       ? products

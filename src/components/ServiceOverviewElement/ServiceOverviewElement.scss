@@ -18,9 +18,17 @@
     > .TextBox {
         padding-top: $padding-m;
 
-      @include respond-to(m) {
+        & p {
+          font-size: $fs-p-mobile;
+        }
+
+      @include respond-to(xxl) {
         padding-top: $padding-l;
         max-width: 40rem;
+
+        & p {
+          font-size: $fs-p;
+        }
       }
     }
   }

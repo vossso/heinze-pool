@@ -1,11 +1,6 @@
 import React from "react";
 
-const Icon = ({
-  type,
-  className = "Icon",
-  size,
-  color,
-}) => {
+const Icon = ({ type, className = "Icon", size, color }) => {
   try {
     require("../../img/icons/" + type + ".svg");
   } catch (e) {

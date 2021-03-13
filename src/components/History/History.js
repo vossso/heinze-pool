@@ -10,13 +10,16 @@ const History = ({ data }) => {
   return data ? (
     <div className="History">
       <Container>
-        <h3>Unsere Geschichte</h3>
-        <p>
-          Seit über 50 Jahren haben wir als Familie das große Glück unsere
-          Leidenschaft für die Schwimmbadtechnik leben zu können. Dabei stehen
-          wir seither für höchste Qualität, Kundenzufriedenheit und Service.
-          Erschaffen Sie sich Ihr eigenes Bild und entdecken unsere Geschichte:
-        </p>
+        <div className="History__intro">
+          <h3>Unsere Geschichte</h3>
+          <p>
+            Seit über 50 Jahren haben wir als Familie das große Glück unsere
+            Leidenschaft für die Schwimmbadtechnik leben zu können. Dabei stehen
+            wir seither für höchste Qualität, Kundenzufriedenheit und Service.
+            Erschaffen Sie sich Ihr eigenes Bild und entdecken unsere
+            Geschichte:
+          </p>
+        </div>
       </Container>
       <div className="History__teasers">
         {data.length > 0 &&

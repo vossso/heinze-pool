@@ -6,13 +6,15 @@ $duration: 0.5s;
 .ProductLinks {
   width: 100%;
 
-  @include respond-to(m) {
+  @include respond-to(xl) {
     display: flex;
     flex-direction: row;
 
     &__image {
       flex: 1 1 auto;
       margin-left: $margin-xl;
+      height: auto;
+      width: 100%;
 
       background-repeat: no-repeat;
       background-size: contain;
@@ -70,7 +72,7 @@ $duration: 0.5s;
     width: 90%;
     margin: 0 auto;
 
-    @include respond-to(m) {
+    @include respond-to(xl) {
       flex: 0 0 40%;
       margin: 0;
     }

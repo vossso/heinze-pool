@@ -15,14 +15,22 @@
       right: $margin-xl;
     }
   }
-  @include respond-to(xl) {
+  @include respond-to(m) {
+    &:last-child .ProductOverviewElement__content {
+      margin-right:$margin-xl ;
+    }
+    &:not(:first-child) .ProductOverviewElement__content {
+      margin-left: $margin-m;
+    }
+  }
+  @include respond-to(xxl) {
     &:not(:first-child) .ProductOverviewElement__content {
       margin-left: $margin-xl;
     }
   }
 
   &__content {
-    max-width: 32rem;
+    max-width: 35rem;
     height: 100%;
 
     margin-left: $margin-s;
@@ -34,9 +42,8 @@
 
       & .TextBox__icon {
         flex: 0 0 30%;
-        width: 10rem;
-        margin-bottom: 2rem;
-        margin-left: -1.5rem;
+        margin-bottom: 1rem;
+        margin-left: -0.7rem;
       }
 
       > h4 {
@@ -49,6 +56,19 @@
         margin-bottom: $margin-s;
         font-size: 1.6rem;
       }
+    }
+    @include respond-to(m) {
+      margin-left: 10rem;
+      max-width: 25rem;
+      & .TextBox__icon {
+        flex: 0 0 30%;
+        margin-bottom: 2rem;
+        margin-left: -1.5rem;
+      }
+    }
+    @include respond-to(xxl) {
+      max-width: 28rem;
+      margin-left: 15rem;
     }
   }
   &__button {

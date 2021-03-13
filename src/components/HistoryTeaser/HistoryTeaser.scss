@@ -2,8 +2,8 @@
 @import "../../styles/media-queries";
 
 .HistoryTeaser {
-    position: relative;
-    margin-top: auto 0 0 ;
+  position: relative;
+  margin-top: auto 0 0;
 
   &__wrapper {
     display: flex;
@@ -43,14 +43,15 @@
       }
     }
     @include respond-to(m) {
-      flex: 0 1 40%;
+      flex: 1 1 30%;
       padding: 0;
       margin: auto 0;
+      margin-right: -10rem;
     }
   }
   &__image {
     @include respond-to(m) {
-      flex: 0 1 40%;
+      flex: 1 1 40%;
       margin-left: 1rem;
     }
   }

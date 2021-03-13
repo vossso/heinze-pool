@@ -9,7 +9,7 @@ import useBreakpoint from "../../hooks/useBreakpoint";
 import { CSSTransition } from "react-transition-group";
 
 const Reasons = ({ title, reasonsList }) => {
-  const BreakpointL = useBreakpoint("l");
+  const BreakpointL = useBreakpoint("xl");
   const [isOver, setIsOver] = useState(false);
 
   return reasonsList.length > 0 ? (
@@ -18,10 +18,11 @@ const Reasons = ({ title, reasonsList }) => {
       <Container variant={["full-height"]}>
         <div className="Reasons__wrapper">
           <h3>{title}</h3>
+          <p>Unsere Geschichte und fünf Gründe, warum Sie sich für uns entscheiden sollten</p>
           <div className="Reasons__content">
             {reasonsList.map((element, index) => {
               const { reason, description } = element;
-              return (
+              return !BreakpointL ? (
                 <CSSTransition
                   in={isOver}
                   timeout={300}
@@ -41,6 +42,17 @@ const Reasons = ({ title, reasonsList }) => {
                     />
                   </div>
                 </CSSTransition>
+              ) : (
+                <div className="Reasons__reason">
+                  <div className="Reasons__hexa">
+                    <HexaIcon size="5rem" number={index + 1} />
+                  </div>
+                  <TextBox
+                    title={reason}
+                    text={description}
+                    variant={BreakpointL ? "auto-height" : null}
+                  />
+                </div>
               );
             })}
           </div>

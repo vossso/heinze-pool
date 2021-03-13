@@ -4,9 +4,11 @@ import "./Stage.scss";
 import Container from "../share/Container/Container";
 import useBreakpoint from "../../hooks/useBreakpoint";
 
-const Stage = ({ image, title, isStarter = true }) => {
+const Stage = ({ image, title, isStarter = true, description = null }) => {
   const BreakpointM = useBreakpoint("m");
-  const variant = isStarter ? ["half-height--start", "full-width", "no-padding", "starter"] : ["half-height--start", "full-width", "no-padding"]
+  const variant = isStarter
+    ? ["half-height--start", "full-width", "no-padding", "starter"]
+    : ["half-height--start", "full-width", "no-padding"];
 
   const getContent = (
     <div className="Stage">
@@ -22,7 +24,10 @@ const Stage = ({ image, title, isStarter = true }) => {
       )}
 
       <div className="Stage__content">
-        <Container>{title && <h2>{title}</h2>}</Container>
+        <Container>
+          {title && <h2>{title}</h2>}
+          {description && <p>{description}</p>}
+        </Container>
       </div>
     </div>
   );

@@ -13,6 +13,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import "./index-page.scss";
 import useBreakpoint from "../hooks/useBreakpoint";
+import FadeIn from "../components/share/FadeIn/FadeIn";
 
 export const IndexPageTemplate = ({ links }) => {
   const [trans, setTrans] = useState(false);
@@ -26,16 +27,19 @@ export const IndexPageTemplate = ({ links }) => {
   useEffect(() => {
     setTimeout(() => {
       setShowLogo(true);
-    }, 500);
+    }, 300);
+    setTimeout(() => {
+      // setTrans(true);
+    }, 5000);
   }, []);
 
   return (
     <div className="IndexPage" onClick={startAnimation}>
       <div className="IndexPage__content">
-        <div className="IndexPage__bg-image">
-          <img src={bgImage} alt="Poool" />
-          {/* <ReactPlayer url='https://www.youtube.com/watch?v=qwz88S1P0os' playing muted loop width= "100%" height="100vh"/> */}
-        </div>
+          <div className="IndexPage__bg-image">
+            <img src={bgImage} alt="Poool" />
+            {/* <ReactPlayer url='https://www.youtube.com/watch?v=qwz88S1P0os' playing muted loop width= "100%" height="100vh"/> */}
+          </div>
         {BreakpointM ? (
           <>
             <div className="IndexPage__mobile">

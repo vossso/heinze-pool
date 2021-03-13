@@ -5,7 +5,8 @@
   position: relative;
   z-index: 0;
   overflow: hidden;
-  
+  height: 100%;
+
   &__gallery {
     position: relative;
     z-index: 1;
@@ -13,7 +14,7 @@
     width: 100vw;
     height: 100%;
 
-    @include respond-to(m) {
+    @include respond-to(l) {
       overflow: hidden;
       left: 0;
       right: 0;
@@ -28,7 +29,7 @@
     width: 90%;
     margin: -10rem auto $margin-l;
 
-    @include respond-to(m) {
+    @include respond-to(l) {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -41,10 +42,11 @@
       align-items: center;
 
       @include respond-to(l) {
-      div {
-        padding: $margin-l;
+        padding-top: $margin-menu + $margin-l;
+        div {
+          padding: $margin-l;
+        }
       }
-    }
     }
   }
   &__text {
@@ -58,5 +60,9 @@
   &__title {
     text-align: left;
     margin-bottom: $margin-xs;
+  }
+
+  .gatsby-image-wrapper {
+    height: 100%;
   }
 }

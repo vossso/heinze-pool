@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
-import { graphql, StaticQuery } from "gatsby";
 
 import Stage from "../../components/Stage/Stage";
 import ProductTeasers from "../../components/ProductTeasers/ProductTeasers";

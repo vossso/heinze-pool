@@ -6,7 +6,7 @@
   @extend %round-box;
   min-height: 25rem;
   min-height: auto;
-  max-height: 50rem;
+  // max-height: 50rem;
 
   > h4 {
     font-size: $fs-h4-mobile;
@@ -31,7 +31,12 @@
     min-height: 5rem;
     width: 5rem;
     margin-bottom: $margin-l;
+    
     @include respond-to(m) {
+      min-height: 8rem;
+      width: 8rem;
+    }
+    @include respond-to(xxl) {
       min-height: 10rem;
       width: 10rem;
     }

@@ -3,10 +3,9 @@
 @import "../../styles/_media-queries.scss";
 
 .FaqBox {
-  width: 90%;
+  width: 95%;
   height: auto;
   padding: $margin-m;
-  margin: 0 auto;
   margin-bottom: $margin-m;
   @extend %round-box;
 
@@ -16,6 +15,8 @@
   overflow: visible;
 
   @include respond-to(m) {
+    margin: 0 auto;
+    margin-bottom: $margin-m;
     width: 100%;
     max-width: 100rem;
   }
@@ -33,7 +34,7 @@
   &__answer {
     margin-top: $margin-s;
     text-align: left;
-    
+
     @include respond-to(m) {
       font-size: $fs-p;
     }

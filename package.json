@@ -43,6 +43,7 @@
     "react-hook-google-maps": "0.0.3",
     "react-lineto": "3.0.0",
     "react-player": "^2.9.0",
+    "react-reveal": "^1.2.2",
     "react-transition-group": "4.4.1",
     "redux": "3.7.2",
     "sass": "1.29.0",

@@ -3,7 +3,6 @@
 
 .ProductsPage {
   position: relative;
-  margin-bottom: $margin-l;
 
   h3 {
     font-size: $fs-h3-mobile;
@@ -13,8 +12,11 @@
       margin-bottom: $margin-m;
     }
   }
-  &__content{
+  &__content {
     width: 100%;
-    padding: $margin-menu-mobile + $margin-l $margin-m 0 $margin-xl;
+    padding: $margin-menu-mobile + $margin-l 0 0;
+    @include respond-to(m) {
+      padding: $margin-menu + $margin-s $margin-m 0 $margin-xl;
+    }
   }
 }

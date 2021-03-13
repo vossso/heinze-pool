@@ -1,32 +1,43 @@
 @import "../../../styles/_global";
 @import "../../../styles/media-queries";
 
-* {
-  scroll-snap-type: y mandatory;
-  &.proximity {
-    scroll-snap-type: y proximity;
-  }
-}
+// * {
+//   scroll-snap-type: y mandatory;
+//   &.proximity {
+//     scroll-snap-type: y proximity;
+//   }
+// }
 
 .Container {
   pointer-events: visible;
-  max-width: 100%;
+  max-width: 100vw;
   margin: $margin-menu auto 0;
-  width: 90%;
+  width: $max-width-s-mobile;
+  // border: solid red 2px;
 
+  @include respond-to(xs) {
+    width: $max-width-m-mobile;
+    // border: solid pink 2px;
+  }
   @include respond-to(s) {
-    width: $max-width-xs;
+    width: $max-width-l-mobile;
+    // border: solid orange 2px;
   }
-
   @include respond-to(m) {
-    width: $max-width-s;
+    width: $max-width-xs;
+    // border: solid blue 2px;
   }
-
   @include respond-to(l) {
+    width: $max-width-s;
+    // border: solid darkblue 2px;
+  }
+  @include respond-to(xl) {
     width: $max-width-m;
+    // border: solid green 2px;
   }
   @include respond-to(xxl) {
     width: $max-width-l;
+    // border: solid turquoise 2px;
   }
 
   &--no-top {
@@ -42,7 +53,7 @@
   &--full-height {
     margin-top: 0;
     min-height: auto;
-    // border: solid red 2px;
+    height: auto;
 
     @include respond-to(xl) {
       height: 100vh;
@@ -54,16 +65,17 @@
     min-height: auto;
 
     @include respond-to(xl) {
-      height: calc(50vh - 8rem);
+      margin-top: 0;
+      height: calc(50vh - 4rem);
       max-height: 50rem;
     }
   }
-  &--half-height--top{
+  &--half-height--top {
     margin-top: 0;
     min-height: auto;
 
     @include respond-to(xl) {
-      height: calc(50vh + 8rem);
+      height: calc(50vh + 4rem);
       max-height: 50rem;
       padding-top: 8rem;
     }
@@ -85,9 +97,8 @@
   }
 
   &--starter {
-    @include respond-to(l) {
-      scroll-snap-align: start;
-      overflow: hidden;
+    @include respond-to(xl) {
+      // scroll-snap-align: start;
     }
   }
 }

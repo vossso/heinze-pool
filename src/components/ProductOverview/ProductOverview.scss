@@ -6,7 +6,7 @@
   z-index: 100;
   // padding-left: $margin-xl;
 
-  @include respond-to(l) {
+  @include respond-to(xl) {
     padding-left: 0;
   }
 
@@ -21,16 +21,20 @@
 
     overflow: scroll;
     overflow-y: visible;
-    width: 100vw;
+    width: 100%;
     padding-right: $margin-l;
 
     max-height: 40rem;
 
+    @include respond-to(xl) {
+      margin-left: 0;
+      margin-top: -10rem;
+      justify-content: space-between;
+    }
+
     @include respond-to(xxl) {
       width: 100%;
       overflow: visible;
-      margin-left: 0;
-      margin-top: -10rem;
     }
   }
 }

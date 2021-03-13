@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import Img from "gatsby-image";
 
-const PreviewCompatibleImage = ({ imageInfo }) => {
-  const imageStyle = { objectFit: "cover" };
+const PreviewCompatibleImage = ({ imageInfo, styles }) => {
+  const imageStyle = styles ? styles : { objectFit: "cover" };
   const { alt = "", childImageSharp, image } = imageInfo;
   if (!!image && !!image.childImageSharp) {
     return (

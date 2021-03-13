@@ -13,7 +13,6 @@ export const ProductPageTemplate = ({ data }) => {
   const location = useWindowLocation();
   const pathname = decodeURI(location.pathname);
 
-
   const products = {
     pools: edges
       ? edges.find((page) => page.node.fields.slug.includes("/product/pools/"))
@@ -37,8 +36,9 @@ export const ProductPageTemplate = ({ data }) => {
 
   useEffect(() => {
     var sliced = pathname.split("/");
+    if (sliced[sliced.length - 1] === "") sliced.pop();
     setProduct(products[sliced[sliced.length - 1]]);
-  }, [pathname]);
+  }, [pathname, products]);
 
   return (
     <div>
@@ -103,7 +103,7 @@ export const ProductPageQuery = graphql`
             productElement {
               image {
                 childImageSharp {
-                  fluid(maxWidth: 500) {
+                  fluid(maxWidth: 300) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -115,7 +115,7 @@ export const ProductPageQuery = graphql`
               images {
                 image {
                   childImageSharp {
-                    fluid(maxWidth: 500) {
+                    fluid(maxWidth: 1300) {
                       ...GatsbyImageSharpFluid
                     }
                   }
@@ -126,7 +126,7 @@ export const ProductPageQuery = graphql`
             brands {
               image {
                 childImageSharp {
-                  fluid(maxWidth: 300) {
+                  fluid(maxWidth: 500) {
                     ...GatsbyImageSharpFluid
                   }
                 }

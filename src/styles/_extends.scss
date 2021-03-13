@@ -40,7 +40,7 @@
   height: auto;
   padding: $padding-box-verti-mobile $padding-box-hori-mobile;
 
-  @include respond-to(m) {
+  @include respond-to(xxl) {
     padding: $padding-box-verti $padding-box-hori;
   }
 }

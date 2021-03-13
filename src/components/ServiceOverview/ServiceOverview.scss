@@ -15,6 +15,10 @@
     }
   }
   &__element {
-    flex: 1 1 max-content;
+    flex: 0 0 30%;
+
+    & p {
+      font-size: 1.6rem;
+    }
   }
 }

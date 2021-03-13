@@ -10,10 +10,10 @@
   }
   &__left {
     flex: 0 0 auto;
-
+    height: 28rem;
     display: none;
 
-    @include respond-to(s) {
+    @include respond-to(m) {
       display: block;
     }
 

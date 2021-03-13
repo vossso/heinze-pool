@@ -19,13 +19,15 @@ export const AboutPageTemplate = ({
   return (
     <div className="AboutPage">
       <div className="AboutPage__stage">
-        <Stage title={title} image={titleimage.image} alt={titleimage.alt} isStarter={false}/>
+        <Stage
+          title={title}
+          image={titleimage.image}
+          alt={titleimage.alt}
+          isStarter={false}
+          description="Seit über 50 Jahren haben wir als Familie das große Glück unsere Leidenschaft für die Schwimmbadtechnik leben zu können. Dabei stehen wir seither für höchste Qualität, Kundenzufriedenheit und Service. Erschaffen Sie sich Ihr eigenes Bild und entdecken unsere Geschichte:"
+        />
       </div>
       <div className="AboutPage__content">
-        <Quote
-          quote={{
-            text: "Unsere Geschichte und fünf Gründe warum Sie sich für uns entscheiden sollten"          }}
-        />
         {reasonsArea.reasonsList.length > 0 && (
           <Reasons
             title={reasonsArea.title}

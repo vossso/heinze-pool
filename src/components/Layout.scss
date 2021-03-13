@@ -1,1 +1,22 @@
 @import "../fonts/stylesheet.css";
+@import "../styles/global";
+@import "../styles/extends";
+
+.Layout {
+  &__content {
+    -webkit-transition: height $duration-s;
+    -moz-transition: height $duration-s;
+    -ms-transition: height $duration-s;
+    -o-transition: height $duration-s;
+    transition: height $duration-s;
+  }
+  &__footer > a {
+    @extend %link;
+    position: absolute;
+    bottom: 2%;
+    right: 15%;
+
+    font-size: 1.4rem;
+    color: $hp-blue;
+  }
+}

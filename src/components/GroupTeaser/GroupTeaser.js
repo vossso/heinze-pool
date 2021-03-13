@@ -9,7 +9,7 @@ import useBreakpoint from "../../hooks/useBreakpoint";
 
 const GroupTeaser = ({ products }) => {
   const BreakpointM = useBreakpoint('l');
-  const variant = BreakpointM ? "" : ["full-height", "starter"];
+  const variant = BreakpointM ? "" : [ "starter"];
   return (
     <Container variant={variant} id="Sonstige">
       <div className="GroupTeaser">

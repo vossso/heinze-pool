@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import ProductLink from "../ProductLink/ProductLink";
 import "./ProductLinks.scss";
+import FadeIn from "../share/FadeIn/FadeIn";
 
 const ProductLinks = ({ products }) => {
   const [activeId, setActiveId] = useState(4);
@@ -24,9 +25,11 @@ const ProductLinks = ({ products }) => {
           />
         ))}
       </div>
-      <div
-        className={`ProductLinks__image${" ProductLinks__image--" + activeId}`}
-      ></div>
+        <div
+          className={`ProductLinks__image${
+            " ProductLinks__image--" + activeId
+          }`}
+        />
     </div>
   ) : null;
 };
