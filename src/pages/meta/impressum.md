@@ -12,16 +12,13 @@ text: >-
   30916 Isernhagen/Hannover
 
 
-  Tel.: 0511.271 31 45
+  Tel.: 0511 271 31 45
 
 
-  Fax: 0511.271 31 47
+  Fax: 0511 271 31 47
 
 
   E-Mail: info@heinze-pool.de
-
-
-  Intern: Heinze-Pool
 
 
   Ust.-Id.-Nr.: DE115829513
@@ -121,8 +118,6 @@ text: >-
   durch Google verhindern, indem sie das unter dem folgenden Link verfügbare
   Browser-Plugin herunterladen und installieren:
   https://tools.google.com/dlpage/gaoptout?hl=de.
-
-
 
 
   <h4>Design und Technische Realisierung</h4>
