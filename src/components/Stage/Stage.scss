@@ -30,7 +30,7 @@
     right: 0;
     left: 0;
 
-    opacity: 0.5;
+    opacity: 0.3;
 
     & img {
       width: 100%;
@@ -59,6 +59,10 @@
       color: $hp-white;
       font-size: $fs-h2-mobile;
 
+      @include respond-to(s) {
+        font-size: 8rem;
+      }
+
       @include respond-to(m) {
         font-size: $fs-h2;
       }
@@ -68,12 +72,13 @@
     }
 
     @include respond-to(m) {
-      margin: 20rem 0 2rem;
+      margin: 22% 0 2rem;
       text-align: left;
     }
 
     @include respond-to(xl) {
-      margin: 17rem 0 5rem;
+      margin: 18% 0 0;
+      left: -1rem;
     }
   }
 }

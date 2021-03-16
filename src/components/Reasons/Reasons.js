@@ -22,13 +22,6 @@ const Reasons = ({ title, reasonsList }) => {
       <Container variant={contVariant}>
         <div className="Reasons__wrapper">
           <h3>{title}</h3>
-          <p>
-            Seit über 50 Jahren haben wir als Familie das große Glück unsere
-            Leidenschaft für die Schwimmbadtechnik leben zu können. Dabei stehen
-            wir seither für höchste Qualität, Kundenzufriedenheit und Service.
-            Erschaffen Sie sich Ihr eigenes Bild und entdecken unsere
-            Geschichte:
-          </p>
           <div className="Reasons__content">
             {reasonsList.map((element, index) => {
               const { reason, description } = element;

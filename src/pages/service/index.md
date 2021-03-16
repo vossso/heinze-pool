@@ -22,11 +22,11 @@ sOverview:
       Zusätzlich zu Beratung und Verkauf können Sie sich auch alle bei uns
       erworbenen Produkte von unseren Monteuren fachgerecht installieren lassen.
     title: Installation
-    image: /img/icon_Inst2-white.png
+    image: /img/icon_Inst3-white.png
     description: '???'
   - alt: Poolwartung
     text: >-
-      Jede Poolanlage ist einzigartig und möchte gepflegt und gewartet werden, um langfristig sorgenfrei Freude zu bereiten. Hierfür steht Ihnen unser Wartungsdienst 
+      Jede Poolanlage möchte gepflegt und gewartet werden, um langfristig sorgenfrei Freude zu bereiten. Hierfür steht Ihnen unser Wartungsdienst zur Verfügung.
     title: Wartung
     image: /img/icon_Wart-white.png
     description: '???'
@@ -42,6 +42,7 @@ sOverview:
     title: Wasseranalyse
     image: /img/icon_Lupe-white.png
     description: '???'
+    link: service#wa
 steps:
   - text: Die erste Kontaktaufnahme
   - text: Persönliches Beratungsgespräch

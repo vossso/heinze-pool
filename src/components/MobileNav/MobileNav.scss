@@ -2,13 +2,13 @@
 @import "../../styles/media-queries";
 
 .MobileNav {
-  position: absolute;
+  // position: absolute;
   z-index: 50;
-  top: -0.1rem;
-  right: 0;
-  left: -0.1rem;
-  width: auto;
-  height: 100%;
+  // top: -0.1rem;
+  // right: 0;
+  // left: -0.1rem;
+  // width: auto;
+  // height: 100%;
 
   &__bar {
     height: 100%;
@@ -31,13 +31,14 @@
   }
 
   &__wrapper {
-    position: relative;
+    position: absolute; //
     z-index: 2;
     height: auto;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     background: $hp-white;
+    min-width: 100vw;
 
     -webkit-transition: opacity $duration-m;
     -moz-transition: opacity $duration-m;

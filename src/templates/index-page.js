@@ -7,6 +7,7 @@ import logo2 from "../img/hp-logo_white-sub.png";
 import hexa from "../img/hexagon_line.png";
 import { Link } from "gatsby";
 import { CSSTransition } from "react-transition-group";
+import { configureAnchors } from "react-scrollable-anchor";
 // import ReactPlayer from 'react-player'
 
 import PropTypes from "prop-types";
@@ -15,8 +16,8 @@ import "./index-page.scss";
 import useBreakpoint from "../hooks/useBreakpoint";
 
 export const IndexPageTemplate = ({ links }) => {
+  configureAnchors({ offset: -80, scrollDuration: 200 });
   const [trans, setTrans] = useState(false);
-  const [showLogo, setShowLogo] = useState(false);
   const BreakpointM = useBreakpoint("m");
 
   const startAnimation = () => {
@@ -25,20 +26,21 @@ export const IndexPageTemplate = ({ links }) => {
 
   useEffect(() => {
     setTimeout(() => {
-      setShowLogo(true);
-    }, 300);
-    setTimeout(() => {
-      setTrans(true);
+      BreakpointM && setTrans(true);
     }, 5000);
   }, []);
 
   return (
-    <div className="IndexPage" onClick={() => startAnimation()} onKeyDown={() => startAnimation()}>
+    <div
+      className="IndexPage"
+      onClick={() => startAnimation()}
+      onKeyDown={() => startAnimation()}
+    >
       <div className="IndexPage__content">
-          <div className="IndexPage__bg-image">
-            <img src={bgImage} alt="Poool" />
-            {/* <ReactPlayer url='https://www.youtube.com/watch?v=qwz88S1P0os' playing muted loop width= "100%" height="100vh"/> */}
-          </div>
+        <div className="IndexPage__bg-image">
+          <img src={bgImage} alt="Poool" />
+          {/* <ReactPlayer url='https://www.youtube.com/watch?v=qwz88S1P0os' playing muted loop width= "100%" height="100vh"/> */}
+        </div>
         {BreakpointM ? (
           <>
             <div className="IndexPage__mobile">
@@ -121,24 +123,17 @@ export const IndexPageTemplate = ({ links }) => {
           <img src={starterImg} alt="Harz Poolbild" />
         </div>
       </CSSTransition>
+
       <CSSTransition
-        in={showLogo}
+        in={!trans}
         timeout={300}
-        classNames="fadeIn-late"
+        classNames="moveup"
         unmountOnExit
         mountOnEnter
       >
-        <CSSTransition
-          in={!trans}
-          timeout={300}
-          classNames="moveup"
-          unmountOnExit
-          mountOnEnter
-        >
-          <div className="IndexPage__logo">
-            <img src={logo2} alt="Heinze-Pool" />
-          </div>
-        </CSSTransition>
+        <div className="IndexPage__logo">
+          <img src={logo2} alt="Heinze-Pool" />
+        </div>
       </CSSTransition>
     </div>
   );

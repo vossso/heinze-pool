@@ -18,7 +18,6 @@ const StepByStep = ({ steps }) => {
         <div className="StepByStep__wrapper">
           {/* <div className="StepByStep__line" /> */}
           <h3>Schritt für Schritt zu Ihrem Pool</h3>
-          <p>Von Ihrer Idee zum fertigen Pool.</p>
           <div className="StepByStep__steps">
             {steps.map((element, index) => {
               return (

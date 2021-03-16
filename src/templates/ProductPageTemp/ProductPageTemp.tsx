@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Stage from "../../components/Stage/Stage";
 import ProductTeasers from "../../components/ProductTeasers/ProductTeasers";
 import Brands from "../../components/Brands/Brands";
+import './ProductPageTemp.scss'
 
 interface IProductPageTempProps {
   product: any;

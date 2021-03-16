@@ -1,11 +1,22 @@
-@import '../../styles/global';
-@import '../../styles/media-queries';
+@import "../../styles/global";
+@import "../../styles/media-queries";
 
 .FaqPage {
-    h3 {
-        font-size: $fs-h3-mobile;
-        @include respond-to(m) {
-            font-size: $fs-h3;
-        }
+  @include respond-to(xl) {
+    & .Stage__content {
+      margin-top: 22%;
     }
+  }
+  h2 {
+    font-size: $fs-h2-mobile;
+    @include respond-to(xl) {
+      font-size: 7rem;
+    }
+  }
+  h3 {
+    font-size: $fs-h3-mobile;
+    @include respond-to(m) {
+      font-size: $fs-h3;
+    }
+  }
 }

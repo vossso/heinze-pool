@@ -44,11 +44,13 @@
     "react-lineto": "3.0.0",
     "react-player": "^2.9.0",
     "react-reveal": "^1.2.2",
+    "react-scrollable-anchor": "^0.6.1",
     "react-transition-group": "4.4.1",
     "redux": "3.7.2",
     "sass": "1.29.0",
     "sass-loader": "10.1.0",
     "seamless-immutable": "7.1.4",
+    "smoothscroll-polyfill": "^0.4.4",
     "uuid": "3.4.0",
     "webpack": "4.44.2",
     "yoga-layout-prebuilt": "^1.10.0"

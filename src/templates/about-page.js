@@ -7,6 +7,7 @@ import History from "../components/History/History";
 import Stage from "../components/Stage/Stage";
 import Reasons from "../components/Reasons/Reasons";
 import ScrollArrow from "../components/share/ScrollArrow/ScrollArrow";
+import Quote from '../components/Quote/Quote'
 
 export const AboutPageTemplate = ({
   title,
@@ -22,10 +23,10 @@ export const AboutPageTemplate = ({
           image={titleimage.image}
           alt={titleimage.alt}
           isStarter={false}
-          // description="Seit über 50 Jahren haben wir als Familie das große Glück unsere Leidenschaft für die Schwimmbadtechnik leben zu können. Dabei stehen wir seither für höchste Qualität, Kundenzufriedenheit und Service. Erschaffen Sie sich Ihr eigenes Bild und entdecken unsere Geschichte:"
         />
       </div>
       <div className="AboutPage__content">
+        <Quote quote={{text: "Seit über 50 Jahren haben wir als Familie das große Glück unser Leidenschaft für die Schwimmbadtechnik leben zu können. Dabei stehen wir seither für höchste Qualität, Kundenzufriedenheit und Service. Erschaffen Sie sich Ihr eigenes Bild und entdecken unsere Geschichte und fünf Gründe, warum Sie sich für uns entscheiden sollten."}} />
         {reasonsArea.reasonsList.length > 0 && (
           <Reasons
             title={reasonsArea.title}
@@ -91,7 +92,7 @@ export const aboutPageQuery = graphql`
             alt
             image {
               childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
+                fluid(maxWidth: 1000, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }

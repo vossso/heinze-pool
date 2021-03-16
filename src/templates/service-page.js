@@ -9,6 +9,7 @@ import StepByStep from "../components/StepByStep/StepByStep";
 import ServiceTeaser from "../components/ServiceTeaser/ServiceTeaser";
 import ProductTeaser from "../components/ProductTeaser/ProductTeaser";
 import ScrollArrow from "../components/share/ScrollArrow/ScrollArrow";
+import './service-page.scss'
 
 export const ServicePageTemplate = ({
   title,
@@ -99,6 +100,7 @@ export const ServicePageQuery = graphql`
           }
           text
           title
+          link
         }
         shop {
           text

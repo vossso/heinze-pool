@@ -20,6 +20,7 @@ const ServiceOverview = ({ services, description }) => {
                     icon={element}
                     title={element.title}
                     description={element.text}
+                    link={element.link}
                   />
                 </div>
               );
