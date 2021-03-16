@@ -51,11 +51,11 @@
         width: 100%;
       }
     }
-    > img {
-      height: 2rem;
-      width: auto;
-      margin-top: 0.5rem;
-    }
+  }
+  a > img {
+    height: 2rem;
+    width: auto;
+    margin-top: 0.5rem;
   }
 
   &__container,
@@ -121,8 +121,8 @@
 
   &__left {
     flex: 1 1 20%;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
 
     a {
       margin: 0;
@@ -242,6 +242,10 @@
       border: none;
       box-shadow: none;
       top: 3rem;
+    }
+    & .Navbar__left .Navbar__start > img {
+      margin-top: 2.5rem;
+      height: 4.5rem;
     }
 
     // & .Navbar__left {

@@ -10,6 +10,9 @@
 
   &:last-child .ProductOverviewElement__content {
     margin-right: $margin-m;
+    & .ProductOverviewElement__button {
+      right: 7.5rem;
+    }
   }
   @include respond-to(m) {
     &:last-child .ProductOverviewElement__content {

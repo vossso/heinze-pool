@@ -14,7 +14,7 @@ const ImageGallery = ({ images, styles }) => {
               <div className="ImageGallery__image" key={index}>
                 <PreviewCompatibleImage
                   imageInfo={element}
-                  styles={styles ? styles: { objectFit: "cover", height: "100%", width: "100%" }}
+                  styles={styles ? styles : { objectFit: "cover", height: "100%", width: "100%" }}
                 />
               </div>
             );

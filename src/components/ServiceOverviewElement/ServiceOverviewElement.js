@@ -5,12 +5,12 @@ import "./ServiceOverviewElement.scss";
 import HexaIcon from "../share/HexaIcon/HexaIcon";
 import TextBox from "../share/TextBox/TextBox";
 
-const ServiceOverviewElement = ({ icon, title, description }) => {
+const ServiceOverviewElement = ({ icon, title, description, link }) => {
   return (
     <div className="ServiceOverviewElement">
       <div className="ServiceOverviewElement__content">
         <HexaIcon icon={icon} size="9rem" />
-        <TextBox title={title} text={description} />
+        <TextBox title={title} text={description} link={link} label="Mehr erfahren"/>
       </div>
     </div>
   );

@@ -1,0 +1,9 @@
+@import "../../styles/media-queries";
+
+.ProductPageTemp {
+  @include respond-to(xl) {
+    & .Stage__content {
+      margin-top: 12%;
+    }
+  }
+}

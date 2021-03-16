@@ -53,7 +53,7 @@ history:
       "<h3>Daimlerstraße, Isernhagen</h3>\n\nHeute finden Sie uns professioneller und erfahrender als je zuvor in der Daimlerstraße in Isernhagen vor, mit einem wunderbaren Team und viel Freude an dem was wir tun."
     historyimage:
       alt: Daimlerstraße, Isernhagen
-      image: /img/Today.jpg
+      image: /img/Service_shop.jpg
     title: Heute
 contactblock:
   adress:

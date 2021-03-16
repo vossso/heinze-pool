@@ -29,8 +29,8 @@ const ProductOverviewElement = ({ title, description, image }) => {
               icon={{ image }}
             />
             <div className="ProductOverviewElement__button">
-              <ArrowLink link={`#${title}`} />
-            </div>{" "}
+              <ArrowLink anchor={title} />
+            </div>
           </>
         )}
       </div>

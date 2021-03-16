@@ -156,7 +156,6 @@
         width: 38vw;
       }
       @include respond-to(xl) {
-        margin-top: -$spacer-m;
         width: 30vw;
       }
     }
@@ -202,9 +201,10 @@
       width: 40rem;
 
       > img {
-        width: auto;
-        height: 100%;
+        width: 100%;
+        height: auto;
         padding: 0;
+        object-fit: contain;
       }
     }
   }

@@ -17,7 +17,7 @@ $fs-h4: 2.4rem;
 $fs-h3-mobile: 2.4rem;
 $fs-h3: 3.4rem;
 $fs-h2-mobile: 4.6rem;
-$fs-h2: 5rem;
+$fs-h2: 10rem;
 $fs-h1: 24rem;
 
 //TODO importieren Font-weoght
@@ -90,13 +90,14 @@ body {
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
-  min-height: -webkit-fill-available;
+  // min-height: -webkit-fill-available;
 }
 html {
   font-size: 10/16 * 100%;
   font-family: $hp-ff;
   color: $hp-blue;
-  height: -webkit-fill-available;
+  // height: -webkit-fill-available;
+  scroll-behavior: smooth;
 }
 h1,
 h2,
@@ -109,7 +110,6 @@ span {
 }
 
 h1,
-h2,
 h3,
 h4 {
   font-weight: $fw-bold;
@@ -120,6 +120,8 @@ h1 {
 }
 h2 {
   font-size: $fs-h2;
+  font-weight: $fw-light;
+  text-transform: uppercase;
 }
 h3 {
   text-align: center;

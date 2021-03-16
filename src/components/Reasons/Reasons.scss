@@ -17,7 +17,6 @@
       margin-bottom: $margin-l;
     }
     @include respond-to(xl) {
-      padding-top: $padding-m;
       > h3 {
         font-size: $fs-h3;
       }
@@ -39,7 +38,7 @@
     @include respond-to(l) {
       flex-direction: row;
       text-align: left;
-      margin-top: $spacer-l;
+      margin-top: $spacer-s;
     }
   }
   &__reason {
@@ -58,7 +57,7 @@
 
       & .TextBox {
         padding: 4rem 3rem 4rem 4rem;
-        min-height: 28rem;
+        min-height: 23rem;
       }
     }
   }

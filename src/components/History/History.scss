@@ -24,7 +24,7 @@
       text-align: center;
     }
     @include respond-to(xl) {
-      margin-top: $margin-menu ;
+      margin-top: $margin-menu;
 
       > h3 {
         font-size: $fs-h3;
@@ -45,10 +45,11 @@
       .HistoryTeaser__image {
         margin: 0;
       }
-
-      .HistoryTeaser__content {
-        margin-left: -10rem;
-        margin-right: 0;
+      @include respond-to(m) {
+        .HistoryTeaser__content {
+          margin-left: -10rem;
+          margin-right: 0;
+        }
       }
     }
   }
