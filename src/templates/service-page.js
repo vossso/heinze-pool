@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
@@ -9,7 +9,9 @@ import StepByStep from "../components/StepByStep/StepByStep";
 import ServiceTeaser from "../components/ServiceTeaser/ServiceTeaser";
 import ProductTeaser from "../components/ProductTeaser/ProductTeaser";
 import ScrollArrow from "../components/share/ScrollArrow/ScrollArrow";
-import './service-page.scss'
+import "./service-page.scss";
+import useScrollPos from "../hooks/useScrollPos";
+import useBreakpoint from "../hooks/useBreakpoint";
 
 export const ServicePageTemplate = ({
   title,
@@ -54,6 +56,18 @@ ServicePageTemplate.propTypes = {
 const ServicePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
+  const [whiteArrow, setWhiteArrow] = useState(false);
+  const currentScrollY = useScrollPos();
+  const BreakpointM = useBreakpoint("m");
+
+  useEffect(() => {
+    if (BreakpointM && currentScrollY < 100) {
+      setWhiteArrow(true);
+    } else {
+      setWhiteArrow(false);
+    }
+  }, [currentScrollY]);
+
   return (
     <Layout>
       <ServicePageTemplate
@@ -65,7 +79,7 @@ const ServicePage = ({ data }) => {
         laborArea={frontmatter.laborArea}
         shop={frontmatter.shop}
       />
-      <ScrollArrow />
+      <ScrollArrow color={whiteArrow ? "white" : ""} />
     </Layout>
   );
 };

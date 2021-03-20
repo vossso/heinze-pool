@@ -37,7 +37,7 @@ const Navbar: React.FC<INavbarProps> = ({ variant, offset }) => {
     const diff = offset ? offset : window.innerHeight / 2;
     if (
       currentScrollY >= diff ||
-      ignorePages.find((element) => element === location)
+      ignorePages.find((element) => location.includes(element))
     ) {
       setShowDefaultNav(true);
     } else {

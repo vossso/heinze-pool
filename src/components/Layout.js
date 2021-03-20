@@ -7,10 +7,8 @@ import { withPrefix } from "gatsby";
 import "./Layout.scss";
 import useBreakpoint from "../hooks/useBreakpoint";
 import FadeIn from "./share/FadeIn/FadeIn";
-import { configureAnchors } from "react-scrollable-anchor";
 
 const TemplateWrapper = ({ hasFooter = true, children }) => {
-  configureAnchors({ offset: -60, scrollDuration: 200 });
   // if ( window.location.hash ) scroll(0,0);
   const { title, description } = useSiteMetadata();
   const BreakpointM = useBreakpoint("l");

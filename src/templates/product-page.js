@@ -6,6 +6,7 @@ import ScrollArrow from "../components/share/ScrollArrow/ScrollArrow";
 import useScrollPos from "../hooks/useScrollPos";
 import ProductPageTemp from "./ProductPageTemp/ProductPageTemp";
 import useWindowLocation from "../hooks/useWindowLocation";
+import useBreakpoint from "../hooks/useBreakpoint";
 
 export const ProductPageTemplate = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
@@ -54,11 +55,14 @@ ProductPageTemplate.propTypes = {
 const ProductPage = ({ data }) => {
   const [whiteArrow, setWhiteArrow] = useState(false);
   const currentScrollY = useScrollPos();
+  const BreakpointM = useBreakpoint("m");
 
   useEffect(() => {
     if (
-      currentScrollY >= window.innerHeight &&
-      currentScrollY < window.innerHeight * 4
+      BreakpointM
+        ? currentScrollY < 100
+        : currentScrollY >= window.innerHeight &&
+          currentScrollY < window.innerHeight * 4
     ) {
       setWhiteArrow(true);
     } else {
@@ -95,7 +99,7 @@ export const ProductPageQuery = graphql`
             title
             image {
               childImageSharp {
-                fluid(maxWidth: 1300) {
+                fluid(maxWidth: 2000) {
                   ...GatsbyImageSharpFluid
                 }
               }

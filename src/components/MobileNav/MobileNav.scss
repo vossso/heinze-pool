@@ -46,8 +46,8 @@
     -o-transition: opacity $duration-m;
     transition: opacity $duration-m;
     opacity: 1;
-    top: 0;
-    left: 0;
+    top: -0.1rem;
+    left: -0.1rem;
   }
 
   &__burger {
@@ -74,7 +74,7 @@
       rgba($hp-blue, 0.8),
       rgba($hp-blue, 0.5)
     );
-    background: linear-gradient(rgba($hp-blue, 0.8), rgba($hp-blue, 0.5));
+    background: linear-gradient(rgba($hp-blue, 1), rgba($hp-blue, 0.8));
     width: auto;
     height: 100%;
     top: 0;
