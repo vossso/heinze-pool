@@ -38,6 +38,7 @@
     "prop-types": "15.6.0",
     "react": "16.8.4",
     "react-animate-height": "2.0.23",
+    "react-cookie": "^4.0.3",
     "react-dom": "16.8.4",
     "react-helmet": "6.0.0",
     "react-hexagon": "1.1.3",

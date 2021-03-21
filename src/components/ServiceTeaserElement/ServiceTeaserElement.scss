@@ -15,6 +15,11 @@
     }
     @include respond-to(xl) {
       min-height: 45rem;
+      max-width: 29rem;
+    }
+    @include respond-to(xxl) {
+      min-height: 51rem;
+      max-width: 40rem;
     }
   }
 }

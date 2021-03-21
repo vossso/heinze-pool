@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 import "./ProductTeaser.scss";
@@ -9,14 +9,13 @@ import useBreakpoint from "../../hooks/useBreakpoint";
 
 const ProductTeaser = ({ title, description, images, link, linkLabel }) => {
   const BreakpointL = useBreakpoint("l");
-  const ref = useRef(null);
   const variant = BreakpointL
     ? ["full-width"]
     : ["full-height", "starter", "full-width"];
 
   return (
     <Container variant={variant} id={title}>
-      <div className="ProductTeaser" ref={ref}>
+      <div className="ProductTeaser">
         {images && (
           <div className="ProductTeaser__gallery">
             <ImageGallery
