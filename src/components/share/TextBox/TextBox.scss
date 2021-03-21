@@ -16,22 +16,26 @@
     }
   }
 
-  > p {
+  > p,
+  span {
     @include respond-to(xxl) {
       font-size: $fs-p;
       line-height: 1.6;
     }
   }
 
+  & span > a,
   > a {
     margin-top: $margin-m;
+    text-decoration: none;
+    color: $hp-blue-3;
   }
 
   &__icon {
     min-height: 5rem;
     width: 5rem;
     margin-bottom: $margin-l;
-    
+
     @include respond-to(m) {
       min-height: 8rem;
       width: 8rem;

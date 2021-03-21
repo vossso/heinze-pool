@@ -31,7 +31,7 @@ export const AboutPageTemplate = ({
         <Quote
           quote={{
             text:
-              "Seit über 50 Jahren haben wir als Familie das große Glück unser Leidenschaft für die Schwimmbadtechnik leben zu können. Dabei stehen wir seither für höchste Qualität, Kundenzufriedenheit und Service. Erschaffen Sie sich Ihr eigenes Bild und entdecken unsere Geschichte und fünf Gründe, warum Sie sich für uns entscheiden sollten.",
+              "Seit über 50 Jahren haben wir als Familie das große Glück unsere Leidenschaft für die Schwimmbadtechnik leben zu können. Dabei stehen wir seither für höchste Qualität, Kundenzufriedenheit und Service. Erschaffen Sie sich Ihr eigenes Bild und entdecken unsere Geschichte und fünf Gründe, warum Sie sich für uns entscheiden sollten.",
           }}
         />
         {reasonsArea.reasonsList.length > 0 && (

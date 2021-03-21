@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Footer.scss";
 import PropTypes from "prop-types";
 import useWindowLocation from "../hooks/useWindowLocation";
@@ -20,11 +20,14 @@ const Footer: React.FC<IFooterProps> = ({ data }) => {
   } = data.markdownRemark.frontmatter.contactblock;
 
   const location = useWindowLocation().pathname;
-
-  const hasMap = location === "/about";
+  const [hasMap, setHasMap] = useState(false);
   const variant = hasMap
     ? ["padding-s", "no-top"]
     : ["no-top", "half-height--bottom", "padding-s"];
+
+  useEffect(() => {
+    setHasMap(location.includes("/about"));
+  }, [location]);
 
   return (
     <footer

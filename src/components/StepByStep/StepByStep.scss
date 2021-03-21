@@ -6,7 +6,6 @@ $duration: 0.5s;
 .StepByStep {
   position: relative;
   &__wrapper {
-    padding-top: $margin-menu + $margin-m;
     position: relative;
     height: 100%;
 
@@ -27,6 +26,9 @@ $duration: 0.5s;
     }
     @include respond-to(l) {
       padding-top: 0;
+    }
+    @include respond-to(m) {
+      padding-top: $margin-menu + $margin-m;
     }
   }
   &__steps {

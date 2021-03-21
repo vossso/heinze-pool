@@ -11,7 +11,7 @@
     padding-top: $margin-menu + $margin-l;
 
     @include respond-to(xxl) {
-        margin-top: 30rem;
+        padding-top:  $margin-menu + $margin-l + 10rem;
     }
 
     &__content {

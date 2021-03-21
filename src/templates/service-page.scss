@@ -1,5 +1,9 @@
+@import "../styles/media-queries";
+
 .ServicePage {
-    & .ProductTeaser .TextBox{
-        margin-top: 25rem;
+  & .ProductTeaser .TextBox {
+    @include respond-to(m) {
+      margin-top: 25rem;
     }
+  }
 }
