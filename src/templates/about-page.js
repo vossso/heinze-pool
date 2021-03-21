@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
@@ -7,7 +7,9 @@ import History from "../components/History/History";
 import Stage from "../components/Stage/Stage";
 import Reasons from "../components/Reasons/Reasons";
 import ScrollArrow from "../components/share/ScrollArrow/ScrollArrow";
-import Quote from '../components/Quote/Quote'
+import Quote from "../components/Quote/Quote";
+import useScrollPos from "../hooks/useScrollPos";
+import useBreakpoint from "../hooks/useBreakpoint";
 
 export const AboutPageTemplate = ({
   title,
@@ -26,7 +28,12 @@ export const AboutPageTemplate = ({
         />
       </div>
       <div className="AboutPage__content">
-        <Quote quote={{text: "Seit über 50 Jahren haben wir als Familie das große Glück unser Leidenschaft für die Schwimmbadtechnik leben zu können. Dabei stehen wir seither für höchste Qualität, Kundenzufriedenheit und Service. Erschaffen Sie sich Ihr eigenes Bild und entdecken unsere Geschichte und fünf Gründe, warum Sie sich für uns entscheiden sollten."}} />
+        <Quote
+          quote={{
+            text:
+              "Seit über 50 Jahren haben wir als Familie das große Glück unsere Leidenschaft für die Schwimmbadtechnik leben zu können. Dabei stehen wir seither für höchste Qualität, Kundenzufriedenheit und Service. Erschaffen Sie sich Ihr eigenes Bild und entdecken unsere Geschichte und fünf Gründe, warum Sie sich für uns entscheiden sollten.",
+          }}
+        />
         {reasonsArea.reasonsList.length > 0 && (
           <Reasons
             title={reasonsArea.title}
@@ -51,6 +58,17 @@ AboutPageTemplate.propTypes = {
 
 const AboutPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
+  const [whiteArrow, setWhiteArrow] = useState(false);
+  const currentScrollY = useScrollPos();
+  const BreakpointM = useBreakpoint("m");
+
+  useEffect(() => {
+    if (BreakpointM && currentScrollY < 100) {
+      setWhiteArrow(true);
+    } else {
+      setWhiteArrow(false);
+    }
+  }, [currentScrollY]);
 
   return (
     <Layout>
@@ -60,7 +78,7 @@ const AboutPage = ({ data }) => {
         history={frontmatter.history}
         reasonsArea={frontmatter.reasonsArea}
       />
-      <ScrollArrow />
+      <ScrollArrow color={whiteArrow ? "white" : ""} />
     </Layout>
   );
 };

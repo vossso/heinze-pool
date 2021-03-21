@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import "./Quote.scss";
 import Container from "../share/Container/Container";
 
-const Quote = ({ quote }) =>
-  quote.text ? (
+const Quote = ({ quote }) => {
+  return quote.text ? (
     <div className="Quote">
       <Container variant={["half-height--start"]}>
         <div className="Quote__wrapper">
@@ -14,6 +14,7 @@ const Quote = ({ quote }) =>
       </Container>
     </div>
   ) : null;
+};
 
 Quote.propTypes = {
   quote: PropTypes.shape({

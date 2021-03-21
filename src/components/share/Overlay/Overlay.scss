@@ -22,11 +22,11 @@
     -ms-filter: blur(4px);
     -moz-filter: blur(4px);
     -webkit-filter: blur(4px);
-    background: rgba($hp-white, 0.8);
+    background: rgba($hp-white, 0.9);
   }
 
   &__content {
-    margin-top: $margin-xl + $margin-menu;
+    margin-top: $spacer-m;
     position: relative;
     z-index: 2;
 
@@ -36,6 +36,7 @@
     height: 70vh;
 
     @include respond-to(l) {
+      margin-top: $margin-xl + $margin-menu;
       flex-direction: row;
     }
   }
@@ -58,7 +59,7 @@
   }
   &__close {
     position: absolute;
-    top: $margin-l;
+    top: $margin-xl;
     right: $margin-s;
     z-index: 2;
     cursor: pointer;

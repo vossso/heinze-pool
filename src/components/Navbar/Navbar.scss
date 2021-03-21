@@ -55,7 +55,7 @@
   a > img {
     height: 2rem;
     width: auto;
-    margin-top: 0.5rem;
+    // margin-top: 0.5rem;
   }
 
   &__container,
@@ -71,7 +71,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: $max-width-s-mobile;
+    width: 90%;
     margin: 0 auto;
 
     @include respond-to(xs) {
@@ -121,6 +121,7 @@
 
   &__left {
     flex: 1 1 20%;
+    margin-top: 5%;
     // display: flex;
     // align-items: center;
 
@@ -132,6 +133,10 @@
         height: 0;
         display: none;
       }
+    }
+
+    @include respond-to(m) {
+      margin-top: auto;
     }
   }
   &__right {
@@ -244,8 +249,12 @@
       top: 3rem;
     }
     & .Navbar__left .Navbar__start > img {
-      margin-top: 2.5rem;
-      height: 4.5rem;
+      // margin-top: 3rem;
+        height: 3.5rem;
+      @include respond-to(m) {
+        margin-top: 2.5rem;
+        height: 4.5rem;
+      }
     }
 
     // & .Navbar__left {

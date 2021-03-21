@@ -35,7 +35,7 @@ $margin-s: 1rem;
 $margin-m: 3rem;
 $margin-l: 5rem;
 $margin-xl: 7rem;
-$margin-menu-mobile: 5rem;
+$margin-menu-mobile: 6rem;
 $margin-menu: 8rem;
 
 $spacer-s: 5rem;
@@ -53,7 +53,7 @@ $padding-box-verti: 3.2rem;
 $padding-box-hori: 3rem;
 
 $max-width-s-mobile-inner: 340px;
-$max-width-s-mobile: 360px;
+$max-width-s-mobile: 90%;
 $max-width-m-mobile-inner: 420px;
 $max-width-m-mobile: 440px;
 $max-width-l-mobile-inner: 540px;
@@ -138,7 +138,7 @@ h5 {
   color: $hp-white;
   font-weight: $fw-light;
 }
-p {
+p, span {
   font-size: $fs-p-mobile;
   font-weight: $fw-regular;
 }

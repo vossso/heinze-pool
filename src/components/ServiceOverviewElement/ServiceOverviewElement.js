@@ -10,7 +10,7 @@ const ServiceOverviewElement = ({ icon, title, description, link }) => {
     <div className="ServiceOverviewElement">
       <div className="ServiceOverviewElement__content">
         <HexaIcon icon={icon} size="9rem" />
-        <TextBox title={title} text={description} link={link} label="Mehr erfahren"/>
+        <TextBox title={title} text={description} link={link} label="Mehr erfahren" isRichText={true}/>
       </div>
     </div>
   );

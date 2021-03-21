@@ -4,7 +4,7 @@
 .FaqPage {
   @include respond-to(xl) {
     & .Stage__content {
-      margin-top: 22%;
+      margin-top: 20%;
     }
   }
   h2 {

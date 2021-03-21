@@ -6,8 +6,8 @@ import logo from "../img/hp-logo_white.png";
 import logo2 from "../img/hp-logo_white-sub.png";
 import hexa from "../img/hexagon_line.png";
 import { Link } from "gatsby";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { CSSTransition } from "react-transition-group";
-import { configureAnchors } from "react-scrollable-anchor";
 // import ReactPlayer from 'react-player'
 
 import PropTypes from "prop-types";
@@ -16,7 +16,6 @@ import "./index-page.scss";
 import useBreakpoint from "../hooks/useBreakpoint";
 
 export const IndexPageTemplate = ({ links }) => {
-  configureAnchors({ offset: -80, scrollDuration: 200 });
   const [trans, setTrans] = useState(false);
   const BreakpointM = useBreakpoint("m");
 
@@ -75,13 +74,14 @@ export const IndexPageTemplate = ({ links }) => {
                   links.map((link, index) => {
                     if (index < 3) {
                       return (
-                        <Link
+                        <AnchorLink
                           key={index}
                           className="IndexPage__link"
                           to={link.path}
+                          stripHash
                         >
                           {link.label}
-                        </Link>
+                        </AnchorLink>
                       );
                     } else return null;
                   })}
@@ -91,13 +91,13 @@ export const IndexPageTemplate = ({ links }) => {
                   links.map((link, index) => {
                     if (index >= 3) {
                       return (
-                        <Link
+                        <AnchorLink
                           key={index}
                           className="IndexPage__link"
                           to={link.path}
                         >
                           {link.label}
-                        </Link>
+                        </AnchorLink>
                       );
                     } else return null;
                   })}

@@ -8,7 +8,7 @@ productElement:
     image: /img/icon_Rob-blue.png
     images:
       - alt: Poolroboter
-        image: /img/Pool_PP.jpg
+        image: /img/Zub_RB.jpg
     introtext: >-
       Unsere kleinen Helfer. Automatische Reinigungsroboter zur Reinigung des Bodens, der Wände und der Wasserlinie.
     single: true
