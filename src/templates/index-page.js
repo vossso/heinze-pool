@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { TransitionLink } from "gatsby-plugin-transition-link/components/TransitionLink";
+import Layout from '../components/Layout'
 
 import bgImage from "../img/water.jpg";
 import starterImg from "../img/Start.jpg";
@@ -37,7 +39,7 @@ export const IndexPageTemplate = ({ links }) => {
     >
       <div className="IndexPage__content">
         <div className="IndexPage__bg-image">
-          <img src={bgImage} alt="Poool" />
+          <img className="IndexPage__image" src={bgImage} alt="Poolwasser" />
           {/* <ReactPlayer url='https://www.youtube.com/watch?v=qwz88S1P0os' playing muted loop width= "100%" height="100vh"/> */}
         </div>
         {BreakpointM ? (
@@ -74,14 +76,13 @@ export const IndexPageTemplate = ({ links }) => {
                   links.map((link, index) => {
                     if (index < 3) {
                       return (
-                        <AnchorLink
+                        <TransitionLink
                           key={index}
                           className="IndexPage__link"
                           to={link.path}
-                          stripHash
                         >
                           {link.label}
-                        </AnchorLink>
+                        </TransitionLink>
                       );
                     } else return null;
                   })}
@@ -120,7 +121,7 @@ export const IndexPageTemplate = ({ links }) => {
         mountOnEnter
       >
         <div className={`IndexPage__intro`}>
-          <img src={starterImg} alt="Harz Poolbild" />
+          <img className="IndexPage__image" src={starterImg} alt="Harz Pool" />
         </div>
       </CSSTransition>
 
@@ -146,7 +147,9 @@ IndexPageTemplate.propTypes = {
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
-  return <IndexPageTemplate links={frontmatter.links} />;
+  return (
+      <IndexPageTemplate links={frontmatter.links} />
+  );
 };
 
 IndexPage.propTypes = {

@@ -4,6 +4,8 @@ import bgImage from "../../img/water.jpg";
 import logo from "../../img/Logo-line_white.png";
 import AnimateHeight from "react-animate-height";
 import useWindowLocation from "../../hooks/useWindowLocation";
+import { TransitionLink } from "gatsby-plugin-transition-link/components/TransitionLink";
+
 
 import "./MobileNav.scss";
 import getVariantClasses from "../../helpers/getVariantClass";
@@ -20,13 +22,13 @@ const MobileNav: React.FC<IMobileNavProps> = ({ variant }) => {
 
   const getLink = (to, label) => {
     return to.includes(location) ? (
-      <a className="navbar-item" href={to} onClick={() => setShowMenu(false)}>
+      <TransitionLink className="navbar-item" to={to} onClick={() => setShowMenu(false)}>
         {label}
-      </a>
+      </TransitionLink>
     ) : (
-      <Link className="navbar-item" to={to}>
+      <TransitionLink className="navbar-item" to={to}>
         {label}
-      </Link>
+      </TransitionLink>
     );
   };
 
@@ -84,7 +86,7 @@ const MobileNav: React.FC<IMobileNavProps> = ({ variant }) => {
             {getLink("/faq", "FAQ")}
           </div>
           <div className="MobileNav__meta">
-            <a href="/meta/impressum">Impressum & Datenschutz</a>
+            <TransitionLink to="/meta/impressum">Impressum & Datenschutz</TransitionLink>
           </div>
         </div>
       )}

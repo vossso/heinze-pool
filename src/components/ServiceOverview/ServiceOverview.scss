@@ -14,6 +14,14 @@
       justify-content: space-between;
       flex-direction: row;
       padding-top: 0;
+
+      margin-top: $spacer-m;
+    }
+    @include respond-to(xl) {
+      margin-top: $spacer-s;
+    }
+    @include respond-to(xxl) {
+      margin-top: 0;
     }
   }
   &__element {

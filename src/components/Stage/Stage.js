@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import "./Stage.scss";
 import Container from "../share/Container/Container";
 import useBreakpoint from "../../hooks/useBreakpoint";
+import Img from "gatsby-image";
 
 const Stage = ({ image, title, isStarter = true, description = null }) => {
   const BreakpointM = useBreakpoint("m");
@@ -14,12 +15,7 @@ const Stage = ({ image, title, isStarter = true, description = null }) => {
     <div className="Stage">
       {image && (
         <div className="Stage__image">
-          <img
-            src={
-              !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-            }
-            alt="Poool"
-          />
+          <Img fluid={{src: !!image.childImageSharp ? image.childImageSharp.fluid.src : image}} style={{position: "relative", height: "100%", width: "100vw"}} fadeIn={true} alt={title}/> 
         </div>
       )}
 
