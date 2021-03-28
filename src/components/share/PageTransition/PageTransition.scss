@@ -1,6 +1,7 @@
 .PageTransition {
   z-index: 999;
   display: fixed;
+  pointer-events: none;
 
   &__logo {
     height: 1rem;

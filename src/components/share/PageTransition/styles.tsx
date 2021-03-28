@@ -14,6 +14,7 @@ export const MotionCurtain = styled(motion.div)`
   align-items: center;
 
   background-color: #1e3769;
+  opacity: 0.8;
 
   will-change: transform;
 `;
