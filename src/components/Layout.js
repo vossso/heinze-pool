@@ -6,12 +6,14 @@ import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 import "./Layout.scss";
 import useBreakpoint from "../hooks/useBreakpoint";
-import FadeIn from "./share/FadeIn/FadeIn";
+import { TransitionState } from "gatsby-plugin-transition-link";
+import PageTransition from "../components/share/PageTransition/PageTransition";
 
 const TemplateWrapper = ({ hasFooter = true, children }) => {
   // if ( window.location.hash ) scroll(0,0);
   const { title, description } = useSiteMetadata();
   const BreakpointM = useBreakpoint("l");
+
   return (
     <div>
       <Helmet>
@@ -54,18 +56,21 @@ const TemplateWrapper = ({ hasFooter = true, children }) => {
         />
       </Helmet>
       <Navbar />
-      <FadeIn>
-        <div>{children}</div>
-        {hasFooter ? (
-          <Footer />
-        ) : (
-          !BreakpointM && (
-            <div className="Layout__footer">
-              <a href="/meta/impressum">Impressum & Datenschutz</a>
-            </div>
-          )
-        )}
-      </FadeIn>
+      <div>{children}</div>
+      {hasFooter ? (
+        <Footer />
+      ) : (
+        !BreakpointM && (
+          <div className="Layout__footer">
+            <a href="/meta/impressum">Impressum & Datenschutz</a>
+          </div>
+        )
+      )}
+      <TransitionState>
+        {({ transitionStatus }) => {
+          return <PageTransition transitionStatus={transitionStatus} />;
+        }}
+      </TransitionState>
     </div>
   );
 };

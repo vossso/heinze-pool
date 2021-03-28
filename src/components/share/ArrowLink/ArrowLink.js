@@ -3,7 +3,7 @@ import hexa from "../../../img/icons/hexa-arrow.svg";
 
 import "./ArrowLink.scss";
 
-const ArrowLink = ({ variant, link, size, anchor }) => {
+const ArrowLink = ({ variant, link, size }) => {
   const className = `ArrowLink${variant ? " ArrowLink--" + variant : ""}`;
   const setSize = {
     width: size ? size : "6rem",

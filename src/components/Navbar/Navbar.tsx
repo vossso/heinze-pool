@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "gatsby";
+import { TransitionLink } from "gatsby-plugin-transition-link/components/TransitionLink";
 import "./Navbar.scss";
 
 import logo from "../../img/Logo-line_color.png";
@@ -11,7 +11,6 @@ import useBreakpoint from "../../hooks/useBreakpoint";
 import useScrollPos from "../../hooks/useScrollPos";
 import MobileNav from "../MobileNav/MobileNav";
 import useWindowLocation from "../../hooks/useWindowLocation";
-
 
 interface INavbarProps {
   variant: string;
@@ -47,14 +46,16 @@ const Navbar: React.FC<INavbarProps> = ({ variant, offset }) => {
 
   const getLink = (to, label) => {
     return (
-      <Link
+      <TransitionLink
         className={`Navbar__link${
           location && location.includes(to) ? " Navbar__link--active" : ""
         }`}
         to={to}
+        exit={{ length: 0.5 }}
+        entry={{ delay: 0.5 }}
       >
         {label}
-      </Link>
+      </TransitionLink>
     );
   };
 
@@ -71,13 +72,19 @@ const Navbar: React.FC<INavbarProps> = ({ variant, offset }) => {
       <div className="Navbar__container">
         <div id="navMenu" className={`Navbar__desktop`}>
           <div className="Navbar__left">
-            <Link to="/" className="Navbar__start" title="Logo">
+            <TransitionLink
+              to="/"
+              className="Navbar__start"
+              title="Logo"
+              exit={{ length: 0.5 }}
+              entry={{length: 0.8, delay: 0.5 }}
+            >
               {variant === "transparent" || !showDefaultNav ? (
                 <img src={logo2} alt="Heinze-Pool" />
               ) : (
                 <img src={logo} alt="Heinze-Pool" />
               )}
-            </Link>
+            </TransitionLink>
           </div>
 
           {BreakpointXL ? (
@@ -117,13 +124,13 @@ const Navbar: React.FC<INavbarProps> = ({ variant, offset }) => {
               </div>
               {getLink("/about", "Über uns")}
               {getLink("/faq", "FAQ")}
-              <a href="/about#contact">
+              <TransitionLink to="/about#contact">
                 {variant === "transparent" || !showDefaultNav ? (
                   <img src={pin2} alt="location" />
                 ) : (
                   <img src={pin} alt="location" />
                 )}
-              </a>
+              </TransitionLink>
             </div>
           )}
         </div>

@@ -37,7 +37,7 @@ export const IndexPageTemplate = ({ links }) => {
     >
       <div className="IndexPage__content">
         <div className="IndexPage__bg-image">
-          <img src={bgImage} alt="Poool" />
+          <img className="IndexPage__image" src={bgImage} alt="Poolwasser"/>
           {/* <ReactPlayer url='https://www.youtube.com/watch?v=qwz88S1P0os' playing muted loop width= "100%" height="100vh"/> */}
         </div>
         {BreakpointM ? (
@@ -120,7 +120,7 @@ export const IndexPageTemplate = ({ links }) => {
         mountOnEnter
       >
         <div className={`IndexPage__intro`}>
-          <img src={starterImg} alt="Harz Poolbild" />
+          <img className="IndexPage__image" src={starterImg} alt="Harz Pool"/> 
         </div>
       </CSSTransition>
 

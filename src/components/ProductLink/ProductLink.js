@@ -4,6 +4,7 @@ import ArrowLink from "../share/ArrowLink/ArrowLink";
 import "./ProductLink.scss";
 import TextBox from "../share/TextBox/TextBox";
 import useBreakpoint from "../../hooks/useBreakpoint";
+import { TransitionLink } from "gatsby-plugin-transition-link/components/TransitionLink";
 
 const ProductLink = ({
   label,
@@ -17,9 +18,9 @@ const ProductLink = ({
   const size = BreakpointM ? "4rem" : "6rem";
 
   return path ? (
-    <a
+    <TransitionLink
       className={`ProductLink${className ? " " + className : ""}`}
-      href={`/product/${path}`}
+      to={`/product/${path}`}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
@@ -27,7 +28,7 @@ const ProductLink = ({
       <div className="ProductLink__button">
         <ArrowLink size={size} />
       </div>
-    </a>
+    </TransitionLink>
   ) : null;
 };
 

@@ -9,6 +9,7 @@
   overflow: hidden;
 
   &__intro {
+    z-index: 2;
     cursor: pointer;
     z-index: 0;
     -webkit-transition: opacity 5s;
@@ -21,10 +22,12 @@
     overflow: hidden;
     pointer-events: none;
 
-    > img {
+    img,
+    .IndexPage__image {
       height: 100vh;
       width: auto;
       margin-left: -65rem;
+      object-fit: cover;
     }
 
     @include respond-to(m) {
@@ -34,7 +37,8 @@
       right: 0;
       bottom: 0;
 
-      > img {
+      img,
+      .IndexPage__image {
         height: 100%;
         width: 100%;
         margin: 0;
@@ -53,13 +57,15 @@
     height: 100%;
     position: absolute;
 
-    & img {
+    img,
+    .IndexPage__image {
       opacity: 0.5;
       width: 100vw;
       height: 100vh;
     }
   }
   &__content {
+    z-index: 0;
     height: auto;
     min-height: 100vh;
     position: absolute;
@@ -162,6 +168,7 @@
   }
 
   &__logo {
+    z-index: 3;
     position: absolute;
     top: 0;
     left: 0;

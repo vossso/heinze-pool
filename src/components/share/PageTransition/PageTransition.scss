@@ -1,0 +1,9 @@
+.PageTransition {
+  z-index: 999;
+  display: fixed;
+
+  &__logo {
+    height: 1rem;
+    margin: auto;
+  }
+}

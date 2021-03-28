@@ -86,6 +86,10 @@ module.exports = {
       options: {
         offset: -50
       }
-    }
+    },
+    `gatsby-plugin-transition-link`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ],
 }

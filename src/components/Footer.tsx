@@ -3,6 +3,7 @@ import "./Footer.scss";
 import PropTypes from "prop-types";
 import useWindowLocation from "../hooks/useWindowLocation";
 import useScrollPos from "../hooks/useScrollPos";
+import { TransitionLink } from "gatsby-plugin-transition-link/components/TransitionLink";
 
 import { graphql, StaticQuery } from "gatsby";
 
@@ -105,7 +106,9 @@ const Footer: React.FC<IFooterProps> = ({ data }) => {
           </div>
         )}
         <div className="Footer__subline">
-          <a href="/meta/impressum">Impressum & Datenschutz</a>
+          <TransitionLink to="/meta/impressum">
+            Impressum & Datenschutz
+          </TransitionLink>
         </div>
       </Container>
     </footer>
