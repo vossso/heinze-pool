@@ -44,7 +44,6 @@ const Footer: React.FC<IFooterProps> = ({ data }) => {
   }, [scrollPos]);
 
   const newPhone = numbers.phone.replace(" ", "");
-  console.log(newPhone);
 
   return (
     <footer
