@@ -55,20 +55,25 @@
     }
 
     h5 {
-      margin-bottom: $margin-s;
-    }
-
-    p,
-    span {
-      color: $hp-white;
       margin-bottom: $margin-s/2;
+    }
+    a {
+      display: inline-block;
+    }
+    p,
+    span,
+    a {
+      color: $hp-white;
+      margin-bottom: $margin-s;
     }
     span {
       text-transform: uppercase;
       font-weight: $fw-light;
       display: inline-block;
     }
-    p {
+    p,
+    a {
+      font-size: $fs-p;
       font-weight: $fw-bold;
     }
     img {
