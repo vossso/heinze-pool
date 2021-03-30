@@ -43,6 +43,8 @@ const Footer: React.FC<IFooterProps> = ({ data }) => {
     }
   }, [scrollPos]);
 
+  const newPhone = numbers.phone.replace(" ", "");
+
   return (
     <footer
       className={`Footer${hasMap ? " Footer--full-height" : ""}`}
@@ -80,9 +82,9 @@ const Footer: React.FC<IFooterProps> = ({ data }) => {
           </div>
           <div className="Footer__col">
             <h5>E-Mail</h5>
-            <p>{webadress.mail}</p>
+            <a href={"mailto:" + webadress.mail}>{webadress.mail}</a>
             <h5>Telefon</h5>
-            <p>{numbers.phone}</p>
+            <a href={"tel:" + numbers.phone}>{numbers.phone}</a>
           </div>
           <div className="Footer__col">
             <h5>Adresse</h5>
