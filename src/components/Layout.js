@@ -24,24 +24,30 @@ const TemplateWrapper = ({ hasFooter = true, children }) => {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href={`${withPrefix("/")}img/apple-touch-icon.png`}
+          href={`${withPrefix("/")}img/hp_favicon_32x32.png`}
         />
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix("/")}img/hp-favico.png`}
+          href={`${withPrefix("/")}img/hp_favicon_32x32.png`}
           sizes="32x32"
         />
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix("/")}img/hp-favico.png`}
+          href={`${withPrefix('/')}img/hp_favicon_32x32.png`}
+          sizes="32x32"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href={`${withPrefix('/')}img/hp_favicon_16x16.png`}
           sizes="16x16"
         />
 
         <link
           rel="mask-icon"
-          href={`${withPrefix("/")}img/safari-pinned-tab.svg`}
+          href={`${withPrefix("/")}img/hp_favicon_32x32.png`}
           color="#ff4400"
         />
 
