@@ -9,7 +9,7 @@ import useBreakpoint from "../hooks/useBreakpoint";
 import { TransitionState } from "gatsby-plugin-transition-link";
 import PageTransition from "../components/share/PageTransition/PageTransition";
 
-const TemplateWrapper = ({ hasFooter = true, children }) => {
+const TemplateWrapper = ({ hasFooter = true, children, isIndex = false }) => {
   // if ( window.location.hash ) scroll(0,0);
   const { title, description } = useSiteMetadata();
   const BreakpointM = useBreakpoint("l");
@@ -35,20 +35,20 @@ const TemplateWrapper = ({ hasFooter = true, children }) => {
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix('/')}img/hp_favicon_32x32.png`}
+          href={`${withPrefix("/")}img/hp_favicon_32x32.png`}
           sizes="32x32"
         />
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix('/')}img/hp_favicon_16x16.png`}
+          href={`${withPrefix("/")}img/hp_favicon_16x16.png`}
           sizes="16x16"
         />
 
         <link
           rel="mask-icon"
           href={`${withPrefix("/")}img/hp_favicon_32x32.png`}
-          color="#ff4400"
+          color="#1e3769"
         />
 
         <meta name="theme-color" content="#fff" />
@@ -61,22 +61,28 @@ const TemplateWrapper = ({ hasFooter = true, children }) => {
           content={`${withPrefix("/")}img/og-image.jpg`}
         />
       </Helmet>
-      <Navbar />
-      <div>{children}</div>
-      {hasFooter ? (
-        <Footer />
+      {isIndex ? (
+        <div>{children}</div>
       ) : (
-        !BreakpointM && (
-          <div className="Layout__footer">
-            <a href="/meta/impressum">Impressum & Datenschutz</a>
-          </div>
-        )
+        <>
+          <Navbar />
+          <div>{children}</div>
+          {hasFooter ? (
+            <Footer />
+          ) : (
+            !BreakpointM && (
+              <div className="Layout__footer">
+                <a href="/meta/impressum">Impressum & Datenschutz</a>
+              </div>
+            )
+          )}
+          <TransitionState>
+            {({ transitionStatus }) => {
+              return <PageTransition transitionStatus={transitionStatus} />;
+            }}
+          </TransitionState>
+        </>
       )}
-      <TransitionState>
-        {({ transitionStatus }) => {
-          return <PageTransition transitionStatus={transitionStatus} />;
-        }}
-      </TransitionState>
     </div>
   );
 };
