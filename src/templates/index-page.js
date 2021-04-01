@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { TransitionLink } from "gatsby-plugin-transition-link/components/TransitionLink";
-import Layout from '../components/Layout'
+import Layout from "../components/Layout";
 
 import bgImage from "../img/water.jpg";
 import starterImg from "../img/Start.jpg";
@@ -148,7 +148,9 @@ const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
+    <Layout isIndex={true} >
       <IndexPageTemplate links={frontmatter.links} />
+    </Layout>
   );
 };
 
