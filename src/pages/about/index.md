@@ -2,7 +2,7 @@
 templateKey: about-page
 title: Über uns
 titleimage:
-  alt: Heinze Pool
+  alt: Heinze Pool - Isernhagen (Hannover)
   image: /img/About_stage.jpg
 reasonsArea:
   reasonsList:
@@ -25,34 +25,34 @@ reasonsArea:
 history:
   - description: "<h3>Lister Meile, Hannover\r</h3>\n\nAm Raschplatz fing alles an. Hier gründete Horst Heinze das Unternehmen als sogenannter Kiesplatzhändler in bester Lage direkt am Hauptbahnhof in Hannover."
     historyimage:
-      alt: "Lister Meile "
+      alt: Lister Meile Hannover 1968
       image: /img/1968.png
     title: "1968"
   - description: "<h3>Lavesstraße, Hannover\r</h3>\n\nDurch Freundlichkeit, Expertise und viel Fleiß konnten wir 1973 unser erstes kleines Ladengeschäft in der Mitte von Hannover eröffnen. Nach dem Umzug in die Lavesstraße setzte sich unsere Erfolgsgeschichte fort."
     historyimage:
-      alt: Lavesstraße Hannover
+      alt: Lavesstraße Hannover 1973
       image: /img/1973.jpg
     title: "1973"
   - description: "<h3>Infa Hannover</h3>\n\n
       Wir besuchten unzählige Messen als Aussteller und Gast. Ein Highlight als Aussteller stellte dabei 1976 die Infa mit einem im Boden versenktem Ausstellungspool und zwei Hallen dar."
     historyimage:
-      alt: Info Hannover
+      alt: Infa Messe Hannover 1976
       image: /img/1976.png
     title: "1976"
   - description: "<h3>Schlehenweg, Langenhagen\r</h3>\n\nMit der Erweiterung unseres Angebots im Poolbereich wurde der Platz knapp und wir benötigten mehr Ausstellungsfläche. Der Schlehenweg in Langenhagen, am Rande von Hannover stellte sich als geeignetes Objekt heraus."
     historyimage:
-      alt: "Schlehenweg, Langenhagen"
+      alt: Schlehenweg, Langenhagen Hannover 1990
       image: /img/1990.jpg
     title: "1990"
   - description: "<h3>Merkurstraße, Garbsen</h3>\n\nMit dem Kunden weiterhin im Fokus stehend bauten wir aus, um unser Lager zu vergrößern und schneller liefern zu können. Willkommen in der Merkurstraße, Garbsen."
     historyimage:
-      alt: "Merkurstraße, Garbsen"
+      alt: Merkurstraße, Garbsen Hannover 2001
       image: /img/2001.jpg
     title: "2001"
   - description: 
       "<h3>Daimlerstraße, Isernhagen</h3>\n\nHeute finden Sie uns professioneller und erfahrender als je zuvor in der Daimlerstraße in Isernhagen vor, mit einem wunderbaren Team und viel Freude an dem was wir tun."
     historyimage:
-      alt: Daimlerstraße, Isernhagen
+      alt: Daimlerstraße, Isernhagen 2021
       image: /img/Service_shop.jpg
     title: Heute
 contactblock:

@@ -26,7 +26,7 @@ const Navbar: React.FC<INavbarProps> = ({ variant, offset }) => {
   const className = getVariantClasses("Navbar", variant);
   const currentScrollY = useScrollPos();
 
-  const ignorePages = ["/portfolio", "/meta/impressum", "/products"];
+  const ignorePages = ["/portfolio", "/meta/impressum", "/products","/404"];
 
   if (location == "/faq") {
     offset = 450;
