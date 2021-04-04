@@ -76,9 +76,9 @@
     bottom: 0;
 
     & a {
-      font-size: $fs-h3-mobile;
+      font-size: $fs-h2-mobile;
       @include respond-to(xl) {
-        font-size: $fs-h3;
+        font-size: $fs-h2;
       }
     }
   }
@@ -121,7 +121,6 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: $fw-bold;
-    // font-size: $fs-xxl;
 
     color: $hp-white;
   }
