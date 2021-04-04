@@ -24,7 +24,7 @@ text: >-
   Ust.-Id.-Nr.: DE115829513
 
 
-  <h4>Inhalte dieser Website</h4>
+  <h3>Inhalte dieser Website</h3>
 
 
   Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt erstellt. Der
@@ -35,7 +35,7 @@ text: >-
   des Anbieters wieder.
 
 
-  <h4>Externe Links</h4>
+  <h3>Externe Links</h3>
 
 
   Diese Website enthält Verknüpfungen zu Websites Dritter („externe Links“).
@@ -51,7 +51,7 @@ text: >-
   werden jedoch derartige externe Links unverzüglich gelöscht.
 
 
-  <h4>Urheberrecht</h4>
+  <h3>Urheberrecht</h3>
 
 
   Die auf dieser Website veröffentlichten Inhalte und Werke sind
@@ -69,7 +69,7 @@ text: >-
   dieser Website in fremden Frames ist nur mit Erlaubnis zulässig.
 
 
-  <h4>Datenschutz</h4>
+  <h3>Datenschutz</h3>
 
 
   Der Anbieter weist ausdrücklich darauf hin, dass die Datenübertragung im
@@ -84,7 +84,7 @@ text: >-
   Daten.
 
 
-  <h4>Google Analytics</h4>
+  <h3>Google Analytics</h3>
 
 
   Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc.
@@ -120,7 +120,7 @@ text: >-
   https://tools.google.com/dlpage/gaoptout?hl=de.
 
 
-  <h4>Design und Technische Realisierung</h4>
+  <h3>Design und Technische Realisierung</h3>
 
 
   Torito Deisgn - http://torito-design.com/

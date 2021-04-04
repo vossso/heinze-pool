@@ -257,6 +257,7 @@ collections:
                     widget: object,
                     fields:
                       [
+                        { label: "Name", name: name, widget: string },
                         { label: "Straße", name: street, widget: string },
                         { label: "PLZ & Ort", name: city, widget: string },
                       ],

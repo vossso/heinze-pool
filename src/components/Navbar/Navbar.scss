@@ -33,7 +33,7 @@
     @extend %link;
     font-weight: $fw-regular;
     color: $hp-blue;
-    margin-right: $margin-l;
+    margin-right: $margin-xl/2;
     -webkit-transition: all $duration-s;
     -moz-transition: all $duration-s;
     -ms-transition: all $duration-s;
@@ -256,17 +256,5 @@
         height: 4.5rem;
       }
     }
-
-    // & .Navbar__left {
-    //   flex: 0 1 20%;
-
-    //   a {
-    //     margin: 0;
-
-    //     &::after {
-    //       height: 0;
-    //     }
-    //   }
-    // }
   }
 }

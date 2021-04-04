@@ -14,7 +14,7 @@ const ServiceTeaser = ({ content }) => {
   return content ? (
     <Container variant={BreakpointL ? "" : ["full-height", "starter"]} id="wa">
       <div className="ServiceTeaser">
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <div className="ServiceTeaser__boxes">
           {labor &&
             labor.map((element, index) => {

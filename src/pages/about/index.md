@@ -44,7 +44,7 @@ history:
       alt: Schlehenweg, Langenhagen Hannover 1990
       image: /img/1990.jpg
     title: "1990"
-  - description: "<h3>Merkurstraße, Garbsen</h3>\n\nMit dem Kunden weiterhin im Fokus stehend bauten wir aus, um unser Lager zu vergrößern und schneller liefern zu können. Willkommen in der Merkurstraße, Garbsen."
+  - description: "<h3>Merkurstraße, Hannover</h3>\n\nMit dem Kunden weiterhin im Fokus stehend bauten wir aus, um unser Lager zu vergrößern und schneller liefern zu können. Willkommen in der Merkurstraße, Hannover."
     historyimage:
       alt: Merkurstraße, Garbsen Hannover 2001
       image: /img/2001.jpg
@@ -57,8 +57,9 @@ history:
     title: Heute
 contactblock:
   adress:
+    name: Heinze Pool GmbH
     city: 30916 Isernhagen
-    street: "Daimlerstr. 9 "
+    street: Daimlerstr. 9
   numbers:
     fax: 0511 2713147
     phone: 0511 2713145

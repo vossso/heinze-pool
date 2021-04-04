@@ -17,7 +17,7 @@ const TemplateWrapper = ({ hasFooter = true, children, isIndex = false }) => {
   return (
     <div>
       <Helmet>
-        <html lang="en" />
+        <html lang="en" data-react-helmet="lang"/>
         <title>{title}</title>
         <meta name="description" content={description} />
 

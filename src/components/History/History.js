@@ -11,7 +11,7 @@ const History = ({ data }) => {
     <div className="History">
       <Container>
         <div className="History__intro">
-          <h3>Unsere Geschichte</h3>
+          <h2>Unsere Geschichte</h2>
         </div>
       </Container>
       <div className="History__teasers">

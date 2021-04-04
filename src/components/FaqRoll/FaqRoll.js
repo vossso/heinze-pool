@@ -35,7 +35,7 @@ export default () => (
     query={graphql`
       query FaqRollQuery {
         allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
+          sort: { order: ASC, fields: [frontmatter___date] }
           filter: { frontmatter: { templateKey: { eq: "faq-post" } } }
         ) {
           edges {

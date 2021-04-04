@@ -21,7 +21,7 @@ const Stage = ({ image, title, isStarter = true, description = null }) => {
 
       <div className="Stage__content">
         <Container>
-          {title && <h2>{title}</h2>}
+          {title && <h1>{title}</h1>}
           {description && <p>{description}</p>}
         </Container>
       </div>

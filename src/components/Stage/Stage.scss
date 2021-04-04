@@ -55,16 +55,16 @@
     margin: 90% auto 2rem;
     text-align: center;
 
-    & h2 {
+    & h1 {
       color: $hp-white;
-      font-size: $fs-h2-mobile;
+      font-size: $fs-h1-mobile;
 
       @include respond-to(s) {
         font-size: 8rem;
       }
 
       @include respond-to(m) {
-        font-size: $fs-h2;
+        font-size: $fs-h1;
       }
     }
     & p {

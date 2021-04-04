@@ -122,6 +122,7 @@ const Navbar: React.FC<INavbarProps> = ({ variant, offset }) => {
                   {getLink("/product/zubehör", "Zubehör")}
                 </div>
               </div>
+              {getLink("/portfolio", "Projekte")}
               {getLink("/about", "Über uns")}
               {getLink("/faq", "FAQ")}
               <TransitionLink to="/about#contact">

@@ -4,12 +4,12 @@
 .ServiceTeaser {
   padding-top: $margin-m;
 
-  > h3 {
-    font-size: $fs-h3-mobile;
+  > h2 {
+    font-size: $fs-h2-mobile;
     margin-bottom: $margin-m;
 
     @include respond-to(xl) {
-      font-size: $fs-h3;
+      font-size: $fs-h2;
       margin-bottom: initial;
     }
   }

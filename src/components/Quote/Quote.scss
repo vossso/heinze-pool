@@ -21,7 +21,7 @@ position: relative;
             content: '“';
         }
         @include respond-to(m) {
-            font-size: $fs-h3-mobile;
+            font-size: $fs-h2-mobile;
         }
     }
 

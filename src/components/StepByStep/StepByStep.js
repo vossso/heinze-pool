@@ -17,7 +17,7 @@ const StepByStep = ({ steps }) => {
       <Container variant={BreakpointXL ? "" : ["full-height", "starter"]}>
         <div className="StepByStep__wrapper">
           {/* <div className="StepByStep__line" /> */}
-          <h3>Schritt für Schritt zu Ihrem Pool</h3>
+          <h2>Schritt für Schritt zu Ihrem Pool</h2>
           <div className="StepByStep__steps">
             {steps.map((element, index) => {
               return (
