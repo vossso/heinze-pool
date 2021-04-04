@@ -21,7 +21,7 @@ const ServiceOverviewIntro = ({ services, description }) => {
           </div>
           <div className="ServiceOverviewIntro__right">
               {/* ToDo Pflegbar machen */}
-            <h4>Unsere Leistungen im Überblick</h4>
+            <h3>Unsere Leistungen im Überblick</h3>
             <p>
              {description}
             </p>

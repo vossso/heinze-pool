@@ -6,7 +6,7 @@ productElement:
   - description: "…sind immer ein Unikat. Treffen Sie selbst die Entscheidung über die exakte Größe, die Anzahl und Form der Treppen, welche Sprudelbank und Gegenstromanlage oder ob Ihr Boden dieselbe Farbe wie Ihre Wand tragen soll.\nVollkommene Flexibilität ist einer der größten Vorteile dieser in höchster Qualität für Sie zusammengefügten Polypropylenplatten. Rechtwinklige Treppenkanten und Innenecken, sowie perfekt gerade Wände sprechen eine klare Linie für modernes Design und eignen sich daher auch hervorragend für Überlaufpools. "
     image: /img/icon_PP-blue.png
     images:
-      - alt: poly
+      - alt: Polypropylen Becken, Harz
         image: /img/Pool_PP.jpg
     introtext: >-
       Thermoplastischer Kunststoff, welcher sich nur für Sie, ganz individuell und auf den Zentimeter genau zu Ihrem Wunschpool formen lässt.
@@ -15,7 +15,7 @@ productElement:
   - description: "…tragen ihre weichen, nahtlosen Kanten mit Stolz und fügen sich geschmeidig in jedes Landschaftsbild ein. Durch Ihre festen Formen und das Schichtsystem bieten diese Becken eine extrem hohe Steifigkeit, sind UV-beständig und resistent gegen alle üblichen Chemikalien.\nZur Auswahl steht eine große Varianten- und Farbvielfalt oder ein schlicht elegantes Design. Als Ceramic Pool werden Becken bezeichnet dessen Festigkeit durch eine zusätzliche Schicht, der sogenannten Ceramic Schicht, erhöht werden."
     image: /img/icon_GFK-blue.png
     images:
-      - alt: GFK Pool
+      - alt: GFK Pool Niedersachsen
         image: /img/Pool_GFK.jpg
     introtext: >-
       Glasfaserverstärkter Kunststoff, mit oder ohne Ceramic Schicht in fester Form, abgerundeten Ecken und nahtloser Schönheit.
@@ -24,7 +24,7 @@ productElement:
   - description: "…bezeichnen Pools die aus einzelnen Segmenten und je nach Hersteller aus unterschiedlichen Materialien bestehen. Diese können in Ihrer Bauweise individuell zusammengesetzt werden um verschiedene Formen und Größen zu erreichen.\n\n Durch das Zusammensetzen der Elemente in der Grube ist ein Einbau an schwer zugänglichen Orten, wie zum Beispiel einem Hinterhaus mit engem Garten, möglich. Dementsprechend entfallen die Krankosten."
     image: /img/icon_Seg-blue.png
     images:
-      - alt: Segmentbecken
+      - alt: Segmentbecken Niedersachsen
         image: /img/Pool_Seg.jpg
     introtext: >-
       Durch den Zusammenbau der Segmente, direkt in der Grube, für ausnahmslos jeden Garten flexibel realisierbar.
@@ -34,7 +34,7 @@ productElement:
       …sind stilvoll, individuell gestaltbar und extravagant. Abgesehen vom „Wow-Effekt“ bieten Ihnen unsere Containerpools viele Vorteile und bringen ein Highlight in Ihren Garten. Durch die stabile, freitragende Bauweise der Container und der bereits vormontierten Technik ist die Montage sowohl oberirdisch als auch teileingelassen möglich.
     image: /img/icon_CP-blue.png
     images:
-      - alt: Container Pools
+      - alt: Container Pools Niedersachsen
         image: /img/Pool_CP.jpg
     introtext: >-
       Genießer oder Individualist? Überzeugen Sie sich von etwas
@@ -45,7 +45,7 @@ productElement:
       …beleben Körper und Geist und helfen Ihnen, dem stressigen Alltag zu entfliehen. Die drei elementaren Faktoren Wärme, Wasser und Massage spiegeln den Inbegriff von Sinnlichkeit und Ruhe wider. So fördern Sie Ihre Durchblutung, entlasten Ihre Gelenke und lösen Ihre verspannten Muskelpartien.
     image: /img/icon_WP-blue.png
     images:
-      - alt: tag whirlpool
+      - alt: Whirlpool Niedersachsen
         image: /img/Pool_WP.jpg
     introtext: >-
       Genießer oder Individualist? Wie wäre es mal mit Anders? Entdecken Sie

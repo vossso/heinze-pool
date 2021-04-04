@@ -14,7 +14,7 @@ const Overlay = ({ title, description, image, variant, onClick }) => {
         <div className="Overlay__bg" />
         <div className="Overlay__content">
           <div className="Overlay__text">
-            <h4>{title}</h4>
+          {title && <h3>{title}</h3>}
             <p>{description}</p>
           </div>
           <div className="Overlay__image">

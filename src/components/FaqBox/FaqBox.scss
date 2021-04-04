@@ -24,11 +24,11 @@
   &__question {
     margin: 0;
     text-align: left;
-    font-size: $fs-h4-mobile;
+    font-size: $fs-h3-mobile;
     text-transform: unset;
 
     @include respond-to(m) {
-      font-size: $fs-h4;
+      font-size: $fs-h3;
     }
   }
   &__answer {

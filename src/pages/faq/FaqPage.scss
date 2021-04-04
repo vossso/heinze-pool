@@ -7,8 +7,8 @@
       margin-top: 20%;
     }
   }
-  h2 {
-    font-size: $fs-h2-mobile;
+  h1 {
+    font-size: $fs-h1-mobile;
     @include respond-to(xl) {
       font-size: 7rem;
     }

@@ -17,9 +17,9 @@
     text-align: center;
     height: auto;
 
-    > h3 {
+    > h2 {
       margin-bottom: $margin-s;
-      font-size: $fs-h3-mobile;
+      font-size: $fs-h2-mobile;
     }
     > p {
       text-align: center;
@@ -27,8 +27,8 @@
     @include respond-to(xl) {
       margin-top: $margin-menu;
 
-      > h3 {
-        font-size: $fs-h3;
+      > h2 {
+        font-size: $fs-h2;
       }
       > p {
         font-size: $fs-p;

@@ -28,7 +28,7 @@ const TextBox = ({
           <PreviewCompatibleImage imageInfo={icon} />
         </div>
       )}
-      {title && <h4>{title}</h4>}
+      {title && <h3>{title}</h3>}
       {text && isRichText ? <Markdown>{text}</Markdown> : <p>{text}</p>}
       {link && <Link label={label} link={link} />}
     </div>

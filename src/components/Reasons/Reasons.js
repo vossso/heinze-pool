@@ -16,7 +16,7 @@ const Reasons = ({ title, reasonsList }) => {
     <div className="Reasons">
       <Container variant={contVariant}>
         <div className="Reasons__wrapper">
-          <h3>{title}</h3>
+          <h2>{title}</h2>
           <div className="Reasons__content">
             {reasonsList.map((element, index) => {
               const { reason, description } = element;

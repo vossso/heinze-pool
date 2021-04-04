@@ -9,16 +9,16 @@
   }
   &__wrapper {
     text-align: center;
-    > h3 {
-      font-size: $fs-h3-mobile;
+    > h2 {
+      font-size: $fs-h2-mobile;
       margin-bottom: $margin-l;
     }
     > p {
       margin-bottom: $margin-l;
     }
     @include respond-to(xl) {
-      > h3 {
-        font-size: $fs-h3;
+      > h2 {
+        font-size: $fs-h2;
       }
       > p {
         margin-bottom: $margin-l;

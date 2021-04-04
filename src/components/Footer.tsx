@@ -51,7 +51,7 @@ const Footer: React.FC<IFooterProps> = ({ data }) => {
       id="contact"
     >
       <Container variant={variant}>
-        <h3>Kontakt</h3>
+        <h2>Kontakt</h2>
         <div className="Footer__content">
           <div className="Footer__col">
             <h5>Öffnungszeiten</h5>
@@ -89,7 +89,7 @@ const Footer: React.FC<IFooterProps> = ({ data }) => {
           <div className="Footer__col">
             <h5>Adresse</h5>
             <p>
-              Henze Pool GmbH
+            {adress.name}
               <br />
               {adress.street}
               <br />
@@ -129,6 +129,7 @@ export default () => (
           frontmatter {
             contactblock {
               adress {
+                name
                 city
                 street
               }

@@ -17,7 +17,7 @@ productElement:
       …erhalten den Blick auf Ihren Pool, wunderschön wie er ist und das Highlight in jedem Garten. Die elektrische Rollladenabdeckung ist in verschiedenen Einbautechniken verfügbar. So ist die Ausführung am Beckenrand, vollständig verschwunden hinter dem Pool oder als praktische Sitzbank im Becken möglich. Die Abdeckung liegt auf dem Wasser auf und kann bei Bedarf automatisch ein- und ausgefahren werden. Im geschlossenen Zustand hält sie die Wärme im Becken, schützt vor Verdunstung und Verschmutzung und heizt als Solarvariante das Wasser auf.
     image: /img/icon_Roll-blue.png
     images:
-      - alt: Rollläden
+      - alt: Rollläden Schwimmbecken
         image: /img/Abd_Roll.jpg
     introtext: >-
       Erhalten die Ästhetik Ihres Pools bei maximaler Effizienz und verschwinden auf Knopfdruck.
@@ -27,7 +27,7 @@ productElement:
       …setzen auf Funktionalität und vereinen so die meisten praktischen Vorteile. Sie schützen nicht nur vor Schmutz, sondern bieten ebenfalls mehr Sicherheit für Kleinkinder und Tiere. Zudem werden Wärmeverlust und Wasserverdunstung erheblich reduziert. Durch ihre stabile Bauweise, der hohen Qualität des Polyestergewebes und der damit gegebenen Sicherheit eignen sich die Rollschutzplanen hervorragend als Winterabdeckung. Sie halten allen Witterungsverhältnissen stand, sind antibakteriell und UV-beständig.
     image: /img/icon_Plane-blue.png
     images:
-      - alt: Rollschutzplane
+      - alt: Pool Rollschutzplane 
         image: /img/Abd_RollP.jpg
     introtext: >-
       PPreiswerter Alleskönner. Sicherheitsabdeckung für die Sommer- und Wintersaison in verschiedenen Farben.
@@ -37,7 +37,7 @@ productElement:
       …oder auch Solarfolien genannt, sind schnell aufgelegt, beziehungsweise abgerollt und daher die einfachste Art um Ihren Pool abzudecken. Dies sollte bei Nichtbenutzung auch bestenfalls so sein um Ihre gewonnene Wärme nicht wieder zu verlieren und eine übermäßige Verdreckung des Beckenwassers zu verhindern. Dadurch wird die Filteranlage entlastet und der Bedarf an Poolchemie im Becken kann reduziert werden. Unsere Planen sind chlor- und UV-beständig und weise eine Stärke von mindestens 400 μm auf.
     image: /img/icon_Luft-blue.png
     images:
-      - alt: Luftpolsterplane
+      - alt: Pool Luftpolsterplane
         image: /img/Abd_Lupo.jpg
     introtext: >-
       Das Mindestmaß und die wohl einfachste Art sämtliche Vorteile einer Abdeckung für sich zu nutzen.
