@@ -14,12 +14,12 @@
     margin-bottom: $margin-xs;
     @include respond-to(m) {
       font-size: $fs-h3;
-      margin-bottom: $margin-m;
+      margin-bottom: $margin-s;
     }
   }
   &__content {
-    width: 100%;
-    padding: $margin-menu-mobile + $margin-l 0 0;
+    width: 95%;
+    padding: $margin-menu-mobile + $margin-s 0 0;
     @include respond-to(xl) {
       padding: $margin-menu $margin-m 0 $margin-xl;
     }

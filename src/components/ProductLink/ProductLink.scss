@@ -22,11 +22,14 @@
       right: -3rem;
     }
   }
-  & .TextBox p {
-    font-size: $fs-p-mobile;
-    @include respond-to(xxl) {
-      font-size: $fs-p;
-      line-height: 1.6;
+  .TextBox {
+    padding: 2rem;
+    > p {
+      font-size: $fs-p-mobile;
+      @include respond-to(xxl) {
+        font-size: $fs-p;
+        line-height: 1.6;
+      }
     }
   }
 }
