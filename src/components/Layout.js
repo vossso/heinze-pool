@@ -17,7 +17,7 @@ const TemplateWrapper = ({ hasFooter = true, children, isIndex = false }) => {
   return (
     <div>
       <Helmet>
-        <html lang="en" data-react-helmet="lang"/>
+        <html lang="en" data-react-helmet="lang" />
         <title>{title}</title>
         <meta name="description" content={description} />
 
@@ -62,7 +62,12 @@ const TemplateWrapper = ({ hasFooter = true, children, isIndex = false }) => {
         />
       </Helmet>
       {isIndex ? (
-        <div>{children}</div>
+        <>
+          <div>{children}</div>
+          <div className="Layout__footer">
+            <a href="/meta/impressum">Impressum & Datenschutz</a>
+          </div>
+        </>
       ) : (
         <>
           <Navbar />
