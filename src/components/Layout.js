@@ -65,7 +65,7 @@ const TemplateWrapper = ({ hasFooter = true, children, isIndex = false }) => {
         <>
           <div>{children}</div>
           <div className="Layout__footer">
-            <a href="/meta/impressum">Impressum & Datenschutz</a>
+            <a href="/meta/impressum" >Impressum & Datenschutz</a>
           </div>
         </>
       ) : (
