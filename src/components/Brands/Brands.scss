@@ -11,20 +11,32 @@
   flex-wrap: wrap;
   align-items: center;
 
+  @include respond-to(m) {
+    justify-content: space-around;
+  }
+
   &__element {
     flex: 1 1 100%;
     height: auto;
     margin: 0 auto;
     margin-bottom: $margin-m;
 
-    > img {
+    & img {
       object-fit: cover;
     }
 
     @include respond-to(m) {
-      flex: 0 1 28%;
-      max-height: 30rem;
+      flex: 0 1 30%;
+      // max-height: 12rem;
       overflow: hidden;
+      margin: 0 4rem;
+      padding: 1rem 3rem;
+
+      & img {
+        object-fit: contain;
+        height: auto;
+        width: 100%;
+      }
     }
   }
 }
