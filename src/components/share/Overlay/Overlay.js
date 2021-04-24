@@ -1,5 +1,5 @@
 import React from "react";
-import getVariantClasses from "../../../helpers/getVariantClass";
+import getVariantClasses from "../../../helpers/getVariantClasses";
 
 import "./Overlay.scss";
 import Container from "../Container/Container";

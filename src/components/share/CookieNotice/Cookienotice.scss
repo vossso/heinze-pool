@@ -1,0 +1,16 @@
+@import "../../../styles/global";
+
+.CookieNotice {
+  background-color: rgba($color: $hp-white, $alpha: 0.9);
+  width: 100vw;
+
+  &__wrapper {
+    padding: $padding-s $padding-l;
+  }
+  &__text {
+    > a {
+      text-transform: none;
+      margin: $padding-xs 0;
+    }
+  }
+}

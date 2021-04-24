@@ -92,13 +92,13 @@ export const IndexPageTemplate = ({ links }) => {
                   links.map((link, index) => {
                     if (index >= 3) {
                       return (
-                        <AnchorLink
+                        <TransitionLink
                           key={index}
                           className="IndexPage__link"
                           to={link.path}
                         >
                           {link.label}
-                        </AnchorLink>
+                        </TransitionLink>
                       );
                     } else return null;
                   })}

@@ -6,7 +6,7 @@ import logo from "../../img/Logo-line_color.png";
 import logo2 from "../../img/hp-logo_drop.png";
 import pin from "../../img/icons/icon_Loc-blue.png";
 import pin2 from "../../img/icons/icon_Loc-white.png";
-import getVariantClasses from "../../helpers/getVariantClass";
+import getVariantClasses from "../../helpers/getVariantClasses";
 import useBreakpoint from "../../hooks/useBreakpoint";
 import useScrollPos from "../../hooks/useScrollPos";
 import MobileNav from "../MobileNav/MobileNav";
@@ -26,7 +26,7 @@ const Navbar: React.FC<INavbarProps> = ({ variant, offset }) => {
   const className = getVariantClasses("Navbar", variant);
   const currentScrollY = useScrollPos();
 
-  const ignorePages = ["/portfolio", "/meta/impressum", "/products","/404"];
+  const ignorePages = ["/portfolio", "/meta/impressum", "/products", "/404"];
 
   if (location == "/faq") {
     offset = 450;
@@ -77,7 +77,7 @@ const Navbar: React.FC<INavbarProps> = ({ variant, offset }) => {
               className="Navbar__start"
               title="Logo"
               exit={{ length: 0.5 }}
-              entry={{length: 0.8, delay: 0.5 }}
+              entry={{ length: 0.8, delay: 0.5 }}
             >
               {variant === "transparent" || !showDefaultNav ? (
                 <img src={logo2} alt="Heinze-Pool" />
