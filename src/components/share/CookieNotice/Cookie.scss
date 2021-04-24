@@ -1,17 +1,26 @@
-
 @import "../../../styles/global";
+@import "../../../styles/media-queries";
 
 .CookieNotice {
   background-color: rgba($color: $hp-white, $alpha: 0.9);
   width: 100vw;
 
   &__wrapper {
-    padding: $padding-s $padding-l;
+    padding: $padding-s;
+    @include respond-to(m) {
+      padding: $padding-s $padding-l;
+    }
   }
   &__text {
+    > span {
+      font-family: $hp-ff;
+      font-size: $fs-s;
+    }
     > a {
       text-transform: none;
       margin: $padding-xs 0;
+      font-size: $fs-s;
+
     }
   }
 }

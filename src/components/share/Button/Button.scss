@@ -1,5 +1,6 @@
 @import "../../../styles/_global";
 @import "../../../styles/_extends";
+@import "../../../styles/media-queries";
 
 .Button {
   border-radius: 20rem;
@@ -9,9 +10,17 @@
   text-transform: uppercase;
   color: $hp-blue;
   font-family: $hp-ff;
+  font-size: $fs-s;
 
+  width: 100%;
   padding: $padding-s/2 $padding-m;
-  margin-right: $margin-m;
+  margin-bottom: $margin-s;
+
+  @include respond-to(m) {
+    width: auto;
+    margin: 0;
+    margin-right: $margin-m;
+  }
 
   transition: background-color $duration-s;
 
