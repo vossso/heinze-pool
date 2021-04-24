@@ -1,4 +1,4 @@
-import "./CookieNotice.scss";
+import "./Cookie.scss";
 import React, { useContext, useEffect, useState } from "react";
 import AnimateHeight from "react-animate-height";
 import { useCookies } from "react-cookie";
