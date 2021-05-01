@@ -3,24 +3,36 @@
 
 .CookieNotice {
   background-color: rgba($color: $hp-white, $alpha: 0.9);
-  width: 100vw;
+  width: auto;
+  border: transparent;
+  border-radius: 15rem;
+  margin: 0 18rem 2rem;
 
   &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: $padding-s;
     @include respond-to(m) {
-      padding: $padding-s $padding-l;
+      padding: $padding-xs $padding-xs;
     }
   }
   &__text {
+    flex: 0 1 auto;
+    margin: 0 $margin-m;
     > span {
       font-family: $hp-ff;
       font-size: $fs-s;
     }
     > a {
       text-transform: none;
-      margin: $padding-xs 0;
+      margin-left: $padding-xs;
       font-size: $fs-s;
 
     }
+  }
+  &__buttons {
+    flex: 1 0 auto;
   }
 }

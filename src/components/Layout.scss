@@ -10,13 +10,24 @@
     -o-transition: height $duration-s;
     transition: height $duration-s;
   }
-  &__footer > a {
-    @extend %link;
-    position: absolute;
-    bottom: 2%;
-    right: 15%;
+  &__footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 3%;
+    text-align: center;
 
-    font-size: 1.4rem;
-    color: $hp-blue;
+    > a {
+      @extend %link;
+      margin: 0 auto;
+
+      font-size: 1.4rem;
+      color: $hp-blue;
+
+      &::after {
+        background-color: $hp-white;
+      }
+    }
   }
 }

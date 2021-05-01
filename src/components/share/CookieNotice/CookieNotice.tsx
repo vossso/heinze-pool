@@ -21,7 +21,7 @@ const CookieNotice: React.FC = () => {
 
   useEffect(() => {
     if (!cookies[cookieName]) {
-      setTimeout(() => showItem("cookieNotice"), 500);
+      setTimeout(() => showItem("cookieNotice"), 5000);
     } else {
       hideItem("cookieNotice");
     }
@@ -40,7 +40,6 @@ const CookieNotice: React.FC = () => {
       }}
     >
       <div className="CookieNotice__wrapper">
-        <div className="CookieNotice__inner">
           <div className="CookieNotice__text">
             <span>
               Diese Website verwendet Funktionen und Cookies von Drittanbietern,
@@ -48,14 +47,13 @@ const CookieNotice: React.FC = () => {
               Besuch der Website haben. Bitte beachten Sie, dass das
               Nicht-Akzeptieren von Cookies von Drittanbietern die
               Website-Nutzung beeinträchtigt.
-            </span><br/>
+            </span>
             <Link link="/meta/impressum" label="Weitere Infos" transition={true}/>
           </div>
           <div className="CookieNotice__buttons">
             <Button onClickHandler={() => setCookiePolicy(0)} label="Ablehnen"/>
             <Button onClickHandler={() => setCookiePolicy(1)} label="Akzeptieren" variant="dark" />
           </div>
-        </div>
       </div>
     </AnimateHeight>
   ) : null;
