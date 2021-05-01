@@ -4,7 +4,7 @@
 
 .Button {
   border-radius: 20rem;
-  background-color: $hp-white;
+  background-color:  $hp-white;
   box-shadow: $bs-standard;
 
   text-transform: uppercase;
@@ -34,7 +34,7 @@
     background-color: $hp-blue-2;
 
     &:hover {
-      background-color: $hp-blue-3;
+      background-color: #055699;
     }
   }
 }
