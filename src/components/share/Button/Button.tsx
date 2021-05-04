@@ -20,7 +20,7 @@ const Button: React.FC<ILink> = ({
     const className = getVariantClasses("Button", variant)
 
   return onClickHandler ? (
-    <button className={className} onClick={onClickHandler}>
+    <button className={className+' ga-hp_test'} onClick={onClickHandler}>
       {label}
     </button>
   ) : <Link extraClass={className} link={link} label={label}/>
