@@ -23,7 +23,7 @@ const useCookiePolicy = () => {
     if (value === 1) {
       pushToDataLayer({ event: "consentChange" });
       pushToDataLayer({"js" : new Date()});
-      pushToDataLayer({"config":  "G-QLNEWDJ89S"});
+      pushToDataLayer({"config":  "G-289WBD66JY"});
     }
     setCookie("cookie-policy", value);
   };
