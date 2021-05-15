@@ -89,7 +89,16 @@ module.exports = {
     },
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          maxWidth: 2000,
+          quality: 100,
+          backgroundColor: `transparent`,
+        }
+      }
+    },
     `gatsby-transformer-sharp`,
   ],
 };

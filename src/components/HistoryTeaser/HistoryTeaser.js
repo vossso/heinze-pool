@@ -5,6 +5,7 @@ import TextBox from "../share/TextBox/TextBox";
 import "./HistoryTeaser.scss";
 import Container from "../share/Container/Container";
 import useBreakpoint from "../../hooks/useBreakpoint";
+import PreviewCompatibleImage from "../share/Image/PreviewCompatibleImage";
 
 const HistoryTeaser = ({ data }) => {
   const { title: year, description, historyimage } = data;
@@ -21,15 +22,7 @@ const HistoryTeaser = ({ data }) => {
           </div>
           {historyimage && (
             <div className="HistoryTeaser__image">
-              <img
-                src={
-                  !!historyimage.image.childImageSharp
-                    ? historyimage.image.childImageSharp.fluid.src
-                    : historyimage.image
-                }
-                style={{ height: "100%", width: "100%" }}
-                alt="oldpic"
-              />
+              <PreviewCompatibleImage imageInfo={historyimage} />
             </div>
           )}
         </div>

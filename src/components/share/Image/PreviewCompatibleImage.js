@@ -1,26 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Img from "gatsby-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-const PreviewCompatibleImage = ({ imageInfo, styles }) => {
+const PreviewCompatibleImage = ({ imageInfo, styles, loading = 'lazy' }) => {
   const imageStyle = styles ? styles : { objectFit: "cover" };
   const { alt = "", childImageSharp, image } = imageInfo;
+  const imagePath = getImage(image);
   if (!!image && !!image.childImageSharp) {
     return (
-      <Img style={imageStyle} fluid={image.childImageSharp.fluid} alt={alt} />
+      <GatsbyImage image={imagePath} alt={alt} loading={loading} />
     );
   }
 
   if (!!childImageSharp) {
-    return <Img style={imageStyle} fluid={childImageSharp.fluid} alt={alt} />;
+    return <GatsbyImage image={imagePath} alt={alt} loading={loading}/>
   }
 
   if (!!image && typeof image === "string") {
-    return <img style={imageStyle} src={image} alt={alt} />;
+    return <img style={imageStyle} src={image} alt={alt} loading={loading}/>;
   }
 
   if (!!image && !!image.publicURL) {
-    return <img style={imageStyle} src={image.publicURL} alt={alt} />;
+    return <img style={imageStyle} src={image.publicURL} alt={alt} loading={loading}/>;
   }
 
   return null;

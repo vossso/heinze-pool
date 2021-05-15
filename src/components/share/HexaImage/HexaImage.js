@@ -4,23 +4,11 @@ import "./HexaImage.scss";
 import Overlay from "../Overlay/Overlay";
 import Hexagon from "react-hexagon";
 import { CSSTransition } from "react-transition-group";
+import {  getImage } from "gatsby-plugin-image";
 
 const HexaImage = ({ title, description, imageInfo }) => {
   const [showOverlay, setShowOverlay] = useState(false);
-
-  const getImagePath = () => {
-    const { childImageSharp, image } = imageInfo;
-    if (!!image && !!image.childImageSharp) {
-      return image.childImageSharp.fluid.src;
-    }
-    if (!!childImageSharp) {
-      return childImageSharp.fluid.src;
-    }
-
-    if (!!image && typeof image === "string") return image.src;
-
-    return null;
-  };
+  const imgagePath = imageInfo.image && getImage(imageInfo.image).images.fallback.src
 
   const onClick = () => {
     setShowOverlay(!showOverlay);
@@ -31,7 +19,7 @@ const HexaImage = ({ title, description, imageInfo }) => {
       <button onClick={onClick}>
         <Hexagon
           className="HexaImage__poly"
-          backgroundImage={getImagePath()}
+          backgroundImage={imgagePath}
           flatTop
           style={{ stroke: "transparent" }}
           backgroundScale={2}

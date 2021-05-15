@@ -4,18 +4,18 @@ import "./Stage.scss";
 import Container from "../share/Container/Container";
 import useBreakpoint from "../../hooks/useBreakpoint";
 import Img from "gatsby-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const Stage = ({ image, title, isStarter = true, description = null }) => {
   const BreakpointM = useBreakpoint("m");
   const variant = isStarter
     ? ["half-height--start", "full-width", "no-padding", "starter"]
     : ["half-height--start", "full-width", "no-padding"];
-
   const getContent = (
     <div className="Stage">
       {image && (
         <div className="Stage__image">
-          <Img fluid={{src: !!image.childImageSharp ? image.childImageSharp.fluid.src : image}} style={{position: "relative", height: "100%", width: "100vw"}} fadeIn={true} alt={title}/> 
+          <GatsbyImage image={getImage(image)} style={{position: "relative", height: "100%", width: "100vw"}} fadeIn={true} alt={title}/> 
         </div>
       )}
 

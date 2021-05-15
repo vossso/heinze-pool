@@ -99,9 +99,13 @@ export const aboutPageQuery = graphql`
           alt
           image {
             childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(
+                placeholder: BLURRED
+                formats: [AUTO, WEBP]
+                width: 2000
+                breakpoints: [480,568,800,1024,1280]
+                quality: 100
+              )
             }
           }
         }
@@ -110,9 +114,14 @@ export const aboutPageQuery = graphql`
             alt
             image {
               childImageSharp {
-                fluid(maxWidth: 1000, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(
+                  placeholder: BLURRED
+                  formats: [AUTO, WEBP]
+                  width: 800
+                  breakpoints: [568,1024]
+                  quality: 100
+                  layout: FULL_WIDTH
+                )
               }
             }
           }

@@ -18,7 +18,7 @@ const Overlay = ({ title, description, image, variant, onClick }) => {
             <p>{description}</p>
           </div>
           <div className="Overlay__image">
-            <PreviewCompatibleImage imageInfo={image} />
+            <PreviewCompatibleImage imageInfo={image} loading="eager"/>
           </div>
         </div>
         <button className="Overlay__close" onClick={onClick}>

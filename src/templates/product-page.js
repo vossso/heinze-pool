@@ -99,17 +99,24 @@ export const ProductPageQuery = graphql`
             title
             image {
               childImageSharp {
-                fluid(maxWidth: 2000) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(
+                  placeholder: BLURRED
+                  formats: [AUTO, WEBP]
+                  width: 1000
+                  breakpoints: [480,568,800,1024,1280]
+                  quality: 100
+                )
               }
             }
             productElement {
               image {
                 childImageSharp {
-                  fluid(maxWidth: 300) {
-                    ...GatsbyImageSharpFluid
-                  }
+                  gatsbyImageData(
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP]
+                    width: 100
+                    quality: 100
+                  )
                 }
               }
               title
@@ -119,9 +126,13 @@ export const ProductPageQuery = graphql`
               images {
                 image {
                   childImageSharp {
-                    fluid(maxWidth: 1300) {
-                      ...GatsbyImageSharpFluid
-                    }
+                    gatsbyImageData(
+                      placeholder: BLURRED
+                      formats: [AUTO, WEBP]
+                      width: 2000
+                      breakpoints: [480,568,800,1024,1280]
+                      quality: 100
+                    )
                   }
                 }
                 alt
@@ -130,9 +141,12 @@ export const ProductPageQuery = graphql`
             brands {
               image {
                 childImageSharp {
-                  fluid(maxWidth: 500) {
-                    ...GatsbyImageSharpFluid
-                  }
+                  gatsbyImageData(
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP]
+                    width: 600
+                    quality: 100
+                  )
                 }
               }
               name

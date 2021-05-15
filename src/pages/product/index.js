@@ -16,7 +16,7 @@ class ProductIndexPage extends React.Component {
   }
 }
 
-//HIER NUR VORschAU ??
+// HIER NUR Vorschau ??
 
 ProductIndexPage.propTypes = {
     data: PropTypes.shape({
@@ -41,9 +41,13 @@ export default () => (
                       title
                       image {
                         childImageSharp {
-                          fluid(maxWidth: 1000) {
-                            ...GatsbyImageSharpFluid
-                          }
+                          gatsbyImageData(
+                            placeholder: BLURRED
+                            formats: [AUTO, WEBP]
+                            width: 1000
+                            breakpoints: [480,568,800,1024,1280]
+                            quality: 100
+                          )
                         }
                       }
                       description
@@ -54,9 +58,13 @@ export default () => (
                         images {
                           image {
                             childImageSharp {
-                              fluid(maxWidth: 1000) {
-                                ...GatsbyImageSharpFluid
-                              }
+                              gatsbyImageData(
+                                placeholder: BLURRED
+                                formats: [AUTO, WEBP]
+                                width: 1000
+                                breakpoints: [480,568,800,1024,1280]
+                                quality: 100
+                              )
                             }
                           }
                           alt
@@ -65,9 +73,13 @@ export default () => (
                       brands {
                         image {
                           childImageSharp {
-                            fluid(maxWidth: 1000) {
-                              ...GatsbyImageSharpFluid
-                            }
+                            gatsbyImageData(
+                              placeholder: BLURRED
+                              formats: [AUTO, WEBP]
+                              width: 1000
+                              breakpoints: [480,568,800,1024,1280]
+                              quality: 100
+                            )
                           }
                         }
                         name
