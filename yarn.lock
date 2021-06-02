@@ -13744,6 +13744,11 @@ react-frame-component@^5.0.0:
   resolved "https://registry.npmjs.org/react-frame-component/-/react-frame-component-5.0.0.tgz#8a7e60e7fe7e2b52bfc0854325d63c01d0788510"
   integrity sha512-JyoPSU6H96sd4l76EUvzB/cNkvhW74OK43A1m7kmgc14QztodV39l9g7DwVgkVeKpSqnpMYhrKcvehHZzfXBGA==
 
+react-ga@3.3.0:
+  version "3.3.0"
+  resolved "https://registry.npmjs.org/react-ga/-/react-ga-3.3.0.tgz#c91f407198adcb3b49e2bc5c12b3fe460039b3ca"
+  integrity sha512-o8RScHj6Lb8cwy3GMrVH6NJvL+y0zpJvKtc0+wmH7Bt23rszJmnqEQxRbyrqUzk9DTJIHoP42bfO5rswC9SWBQ==
+
 react-helmet@6.0.0:
   version "6.0.0"
   resolved "https://registry.npmjs.org/react-helmet/-/react-helmet-6.0.0.tgz#fcb93ebaca3ba562a686eb2f1f9d46093d83b5f8"
