@@ -21,9 +21,9 @@ const useCookiePolicy = () => {
   const setCookiePolicy = (value: number) => {
     pushToDataLayer([{ marketingCookieConsent: value === 1 }]);
     if (value === 1) {
-      pushToDataLayer({ event: "consentChange" });
       pushToDataLayer({"js" : new Date()});
       pushToDataLayer({"config":  "G-289WBD66JY"});
+      pushToDataLayer({ event: "consentChange" });
     }
     setCookie("cookie-policy", value);
   };
