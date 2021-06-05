@@ -1,0 +1,57 @@
+@import "../../../styles/_global.scss";
+
+.InfoBox {
+  display: block;
+  position: fixed;
+  z-index: 99;
+  top: 2%;
+  right: 2%;
+  width: 100%;
+  max-width: 30rem;
+  min-width: 20rem;
+  height: auto;
+  opacity: 0;
+  transition: opacity $duration-m;
+
+  &--visible {
+    opacity: 1;
+
+    & .InfoBox__hexa {
+      transform: rotate(0deg);
+    }
+  }
+
+  &__hexa {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    transform: rotate(90deg);
+    transition: transform $duration-s;
+  }
+  &__content {
+    z-index: 2;
+    position: relative;
+
+    padding: 15% 15%;
+    h3,
+    p {
+      color: #fff;
+      text-align: center;
+    }
+  }
+  &__close {
+    z-index: 3;
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    cursor: pointer;
+
+    &-icon {
+      width: 2rem;
+      height: auto;
+    }
+  }
+}

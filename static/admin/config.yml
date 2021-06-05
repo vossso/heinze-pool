@@ -36,6 +36,21 @@ collections:
                   { label: Pfad, name: path, widget: string },
                 ],
             }
+          - {
+              label: Info-Box,
+              name: infoBox,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: "Auf der Startseite anzeigen?",
+                    name: showInfoBox,
+                    widget: boolean,
+                  },
+                  { label: Titel, name: title, widget: string },
+                  { label: Text, name: text, widget: text , required: true},
+                ],
+            }
       - file: "src/pages/portfolio/index.md"
         label: "Projekte"
         name: "portfolio"
@@ -94,7 +109,12 @@ collections:
                   { label: Keywords, name: alt, widget: string },
                   { label: Title, name: title, widget: string },
                   { label: Text, name: text, widget: markdown },
-                  { label: Verlinkung, name: link, widget: string, required: false },
+                  {
+                    label: Verlinkung,
+                    name: link,
+                    widget: string,
+                    required: false,
+                  },
                 ],
             }
           - {
@@ -410,7 +430,7 @@ collections:
             [
               { label: Logo, name: image, widget: image },
               { label: Name, name: name, widget: string },
-              {label: Webseitenlinnk, name: link, widget: string},
+              { label: Webseitenlinnk, name: link, widget: string },
             ],
         }
 

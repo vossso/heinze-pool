@@ -9,6 +9,7 @@ const IndexPagePreview = ({ entry }) => {
     return (
       <IndexPageTemplate
         links={data.links}
+        infoBox={data.infoBox}
       />
     )
   } else {
