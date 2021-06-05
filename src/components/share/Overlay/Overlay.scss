@@ -50,7 +50,7 @@
     height: 100%;
 
     > div {
-      height: 100%;
+      height: auto;
       width: auto;
     }
     @include respond-to(l) {

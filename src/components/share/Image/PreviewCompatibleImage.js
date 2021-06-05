@@ -8,12 +8,12 @@ const PreviewCompatibleImage = ({ imageInfo, styles, loading = 'lazy' }) => {
   const imagePath = getImage(image);
   if (!!image && !!image.childImageSharp) {
     return (
-      <GatsbyImage image={imagePath} alt={alt} loading={loading} />
+      <GatsbyImage image={imagePath} alt={alt} loading={loading}  style={imageStyle}/>
     );
   }
 
   if (!!childImageSharp) {
-    return <GatsbyImage image={imagePath} alt={alt} loading={loading}/>
+    return <GatsbyImage image={imagePath} alt={alt} loading={loading} style={imageStyle}/>
   }
 
   if (!!image && typeof image === "string") {
