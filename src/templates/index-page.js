@@ -20,7 +20,7 @@ import useBreakpoint from "../hooks/useBreakpoint";
 export const IndexPageTemplate = ({ links, infoBox }) => {
   const [trans, setTrans] = useState(false);
   const BreakpointM = useBreakpoint("m");
-  const { showInfoBox, title, text } = infoBox || {};
+  const { showInfoBox, title, text, introText } = infoBox || {};
 
   const startAnimation = () => {
     setTrans(true);
@@ -46,6 +46,9 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
         {BreakpointM ? (
           <>
             <div className="IndexPage__mobile">
+              {trans && showInfoBox && (
+                <InfoBox title={title} text={text} introText={introText} />
+              )}
               <div className="IndexPage__box">
                 <div className={`IndexPage__logo-box`}>
                   <img src={logo} alt="Heinze-Pool" />
@@ -110,7 +113,9 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
               <div className="IndexPage__hexa-box">
                 <img src={hexa} alt="Heinze-Pool" />
               </div>
-              {trans && showInfoBox && <InfoBox title={title} text={text} />}
+              {trans && showInfoBox && (
+                <InfoBox title={title} text={text} introText={introText} />
+              )}
             </div>
           </CSSTransition>
         )}
@@ -181,6 +186,7 @@ export const pageQuery = graphql`
           showInfoBox
           title
           text
+          introText
         }
       }
     }

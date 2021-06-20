@@ -1,23 +1,42 @@
 @import "../../../styles/_global.scss";
+@import "../../../styles/media-queries";
 
 .InfoBox {
   display: block;
   position: fixed;
   z-index: 99;
-  top: 2%;
-  right: 2%;
-  width: 100%;
-  max-width: 30rem;
-  min-width: 20rem;
+  top: 30%;
+  align-self: center;
+  width: 30rem;
   height: auto;
   opacity: 0;
-  transition: opacity $duration-m;
+  transition: opacity $duration-m $duration-s, width $duration-s;
+  @include respond-to(s) {
+    top: 2%;
+    right: 2%;
+  }
 
-  &--visible {
-    opacity: 1;
+  &__bg {
+    opacity: 0;
+    transition: opacity $duration-m $duration-s;
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $hp-blue;
+    background: -webkit-linear-gradient(
+      rgba($hp-blue, 0.8),
+      rgba($hp-blue, 0.5)
+    );
+    background: linear-gradient(rgba($hp-blue, 1), rgba($hp-blue, 0.8));
+  }
 
+  &:hover {
+    width: 30.5rem;
     & .InfoBox__hexa {
-      transform: rotate(0deg);
+      transform: rotate(-5deg);
     }
   }
 
@@ -29,18 +48,32 @@
     height: auto;
     width: 100%;
     transform: rotate(90deg);
-    transition: transform $duration-s;
+    transition: transform $duration-m;
   }
   &__content {
     z-index: 2;
     position: relative;
-
-    padding: 15% 15%;
-    h3,
-    p {
-      color: #fff;
-      text-align: center;
+    padding: $padding-l/2 $padding-m;
+  }
+  &__title,
+  &__text {
+    color: #fff;
+    text-align: center;
+  }
+  &__text {
+    font-size: $fs-s;
+    @include respond-to(s) {
+      font-size: $fs-p-mobile;
     }
+  }
+  &__button {
+    width: 100%;
+    cursor: pointer;
+    transition: transform $duration-s;
+  }
+  &__arrow-icon {
+    margin-left: $margin-s;
+    width:  2rem;
   }
   &__close {
     z-index: 3;
@@ -52,6 +85,33 @@
     &-icon {
       width: 2rem;
       height: auto;
+    }
+  }
+
+  &--visible {
+    opacity: 1;
+
+    & .InfoBox__hexa {
+      transform: rotate(0deg);
+    }
+  }
+  &--open {
+    width: 95vw;
+    @include respond-to(s) {
+      width: 40rem;
+    }
+
+    &:hover {
+      width: 39.5rem;
+      & .InfoBox__hexa {
+        transform: rotate(-55deg);
+      }
+    }
+    & .InfoBox__hexa {
+      transform: rotate(-60deg);
+    }
+    & .InfoBox__content {
+      padding: $padding-m $padding-m;
     }
   }
 }

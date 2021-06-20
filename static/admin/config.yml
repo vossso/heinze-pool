@@ -48,7 +48,8 @@ collections:
                     widget: boolean,
                   },
                   { label: Titel, name: title, widget: string },
-                  { label: Text, name: text, widget: text , required: true},
+                  { label: Introtext, name: introText, widget: text },
+                  { label: Text, name: text, widget: text, required: true },
                 ],
             }
       - file: "src/pages/portfolio/index.md"
