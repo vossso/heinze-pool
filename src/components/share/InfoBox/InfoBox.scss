@@ -11,6 +11,8 @@
   opacity: 0;
   background-color: transparent;
   transition: opacity $duration-m $duration-s, background-color $duration-m;
+
+  pointer-events: none;
   &__bg {
     opacity: 0;
     transition: opacity $duration-m $duration-s;
@@ -37,6 +39,8 @@
     width: 30rem;
     height: auto;
     transition: opacity $duration-m $duration-s, width $duration-s;
+    pointer-events: visible;
+
     &:hover {
       width: 30.5rem;
       & .InfoBox__hexa {
@@ -46,6 +50,8 @@
     @include respond-to(s) {
       top: 5%;
       right: 5%;
+      left: auto;
+      margin: 0;
     }
   }
   &__details {
@@ -132,6 +138,7 @@
     }
   }
   &--open {
+    pointer-events: visible;
     background-color: $hp-blue-3;
     & .InfoBox__bg {
       opacity: 0;
