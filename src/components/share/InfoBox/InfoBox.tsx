@@ -1,5 +1,6 @@
 import hexa from "../../../img/icons/hexa-3.svg";
 import close from "../../../img/icons/close.svg";
+import closeW from "../../../img/icons/close-white.svg";
 import arrow from "../../../img/icons/arrow.svg";
 import React, { useEffect, useState } from "react";
 
@@ -22,15 +23,15 @@ const InfoBox: React.FC<IInfoBox> = ({
   const BreakpointS = useBreakpoint("s");
 
   return (
-    <>
+    <div
+      className={`InfoBox${isVisible ? " InfoBox--visible" : ""}${
+        isOpen ? " InfoBox--open" : ""
+      }`}
+    >
       {BreakpointS && (
         <div className={`InfoBox__bg${isVisible ? " InfoBox--visible" : ""}`} />
       )}
-      <div
-        className={`InfoBox${isVisible ? " InfoBox--visible" : ""}${
-          isOpen ? " InfoBox--open" : ""
-        }`}
-      >
+      <div className="InfoBox__wrapper">
         <button className="InfoBox__button" onClick={() => setIsOpen(!isOpen)}>
           <img className="InfoBox__hexa" src={hexa} alt="InfoBox" />
           <div className="InfoBox__content">
@@ -55,7 +56,19 @@ const InfoBox: React.FC<IInfoBox> = ({
           <img className="InfoBox__close-icon" src={close} alt="InfoBox" />
         </button>
       </div>
-    </>
+      <div className="InfoBox__details">
+        <div className="InfoBox__content">
+          <h3 className="InfoBox__title">{title}</h3>
+          <p className="InfoBox__text">{text}</p>
+        </div>
+        <button
+            className="InfoBox__close"
+            onClick={() => BreakpointS ? setIsVisible(false) : setIsOpen(false)}
+          >
+            <img className="InfoBox__close-icon" src={closeW} alt="InfoBox" />
+          </button>
+      </div>
+    </div>
   );
 };
 
