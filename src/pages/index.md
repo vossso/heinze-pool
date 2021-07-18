@@ -14,8 +14,9 @@ links:
   - label: FAQ
     path: /faq
 infoBox:
-  showInfoBox: true
-  introText: >-
+  introText: Aenean lacinia bibendum nulla sed consectetur.
+  showInfoBox: false
+  text: >-
     Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et
     magnis dis parturient montes, nascetur ridiculus mus.
   text: >-
