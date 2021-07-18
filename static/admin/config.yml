@@ -46,6 +46,7 @@ collections:
                     label: "Auf der Startseite anzeigen?",
                     name: showInfoBox,
                     widget: boolean,
+                    default: false,
                   },
                   { label: Titel, name: title, widget: string },
                   { label: Introtext, name: introText, widget: text },
