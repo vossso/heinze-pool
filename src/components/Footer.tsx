@@ -38,10 +38,10 @@ const Footer: React.FC<IFooterProps> = ({ data }) => {
       const id = hash.replace("#", "");
       const element = document.getElementById(id);
       if (element && element.scrollIntoView) {
-        element.scrollIntoView();
+        element.scrollIntoView(false);
       }
     }
-  }, [scrollPos]);
+  }, []);
 
   const newPhone = numbers.phone.replace(" ", "");
 

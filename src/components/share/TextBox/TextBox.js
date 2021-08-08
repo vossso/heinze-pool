@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "../Link/Link";
-import getVariantClasses from "../../../helpers/getVariantClass";
+import getVariantClasses from "../../../helpers/getVariantClasses";
 import PreviewCompatibleImage from "../Image/PreviewCompatibleImage";
 import Markdown from "markdown-to-jsx";
 import { CSSTransition } from "react-transition-group";

@@ -8,7 +8,7 @@ import { TransitionLink } from "gatsby-plugin-transition-link/components/Transit
 
 
 import "./MobileNav.scss";
-import getVariantClasses from "../../helpers/getVariantClass";
+import getVariantClasses from "../../helpers/getVariantClasses";
 
 interface IMobileNavProps {
   variant?: string;

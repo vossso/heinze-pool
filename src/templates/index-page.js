@@ -8,18 +8,19 @@ import logo from "../img/hp-logo_white.png";
 import logo2 from "../img/hp-logo_white-sub.png";
 import hexa from "../img/hexagon_line.png";
 import { Link } from "gatsby";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { CSSTransition } from "react-transition-group";
 // import ReactPlayer from 'react-player'
+import InfoBox from "../components/share/InfoBox/InfoBox";
 
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import "./index-page.scss";
 import useBreakpoint from "../hooks/useBreakpoint";
 
-export const IndexPageTemplate = ({ links }) => {
+export const IndexPageTemplate = ({ links, infoBox }) => {
   const [trans, setTrans] = useState(false);
   const BreakpointM = useBreakpoint("m");
+  const { showInfoBox, title, text, introText } = infoBox || {};
 
   const startAnimation = () => {
     setTrans(true);
@@ -45,6 +46,9 @@ export const IndexPageTemplate = ({ links }) => {
         {BreakpointM ? (
           <>
             <div className="IndexPage__mobile">
+              {trans && showInfoBox && (
+                <InfoBox title={title} text={text} introText={introText} />
+              )}
               <div className="IndexPage__box">
                 <div className={`IndexPage__logo-box`}>
                   <img src={logo} alt="Heinze-Pool" />
@@ -92,13 +96,13 @@ export const IndexPageTemplate = ({ links }) => {
                   links.map((link, index) => {
                     if (index >= 3) {
                       return (
-                        <AnchorLink
+                        <TransitionLink
                           key={index}
                           className="IndexPage__link"
                           to={link.path}
                         >
                           {link.label}
-                        </AnchorLink>
+                        </TransitionLink>
                       );
                     } else return null;
                   })}
@@ -109,6 +113,9 @@ export const IndexPageTemplate = ({ links }) => {
               <div className="IndexPage__hexa-box">
                 <img src={hexa} alt="Heinze-Pool" />
               </div>
+              {trans && showInfoBox && (
+                <InfoBox title={title} text={text} introText={introText} />
+              )}
             </div>
           </CSSTransition>
         )}
@@ -142,14 +149,17 @@ export const IndexPageTemplate = ({ links }) => {
 
 IndexPageTemplate.propTypes = {
   links: PropTypes.array,
+  infoBox: PropTypes.object,
 };
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-
   return (
-    <Layout isIndex={true} >
-      <IndexPageTemplate links={frontmatter.links} />
+    <Layout isIndex={true}>
+      <IndexPageTemplate
+        links={frontmatter.links}
+        infoBox={frontmatter.infoBox}
+      />
     </Layout>
   );
 };
@@ -171,6 +181,12 @@ export const pageQuery = graphql`
         links {
           label
           path
+        }
+        infoBox {
+          showInfoBox
+          title
+          text
+          introText
         }
       }
     }

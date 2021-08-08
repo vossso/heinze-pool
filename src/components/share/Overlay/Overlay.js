@@ -1,5 +1,6 @@
 import React from "react";
-import getVariantClasses from "../../../helpers/getVariantClass";
+import close from "../../../img/icons/close.svg";
+import getVariantClasses from "../../../helpers/getVariantClasses";
 
 import "./Overlay.scss";
 import Container from "../Container/Container";
@@ -18,11 +19,11 @@ const Overlay = ({ title, description, image, variant, onClick }) => {
             <p>{description}</p>
           </div>
           <div className="Overlay__image">
-            <PreviewCompatibleImage imageInfo={image} />
+            <PreviewCompatibleImage imageInfo={image} loading="eager" styles={{objectFit: "contain"}}/>
           </div>
         </div>
         <button className="Overlay__close" onClick={onClick}>
-          <HexaIcon number="X" size="4rem"/>
+          <img className="InfoBox__close-icon" src={close} alt="InfoBox" />
         </button>
       </Container>
     </div>

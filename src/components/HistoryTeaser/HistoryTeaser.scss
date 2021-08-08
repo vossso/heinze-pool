@@ -24,6 +24,7 @@
     }
   }
   &__content {
+    z-index: 2;
     position: relative;
     padding: 0 $padding-xs;
     margin-top: -$margin-m;
@@ -55,11 +56,14 @@
     }
   }
   &__image {
+    z-index: 1;
     min-height: 25rem;
+    overflow: hidden;
     @include respond-to(m) {
-      flex: 1 1 40%;
+      flex: 0 1 60%;
       margin-left: 1rem;
-      min-height: 40rem;
+      // min-height: 40rem;
+      max-height: 50rem;
     }
   }
 }

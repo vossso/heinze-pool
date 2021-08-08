@@ -81,15 +81,18 @@ module.exports = {
       },
     }, // must be after other CSS plugins
     "gatsby-plugin-netlify", // make sure to keep it last in the array
-    {
-      resolve: "gatsby-plugin-anchor-links",
-      options: {
-        offset: -50,
-      },
-    },
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          maxWidth: 2000,
+          quality: 100,
+          backgroundColor: `transparent`,
+        }
+      }
+    },
     `gatsby-transformer-sharp`,
   ],
 };

@@ -8,6 +8,8 @@ import "./Layout.scss";
 import useBreakpoint from "../hooks/useBreakpoint";
 import { TransitionState } from "gatsby-plugin-transition-link";
 import PageTransition from "../components/share/PageTransition/PageTransition";
+import CookieNotice from "./share/CookieNotice/CookieNotice";
+import { VisibilityContextProvider } from "../contexts/VisibilityContext";
 
 const TemplateWrapper = ({ hasFooter = true, children, isIndex = false }) => {
   // if ( window.location.hash ) scroll(0,0);
@@ -61,11 +63,14 @@ const TemplateWrapper = ({ hasFooter = true, children, isIndex = false }) => {
           content={`${withPrefix("/")}img/og-image.jpg`}
         />
       </Helmet>
+      <VisibilityContextProvider>
+        <CookieNotice />
+      </VisibilityContextProvider>
       {isIndex ? (
         <>
           <div>{children}</div>
           <div className="Layout__footer">
-            <a href="/meta/impressum" >Impressum & Datenschutz</a>
+            <a href="/meta/impressum">Impressum & Datenschutz</a>
           </div>
         </>
       ) : (

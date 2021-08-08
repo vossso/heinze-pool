@@ -101,9 +101,13 @@ export const ServicePageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(
+              placeholder: BLURRED
+              formats: [AUTO, WEBP]
+              width: 2000
+              breakpoints: [480,568,800,1024,1280]
+              quality: 100
+            )
           }
         }
         description
@@ -123,9 +127,13 @@ export const ServicePageQuery = graphql`
             alt
             image {
               childImageSharp {
-                fluid(maxWidth: 2048, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(
+                  placeholder: BLURRED
+                  formats: [AUTO, WEBP]
+                  width: 2000
+                  breakpoints: [480,568,800,1024,1280]
+                  quality: 100
+                )
               }
             }
           }

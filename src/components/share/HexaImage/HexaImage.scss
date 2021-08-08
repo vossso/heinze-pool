@@ -12,6 +12,13 @@ $size-l: 25rem;
 
   @include respond-to(s) {
     margin-bottom: 1.5rem;
+
+    &:hover {
+      .HexaImage__poly {
+        image {
+          opacity: 1;
+        }}
+    }
   }
   @include respond-to(m) {
     margin-bottom: 1.8rem;
@@ -20,8 +27,9 @@ $size-l: 25rem;
   &__poly {
     image {
       transform: translateY(-200px) translateX(-100px);
-      opacity: 0.5;
+      opacity: 0.6;
       background-color: $hp-blue;
+      transition: opacity $duration-s;
     }
   }
 

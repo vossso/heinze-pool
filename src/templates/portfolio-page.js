@@ -64,9 +64,13 @@ export const PortfolioPageQuery = graphql`
           imageObject {
             image {
               childImageSharp {
-                fluid(maxWidth: 500, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(
+                  placeholder: BLURRED
+                  formats: [AUTO, WEBP]
+                  width: 1000
+                  breakpoints: [480,568,800,1024,1280]
+                  quality: 100
+                )
               }
             }
             alt

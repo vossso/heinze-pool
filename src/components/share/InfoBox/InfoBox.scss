@@ -1,0 +1,171 @@
+@import "../../../styles/_global.scss";
+@import "../../../styles/media-queries";
+
+.InfoBox {
+  display: block;
+  position: fixed;
+  z-index: 99;
+  height: 100vh;
+  width: 100vw;
+  align-self: center;
+  opacity: 0;
+  background-color: transparent;
+  transition: opacity $duration-m $duration-s, background-color $duration-m;
+
+  pointer-events: none;
+  &__bg {
+    opacity: 0;
+    transition: opacity $duration-m $duration-s;
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $hp-blue;
+    background: -webkit-linear-gradient(
+      rgba($hp-blue, 0.8),
+      rgba($hp-blue, 0.5)
+    );
+    background: linear-gradient(rgba($hp-blue, 1), rgba($hp-blue, 0.8));
+  }
+  &__wrapper {
+    z-index: 99;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 30rem;
+    height: auto;
+    transition: opacity $duration-m $duration-s, width $duration-s;
+    pointer-events: visible;
+
+    &:hover {
+      width: 30.5rem;
+      & .InfoBox__hexa {
+        transform: rotate(-5deg);
+      }
+    }
+    @include respond-to(s) {
+      top: 5%;
+      right: 5%;
+      left: auto;
+      margin: 0;
+    }
+  }
+  &__details {
+    z-index: 99;
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    & .InfoBox__content {
+      position: relative;
+      padding: $padding-s;
+      width: 100%;
+      min-width: 50%;
+      margin: 20% auto;
+      @include respond-to(s) {
+        width: auto;
+        max-width: 20rem;
+        padding: $padding-l;
+        margin: 20% auto;
+      }
+    }
+    & .InfoBox__close {
+      position: absolute;
+      top: 5%;
+      right: 2%;
+    }
+  }
+  &__hexa {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    transform: rotate(90deg);
+    transition: transform $duration-m;
+  }
+  &__content {
+    z-index: 2;
+    position: relative;
+    padding: $padding-l/2 $padding-m;
+  }
+  &__title,
+  &__text {
+    color: #fff;
+    text-align: center;
+  }
+  &__text {
+    font-size: $fs-s;
+    @include respond-to(s) {
+      font-size: $fs-p-mobile;
+    }
+  }
+  &__button {
+    width: 100%;
+    cursor: pointer;
+    transition: transform $duration-s;
+  }
+  &__arrow-icon {
+    margin-left: $margin-s;
+    width: 2rem;
+  }
+  &__close {
+    z-index: 3;
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    cursor: pointer;
+
+    &-icon {
+      width: 2rem;
+      height: auto;
+    }
+  }
+
+  &--visible {
+    opacity: 1;
+
+    & .InfoBox__hexa {
+      transform: rotate(0deg);
+    }
+  }
+  &--open {
+    pointer-events: visible;
+    background-color: $hp-blue-3;
+    & .InfoBox__bg {
+      opacity: 0;
+
+      @include respond-to(s) {
+        opacity: 1;
+      }
+    }
+    & .InfoBox__details {
+      display: block;
+    }
+    & .InfoBox__wrapper {
+      opacity: 0;
+      width: 100vw;
+
+      & .InfoBox__content {
+        opacity: 0;
+      }
+      & .InfoBox__hexa {
+        transform: rotate(-105deg);
+      }
+      &:hover {
+        width: 100vw;
+        & .InfoBox__hexa {
+          transform: rotate(0);
+        }
+      }
+    }
+  }
+}

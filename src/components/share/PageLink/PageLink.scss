@@ -1,0 +1,19 @@
+@import "../../styles/_extends";
+
+.PageLink {
+  &__styled-link {
+    a,
+    button {
+      @extend %link;
+      font-weight: $fw-regular;
+      color: $hp-blue;
+      margin-right: $margin-l;
+      -webkit-transition: all $duration-s;
+      -moz-transition: all $duration-s;
+      -ms-transition: all $duration-s;
+      -o-transition: all $duration-s;
+      transition: all $duration-s;
+      cursor: pointer;
+    }
+  }
+}

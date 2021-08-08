@@ -1,0 +1,51 @@
+@import "../../../styles/global";
+@import "../../../styles/media-queries";
+
+.CookieNotice {
+  background-color: rgba($color: $hp-white, $alpha: 0.9);
+  width: auto;
+  border: transparent;
+  border-radius: 3rem;
+  margin: 0 10% 2rem;
+  @include respond-to(l) {
+    border-radius: 10rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: $padding-s;
+    @include respond-to(m) {
+      padding: $padding-xs $padding-xs;
+    }
+    @include respond-to(l) {
+      flex-direction: row;
+    }
+  }
+  &__text {
+    flex: 0 1 auto;
+    @include respond-to(l) {
+      margin: 0 $margin-m;
+    }
+
+    > span {
+      font-family: $hp-ff;
+      font-size: $fs-s;
+    }
+    > a {
+      text-transform: none;
+      margin-left: $padding-xs;
+      font-size: $fs-s;
+
+    }
+  }
+  &__buttons {
+    flex: 1 0 auto;
+    margin-top: $margin-m;
+    @include respond-to(l) {
+      margin-top: 0;
+    }
+  }
+}

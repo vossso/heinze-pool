@@ -1,0 +1,40 @@
+@import "../../../styles/_global";
+@import "../../../styles/_extends";
+@import "../../../styles/media-queries";
+
+.Button {
+  border-radius: 20rem;
+  background-color:  $hp-white;
+  box-shadow: $bs-standard;
+
+  text-transform: uppercase;
+  color: $hp-blue;
+  font-family: $hp-ff;
+  font-size: $fs-s;
+
+  width: 100%;
+  padding: $padding-s/2 $padding-m;
+  margin-bottom: $margin-s;
+
+  @include respond-to(m) {
+    width: auto;
+    margin: 0;
+    margin-right: $margin-m;
+  }
+
+  transition: background-color $duration-s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $hp-light-gray;
+  }
+
+  &--dark {
+    color: $hp-white;
+    background-color: $hp-blue-2;
+
+    &:hover {
+      background-color: #055699;
+    }
+  }
+}

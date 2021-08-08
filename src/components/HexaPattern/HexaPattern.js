@@ -19,7 +19,7 @@ const HexaPattern = ({ imageList }) => {
       imageList.length > 0 ? Math.ceil(imageList.length / 3) : 5;
     const pattern = BreakpointL
       ? [mobileSize, mobileSize, mobileSize]
-      : [2, 2, 2, 2, 2, 2];
+      : [2, 2, 2, 2, 2, 2, 2];
 
     imageList &&
       imageList.forEach((element, index) => {

@@ -71,5 +71,23 @@ imageTeasers:
     imageObject:
       alt: GFK Novastone grau Carbonschicht Schwimmbecken
       image: /img/Projekt-11.jpg
+  - description: >-
+      490 x 200 x 140 cm | Farbe: Grau | Material: Polypropylen
+    title: ""
+    imageObject:
+      alt: Polypropylen grau Schwimmbecken
+      image: /img/Projekt-12.jpg
+  - description: >-
+      500 x 210 x 140 cm | Farbe: Sand | Material: Polypropylen
+    title: ""
+    imageObject:
+      alt: Polypropylen Sand Schwimmbecken
+      image: /img/Projekt-13.jpg
+  - description: >-
+      500 x 210 x 140 cm | Farbe: Sand | Material: Polypropylen
+    title: ""
+    imageObject:
+      alt: Polypropylen Sand Schwimmbecken
+      image: /img/Projekt-14.jpg
 ---
 
