@@ -75,7 +75,6 @@ export const PortfolioPageQuery = graphql`
             }
             alt
           }
-          title
           description
         }
       }

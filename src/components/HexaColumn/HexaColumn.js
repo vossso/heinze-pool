@@ -8,13 +8,10 @@ const HexaColumn = ({ elements }) => {
     return (
       <>
         {elements.map((element, index) => {
-            const {title, description, imageObject} = element;
+          const { description, imageObject } = element;
           return (
-            <div
-            className="HexaColumn__element"
-              key={index}
-            >
-              <HexaImage title={title} description={description} imageInfo={imageObject} />
+            <div className="HexaColumn__element" key={index}>
+              <HexaImage description={description} imageInfo={imageObject} />
             </div>
           );
         })}
