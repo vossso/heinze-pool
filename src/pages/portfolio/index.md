@@ -55,11 +55,11 @@ imageTeasers:
     imageObject:
       alt: Polypropylen grau Schwimmbecken
       image: /img/Projekt-12.jpg
-  - description: '500 x 210 x 140 cm | Farbe: Sand | Material: Polypropylen'
+  - description: '900 x 360 x 150 cm | Farbe: Hellgrau | Material: Polypropylen'
     imageObject:
       alt: Polypropylen Sand Schwimmbecken
       image: /img/Projekt-13.jpg
-  - description: '500 x 210 x 140 cm | Farbe: Sand | Material: Polypropylen'
+  - description: '850 x 375 x 150 cm | Farbe: Sand | Material: Styroporstein mit Folie'
     imageObject:
       alt: Polypropylen Sand Schwimmbecken
       image: /img/Projekt-14.jpg
