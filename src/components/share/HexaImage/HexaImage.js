@@ -4,11 +4,12 @@ import "./HexaImage.scss";
 import Overlay from "../Overlay/Overlay";
 import Hexagon from "react-hexagon";
 import { CSSTransition } from "react-transition-group";
-import {  getImage } from "gatsby-plugin-image";
+import { getImage } from "gatsby-plugin-image";
 
-const HexaImage = ({ title, description, imageInfo }) => {
+const HexaImage = ({ description, imageInfo }) => {
   const [showOverlay, setShowOverlay] = useState(false);
-  const imgagePath = imageInfo.image && getImage(imageInfo.image).images.fallback.src
+  const imgagePath =
+    imageInfo.image && getImage(imageInfo.image).images.fallback.src;
 
   const onClick = () => {
     setShowOverlay(!showOverlay);
@@ -34,7 +35,6 @@ const HexaImage = ({ title, description, imageInfo }) => {
           unmountOnExit
         >
           <Overlay
-            title={title}
             image={imageInfo}
             description={description}
             onClick={onClick}

@@ -82,7 +82,6 @@ collections:
                         { label: Keywords, name: alt, widget: string },
                       ],
                   },
-                  { label: Foto-Titel, name: title, widget: string },
                   { label: Beschreibung, name: description, widget: text },
                 ],
             }
