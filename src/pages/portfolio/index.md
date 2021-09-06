@@ -9,10 +9,6 @@ imageTeasers:
     imageObject:
       alt: Polypropylen Sand Schwimmbecken
       image: /img/Projekt-01.jpg
-  - description: 'Größe: 750 x 370 x 150 cm | Farbe: Dunkelblau | Material: Polypropylen'
-    imageObject:
-      alt: Polypropylen Dunkelblau Schwimmbecken
-      image: /img/Projekt-02.jpg
   - description: 'Größe: 1000 x 360 x 150 | Farbe: Weiß | Material: Polypropylen'
     imageObject:
       alt: Polypropylen Weiß Schwimmbecken
