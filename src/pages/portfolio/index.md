@@ -59,5 +59,9 @@ imageTeasers:
     imageObject:
       alt: Polypropylen Sand Schwimmbecken
       image: /img/Projekt-14.jpg
+  - description: '900 x 370 x 150 cm | Farbe: Grau | Material: Polypropylen'
+    imageObject:
+      alt: Polypropylen Pool grau
+      image: /img/webseite.jpg
 ---
 
