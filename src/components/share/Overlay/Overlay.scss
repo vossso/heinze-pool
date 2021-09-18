@@ -50,8 +50,12 @@
     height: 100%;
 
     > div {
-      height: auto;
-      width: auto;
+      height: 100%;
+      width: 100%;
+    }
+
+    & img {
+      object-fit: contain;
     }
     @include respond-to(l) {
       margin-left: $spacer-m;
