@@ -35,7 +35,7 @@ const ProductOverview = ({ primeProducts, secondProducts }) => {
           })}
           {secondProducts.length > 0 && (
             <ProductOverviewElement
-              title="Weitere"
+              title="Sonstige"
               description={secondIntro[0]}
               image={dots}
             />
