@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import "./Stage.scss";
 import Container from "../share/Container/Container";
 import useBreakpoint from "../../hooks/useBreakpoint";
-import Img from "gatsby-image";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const Stage = ({ image, title, isStarter = true, description = null }) => {
@@ -15,7 +14,20 @@ const Stage = ({ image, title, isStarter = true, description = null }) => {
     <div className="Stage">
       {image && (
         <div className="Stage__image">
-          <GatsbyImage image={getImage(image)} style={{position: "relative", height: "100%", width: "100vw"}} fadeIn={true} alt={title}/> 
+          {getImage(image) ? (
+            <GatsbyImage
+              image={getImage(image)}
+              style={{ position: "relative", height: "100%", width: "100vw" }}
+              fadeIn={true}
+              alt={title}
+            />
+          ) : (
+            <img
+              style={{ position: "relative", height: "100%", width: "100vw" }}
+              src={image}
+              alt={title}
+            />
+          )}
         </div>
       )}
 

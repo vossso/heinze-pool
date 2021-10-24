@@ -431,7 +431,12 @@ collections:
             [
               { label: Logo, name: image, widget: image },
               { label: Name, name: name, widget: string },
-              { label: Webseitenlinnk, name: link, widget: string },
+              {
+                label: Webseitenlink,
+                name: link,
+                widget: string,
+                required: false,
+              },
             ],
         }
 
