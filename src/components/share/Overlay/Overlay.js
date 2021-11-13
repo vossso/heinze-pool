@@ -21,6 +21,7 @@ const Overlay = ({ description, image, variant, onClick }) => {
               imageInfo={image}
               loading="eager"
               styles={{ objectFit: "contain" }}
+              objectFit="contain"
             />
           </div>
         </div>
