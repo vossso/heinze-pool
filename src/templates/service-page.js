@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
@@ -66,7 +66,7 @@ const ServicePage = ({ data }) => {
     } else {
       setWhiteArrow(false);
     }
-  }, [currentScrollY]);
+  }, [currentScrollY, BreakpointM]);
 
   return (
     <Layout>
@@ -105,7 +105,7 @@ export const ServicePageQuery = graphql`
               placeholder: BLURRED
               formats: [AUTO, WEBP]
               width: 2000
-              breakpoints: [480,568,800,1024,1280]
+              breakpoints: [480, 568, 800, 1024, 1280]
               quality: 100
             )
           }
@@ -131,7 +131,7 @@ export const ServicePageQuery = graphql`
                   placeholder: BLURRED
                   formats: [AUTO, WEBP]
                   width: 2000
-                  breakpoints: [480,568,800,1024,1280]
+                  breakpoints: [480, 568, 800, 1024, 1280]
                   quality: 100
                 )
               }

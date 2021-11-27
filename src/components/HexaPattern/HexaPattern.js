@@ -5,45 +5,77 @@ import "./HexaPattern.scss";
 
 import HexaColumn from "../HexaColumn/HexaColumn";
 import useBreakpoint from "../../hooks/useBreakpoint";
+import hexaPatternDivisions from "./HexaPatternDivisions";
 
 const HexaPattern = ({ imageList }) => {
+  const listLength = imageList.length;
   const [content, setContent] = useState(() => null);
-
+  const BreakpointXL = useBreakpoint("xl");
   const BreakpointL = useBreakpoint("l");
+  const BreakpointM = useBreakpoint("m");
+  const BreakpointS = useBreakpoint("s");
+  const [pattern, setPattern] = useState([]);
+  const [styling, setStyling] = useState([]);
+  const { divisions, stylings } = hexaPatternDivisions;
+
+  const mobileDivsion = BreakpointS ? 3 : 4;
+
+  const mobileSize = Math.ceil(listLength / mobileDivsion);
+  console.log(mobileDivsion, mobileSize);
+
+  const padding = BreakpointS
+    ? 11 / 2
+    : BreakpointM
+    ? 150 / 2
+    : BreakpointXL
+    ? 16 / 2
+    : 20 / 2;
+  const getPadding = (count) => {
+    return { paddingTop: `${count * padding}rem` };
+  };
 
   useEffect(() => {
-    var all = [];
-    var column = [];
-    var i = 0;
-    const mobileSize =
-      imageList.length > 0 ? Math.ceil(imageList.length / 3) : 5;
-    const pattern = BreakpointL
-      ? [mobileSize, mobileSize, mobileSize]
-      : [2, 2, 2, 2, 2, 2, 2];
+    setPattern(
+      BreakpointL
+        ? [mobileSize, mobileSize, mobileSize, mobileSize]
+        : divisions[listLength - 1]
+    );
+    BreakpointL
+      ? setStyling([1, 0, 1, 0])
+      : setStyling(stylings[listLength - 1]);
+  }, [BreakpointL]);
 
-    imageList &&
-      imageList.forEach((element, index) => {
-        if (index % pattern[i] === 0 && index !== 0) {
-          all.push(column);
-          column = [element];
-          i = i + 1;
-        } else if (index === imageList.length - 1 && column.length > 0) {
-          column.push(element);
-          all.push(column);
-        } else {
-          column.push(element);
+  useEffect(() => {
+    const imageListCopy = [...imageList];
+    let sorted = [];
+    pattern &&
+      pattern.map((column, index) => {
+        sorted[index] = [];
+        for (let i = 0; i < column; i++) {
+          const element = imageListCopy.pop();
+          element && sorted[index].push(element);
         }
       });
-    setContent(() =>
-      all.map((element, index) => (
-        <div className="HexaPattern__column" key={index}>
-          <HexaColumn elements={element} />
-        </div>
-      ))
+    setContent(
+      () =>
+        sorted &&
+        sorted.map((column, index) => {
+          return (
+            column.length > 0 && (
+              <div
+                className="HexaPattern__column"
+                style={styling && getPadding(styling[index])}
+                key={index}
+              >
+                <HexaColumn elements={column} />
+              </div>
+            )
+          );
+        })
     );
-  }, [imageList, BreakpointL]);
+  }, [pattern, imageList]);
 
-  return imageList ? (
+  return listLength ? (
     <div className="HexaPattern">
       <div className="HexaPattern__content">{content}</div>
     </div>

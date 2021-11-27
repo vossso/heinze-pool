@@ -4,10 +4,10 @@ import HexaImage from "../share/HexaImage/HexaImage";
 import "./HexaColumn.scss";
 
 const HexaColumn = ({ elements }) => {
-  const getContent = () => {
-    return (
-      <>
-        {elements.map((element, index) => {
+  return (
+    <div className="HexaColumn">
+      {elements &&
+        elements.map((element, index) => {
           const { description, imageObject } = element;
           return (
             <div className="HexaColumn__element" key={index}>
@@ -15,10 +15,8 @@ const HexaColumn = ({ elements }) => {
             </div>
           );
         })}
-      </>
-    );
-  };
-  return <div className="HexaColumn">{getContent()}</div>;
+    </div>
+  );
 };
 
 export default HexaColumn;
