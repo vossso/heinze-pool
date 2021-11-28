@@ -17,7 +17,7 @@ const TemplateWrapper = ({ hasFooter = true, children, isIndex = false }) => {
   const BreakpointM = useBreakpoint("l");
 
   return (
-    <div>
+    <div className="Layout">
       <Helmet>
         <html lang="en" data-react-helmet="lang" />
         <title>{title}</title>
@@ -75,17 +75,19 @@ const TemplateWrapper = ({ hasFooter = true, children, isIndex = false }) => {
         </>
       ) : (
         <>
-          <Navbar />
-          <div>{children}</div>
-          {hasFooter ? (
-            <Footer />
-          ) : (
-            !BreakpointM && (
-              <div className="Layout__footer">
-                <a href="/meta/impressum">Impressum & Datenschutz</a>
-              </div>
-            )
-          )}
+          <div id="PageContent">
+            <Navbar />
+            <div>{children}</div>
+            {hasFooter ? (
+              <Footer />
+            ) : (
+              !BreakpointM && (
+                <div className="Layout__footer">
+                  <a href="/meta/impressum">Impressum & Datenschutz</a>
+                </div>
+              )
+            )}
+          </div>
           <TransitionState>
             {({ transitionStatus }) => {
               return <PageTransition transitionStatus={transitionStatus} />;

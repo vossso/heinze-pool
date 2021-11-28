@@ -65,7 +65,6 @@ const GoogleMap: React.FC<IGoogleMap> = ({ address }) => {
         },
       });
     }
-    console.log(ref);
   }, [currentPos, isMaxVpS]);
 
   google &&

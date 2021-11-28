@@ -20,7 +20,6 @@ const Overlay = ({
   const [description, setDescription] = useState("");
 
   useEffect(() => {
-    console.log(content);
     if (content) {
       content.imageObject && setImage(content.imageObject);
       setDescription(content.description);
