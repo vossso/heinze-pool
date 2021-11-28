@@ -67,6 +67,11 @@
     right: $margin-s;
     z-index: 2;
     cursor: pointer;
+    transition: transform $duration-s;
+
+    &:hover {
+      transform: rotate(90deg);
+    }
 
     > .HexaIcon h3 {
       font-size: $fs-h3-mobile;
@@ -76,6 +81,37 @@
     @include respond-to(l) {
       top: $margin-l;
       right: $margin-l;
+    }
+  }
+  &__arrow {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 3%;
+    cursor: pointer;
+    padding: 0;
+
+    background-color: #fff;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    transition: transform $duration-m;
+
+    &:hover {
+      transform: translateX(1rem);
+    }
+
+    img {
+      width: 3rem;
+    }
+    &--prev {
+      right: auto;
+      left: 3%;
+      transform: rotate(180deg);
+      margin-top: -0.3rem;
+      &:hover {
+        transform: translateX(-1rem) rotate(180deg);
+      }
     }
   }
 }
