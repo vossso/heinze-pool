@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { createRef, useEffect, useState } from "react";
 import { TransitionLink } from "gatsby-plugin-transition-link/components/TransitionLink";
 import Layout from "../components/Layout";
 
@@ -11,6 +11,8 @@ import { Link } from "gatsby";
 import { CSSTransition } from "react-transition-group";
 // import ReactPlayer from 'react-player'
 import InfoBox from "../components/share/InfoBox/InfoBox";
+import lottie from "lottie-web";
+import drop from "../img/animation/drop.json";
 
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
@@ -19,17 +21,38 @@ import useBreakpoint from "../hooks/useBreakpoint";
 
 export const IndexPageTemplate = ({ links, infoBox }) => {
   const [trans, setTrans] = useState(false);
+  const [imageLayer, setImageLayer] = useState(true);
+  const [logoLayer, setLogoLayer] = useState(true);
+  const [menuLayer, setMenuLayer] = useState(false);
   const BreakpointM = useBreakpoint("m");
   const { showInfoBox, title, text, introText } = infoBox || {};
 
   const startAnimation = () => {
-    setTrans(true);
+    setImageLayer(false);
+    setLogoLayer(true);
+    setTimeout(() => {
+      setLogoLayer(false);
+      setMenuLayer(true);
+    }, 2000);
   };
 
   useEffect(() => {
     setTimeout(() => {
       BreakpointM && setTrans(true);
     }, 5000);
+  }, []);
+
+  let animationContainer = createRef();
+  useEffect(() => {
+    const anim = lottie.loadAnimation({
+      container: animationContainer.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path:
+        "https://labs.nearpod.com/bodymovin/demo/markus/isometric/markus2.json",
+    });
+    return () => anim.destroy(); // optional clean up for unmounting
   }, []);
 
   return (
@@ -46,7 +69,7 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
         {BreakpointM ? (
           <>
             <div className="IndexPage__mobile">
-              {trans && showInfoBox && (
+              {menuLayer && showInfoBox && (
                 <InfoBox title={title} text={text} introText={introText} />
               )}
               <div className="IndexPage__box">
@@ -68,7 +91,7 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
           </>
         ) : (
           <CSSTransition
-            in={trans}
+            in={menuLayer}
             timeout={300}
             classNames="fadeIn"
             unmountOnExit
@@ -121,7 +144,21 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
         )}
       </div>
       <CSSTransition
-        in={!trans}
+        in={logoLayer}
+        timeout={300}
+        classNames="fadeIn-late"
+        unmountOnExit
+        mountOnEnter
+      >
+        <div className="IndexPage__dropLayer">
+          <div
+            className="animation-container IndexPage__drop"
+            ref={animationContainer}
+          />
+        </div>
+      </CSSTransition>
+      <CSSTransition
+        in={imageLayer}
         timeout={300}
         classNames="fadeIn-late"
         unmountOnExit
@@ -131,9 +168,8 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
           <img className="IndexPage__image" src={starterImg} alt="Harz Pool" />
         </div>
       </CSSTransition>
-
       <CSSTransition
-        in={!trans}
+        in={imageLayer}
         timeout={300}
         classNames="moveup"
         unmountOnExit

@@ -32,8 +32,9 @@
     "gatsby-transformer-sharp": "3.1.0",
     "lodash": "4.17.15",
     "lodash-webpack-plugin": "0.11.4",
+    "lottie-web": "5.8.1",
     "markdown-to-jsx": "7.1.0",
-    "netlify": "^7.0.1",
+    "netlify": "7.0.1",
     "netlify-cms-app": "2.9.6",
     "netlify-cms-lib-util": "^2.12.3",
     "netlify-cms-lib-widgets": "1.6.0",
@@ -42,6 +43,7 @@
     "prop-types": "15.6.0",
     "react": "16.8.4",
     "react-animate-height": "2.0.23",
+    "react-bodymovin": "2.0.0",
     "react-cookie": "^4.0.3",
     "react-dom": "16.8.4",
     "react-ga": "3.3.0",
@@ -60,7 +62,7 @@
     "style-value-types": "4.1.4",
     "styled-components": "5.2.1",
     "uuid": "3.4.0",
-    "webpack": "4.44.2",
+    "webpack": "5.64.4",
     "yoga-layout-prebuilt": "^1.10.0"
   },
   "keywords": [
