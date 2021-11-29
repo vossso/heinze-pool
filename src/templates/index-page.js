@@ -22,18 +22,15 @@ import useBreakpoint from "../hooks/useBreakpoint";
 export const IndexPageTemplate = ({ links, infoBox }) => {
   const [trans, setTrans] = useState(false);
   const [imageLayer, setImageLayer] = useState(true);
-  const [logoLayer, setLogoLayer] = useState(true);
   const [menuLayer, setMenuLayer] = useState(false);
   const BreakpointM = useBreakpoint("m");
   const { showInfoBox, title, text, introText } = infoBox || {};
 
   const startAnimation = () => {
     setImageLayer(false);
-    setLogoLayer(true);
     setTimeout(() => {
-      setLogoLayer(false);
       setMenuLayer(true);
-    }, 2000);
+    }, 800);
   };
 
   useEffect(() => {
@@ -144,25 +141,10 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
         )}
       </div>
       <CSSTransition
-        in={logoLayer}
-        timeout={300}
-        classNames="fadeIn-late"
-        unmountOnExit
-        mountOnEnter
-      >
-        <div className="IndexPage__dropLayer">
-          <div
-            className="animation-container IndexPage__drop"
-            ref={animationContainer}
-          />
-        </div>
-      </CSSTransition>
-      <CSSTransition
         in={imageLayer}
-        timeout={300}
+        timeout={3000}
         classNames="fadeIn-late"
         unmountOnExit
-        mountOnEnter
       >
         <div className={`IndexPage__intro`}>
           <img className="IndexPage__image" src={starterImg} alt="Harz Pool" />
