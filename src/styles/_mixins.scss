@@ -66,12 +66,12 @@
 }
 .fadeIn-late-exit-active {
   opacity: 0;
-  transform: scale(10);
-  -webkit-transition: opacity 1s, transform 5s;
-  -moz-transition: opacity 1s, transform 5s;
-  -ms-transition: opacity 1s, transform 5s;
-  -o-transition: opacity 1s, transform 5s;
-  transition: opacity 1s, transform 5s;
+  transform: scale(20) translate(10px, -200px);
+  -webkit-transition: opacity 4.5s 0.5s, transform 5s;
+  -moz-transition: opacity 4.5s 0.5s, transform 5s;
+  -ms-transition: opacity 4.5s 0.5s, transform 5s;
+  -o-transition: opacity 4.5s 0.5s, transform 5s;
+  transition: opacity 4.5s 0.5s, transform 5s;
 }
 
 .fadeOut-enter {

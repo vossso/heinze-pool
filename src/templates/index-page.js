@@ -30,7 +30,7 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
     setImageLayer(false);
     setTimeout(() => {
       setMenuLayer(true);
-    }, 800);
+    }, 3000);
   };
 
   useEffect(() => {
