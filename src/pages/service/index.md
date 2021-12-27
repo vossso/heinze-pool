@@ -3,11 +3,11 @@ templateKey: service-page
 title: Leistungen
 image: /img/Service_stage.jpg
 description: >-
-  Seit über 50 Jahren bieten wir Ihnen aus unserem Standort in Hannover ein
-  umfassendes Dienstleistungsspektrum rund um das Thema Pool. Hierbei
-  unterstützen wir Sie vor, während und nach dem Poolbau in Rat und Tat. 
-  Verschaffen Sie sich nachfolgend einen detaillierten Überblick über unser
-  Leistungs- und Serviceangebot:
+  Wir bieten Ihnen aus unserem Standort in Hannover ein umfassendes
+  Dienstleistungsspektrum rund um das Thema Pool. Hierbei unterstützen wir Sie
+  vor, während und nach dem Poolbau in Rat und Tat.  Verschaffen Sie sich
+  nachfolgend einen detaillierten Überblick über unser Leistungs- und
+  Serviceangebot:
 sOverview:
   - alt: Swimmingpoolbau
     title: Poolbau
