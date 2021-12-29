@@ -1,21 +1,14 @@
 import React, { createRef, useEffect, useState } from "react";
 import { TransitionLink } from "gatsby-plugin-transition-link/components/TransitionLink";
-import Layout from "../components/Layout";
-
-import bgImage from "../img/water.jpg";
-import starterImg from "../img/Start.jpg";
-import logo from "../img/hp-logo_white.png";
-import logo2 from "../img/hp-logo_white-sub.png";
-import hexa from "../img/hexagon_line.png";
-import { Link } from "gatsby";
 import { CSSTransition } from "react-transition-group";
-// import ReactPlayer from 'react-player'
-import InfoBox from "../components/share/InfoBox/InfoBox";
-import lottie from "lottie-web";
-import drop from "../img/animation/drop.json";
-
+import { Link } from "gatsby";
+import Layout from "../components/Layout";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
+import lottie from "lottie-web";
+import { StaticImage } from "gatsby-plugin-image";
+
+import InfoBox from "../components/share/InfoBox/InfoBox";
 import "./index-page.scss";
 import useBreakpoint from "../hooks/useBreakpoint";
 
@@ -37,7 +30,7 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
     setTimeout(() => {
       BreakpointM && setTrans(true);
     }, 5000);
-  }, []);
+  }, [BreakpointM]);
 
   let animationContainer = createRef();
   useEffect(() => {
@@ -60,8 +53,11 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
     >
       <div className="IndexPage__content">
         <div className="IndexPage__bg-image">
-          <img className="IndexPage__image" src={bgImage} alt="Poolwasser" />
-          {/* <ReactPlayer url='https://www.youtube.com/watch?v=qwz88S1P0os' playing muted loop width= "100%" height="100vh"/> */}
+          <StaticImage
+            src="../img/water.webp"
+            width={`${BreakpointM ? "2300" : "300"}`}
+            className="IndexPage__image"
+          />
         </div>
         {BreakpointM ? (
           <>
@@ -71,10 +67,11 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
               )}
               <div className="IndexPage__box">
                 <div className={`IndexPage__logo-box`}>
-                  <img src={logo} alt="Heinze-Pool" />
-                </div>
-                <div className="IndexPage__hexa-box">
-                  <img src={hexa} alt="Heinze-Pool" />
+                  <StaticImage
+                    src="../img/hp-logo_white.png"
+                    width="360"
+                    alt="Heinze-Pool"
+                  />
                 </div>
               </div>
               {links.map((link, index) => {
@@ -128,10 +125,18 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
                   })}
               </div>
               <div className={`IndexPage__logo-box`}>
-                <img src={logo} alt="Heinze-Pool" />
+                <StaticImage
+                  src="../img/hp-logo_white.png"
+                  width="800"
+                  alt="Heinze-Pool"
+                />
               </div>
               <div className="IndexPage__hexa-box">
-                <img src={hexa} alt="Heinze-Pool" />
+                <StaticImage
+                  src="../img/hexagon_line.png"
+                  width="850"
+                  alt="Heinze-Pool"
+                />
               </div>
               {trans && showInfoBox && (
                 <InfoBox title={title} text={text} introText={introText} />
@@ -147,7 +152,13 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
         unmountOnExit
       >
         <div className={`IndexPage__intro`}>
-          <img className="IndexPage__image" src={starterImg} alt="Harz Pool" />
+          {/* <img className="IndexPage__image" src={starterImg} alt="Harz Pool" /> */}
+          <StaticImage
+            className="IndexPage__image"
+            src="../img/Start.webp"
+            width="2800"
+            alt="Harz Pool"
+          />
         </div>
       </CSSTransition>
       <CSSTransition
@@ -158,7 +169,12 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
         mountOnEnter
       >
         <div className="IndexPage__logo">
-          <img src={logo2} alt="Heinze-Pool" />
+          {/* <img src={logo2} alt="Heinze-Pool" /> */}
+          <StaticImage
+            src="../img/hp-logo_white-sub.png"
+            width="400"
+            alt="Heinze-Pool"
+          />
         </div>
       </CSSTransition>
     </div>
