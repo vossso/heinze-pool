@@ -68,7 +68,7 @@ const AboutPage = ({ data }) => {
     } else {
       setWhiteArrow(false);
     }
-  }, [currentScrollY]);
+  }, [currentScrollY, BreakpointM]);
 
   return (
     <Layout>

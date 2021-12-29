@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "gatsby";
-import bgImage from "../../img/water.webp";
-import logo from "../../img/Logo-line_white.png";
 import AnimateHeight from "react-animate-height";
 import useWindowLocation from "../../hooks/useWindowLocation";
 import { TransitionLink } from "gatsby-plugin-transition-link/components/TransitionLink";
+import { StaticImage } from "gatsby-plugin-image";
 
 import "./MobileNav.scss";
 import getVariantClasses from "../../helpers/getVariantClasses";
@@ -51,7 +49,11 @@ const MobileNav: React.FC<IMobileNavProps> = ({ variant }) => {
       ) : (
         <div className={`MobileNav__wrapper`}>
           <div className="MobileNav__bg-image">
-            <img src={bgImage} alt="Poool" />
+            <StaticImage
+              src="../../img/water.webp"
+              height={600}
+              alt="Heinze-Pool"
+            />
           </div>
           <button
             className="MobileNav__close"
@@ -61,7 +63,14 @@ const MobileNav: React.FC<IMobileNavProps> = ({ variant }) => {
           </button>
           <div className="MobileNav__content">
             <div className="MobileNav__logo">
-              {getLink("/", <img src={logo} alt="Poool" />)}
+              {getLink(
+                "/",
+                <StaticImage
+                  src="../../img/Logo-line_white.png"
+                  height={300}
+                  alt="Heinze-Pool"
+                />
+              )}
             </div>
             {getLink("/service", "Leistungen")}
             <div className="MobileNav__ext">

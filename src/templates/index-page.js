@@ -43,7 +43,7 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
         "https://labs.nearpod.com/bodymovin/demo/markus/isometric/markus2.json",
     });
     return () => anim.destroy(); // optional clean up for unmounting
-  }, []);
+  }, [animationContainer]);
 
   return (
     <div
@@ -55,7 +55,7 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
         <div className="IndexPage__bg-image">
           <StaticImage
             src="../img/water.webp"
-            width="2300"
+            width={2300}
             className="IndexPage__image"
           />
         </div>
@@ -69,7 +69,7 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
                 <div className={`IndexPage__logo-box`}>
                   <StaticImage
                     src="../img/hp-logo_white.png"
-                    width="360"
+                    width={360}
                     alt="Heinze-Pool"
                   />
                 </div>
@@ -127,14 +127,14 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
               <div className={`IndexPage__logo-box`}>
                 <StaticImage
                   src="../img/hp-logo_white.png"
-                  width="800"
+                  width={800}
                   alt="Heinze-Pool"
                 />
               </div>
               <div className="IndexPage__hexa-box">
                 <StaticImage
                   src="../img/hexagon_line.png"
-                  width="850"
+                  width={850}
                   alt="Heinze-Pool"
                 />
               </div>
@@ -152,12 +152,12 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
         unmountOnExit
       >
         <div className={`IndexPage__intro`}>
-          {/* <img className="IndexPage__image" src={starterImg} alt="Harz Pool" /> */}
           <StaticImage
             className="IndexPage__image"
             src="../img/Start.webp"
-            width="2800"
+            width={2800}
             alt="Harz Pool"
+            blurredOptions
           />
         </div>
       </CSSTransition>
@@ -169,10 +169,9 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
         mountOnEnter
       >
         <div className="IndexPage__logo">
-          {/* <img src={logo2} alt="Heinze-Pool" /> */}
           <StaticImage
             src="../img/hp-logo_white-sub.png"
-            width="400"
+            width={400}
             alt="Heinze-Pool"
           />
         </div>
