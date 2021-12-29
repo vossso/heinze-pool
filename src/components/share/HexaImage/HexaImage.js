@@ -16,6 +16,7 @@ const HexaImage = ({ imageInfo, index }) => {
         onClick={() => {
           onClick(index);
         }}
+        aria-label="Show Project"
       >
         <Hexagon
           className="HexaImage__poly"
