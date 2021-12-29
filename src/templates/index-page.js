@@ -55,7 +55,7 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
         <div className="IndexPage__bg-image">
           <StaticImage
             src="../img/water.webp"
-            width={`${BreakpointM ? "2300" : "300"}`}
+            width="2300"
             className="IndexPage__image"
           />
         </div>
