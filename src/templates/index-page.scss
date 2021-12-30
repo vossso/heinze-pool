@@ -46,6 +46,7 @@
   }
 
   &__bg-image {
+    cursor: pointer;
     background: $hp-blue;
     background: -webkit-linear-gradient(
       rgba($hp-blue, 0.8),
@@ -169,6 +170,7 @@
   }
 
   &__logo {
+    cursor: pointer;
     z-index: 3;
     position: absolute;
     top: 0;
@@ -203,16 +205,17 @@
       width: 40rem;
     }
     @include respond-to(xxl) {
-      top: 10%;
+      top: 0;
       left: 10%;
       height: 40rem;
       width: 40rem;
 
-      > img {
+      > div {
         width: 100%;
         height: auto;
         padding: 0;
         object-fit: contain;
+        max-width: 40rem;
       }
     }
   }
@@ -255,6 +258,9 @@
     width: 20rem;
   }
 }
-.Layout__footer > a {
-  color: $hp-white;
+.Layout__footer {
+  z-index: 3;
+  > a {
+    color: $hp-white;
+  }
 }

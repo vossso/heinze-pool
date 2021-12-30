@@ -60,94 +60,100 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
             placeholder="none"
           />
         </div>
-        {BreakpointM ? (
-          <>
-            <div className="IndexPage__mobile">
-              {menuLayer && showInfoBox && (
-                <InfoBox title={title} text={text} introText={introText} />
-              )}
-              <div className="IndexPage__box">
+        {!imageLayer &&
+          (BreakpointM ? (
+            <>
+              <div className="IndexPage__mobile">
+                {menuLayer && showInfoBox && (
+                  <InfoBox title={title} text={text} introText={introText} />
+                )}
+                <div className="IndexPage__box">
+                  <div className={`IndexPage__logo-box`}>
+                    <StaticImage
+                      src="../img/hp-logo_white.png"
+                      width={360}
+                      alt="Heinze-Pool"
+                      placeholder="none"
+                    />
+                  </div>
+                </div>
+                {links.map((link, index) => {
+                  return (
+                    <Link
+                      key={index}
+                      className="IndexPage__link"
+                      to={link.path}
+                    >
+                      {link.label}
+                    </Link>
+                  );
+                })}
+              </div>
+            </>
+          ) : (
+            <CSSTransition
+              in={menuLayer}
+              timeout={300}
+              classNames="fadeIn"
+              unmountOnExit
+              mountOnEnter
+            >
+              <div className={`IndexPage__wrapper`}>
+                <div className={`IndexPage__menu-left`}>
+                  {links &&
+                    links.map((link, index) => {
+                      if (index < 3) {
+                        return (
+                          <TransitionLink
+                            key={index}
+                            className="IndexPage__link"
+                            to={link.path}
+                          >
+                            {link.label}
+                          </TransitionLink>
+                        );
+                      } else return null;
+                    })}
+                </div>
+                <div className={`IndexPage__menu-right`}>
+                  {links &&
+                    links.map((link, index) => {
+                      if (index >= 3) {
+                        return (
+                          <TransitionLink
+                            key={index}
+                            className="IndexPage__link"
+                            to={link.path}
+                          >
+                            {link.label}
+                          </TransitionLink>
+                        );
+                      } else return null;
+                    })}
+                </div>
                 <div className={`IndexPage__logo-box`}>
                   <StaticImage
                     src="../img/hp-logo_white.png"
-                    width={360}
+                    width={600}
+                    alt="Heinze-Pool"
+                    placeholder="none"
+                    layout="constrained"
+                  />
+                </div>
+                <div className="IndexPage__hexa-box">
+                  <StaticImage
+                    src="../img/hexagon_line.png"
+                    width={810}
                     alt="Heinze-Pool"
                     placeholder="none"
                   />
                 </div>
+                {trans && showInfoBox && (
+                  <InfoBox title={title} text={text} introText={introText} />
+                )}
               </div>
-              {links.map((link, index) => {
-                return (
-                  <Link key={index} className="IndexPage__link" to={link.path}>
-                    {link.label}
-                  </Link>
-                );
-              })}
-            </div>
-          </>
-        ) : (
-          <CSSTransition
-            in={menuLayer}
-            timeout={300}
-            classNames="fadeIn"
-            unmountOnExit
-            mountOnEnter
-          >
-            <div className={`IndexPage__wrapper`}>
-              <div className={`IndexPage__menu-left`}>
-                {links &&
-                  links.map((link, index) => {
-                    if (index < 3) {
-                      return (
-                        <TransitionLink
-                          key={index}
-                          className="IndexPage__link"
-                          to={link.path}
-                        >
-                          {link.label}
-                        </TransitionLink>
-                      );
-                    } else return null;
-                  })}
-              </div>
-              <div className={`IndexPage__menu-right`}>
-                {links &&
-                  links.map((link, index) => {
-                    if (index >= 3) {
-                      return (
-                        <TransitionLink
-                          key={index}
-                          className="IndexPage__link"
-                          to={link.path}
-                        >
-                          {link.label}
-                        </TransitionLink>
-                      );
-                    } else return null;
-                  })}
-              </div>
-              <div className={`IndexPage__logo-box`}>
-                <StaticImage
-                  src="../img/hp-logo_white.png"
-                  width={530}
-                  alt="Heinze-Pool"
-                  placeholder="none"
-                />
-              </div>
-              <div className="IndexPage__hexa-box">
-                <StaticImage
-                  src="../img/hexagon_line.png"
-                  width={810}
-                  alt="Heinze-Pool"
-                  placeholder="none"
-                />
-              </div>
-              {trans && showInfoBox && (
-                <InfoBox title={title} text={text} introText={introText} />
-              )}
-            </div>
-          </CSSTransition>
-        )}
+            </CSSTransition>
+          ))}
       </div>
       <CSSTransition
         in={imageLayer}
