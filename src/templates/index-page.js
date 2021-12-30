@@ -43,7 +43,7 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
         "https://labs.nearpod.com/bodymovin/demo/markus/isometric/markus2.json",
     });
     return () => anim.destroy(); // optional clean up for unmounting
-  }, [animationContainer]);
+  }, []);
 
   return (
     <div
@@ -57,6 +57,7 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
             src="../img/water.webp"
             width={2300}
             className="IndexPage__image"
+            placeholder="none"
           />
         </div>
         {BreakpointM ? (
@@ -71,6 +72,7 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
                     src="../img/hp-logo_white.png"
                     width={360}
                     alt="Heinze-Pool"
+                    placeholder="none"
                   />
                 </div>
               </div>
@@ -127,15 +129,17 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
               <div className={`IndexPage__logo-box`}>
                 <StaticImage
                   src="../img/hp-logo_white.png"
-                  width={800}
+                  width={530}
                   alt="Heinze-Pool"
+                  placeholder="none"
                 />
               </div>
               <div className="IndexPage__hexa-box">
                 <StaticImage
                   src="../img/hexagon_line.png"
-                  width={850}
+                  width={810}
                   alt="Heinze-Pool"
+                  placeholder="none"
                 />
               </div>
               {trans && showInfoBox && (
@@ -157,7 +161,7 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
             src="../img/Start.webp"
             width={2800}
             alt="Harz Pool"
-            blurredOptions
+            placeholder="none"
           />
         </div>
       </CSSTransition>
@@ -173,6 +177,7 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
             src="../img/hp-logo_white-sub.png"
             width={400}
             alt="Heinze-Pool"
+            placeholder="none"
           />
         </div>
       </CSSTransition>
