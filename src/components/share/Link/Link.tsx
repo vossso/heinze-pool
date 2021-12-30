@@ -23,7 +23,9 @@ const Link: React.FC<ILink> = ({ label, link, transition, extraClass }) => {
         {label}
       </TransitionLink>
     ) : (
-      <a className={`${extraClass ? extraClass : "Link"}`} href={link}>{label}</a>
+      <a className={`${extraClass ? extraClass : "Link"}`} href={link}>
+        {label}
+      </a>
     )
   ) : null;
 };

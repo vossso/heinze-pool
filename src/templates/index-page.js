@@ -1,35 +1,48 @@
-import React, { useEffect, useState } from "react";
+import React, { createRef, useEffect, useState } from "react";
 import { TransitionLink } from "gatsby-plugin-transition-link/components/TransitionLink";
-import Layout from "../components/Layout";
-
-import bgImage from "../img/water.jpg";
-import starterImg from "../img/Start.jpg";
-import logo from "../img/hp-logo_white.png";
-import logo2 from "../img/hp-logo_white-sub.png";
-import hexa from "../img/hexagon_line.png";
-import { Link } from "gatsby";
 import { CSSTransition } from "react-transition-group";
-// import ReactPlayer from 'react-player'
-import InfoBox from "../components/share/InfoBox/InfoBox";
-
+import { Link } from "gatsby";
+import Layout from "../components/Layout";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
+import lottie from "lottie-web";
+import { StaticImage } from "gatsby-plugin-image";
+
+import InfoBox from "../components/share/InfoBox/InfoBox";
 import "./index-page.scss";
 import useBreakpoint from "../hooks/useBreakpoint";
 
 export const IndexPageTemplate = ({ links, infoBox }) => {
   const [trans, setTrans] = useState(false);
+  const [imageLayer, setImageLayer] = useState(true);
+  const [menuLayer, setMenuLayer] = useState(false);
   const BreakpointM = useBreakpoint("m");
   const { showInfoBox, title, text, introText } = infoBox || {};
 
   const startAnimation = () => {
-    setTrans(true);
+    setImageLayer(false);
+    setTimeout(() => {
+      setMenuLayer(true);
+    }, 3000);
   };
 
   useEffect(() => {
     setTimeout(() => {
       BreakpointM && setTrans(true);
     }, 5000);
+  }, [BreakpointM]);
+
+  let animationContainer = createRef();
+  useEffect(() => {
+    const anim = lottie.loadAnimation({
+      container: animationContainer.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path:
+        "https://labs.nearpod.com/bodymovin/demo/markus/isometric/markus2.json",
+    });
+    return () => anim.destroy(); // optional clean up for unmounting
   }, []);
 
   return (
@@ -40,107 +53,138 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
     >
       <div className="IndexPage__content">
         <div className="IndexPage__bg-image">
-          <img className="IndexPage__image" src={bgImage} alt="Poolwasser" />
-          {/* <ReactPlayer url='https://www.youtube.com/watch?v=qwz88S1P0os' playing muted loop width= "100%" height="100vh"/> */}
+          <StaticImage
+            src="../img/water.webp"
+            width={2300}
+            className="IndexPage__image"
+            placeholder="none"
+          />
         </div>
-        {BreakpointM ? (
-          <>
-            <div className="IndexPage__mobile">
-              {trans && showInfoBox && (
-                <InfoBox title={title} text={text} introText={introText} />
-              )}
-              <div className="IndexPage__box">
+        {!imageLayer &&
+          (BreakpointM ? (
+            <>
+              <div className="IndexPage__mobile">
+                {menuLayer && showInfoBox && (
+                  <InfoBox title={title} text={text} introText={introText} />
+                )}
+                <div className="IndexPage__box">
+                  <div className={`IndexPage__logo-box`}>
+                    <StaticImage
+                      src="../img/hp-logo_white.png"
+                      width={360}
+                      alt="Heinze-Pool"
+                      placeholder="none"
+                    />
+                  </div>
+                </div>
+                {links.map((link, index) => {
+                  return (
+                    <Link
+                      key={index}
+                      className="IndexPage__link"
+                      to={link.path}
+                    >
+                      {link.label}
+                    </Link>
+                  );
+                })}
+              </div>
+            </>
+          ) : (
+            <CSSTransition
+              in={menuLayer}
+              timeout={300}
+              classNames="fadeIn"
+              unmountOnExit
+              mountOnEnter
+            >
+              <div className={`IndexPage__wrapper`}>
+                <div className={`IndexPage__menu-left`}>
+                  {links &&
+                    links.map((link, index) => {
+                      if (index < 3) {
+                        return (
+                          <TransitionLink
+                            key={index}
+                            className="IndexPage__link"
+                            to={link.path}
+                          >
+                            {link.label}
+                          </TransitionLink>
+                        );
+                      } else return null;
+                    })}
+                </div>
+                <div className={`IndexPage__menu-right`}>
+                  {links &&
+                    links.map((link, index) => {
+                      if (index >= 3) {
+                        return (
+                          <TransitionLink
+                            key={index}
+                            className="IndexPage__link"
+                            to={link.path}
+                          >
+                            {link.label}
+                          </TransitionLink>
+                        );
+                      } else return null;
+                    })}
+                </div>
                 <div className={`IndexPage__logo-box`}>
-                  <img src={logo} alt="Heinze-Pool" />
+                  <StaticImage
+                    src="../img/hp-logo_white.png"
+                    width={600}
+                    alt="Heinze-Pool"
+                    placeholder="none"
+                    layout="constrained"
+                  />
                 </div>
                 <div className="IndexPage__hexa-box">
-                  <img src={hexa} alt="Heinze-Pool" />
+                  <StaticImage
+                    src="../img/hexagon_line.png"
+                    width={810}
+                    alt="Heinze-Pool"
+                    placeholder="none"
+                  />
                 </div>
+                {trans && showInfoBox && (
+                  <InfoBox title={title} text={text} introText={introText} />
+                )}
               </div>
-              {links.map((link, index) => {
-                return (
-                  <Link key={index} className="IndexPage__link" to={link.path}>
-                    {link.label}
-                  </Link>
-                );
-              })}
-            </div>
-          </>
-        ) : (
-          <CSSTransition
-            in={trans}
-            timeout={300}
-            classNames="fadeIn"
-            unmountOnExit
-            mountOnEnter
-          >
-            <div className={`IndexPage__wrapper`}>
-              <div className={`IndexPage__menu-left`}>
-                {links &&
-                  links.map((link, index) => {
-                    if (index < 3) {
-                      return (
-                        <TransitionLink
-                          key={index}
-                          className="IndexPage__link"
-                          to={link.path}
-                        >
-                          {link.label}
-                        </TransitionLink>
-                      );
-                    } else return null;
-                  })}
-              </div>
-              <div className={`IndexPage__menu-right`}>
-                {links &&
-                  links.map((link, index) => {
-                    if (index >= 3) {
-                      return (
-                        <TransitionLink
-                          key={index}
-                          className="IndexPage__link"
-                          to={link.path}
-                        >
-                          {link.label}
-                        </TransitionLink>
-                      );
-                    } else return null;
-                  })}
-              </div>
-              <div className={`IndexPage__logo-box`}>
-                <img src={logo} alt="Heinze-Pool" />
-              </div>
-              <div className="IndexPage__hexa-box">
-                <img src={hexa} alt="Heinze-Pool" />
-              </div>
-              {trans && showInfoBox && (
-                <InfoBox title={title} text={text} introText={introText} />
-              )}
-            </div>
-          </CSSTransition>
-        )}
+            </CSSTransition>
+          ))}
       </div>
       <CSSTransition
-        in={!trans}
-        timeout={300}
+        in={imageLayer}
+        timeout={3000}
         classNames="fadeIn-late"
         unmountOnExit
-        mountOnEnter
       >
         <div className={`IndexPage__intro`}>
-          <img className="IndexPage__image" src={starterImg} alt="Harz Pool" />
+          <StaticImage
+            className="IndexPage__image"
+            src="../img/Start.webp"
+            width={2800}
+            alt="Harz Pool"
+            placeholder="none"
+          />
         </div>
       </CSSTransition>
-
       <CSSTransition
-        in={!trans}
+        in={imageLayer}
         timeout={300}
         classNames="moveup"
         unmountOnExit
         mountOnEnter
       >
         <div className="IndexPage__logo">
-          <img src={logo2} alt="Heinze-Pool" />
+          <StaticImage
+            src="../img/hp-logo_white-sub.png"
+            width={400}
+            alt="Heinze-Pool"
+            placeholder="none"
+          />
         </div>
       </CSSTransition>
     </div>

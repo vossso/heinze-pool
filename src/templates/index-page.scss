@@ -9,9 +9,8 @@
   overflow: hidden;
 
   &__intro {
-    z-index: 2;
+    z-index: 3;
     cursor: pointer;
-    z-index: 0;
     -webkit-transition: opacity 5s;
     -moz-transition: opacity 5s;
     -ms-transition: opacity 5s;
@@ -26,7 +25,7 @@
     .IndexPage__image {
       height: 100vh;
       width: auto;
-      margin-left: -65rem;
+      margin-left: -33rem;
       object-fit: cover;
     }
 
@@ -47,6 +46,7 @@
   }
 
   &__bg-image {
+    cursor: pointer;
     background: $hp-blue;
     background: -webkit-linear-gradient(
       rgba($hp-blue, 0.8),
@@ -156,24 +156,27 @@
     & img {
       margin-top: -$margin-s;
       width: 80vw;
+      max-width: 40rem;
       @include respond-to(m) {
-        margin-top: -7rem;
+        margin-top: -5rem;
         width: 38vw;
+        max-width: 60rem;
       }
       @include respond-to(xl) {
         width: 30vw;
+        max-width: 80rem;
       }
     }
   }
 
   &__logo {
+    cursor: pointer;
     z-index: 3;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+    right: 0;
+    bottom: 0;
 
     background: $hp-blue;
     background: -webkit-linear-gradient(
@@ -187,10 +190,11 @@
     -o-transition: all 5s;
     transition: all 5s;
 
-    > img {
-      width: 100%;
-      height: auto;
-      padding: 10rem 5rem;
+    > div {
+      margin: 0 auto;
+      display: block;
+      margin-top: 10rem;
+      max-width: 25rem;
     }
     @include respond-to(m) {
       background: transparent;
@@ -201,16 +205,17 @@
       width: 40rem;
     }
     @include respond-to(xxl) {
-      top: 10%;
+      top: 0;
       left: 10%;
       height: 40rem;
       width: 40rem;
 
-      > img {
+      > div {
         width: 100%;
         height: auto;
         padding: 0;
         object-fit: contain;
+        max-width: 40rem;
       }
     }
   }
@@ -233,7 +238,29 @@
       margin-bottom: $margin-s;
     }
   }
+  &__dropLayer {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $hp-blue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__drop {
+    position: absolute;
+    margin: auto;
+    height: 20rem;
+    width: 20rem;
+  }
 }
-.Layout__footer > a {
-  color: $hp-white;
+.Layout__footer {
+  z-index: 3;
+  > a {
+    color: $hp-white;
+  }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../components/share/Container/Container";
 import Layout from "../components/Layout";
 import Link from "../components/share/Link/Link";
-import starterImg from "../img/Start.jpg";
+import starterImg from "../img/Start.webp";
 
 import "./404.scss";
 
@@ -15,7 +15,10 @@ const NotFoundPage = () => (
         </div>
         <div className="Page-404__text">
           <h1>404 Error</h1>
-          <p>Die Seite wurde nicht gefunden, dafür finden Sie ihren Traumpool bei uns.</p>
+          <p>
+            Die Seite wurde nicht gefunden, dafür finden Sie ihren Traumpool bei
+            uns.
+          </p>
           <Link label="zur Startseite" link="/" />
         </div>
       </div>

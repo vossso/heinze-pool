@@ -31,10 +31,10 @@
 .fadeIn-enter-active {
   opacity: 1;
   transform: translateX(0);
-  -webkit-transition: opacity 1s transform 300ms;
-  -moz-transition: opacity 1s transform 300ms;
-  -ms-transition: opacity 1s transform 300ms;
-  -o-transition: opacity 1s transform 300ms;
+  -webkit-transition: opacity 1s, transform 300ms;
+  -moz-transition: opacity 1s, transform 300ms;
+  -ms-transition: opacity 1s, transform 300ms;
+  -o-transition: opacity 1s, transform 300ms;
   transition: opacity 1s, transform 300ms;
 }
 .fadeIn-exit {
@@ -43,11 +43,11 @@
 .fadeIn-exit-active {
   opacity: 0;
   transform: scale(0.9);
-  -webkit-transition: opacity 500ms, transform 300ms;
-  -moz-transition: opacity 500ms, transform 300ms;
-  -ms-transition: opacity 500ms, transform 300ms;
-  -o-transition: opacity 500ms, transform 300ms;
-  transition: opacity 500ms, transform 300ms;
+  -webkit-transition: opacity 1s, transform 300ms;
+  -moz-transition: opacity 1s, transform 300ms;
+  -ms-transition: opacity 1s, transform 300ms;
+  -o-transition: opacity 1s, transform 300ms;
+  transition: opacity 1s, transform 300ms;
 }
 
 .fadeIn-late-enter {
@@ -55,24 +55,24 @@
 }
 .fadeIn-late-enter-active {
   opacity: 1;
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  -ms-transition: opacity 1s;
-  -o-transition: opacity 1s;
-  transition: opacity 1s;
+  -webkit-transition: opacity 5s, transform 5s;
+  -moz-transition: opacity 5s, transform 5s;
+  -ms-transition: opacity 5s, transform 5s;
+  -o-transition: opacity 5s, transform 5s;
+  transition: opacity 5s, transform 5s;
 }
 .fadeIn-late-exit {
   opacity: 1;
 }
 .fadeIn-late-exit-active {
   opacity: 0;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -ms-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;
+  transform: scale(20) translate(10px, -200px);
+  -webkit-transition: opacity 4.5s 0.5s, transform 5s;
+  -moz-transition: opacity 4.5s 0.5s, transform 5s;
+  -ms-transition: opacity 4.5s 0.5s, transform 5s;
+  -o-transition: opacity 4.5s 0.5s, transform 5s;
+  transition: opacity 4.5s 0.5s, transform 5s;
 }
-
 
 .fadeOut-enter {
   opacity: 0;
@@ -125,8 +125,6 @@
   -o-transition: opacity 50ms 5s, transform 300ms;
   transition: opacity 50ms 5s, transform 300ms;
 }
-
-
 
 .slideIn-enter {
   opacity: 0;

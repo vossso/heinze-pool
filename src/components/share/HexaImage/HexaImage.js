@@ -1,23 +1,23 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 
 import "./HexaImage.scss";
-import Overlay from "../Overlay/Overlay";
 import Hexagon from "react-hexagon";
-import { CSSTransition } from "react-transition-group";
 import { getImage } from "gatsby-plugin-image";
+import { HexaPatternContext } from "../../HexaPattern/HexaPattern";
 
-const HexaImage = ({ description, imageInfo }) => {
-  const [showOverlay, setShowOverlay] = useState(false);
+const HexaImage = ({ imageInfo, index }) => {
+  const { onClick } = useContext(HexaPatternContext) || {};
   const imgagePath =
     imageInfo.image && getImage(imageInfo.image).images.fallback.src;
 
-  const onClick = () => {
-    setShowOverlay(!showOverlay);
-  };
-
   return (
     <div className="HexaImage">
-      <button onClick={onClick}>
+      <button
+        onClick={() => {
+          onClick(index);
+        }}
+        aria-label="Show Project"
+      >
         <Hexagon
           className="HexaImage__poly"
           backgroundImage={imgagePath}
@@ -27,20 +27,6 @@ const HexaImage = ({ description, imageInfo }) => {
           hexProps={{ strokeLinecap: "round" }}
         />
       </button>
-      {
-        <CSSTransition
-          in={showOverlay}
-          timeout={300}
-          classNames="alert"
-          unmountOnExit
-        >
-          <Overlay
-            image={imageInfo}
-            description={description}
-            onClick={onClick}
-          />
-        </CSSTransition>
-      }
     </div>
   );
 };

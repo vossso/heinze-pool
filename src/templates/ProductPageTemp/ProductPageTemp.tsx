@@ -5,11 +5,7 @@ import ProductTeasers from "../../components/ProductTeasers/ProductTeasers";
 import Brands from "../../components/Brands/Brands";
 import './ProductPageTemp.scss'
 
-interface IProductPageTempProps {
-  product: any;
-}
-
-const ProductPageTemp: React.FC<IProductPageTempProps> = ({ product }) => {
+const ProductPageTemp = ({ product }) => {
   const [content, setContent] = useState(null);
 
   useEffect(() => {

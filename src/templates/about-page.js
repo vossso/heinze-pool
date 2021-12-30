@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
@@ -68,7 +68,7 @@ const AboutPage = ({ data }) => {
     } else {
       setWhiteArrow(false);
     }
-  }, [currentScrollY]);
+  }, [currentScrollY, BreakpointM]);
 
   return (
     <Layout>
@@ -103,7 +103,7 @@ export const aboutPageQuery = graphql`
                 placeholder: BLURRED
                 formats: [AUTO, WEBP]
                 width: 2000
-                breakpoints: [480,568,800,1024,1280]
+                breakpoints: [480, 568, 800, 1024, 1280]
                 quality: 100
               )
             }
@@ -118,7 +118,7 @@ export const aboutPageQuery = graphql`
                   placeholder: BLURRED
                   formats: [AUTO, WEBP]
                   width: 800
-                  breakpoints: [568,1024]
+                  breakpoints: [568, 1024]
                   quality: 100
                   layout: FULL_WIDTH
                 )

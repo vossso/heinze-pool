@@ -5,11 +5,11 @@
   overflow: hidden;
   max-width: 100vw;
 
-  @include respond-to(m) {
+  @include respond-to(l) {
     max-height: 100vw;
   }
   &__stage {
-    padding-top: $margin-menu-mobile+$margin-s;
+    padding-top: $margin-menu-mobile + $margin-s;
     text-align: center;
 
     > h3 {
@@ -17,7 +17,7 @@
       font-size: $fs-h3-mobile;
     }
     @include respond-to(m) {
-      padding-top: $margin-menu+$margin-m;
+      padding-top: $margin-menu + $margin-m;
       > h3 {
         font-size: $fs-h3;
       }

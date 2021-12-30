@@ -68,7 +68,7 @@ export const PortfolioPageQuery = graphql`
                   placeholder: BLURRED
                   formats: [AUTO, WEBP]
                   width: 1000
-                  breakpoints: [480,568,800,1024,1280]
+                  breakpoints: [480, 568, 800, 1024, 1280]
                   quality: 100
                 )
               }
