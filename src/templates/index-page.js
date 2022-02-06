@@ -53,12 +53,19 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
     >
       <div className="IndexPage__content">
         <div className="IndexPage__bg-image">
-          <StaticImage
-            src="../img/water.webp"
-            width={2300}
-            className="IndexPage__image"
-            placeholder="none"
-          />
+          <CSSTransition
+            in={!imageLayer}
+            timeout={300}
+            classNames="fadeIn"
+            mountOnEnter
+          >
+            <StaticImage
+              src="../img/water.webp"
+              width={2300}
+              className="IndexPage__image"
+              placeholder="none"
+            />
+          </CSSTransition>
         </div>
         {!imageLayer &&
           (BreakpointM ? (
