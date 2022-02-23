@@ -92,7 +92,7 @@
   &__menu-right,
   &__menu-left {
     flex: 1 0 30%;
-    height: 70%;
+    height: 44%;
 
     display: flex;
     justify-content: space-between;
@@ -100,6 +100,10 @@
     align-items: center;
 
     z-index: 2;
+
+    @include respond-to(l) {
+      height: 70%;
+    }
 
     @include respond-to(xl) {
       height: 80%;
@@ -140,12 +144,19 @@
   }
 
   &__hexa-box {
+    & > div {
+      max-width: 50vw;
+      @include respond-to(xl) {
+        max-width: 100%;
+      }
+    }
     & img {
       display: none;
 
       @include respond-to(m) {
         display: block;
         width: 52vw;
+        height: 100%;
       }
       @include respond-to(xl) {
         width: 45vw;
@@ -153,6 +164,12 @@
     }
   }
   &__logo-box {
+    & > div {
+      max-width: 38vw;
+      @include respond-to(xl) {
+        max-width: 100%;
+      }
+    }
     & img {
       margin-top: -$margin-s;
       width: 80vw;
