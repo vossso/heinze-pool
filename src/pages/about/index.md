@@ -56,17 +56,6 @@ history:
       image: /img/1990.jpg
     title: '1990'
   - description: >-
-      <h3>Merkurstraße, Hannover</h3>
-
-
-      Mit dem Kunden weiterhin im Fokus stehend bauten wir aus, um unser Lager
-      zu vergrößern und schneller liefern zu können. Willkommen in der
-      Merkurstraße, Hannover.
-    historyimage:
-      alt: 'Merkurstraße, Garbsen Hannover 2001'
-      image: /img/2001.jpg
-    title: '2001'
-  - description: >-
       <h3>Daimlerstraße, Isernhagen</h3>
 
 
