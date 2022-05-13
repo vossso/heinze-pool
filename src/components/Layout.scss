@@ -34,4 +34,6 @@
 #PageContent {
   transition: filter $duration-s;
   -webkit-transition: -webkit-filter $duration-s;
+
+  display: contents;
 }
