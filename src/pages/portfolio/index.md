@@ -3,7 +3,7 @@ templateKey: portfolio-page
 title: Projekte
 description: >-
   Klicken Sie sich durch eine kleine Auswahl unserer Projekte und überzeugen Sie
-  sich von unserem Handwerk.
+  sich von unserem Handwerk..
 imageTeasers:
   - description: 'Größe: 1000 x 370 x 150 cm | Farbe: Sand | Material: Polypropylen '
     imageObject:
