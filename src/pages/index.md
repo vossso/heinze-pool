@@ -62,6 +62,10 @@ infoBox:
 
 
     Wir freuen uns dich kennen zu lernen!
+
+
+    Bewirb dich ganz einfach mit deinen Bewerbungsunterlagen per E-mail unter
+    info@heinze-pool.de oder kontaktiere uns telefonisch unter 0511 / 2713145.
   title: Wir suchen dich!
 ---
 
