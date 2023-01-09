@@ -39,8 +39,7 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
       renderer: "svg",
       loop: true,
       autoplay: true,
-      path:
-        "https://labs.nearpod.com/bodymovin/demo/markus/isometric/markus2.json",
+      path: "https://labs.nearpod.com/bodymovin/demo/markus/isometric/markus2.json",
     });
     return () => anim.destroy(); // optional clean up for unmounting
   }, []);
@@ -155,7 +154,7 @@ export const IndexPageTemplate = ({ links, infoBox }) => {
                     placeholder="none"
                   />
                 </div>
-                {trans && showInfoBox && (
+                {menuLayer && showInfoBox && (
                   <InfoBox title={title} text={text} introText={introText} />
                 )}
               </div>
