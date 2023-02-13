@@ -70,7 +70,7 @@ contactblock:
   adress:
     city: 30916 Isernhagen
     name: Heinze Pool GmbH
-    street: Daimlerstr. 9
+    street: Siemensstraße 3
   numbers:
     fax: 0511 2713147
     phone: 0511 2713145
