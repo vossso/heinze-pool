@@ -14,58 +14,24 @@ links:
   - label: FAQ
     path: /faq
 infoBox:
-  introText: Erfahrener Poolbauer (m/w/d) oder Lust auf eine neue Herausforderung?
+  introText: 'Ab sofort in der Siemensstraße 3, 30916 Isernhagen!'
   showInfoBox: true
   text: >-
-    Wir suchen Dich als Techniker/ Handwerker und neuen Kollegen (m/w/d) im
-    Bereich Poolbau zum 01.02.2023 oder 01.03.2023!
+    Hallo liebe Poolfreunde,
 
 
-    Deine Aufgaben:
+    wir sind umgezogen, doch keine Sorge, nur eine Straße weiter. Ab sofort
+    findet Ihr uns in der Siemensstraße 3 in 30916 Isernhagen.
 
 
-    - Einsetzen und installieren von Fertigpools und dessen Ausstattung
-
-    - Verrohrung der Filtertechnik und zusätzlicher Technik
-
-    - Kleine Beratungstätigkeiten vor Ort
-
-    - Poolpflege und Wartung von Bestandskunden
+    Wir bitten um etwas Nachsicht, da wir uns aktuell noch im Umbau befinden.
+    Selbstverständlich könnt Ihr trotzdem wie gewohnt alle Produkte aus unserem
+    Sortiment beziehen, eine professionelle Wasseranalyse durchführen lassen
+    oder euch allgemein beraten lassen.
 
 
-    Wir wünschen uns von dir:
-
-
-    - Handwerkliches Geschick und technisches Verständnis
-
-    - Abgeschlossene Berufssausbildung im Handwerk
-
-    - Gute Deutschkenntnisse in Wort und Schrift
-
-    - Führerscheinklasse B
-
-
-    Wir bieten:
-
-
-    - Unbefristeter Arbeitsvertrag
-
-    - 37,5 Stunden Woche
-
-    - Familiäres Umfeld
-
-    - Junges und humorvolles Team
-
-    - Regelmäßige Fort- und Weiterbildungen
-
-    - Attraktives Gehalt + Sonderzahlungen
-
-
-    Wir freuen uns dich kennen zu lernen!
-
-
-    Bewirb dich ganz einfach mit deinen Bewerbungsunterlagen per E-mail unter
-    info@heinze-pool.de oder kontaktiere uns telefonisch unter 0511 / 2713145.
-  title: Wir suchen dich!
+    Für vollständige oder technische Beratungen bitten wir nach wie vor um
+    Terminvereinbarung.
+  title: Wir sind umgezogen!
 ---
 
