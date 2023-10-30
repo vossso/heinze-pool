@@ -2,7 +2,7 @@
 @import "../../../styles/media-queries";
 
 .InfoBox {
-  display: block;
+  // display: none;
   position: fixed;
   z-index: 99;
   height: 100vh;
@@ -39,7 +39,6 @@
     width: 30rem;
     height: auto;
     transition: opacity $duration-m $duration-s, width $duration-s;
-    pointer-events: visible;
 
     &:hover {
       width: 30.5rem;
@@ -148,7 +147,9 @@
   }
 
   &--visible {
+    // display: block;
     opacity: 1;
+    pointer-events: visible;
 
     & .InfoBox__hexa {
       transform: rotate(0deg);

@@ -25,7 +25,7 @@ const InfoBox: React.FC<IInfoBox> = ({
   return (
     <div
       className={`InfoBox${isVisible ? " InfoBox--visible" : ""}${
-        isOpen ? " InfoBox--open" : ""
+        isOpen && isVisible ? " InfoBox--open" : ""
       }`}
     >
       {BreakpointS && (
