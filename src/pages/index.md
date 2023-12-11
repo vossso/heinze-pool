@@ -14,24 +14,15 @@ links:
   - label: FAQ
     path: /faq
 infoBox:
-  introText: 'Ab sofort in der Siemensstraße 3, 30916 Isernhagen!'
+  introText: Geschlossen vom 20.12.23 - 07.01.24
   showInfoBox: true
   text: >-
     Hallo liebe Poolfreunde,
 
 
-    wir sind umgezogen, doch keine Sorge, nur eine Straße weiter. Ab sofort
-    findet Ihr uns in der Siemensstraße 3 in 30916 Isernhagen.
-
-
-    Wir bitten um etwas Nachsicht, da wir uns aktuell noch im Umbau befinden.
-    Selbstverständlich könnt Ihr trotzdem wie gewohnt alle Produkte aus unserem
-    Sortiment beziehen, eine professionelle Wasseranalyse durchführen lassen
-    oder euch allgemein beraten lassen.
-
-
-    Für vollständige oder technische Beratungen bitten wir nach wie vor um
-    Terminvereinbarung.
-  title: Wir sind umgezogen!
+    wir befinden uns vom 20.12.23 bis zum 07.01.24 in den Betriebsferien. Wir
+    wünschen euch allen schöne Festtage und freuen uns auf die nächste
+    gemeinsame Poolsaison.
+  title: Winteröffnungszeiten
 ---
 
