@@ -15,7 +15,7 @@ links:
     path: /faq
 infoBox:
   introText: Geschlossen vom 20.12.23 - 07.01.24
-  showInfoBox: true
+  showInfoBox: false
   text: >-
     Hallo liebe Poolfreunde,
 
