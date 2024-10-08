@@ -21,7 +21,7 @@ text: >-
   E-Mail: info@heinze-pool.de
 
 
-  Ust.-Id.-Nr.: DE326 579 682
+  Ust.-Id.-Nr.: DE360 771 760
 
 
   <h3>Inhalte dieser Website</h3>
