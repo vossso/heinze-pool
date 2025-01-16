@@ -59,13 +59,13 @@ history:
       <h3>Daimlerstraße, Isernhagen</h3>
 
 
-      Heute finden Sie uns professioneller und erfahrender als je zuvor in der
-      Daimlerstraße in Isernhagen vor, mit einem wunderbaren Team und viel
+      Bis 2022 fanden Sie uns professioneller und erfahrender als je zuvor in
+      der Daimlerstraße in Isernhagen vor, mit einem wunderbaren Team und viel
       Freude an dem was wir tun.
     historyimage:
-      alt: 'Daimlerstraße, Isernhagen 2021'
+      alt: 'Daimlerstraße, Isernhagen 2022'
       image: /img/Service_shop.jpg
-    title: Heute
+    title: '2022'
 contactblock:
   adress:
     city: 30916 Isernhagen
