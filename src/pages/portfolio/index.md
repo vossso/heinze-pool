@@ -63,5 +63,9 @@ imageTeasers:
     imageObject:
       alt: Polypropylen Pool grau
       image: /img/webseite.jpg
+  - description: '1000 x 370 x 150 | Farbe: Papyrus | Material: GFK'
+    imageObject:
+      alt: GFK Pool Papyrus
+      image: /img/img_3700.jpeg
 ---
 
