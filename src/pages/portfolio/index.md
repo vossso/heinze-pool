@@ -67,5 +67,13 @@ imageTeasers:
     imageObject:
       alt: GFK Pool Papyrus
       image: /img/img_3700.jpeg
+  - description: '800 x 360 x 140 cm | Farbe: Anthrazit | Material: Polypropylen'
+    imageObject:
+      alt: Fertigschwimmbecken Pool Polypropylen
+      image: /img/fertig.jpg
+  - description: '800 x 350 x 145 cm | Farbe: Grau | Material: Polypropylen'
+    imageObject:
+      alt: Pool Fertigschwimmbecken Grau
+      image: /img/img-20250803-wa0023.jpg
 ---
 
